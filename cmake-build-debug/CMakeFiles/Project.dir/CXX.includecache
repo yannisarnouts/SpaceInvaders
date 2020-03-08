@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../model/Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+../model/AbstractPlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
+../model/AbstractAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h
+../model/AbstractBullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TxTFactory.h
+AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/main.cpp
+iostream
+-
+factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+factory/TxTFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TxTFactory.h
+MVC/Game.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h
+Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
+Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
+Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
