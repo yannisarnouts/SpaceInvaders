@@ -4,9 +4,20 @@
 CMakeFiles/Project.dir/MVC/Game.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+CMakeFiles/Project.dir/MVC/GameView.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
+CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
 CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj
@@ -43,10 +54,22 @@ CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
 CMakeFiles/Project.dir/main.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TxTFactory.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/main.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h

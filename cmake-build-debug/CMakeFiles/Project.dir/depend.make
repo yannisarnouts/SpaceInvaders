@@ -3,11 +3,22 @@
 
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/Game.cpp
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/Game.h
+CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/GameView.h
+CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../SDLClasses/SDLSpaceShip.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractAlien.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractBullet.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractPlayerShip.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/Entity.h
+
+CMakeFiles/Project.dir/MVC/GameView.cpp.obj: ../MVC/GameView.cpp
+CMakeFiles/Project.dir/MVC/GameView.cpp.obj: ../MVC/GameView.h
+
+CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../MVC/GameView.h
+CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../SDLClasses/SDLSpaceShip.cpp
+CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../SDLClasses/SDLSpaceShip.h
+CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../model/AbstractPlayerShip.h
+CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj: ../TxTClasses/TxTAlien.cpp
 CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj: ../TxTClasses/TxTAlien.h
@@ -43,9 +54,21 @@ CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../model/AbstractBullet.h
 CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../model/AbstractPlayerShip.h
 CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../model/Entity.h
 
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../MVC/GameView.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLSpaceShip.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.cpp
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AbstractAlien.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AbstractBullet.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AbstractPlayerShip.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/Entity.h
+
 CMakeFiles/Project.dir/main.cpp.obj: ../MVC/Game.h
+CMakeFiles/Project.dir/main.cpp.obj: ../MVC/GameView.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/TxTFactory.h
+CMakeFiles/Project.dir/main.cpp.obj: ../factory/sdlFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Project.dir/main.cpp.obj: ../model/AbstractAlien.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/AbstractBullet.h

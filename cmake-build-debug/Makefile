@@ -149,6 +149,60 @@ MVC/Game.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/Game.cpp.s
 .PHONY : MVC/Game.cpp.s
 
+MVC/GameView.obj: MVC/GameView.cpp.obj
+
+.PHONY : MVC/GameView.obj
+
+# target to build an object file
+MVC/GameView.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/GameView.cpp.obj
+.PHONY : MVC/GameView.cpp.obj
+
+MVC/GameView.i: MVC/GameView.cpp.i
+
+.PHONY : MVC/GameView.i
+
+# target to preprocess a source file
+MVC/GameView.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/GameView.cpp.i
+.PHONY : MVC/GameView.cpp.i
+
+MVC/GameView.s: MVC/GameView.cpp.s
+
+.PHONY : MVC/GameView.s
+
+# target to generate assembly for a file
+MVC/GameView.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/GameView.cpp.s
+.PHONY : MVC/GameView.cpp.s
+
+SDLClasses/SDLSpaceShip.obj: SDLClasses/SDLSpaceShip.cpp.obj
+
+.PHONY : SDLClasses/SDLSpaceShip.obj
+
+# target to build an object file
+SDLClasses/SDLSpaceShip.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj
+.PHONY : SDLClasses/SDLSpaceShip.cpp.obj
+
+SDLClasses/SDLSpaceShip.i: SDLClasses/SDLSpaceShip.cpp.i
+
+.PHONY : SDLClasses/SDLSpaceShip.i
+
+# target to preprocess a source file
+SDLClasses/SDLSpaceShip.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.i
+.PHONY : SDLClasses/SDLSpaceShip.cpp.i
+
+SDLClasses/SDLSpaceShip.s: SDLClasses/SDLSpaceShip.cpp.s
+
+.PHONY : SDLClasses/SDLSpaceShip.s
+
+# target to generate assembly for a file
+SDLClasses/SDLSpaceShip.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.s
+.PHONY : SDLClasses/SDLSpaceShip.cpp.s
+
 TxTClasses/TxTAlien.obj: TxTClasses/TxTAlien.cpp.obj
 
 .PHONY : TxTClasses/TxTAlien.obj
@@ -283,6 +337,33 @@ factory/TxTFactory.s: factory/TxTFactory.cpp.s
 factory/TxTFactory.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/TxTFactory.cpp.s
 .PHONY : factory/TxTFactory.cpp.s
+
+factory/sdlFactory.obj: factory/sdlFactory.cpp.obj
+
+.PHONY : factory/sdlFactory.obj
+
+# target to build an object file
+factory/sdlFactory.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj
+.PHONY : factory/sdlFactory.cpp.obj
+
+factory/sdlFactory.i: factory/sdlFactory.cpp.i
+
+.PHONY : factory/sdlFactory.i
+
+# target to preprocess a source file
+factory/sdlFactory.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/sdlFactory.cpp.i
+.PHONY : factory/sdlFactory.cpp.i
+
+factory/sdlFactory.s: factory/sdlFactory.cpp.s
+
+.PHONY : factory/sdlFactory.s
+
+# target to generate assembly for a file
+factory/sdlFactory.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/sdlFactory.cpp.s
+.PHONY : factory/sdlFactory.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -431,6 +512,12 @@ help:
 	@echo ... MVC/Game.obj
 	@echo ... MVC/Game.i
 	@echo ... MVC/Game.s
+	@echo ... MVC/GameView.obj
+	@echo ... MVC/GameView.i
+	@echo ... MVC/GameView.s
+	@echo ... SDLClasses/SDLSpaceShip.obj
+	@echo ... SDLClasses/SDLSpaceShip.i
+	@echo ... SDLClasses/SDLSpaceShip.s
 	@echo ... TxTClasses/TxTAlien.obj
 	@echo ... TxTClasses/TxTAlien.i
 	@echo ... TxTClasses/TxTAlien.s
@@ -446,6 +533,9 @@ help:
 	@echo ... factory/TxTFactory.obj
 	@echo ... factory/TxTFactory.i
 	@echo ... factory/TxTFactory.s
+	@echo ... factory/sdlFactory.obj
+	@echo ... factory/sdlFactory.i
+	@echo ... factory/sdlFactory.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
