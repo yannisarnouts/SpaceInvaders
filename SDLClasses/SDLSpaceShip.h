@@ -8,16 +8,20 @@
 
 #include "../model/AbstractPlayerShip.h"
 #include "../MVC/GameView.h"
+#include "../factory/Texture.h"
 
 class SDLSpaceShip : public AbstractPlayerShip {
 public:
     SDLSpaceShip();
-    SDLSpaceShip(int xCoord, int yCoord, int width, int height);
+
+    SDLSpaceShip(SDL_Renderer *gRenderer, int width, int height, std::string imgPath);
 
     void Visualize(AbstractPlayerShip abstractPlayerShip) override;
 
 private:
-    GameView* gameView;
+    SDL_Renderer* gRenderer;
+    Texture* texture = NULL;
+    std::string imgPath;
 };
 
 

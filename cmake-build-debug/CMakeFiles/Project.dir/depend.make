@@ -6,6 +6,7 @@ CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/Game.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/GameView.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../SDLClasses/SDLSpaceShip.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractAlien.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractBullet.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractPlayerShip.h
@@ -17,6 +18,7 @@ CMakeFiles/Project.dir/MVC/GameView.cpp.obj: ../MVC/GameView.h
 CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../MVC/GameView.h
 CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../SDLClasses/SDLSpaceShip.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../SDLClasses/SDLSpaceShip.h
+CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../model/AbstractPlayerShip.h
 CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../model/Entity.h
 
@@ -43,6 +45,9 @@ CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/AbstractBullet.
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/AbstractPlayerShip.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Entity.h
 
+CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.cpp
+CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.h
+
 CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../TxTClasses/TxTAlien.h
 CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../TxTClasses/TxTBullet.h
 CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../TxTClasses/TxTSpaceShip.h
@@ -57,6 +62,7 @@ CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../MVC/GameView.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLSpaceShip.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.cpp
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AbstractAlien.h

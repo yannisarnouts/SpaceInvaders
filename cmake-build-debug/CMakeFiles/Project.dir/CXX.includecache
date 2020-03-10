@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.cpp
-SDL2/SDL.h
--
-SDL2/SDL_image.h
--
-stdio.h
--
-iostream
--
-GameView.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
-
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
 SDL2/SDL.h
 -
@@ -25,4 +13,58 @@ stdio.h
 -
 string
 -
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h
+../model/AbstractPlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
+../MVC/GameView.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../model/Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+../model/AbstractPlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
+../model/AbstractAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h
+../model/AbstractBullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+SDL2/SDL_render.h
+-
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.cpp
+sdlFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.h
+../MVC/GameView.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
+../SDLClasses/SDLSpaceShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h
+SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.h
+AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../MVC/GameView.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h
+Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
+Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
+Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
 

@@ -14,6 +14,15 @@ public:
     int getYCoord() const;
     void setXCoord(int xCoord);
     void setYCoord(int yCoord);
+
+    int getWidth() const;
+
+    void setWidth(int width);
+
+    int getHeight() const;
+
+    void setHeight(int height);
+
 private:
     int xCoord;
     int yCoord;

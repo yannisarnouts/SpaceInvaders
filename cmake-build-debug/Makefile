@@ -311,6 +311,33 @@ factory/AbstractFactory.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/AbstractFactory.cpp.s
 .PHONY : factory/AbstractFactory.cpp.s
 
+factory/Texture.obj: factory/Texture.cpp.obj
+
+.PHONY : factory/Texture.obj
+
+# target to build an object file
+factory/Texture.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/Texture.cpp.obj
+.PHONY : factory/Texture.cpp.obj
+
+factory/Texture.i: factory/Texture.cpp.i
+
+.PHONY : factory/Texture.i
+
+# target to preprocess a source file
+factory/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/Texture.cpp.i
+.PHONY : factory/Texture.cpp.i
+
+factory/Texture.s: factory/Texture.cpp.s
+
+.PHONY : factory/Texture.s
+
+# target to generate assembly for a file
+factory/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/Texture.cpp.s
+.PHONY : factory/Texture.cpp.s
+
 factory/TxTFactory.obj: factory/TxTFactory.cpp.obj
 
 .PHONY : factory/TxTFactory.obj
@@ -530,6 +557,9 @@ help:
 	@echo ... factory/AbstractFactory.obj
 	@echo ... factory/AbstractFactory.i
 	@echo ... factory/AbstractFactory.s
+	@echo ... factory/Texture.obj
+	@echo ... factory/Texture.i
+	@echo ... factory/Texture.s
 	@echo ... factory/TxTFactory.obj
 	@echo ... factory/TxTFactory.i
 	@echo ... factory/TxTFactory.s

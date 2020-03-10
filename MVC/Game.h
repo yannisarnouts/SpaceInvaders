@@ -6,6 +6,7 @@
 #define PROJECT_GAME_H
 
 
+#include <string>
 #include "../factory/AbstractFactory.h"
 
 class Game {
@@ -15,6 +16,7 @@ public:
 
 private:
     AbstractFactory *A;
+    std::string shipPath = "../assets/spaceship.png";
 };
 
 

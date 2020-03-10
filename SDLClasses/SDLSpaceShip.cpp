@@ -3,15 +3,21 @@
 //
 
 #include "SDLSpaceShip.h"
+#include "../factory/Texture.h"
 
 SDLSpaceShip::SDLSpaceShip() {
-    gameView = new GameView();
 }
 
-SDLSpaceShip::SDLSpaceShip(int xCoord, int yCoord, int width, int height) : AbstractPlayerShip(xCoord, yCoord, width,
-                                                                                               height) {
+SDLSpaceShip::SDLSpaceShip(SDL_Renderer *gRenderer, int width, int height, std::string imgPath) {
+    this->gRenderer = gRenderer;
+    this->imgPath = imgPath;
+    Texture *ssTexture = new Texture(gRenderer);
+    texture = ssTexture;
 }
-
 void SDLSpaceShip::Visualize(AbstractPlayerShip abstractPlayerShip) {
-    gameView->createTexture("../assets/spaceship.png");
+    SDL_Rect renderQuad = {getXCoord(), getXCoord(), getWidth(), getHeight()};
+    SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
+    //renderQuad = {0, scrollingOffset - (getHeight()), getWidth(), getHeight()};
+    SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
+    texture->loadFromFile(imgPath);
 }

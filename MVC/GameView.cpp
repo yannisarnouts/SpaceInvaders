@@ -31,8 +31,9 @@ void GameView::init(const char *title, int width, int height, bool fullscreen) {
 
 GameView::GameView() {
     init("SpaceInvaders", 800, 600, false);
-    createTexture("../assets/bg.jpg");
-    createTexture("../assets/spaceship.png");
+    destR.h = 450;
+    createTexture("../assets/bg.jpg", playerR);
+    createTexture("../assets/spaceship.png", playerR);
     while (isRunning) {
         handleEvents();
         update();
@@ -63,7 +64,7 @@ void GameView::handleEvents() {
 
 void GameView::render() {
     SDL_RenderClear(renderer);
-    SDL_RenderCopy(renderer, texture, NULL, &destR);
+    SDL_RenderCopy(renderer, texture, NULL, NULL);
     SDL_RenderPresent(renderer);
 }
 
@@ -73,9 +74,9 @@ void GameView::clean() {
     SDL_Quit();
 }
 
-SDL_Texture* GameView::createTexture(const char* path) {
-    printf("createtext");
+SDL_Texture* GameView::createTexture(const char* path, SDL_Rect *rect) {
     SDL_Surface* tmpSurface = IMG_Load(path);
+    SDL_GetClipRect(tmpSurface, rect);
     texture = SDL_CreateTextureFromSurface(renderer, tmpSurface);
     SDL_FreeSurface(tmpSurface);
     return texture;

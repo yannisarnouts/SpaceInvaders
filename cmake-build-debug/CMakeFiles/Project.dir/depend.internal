@@ -7,6 +7,7 @@ CMakeFiles/Project.dir/MVC/Game.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
@@ -18,6 +19,7 @@ CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
 CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj
@@ -43,6 +45,9 @@ CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+CMakeFiles/Project.dir/factory/Texture.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
 CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/TxTClasses/TxTAlien.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/TxTClasses/TxTBullet.h
@@ -58,6 +63,7 @@ CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h

@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/TxTClasses/TxTBullet.cpp.obj"
   "CMakeFiles/Project.dir/TxTClasses/TxTSpaceShip.cpp.obj"
   "CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj"
+  "CMakeFiles/Project.dir/factory/Texture.cpp.obj"
   "CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj"
   "CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj"
   "CMakeFiles/Project.dir/main.cpp.obj"

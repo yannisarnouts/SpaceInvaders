@@ -122,6 +122,12 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TxTFactory.cpp">
 			<Option target="Project"/>
 		</Unit>

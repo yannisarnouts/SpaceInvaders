@@ -25,3 +25,19 @@ void Entity::setYCoord(int yCoord) {
 
 Entity::Entity(int xCoord, int yCoord, int width, int height) : xCoord(xCoord), yCoord(yCoord), width(width),
                                                                 height(height) {}
+
+int Entity::getWidth() const {
+    return width;
+}
+
+void Entity::setWidth(int width) {
+    Entity::width = width;
+}
+
+int Entity::getHeight() const {
+    return height;
+}
+
+void Entity::setHeight(int height) {
+    Entity::height = height;
+}

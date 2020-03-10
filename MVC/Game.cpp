@@ -12,11 +12,6 @@ Game::Game(AbstractFactory *_A) {
 
 void Game::Run() {
     //GameView();
-    SDLSpaceShip();
     AbstractPlayerShip *playerShip = A->createPlayerShip();
     playerShip->Visualize(*playerShip);
-    AbstractAlien *alien = A->createAlien();
-    alien->Visualize(*alien);
-    AbstractBullet *abstractBullet = A->createBullet();
-    abstractBullet->Visualize(*abstractBullet);
 }

@@ -15,6 +15,13 @@ public:
     AbstractPlayerShip *createPlayerShip() override;
     AbstractAlien *createAlien() override;
     AbstractBullet *createBullet() override;
+
+    void init(int wh, int ww);
+    void render();
+
+private:
+    SDL_Window* gWindow = NULL;
+    SDL_Renderer* gRenderer = NULL;
 };
 
 
