@@ -3,96 +3,49 @@
 
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/Game.cpp
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/Game.h
-CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/GameView.h
-CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../SDLClasses/SDLSpaceShip.h
+CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../SDLClasses/SDLPlayerShip.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../factory/Texture.h
-CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractAlien.h
-CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractBullet.h
-CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/PlayerShip.h
 
-CMakeFiles/Project.dir/MVC/GameView.cpp.obj: ../MVC/GameView.cpp
-CMakeFiles/Project.dir/MVC/GameView.cpp.obj: ../MVC/GameView.h
+CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj: ../SDLClasses/SDLBackground.cpp
+CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj: ../SDLClasses/SDLBackground.h
+CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj: ../factory/Texture.h
+CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj: ../model/Background.h
 
-CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../MVC/GameView.h
-CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../SDLClasses/SDLSpaceShip.cpp
-CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../SDLClasses/SDLSpaceShip.h
-CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../factory/Texture.h
-CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj: ../model/Entity.h
-
-CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj: ../TxTClasses/TxTAlien.cpp
-CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj: ../TxTClasses/TxTAlien.h
-CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj: ../model/AbstractAlien.h
-CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj: ../model/Entity.h
-
-CMakeFiles/Project.dir/TxTClasses/TxTBullet.cpp.obj: ../TxTClasses/TxTBullet.cpp
-CMakeFiles/Project.dir/TxTClasses/TxTBullet.cpp.obj: ../TxTClasses/TxTBullet.h
-CMakeFiles/Project.dir/TxTClasses/TxTBullet.cpp.obj: ../model/AbstractBullet.h
-CMakeFiles/Project.dir/TxTClasses/TxTBullet.cpp.obj: ../model/Entity.h
-
-CMakeFiles/Project.dir/TxTClasses/TxTSpaceShip.cpp.obj: ../TxTClasses/TxTSpaceShip.cpp
-CMakeFiles/Project.dir/TxTClasses/TxTSpaceShip.cpp.obj: ../TxTClasses/TxTSpaceShip.h
-CMakeFiles/Project.dir/TxTClasses/TxTSpaceShip.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/TxTClasses/TxTSpaceShip.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../SDLClasses/SDLPlayerShip.cpp
+CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../SDLClasses/SDLPlayerShip.h
+CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../factory/Texture.h
+CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../factory/AbstractFactory.cpp
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../factory/AbstractFactory.h
-CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/AbstractAlien.h
-CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/AbstractBullet.h
-CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.cpp
 CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.h
 
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../TxTClasses/TxTAlien.h
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../TxTClasses/TxTBullet.h
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../TxTClasses/TxTSpaceShip.h
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../factory/AbstractFactory.h
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../factory/TxTFactory.cpp
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../factory/TxTFactory.h
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../model/AbstractAlien.h
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../model/AbstractBullet.h
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj: ../model/Entity.h
-
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../MVC/GameView.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLSpaceShip.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLBackground.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLPlayerShip.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.cpp
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AbstractAlien.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AbstractBullet.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/main.cpp.obj: ../MVC/Game.h
-CMakeFiles/Project.dir/main.cpp.obj: ../MVC/GameView.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/AbstractFactory.h
-CMakeFiles/Project.dir/main.cpp.obj: ../factory/TxTFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/sdlFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/Project.dir/main.cpp.obj: ../model/AbstractAlien.h
-CMakeFiles/Project.dir/main.cpp.obj: ../model/AbstractBullet.h
-CMakeFiles/Project.dir/main.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/main.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/main.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/main.cpp.obj: ../model/PlayerShip.h
 
-CMakeFiles/Project.dir/model/AbstractAlien.cpp.obj: ../model/AbstractAlien.cpp
-CMakeFiles/Project.dir/model/AbstractAlien.cpp.obj: ../model/AbstractAlien.h
-CMakeFiles/Project.dir/model/AbstractAlien.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.cpp
+CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.h
 
-CMakeFiles/Project.dir/model/AbstractBullet.cpp.obj: ../model/AbstractBullet.cpp
-CMakeFiles/Project.dir/model/AbstractBullet.cpp.obj: ../model/AbstractBullet.h
-CMakeFiles/Project.dir/model/AbstractBullet.cpp.obj: ../model/Entity.h
-
-CMakeFiles/Project.dir/model/AbstractPlayerShip.cpp.obj: ../model/AbstractPlayerShip.cpp
-CMakeFiles/Project.dir/model/AbstractPlayerShip.cpp.obj: ../model/AbstractPlayerShip.h
-CMakeFiles/Project.dir/model/AbstractPlayerShip.cpp.obj: ../model/Entity.h
-
-CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.cpp
-CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.cpp
+CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.h
 

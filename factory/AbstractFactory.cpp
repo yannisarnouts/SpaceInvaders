@@ -3,9 +3,6 @@
 //
 
 #include "AbstractFactory.h"
-#include "../model/AbstractPlayerShip.h"
+#include "../model/PlayerShip.h"
 
 AbstractFactory::AbstractFactory() {}
-AbstractPlayerShip *AbstractFactory::createPlayerShip(){}
-AbstractAlien *AbstractFactory::createAlien(){}
-AbstractBullet* createBullet() {}

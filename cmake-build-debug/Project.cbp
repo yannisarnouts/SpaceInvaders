@@ -86,34 +86,16 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/GameView.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLSpaceShip.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/TxTClasses/TxTAlien.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/TxTClasses/TxTAlien.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/TxTClasses/TxTBullet.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/TxTClasses/TxTBullet.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/TxTClasses/TxTSpaceShip.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/TxTClasses/TxTSpaceShip.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.cpp">
@@ -128,12 +110,6 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TxTFactory.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TxTFactory.h">
-			<Option target="Project"/>
-		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -143,28 +119,16 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/main.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractAlien.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractBullet.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AbstractPlayerShip.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/CMakeLists.txt">

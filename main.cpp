@@ -1,6 +1,5 @@
 #include <iostream>
 #include "factory/AbstractFactory.h"
-#include "factory/TxTFactory.h"
 #include "MVC/Game.h"
 #include "factory/sdlFactory.h"
 

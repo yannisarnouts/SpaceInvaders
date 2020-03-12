@@ -17,6 +17,7 @@ public:
 private:
     AbstractFactory *A;
     std::string shipPath = "../assets/spaceship.png";
+    std::string bgPath = "../assets/bg.jpg";
 };
 
 

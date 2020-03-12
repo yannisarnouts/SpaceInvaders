@@ -3,13 +3,16 @@
 //
 
 #include "sdlFactory.h"
-#include "../MVC/GameView.h"
-#include "../SDLClasses/SDLSpaceShip.h"
+#include "../SDLClasses/SDLPlayerShip.h"
+#include "../SDLClasses/SDLBackground.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+
 sdlFactory::sdlFactory() {}
 
 void sdlFactory::init(int wh, int ww) {
+    SCREEN_WIDTH = ww;
+    SCREEN_HEIGHT = wh;
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
     } else {
@@ -36,18 +39,23 @@ void sdlFactory::init(int wh, int ww) {
         }
     }
 }
-AbstractPlayerShip *sdlFactory::createPlayerShip() {
-    return new SDLSpaceShip(8,9,5,5, gRenderer);
-}
-
-AbstractAlien *sdlFactory::createAlien() {
-    return nullptr;
-}
-
-AbstractBullet *sdlFactory::createBullet() {
-    return nullptr;
-}
 
 void sdlFactory::render() {
+    //update the screen
     SDL_RenderPresent(gRenderer);
+}
+
+PlayerShip *sdlFactory::createPlayerShip(std::string path) {
+    return new SDLPlayerShip(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
+}
+
+void sdlFactory::close() {
+    SDL_DestroyWindow(gWindow);
+    gWindow = NULL;
+    IMG_Quit();
+    SDL_Quit();
+}
+
+Background *sdlFactory::createBackground(std::string path) {
+    return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
 }

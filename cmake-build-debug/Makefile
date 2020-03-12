@@ -149,140 +149,59 @@ MVC/Game.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/Game.cpp.s
 .PHONY : MVC/Game.cpp.s
 
-MVC/GameView.obj: MVC/GameView.cpp.obj
+SDLClasses/SDLBackground.obj: SDLClasses/SDLBackground.cpp.obj
 
-.PHONY : MVC/GameView.obj
-
-# target to build an object file
-MVC/GameView.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/GameView.cpp.obj
-.PHONY : MVC/GameView.cpp.obj
-
-MVC/GameView.i: MVC/GameView.cpp.i
-
-.PHONY : MVC/GameView.i
-
-# target to preprocess a source file
-MVC/GameView.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/GameView.cpp.i
-.PHONY : MVC/GameView.cpp.i
-
-MVC/GameView.s: MVC/GameView.cpp.s
-
-.PHONY : MVC/GameView.s
-
-# target to generate assembly for a file
-MVC/GameView.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/GameView.cpp.s
-.PHONY : MVC/GameView.cpp.s
-
-SDLClasses/SDLSpaceShip.obj: SDLClasses/SDLSpaceShip.cpp.obj
-
-.PHONY : SDLClasses/SDLSpaceShip.obj
+.PHONY : SDLClasses/SDLBackground.obj
 
 # target to build an object file
-SDLClasses/SDLSpaceShip.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.obj
-.PHONY : SDLClasses/SDLSpaceShip.cpp.obj
+SDLClasses/SDLBackground.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj
+.PHONY : SDLClasses/SDLBackground.cpp.obj
 
-SDLClasses/SDLSpaceShip.i: SDLClasses/SDLSpaceShip.cpp.i
+SDLClasses/SDLBackground.i: SDLClasses/SDLBackground.cpp.i
 
-.PHONY : SDLClasses/SDLSpaceShip.i
+.PHONY : SDLClasses/SDLBackground.i
 
 # target to preprocess a source file
-SDLClasses/SDLSpaceShip.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.i
-.PHONY : SDLClasses/SDLSpaceShip.cpp.i
+SDLClasses/SDLBackground.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.i
+.PHONY : SDLClasses/SDLBackground.cpp.i
 
-SDLClasses/SDLSpaceShip.s: SDLClasses/SDLSpaceShip.cpp.s
+SDLClasses/SDLBackground.s: SDLClasses/SDLBackground.cpp.s
 
-.PHONY : SDLClasses/SDLSpaceShip.s
+.PHONY : SDLClasses/SDLBackground.s
 
 # target to generate assembly for a file
-SDLClasses/SDLSpaceShip.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLSpaceShip.cpp.s
-.PHONY : SDLClasses/SDLSpaceShip.cpp.s
+SDLClasses/SDLBackground.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.s
+.PHONY : SDLClasses/SDLBackground.cpp.s
 
-TxTClasses/TxTAlien.obj: TxTClasses/TxTAlien.cpp.obj
+SDLClasses/SDLPlayerShip.obj: SDLClasses/SDLPlayerShip.cpp.obj
 
-.PHONY : TxTClasses/TxTAlien.obj
+.PHONY : SDLClasses/SDLPlayerShip.obj
 
 # target to build an object file
-TxTClasses/TxTAlien.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.obj
-.PHONY : TxTClasses/TxTAlien.cpp.obj
+SDLClasses/SDLPlayerShip.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj
+.PHONY : SDLClasses/SDLPlayerShip.cpp.obj
 
-TxTClasses/TxTAlien.i: TxTClasses/TxTAlien.cpp.i
+SDLClasses/SDLPlayerShip.i: SDLClasses/SDLPlayerShip.cpp.i
 
-.PHONY : TxTClasses/TxTAlien.i
-
-# target to preprocess a source file
-TxTClasses/TxTAlien.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.i
-.PHONY : TxTClasses/TxTAlien.cpp.i
-
-TxTClasses/TxTAlien.s: TxTClasses/TxTAlien.cpp.s
-
-.PHONY : TxTClasses/TxTAlien.s
-
-# target to generate assembly for a file
-TxTClasses/TxTAlien.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTAlien.cpp.s
-.PHONY : TxTClasses/TxTAlien.cpp.s
-
-TxTClasses/TxTBullet.obj: TxTClasses/TxTBullet.cpp.obj
-
-.PHONY : TxTClasses/TxTBullet.obj
-
-# target to build an object file
-TxTClasses/TxTBullet.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTBullet.cpp.obj
-.PHONY : TxTClasses/TxTBullet.cpp.obj
-
-TxTClasses/TxTBullet.i: TxTClasses/TxTBullet.cpp.i
-
-.PHONY : TxTClasses/TxTBullet.i
+.PHONY : SDLClasses/SDLPlayerShip.i
 
 # target to preprocess a source file
-TxTClasses/TxTBullet.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTBullet.cpp.i
-.PHONY : TxTClasses/TxTBullet.cpp.i
+SDLClasses/SDLPlayerShip.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.i
+.PHONY : SDLClasses/SDLPlayerShip.cpp.i
 
-TxTClasses/TxTBullet.s: TxTClasses/TxTBullet.cpp.s
+SDLClasses/SDLPlayerShip.s: SDLClasses/SDLPlayerShip.cpp.s
 
-.PHONY : TxTClasses/TxTBullet.s
-
-# target to generate assembly for a file
-TxTClasses/TxTBullet.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTBullet.cpp.s
-.PHONY : TxTClasses/TxTBullet.cpp.s
-
-TxTClasses/TxTSpaceShip.obj: TxTClasses/TxTSpaceShip.cpp.obj
-
-.PHONY : TxTClasses/TxTSpaceShip.obj
-
-# target to build an object file
-TxTClasses/TxTSpaceShip.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTSpaceShip.cpp.obj
-.PHONY : TxTClasses/TxTSpaceShip.cpp.obj
-
-TxTClasses/TxTSpaceShip.i: TxTClasses/TxTSpaceShip.cpp.i
-
-.PHONY : TxTClasses/TxTSpaceShip.i
-
-# target to preprocess a source file
-TxTClasses/TxTSpaceShip.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTSpaceShip.cpp.i
-.PHONY : TxTClasses/TxTSpaceShip.cpp.i
-
-TxTClasses/TxTSpaceShip.s: TxTClasses/TxTSpaceShip.cpp.s
-
-.PHONY : TxTClasses/TxTSpaceShip.s
+.PHONY : SDLClasses/SDLPlayerShip.s
 
 # target to generate assembly for a file
-TxTClasses/TxTSpaceShip.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/TxTClasses/TxTSpaceShip.cpp.s
-.PHONY : TxTClasses/TxTSpaceShip.cpp.s
+SDLClasses/SDLPlayerShip.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.s
+.PHONY : SDLClasses/SDLPlayerShip.cpp.s
 
 factory/AbstractFactory.obj: factory/AbstractFactory.cpp.obj
 
@@ -338,33 +257,6 @@ factory/Texture.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/Texture.cpp.s
 .PHONY : factory/Texture.cpp.s
 
-factory/TxTFactory.obj: factory/TxTFactory.cpp.obj
-
-.PHONY : factory/TxTFactory.obj
-
-# target to build an object file
-factory/TxTFactory.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/TxTFactory.cpp.obj
-.PHONY : factory/TxTFactory.cpp.obj
-
-factory/TxTFactory.i: factory/TxTFactory.cpp.i
-
-.PHONY : factory/TxTFactory.i
-
-# target to preprocess a source file
-factory/TxTFactory.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/TxTFactory.cpp.i
-.PHONY : factory/TxTFactory.cpp.i
-
-factory/TxTFactory.s: factory/TxTFactory.cpp.s
-
-.PHONY : factory/TxTFactory.s
-
-# target to generate assembly for a file
-factory/TxTFactory.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/TxTFactory.cpp.s
-.PHONY : factory/TxTFactory.cpp.s
-
 factory/sdlFactory.obj: factory/sdlFactory.cpp.obj
 
 .PHONY : factory/sdlFactory.obj
@@ -419,113 +311,59 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-model/AbstractAlien.obj: model/AbstractAlien.cpp.obj
+model/Background.obj: model/Background.cpp.obj
 
-.PHONY : model/AbstractAlien.obj
-
-# target to build an object file
-model/AbstractAlien.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractAlien.cpp.obj
-.PHONY : model/AbstractAlien.cpp.obj
-
-model/AbstractAlien.i: model/AbstractAlien.cpp.i
-
-.PHONY : model/AbstractAlien.i
-
-# target to preprocess a source file
-model/AbstractAlien.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractAlien.cpp.i
-.PHONY : model/AbstractAlien.cpp.i
-
-model/AbstractAlien.s: model/AbstractAlien.cpp.s
-
-.PHONY : model/AbstractAlien.s
-
-# target to generate assembly for a file
-model/AbstractAlien.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractAlien.cpp.s
-.PHONY : model/AbstractAlien.cpp.s
-
-model/AbstractBullet.obj: model/AbstractBullet.cpp.obj
-
-.PHONY : model/AbstractBullet.obj
+.PHONY : model/Background.obj
 
 # target to build an object file
-model/AbstractBullet.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractBullet.cpp.obj
-.PHONY : model/AbstractBullet.cpp.obj
+model/Background.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Background.cpp.obj
+.PHONY : model/Background.cpp.obj
 
-model/AbstractBullet.i: model/AbstractBullet.cpp.i
+model/Background.i: model/Background.cpp.i
 
-.PHONY : model/AbstractBullet.i
+.PHONY : model/Background.i
 
 # target to preprocess a source file
-model/AbstractBullet.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractBullet.cpp.i
-.PHONY : model/AbstractBullet.cpp.i
+model/Background.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Background.cpp.i
+.PHONY : model/Background.cpp.i
 
-model/AbstractBullet.s: model/AbstractBullet.cpp.s
+model/Background.s: model/Background.cpp.s
 
-.PHONY : model/AbstractBullet.s
+.PHONY : model/Background.s
 
 # target to generate assembly for a file
-model/AbstractBullet.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractBullet.cpp.s
-.PHONY : model/AbstractBullet.cpp.s
+model/Background.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Background.cpp.s
+.PHONY : model/Background.cpp.s
 
-model/AbstractPlayerShip.obj: model/AbstractPlayerShip.cpp.obj
+model/PlayerShip.obj: model/PlayerShip.cpp.obj
 
-.PHONY : model/AbstractPlayerShip.obj
+.PHONY : model/PlayerShip.obj
 
 # target to build an object file
-model/AbstractPlayerShip.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractPlayerShip.cpp.obj
-.PHONY : model/AbstractPlayerShip.cpp.obj
+model/PlayerShip.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/PlayerShip.cpp.obj
+.PHONY : model/PlayerShip.cpp.obj
 
-model/AbstractPlayerShip.i: model/AbstractPlayerShip.cpp.i
+model/PlayerShip.i: model/PlayerShip.cpp.i
 
-.PHONY : model/AbstractPlayerShip.i
-
-# target to preprocess a source file
-model/AbstractPlayerShip.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractPlayerShip.cpp.i
-.PHONY : model/AbstractPlayerShip.cpp.i
-
-model/AbstractPlayerShip.s: model/AbstractPlayerShip.cpp.s
-
-.PHONY : model/AbstractPlayerShip.s
-
-# target to generate assembly for a file
-model/AbstractPlayerShip.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AbstractPlayerShip.cpp.s
-.PHONY : model/AbstractPlayerShip.cpp.s
-
-model/Entity.obj: model/Entity.cpp.obj
-
-.PHONY : model/Entity.obj
-
-# target to build an object file
-model/Entity.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Entity.cpp.obj
-.PHONY : model/Entity.cpp.obj
-
-model/Entity.i: model/Entity.cpp.i
-
-.PHONY : model/Entity.i
+.PHONY : model/PlayerShip.i
 
 # target to preprocess a source file
-model/Entity.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Entity.cpp.i
-.PHONY : model/Entity.cpp.i
+model/PlayerShip.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/PlayerShip.cpp.i
+.PHONY : model/PlayerShip.cpp.i
 
-model/Entity.s: model/Entity.cpp.s
+model/PlayerShip.s: model/PlayerShip.cpp.s
 
-.PHONY : model/Entity.s
+.PHONY : model/PlayerShip.s
 
 # target to generate assembly for a file
-model/Entity.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Entity.cpp.s
-.PHONY : model/Entity.cpp.s
+model/PlayerShip.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/PlayerShip.cpp.s
+.PHONY : model/PlayerShip.cpp.s
 
 # Help Target
 help:
@@ -539,48 +377,30 @@ help:
 	@echo ... MVC/Game.obj
 	@echo ... MVC/Game.i
 	@echo ... MVC/Game.s
-	@echo ... MVC/GameView.obj
-	@echo ... MVC/GameView.i
-	@echo ... MVC/GameView.s
-	@echo ... SDLClasses/SDLSpaceShip.obj
-	@echo ... SDLClasses/SDLSpaceShip.i
-	@echo ... SDLClasses/SDLSpaceShip.s
-	@echo ... TxTClasses/TxTAlien.obj
-	@echo ... TxTClasses/TxTAlien.i
-	@echo ... TxTClasses/TxTAlien.s
-	@echo ... TxTClasses/TxTBullet.obj
-	@echo ... TxTClasses/TxTBullet.i
-	@echo ... TxTClasses/TxTBullet.s
-	@echo ... TxTClasses/TxTSpaceShip.obj
-	@echo ... TxTClasses/TxTSpaceShip.i
-	@echo ... TxTClasses/TxTSpaceShip.s
+	@echo ... SDLClasses/SDLBackground.obj
+	@echo ... SDLClasses/SDLBackground.i
+	@echo ... SDLClasses/SDLBackground.s
+	@echo ... SDLClasses/SDLPlayerShip.obj
+	@echo ... SDLClasses/SDLPlayerShip.i
+	@echo ... SDLClasses/SDLPlayerShip.s
 	@echo ... factory/AbstractFactory.obj
 	@echo ... factory/AbstractFactory.i
 	@echo ... factory/AbstractFactory.s
 	@echo ... factory/Texture.obj
 	@echo ... factory/Texture.i
 	@echo ... factory/Texture.s
-	@echo ... factory/TxTFactory.obj
-	@echo ... factory/TxTFactory.i
-	@echo ... factory/TxTFactory.s
 	@echo ... factory/sdlFactory.obj
 	@echo ... factory/sdlFactory.i
 	@echo ... factory/sdlFactory.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... model/AbstractAlien.obj
-	@echo ... model/AbstractAlien.i
-	@echo ... model/AbstractAlien.s
-	@echo ... model/AbstractBullet.obj
-	@echo ... model/AbstractBullet.i
-	@echo ... model/AbstractBullet.s
-	@echo ... model/AbstractPlayerShip.obj
-	@echo ... model/AbstractPlayerShip.i
-	@echo ... model/AbstractPlayerShip.s
-	@echo ... model/Entity.obj
-	@echo ... model/Entity.i
-	@echo ... model/Entity.s
+	@echo ... model/Background.obj
+	@echo ... model/Background.i
+	@echo ... model/Background.s
+	@echo ... model/PlayerShip.obj
+	@echo ... model/PlayerShip.i
+	@echo ... model/PlayerShip.s
 .PHONY : help
 
 

@@ -6,17 +6,19 @@
 #define PROJECT_ABSTRACTFACTORY_H
 
 
-#include "../model/Entity.h"
-#include "../model/AbstractPlayerShip.h"
-#include "../model/AbstractAlien.h"
-#include "../model/AbstractBullet.h"
+#include <string>
+#include "../model/PlayerShip.h"
+#include "../model/Background.h"
 
 class AbstractFactory {
 public:
     AbstractFactory();
-    virtual AbstractPlayerShip* createPlayerShip() = 0;
-    virtual AbstractAlien* createAlien() = 0;
-    virtual AbstractBullet* createBullet() = 0;
+
+    virtual PlayerShip* createPlayerShip(std::string path) = 0;
+    virtual Background* createBackground(std::string path) = 0;
+    virtual void init(int wh,int ww)=0;
+    virtual void render()=0;
+    virtual void close()=0;
 };
 
 
