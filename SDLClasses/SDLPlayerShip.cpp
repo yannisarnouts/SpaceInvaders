@@ -30,19 +30,19 @@ void SDLPlayerShip::Visualize() {
 }
 
 int SDLPlayerShip::getXCoord() {
-    return 0;
+    return xCoord;
 }
 
 int SDLPlayerShip::getYCoord() {
-    return 0;
+    return yCoord;
 }
 
 int SDLPlayerShip::getWidth() {
-    return 0;
+    return shipWidth;
 }
 
 int SDLPlayerShip::getHeight() {
-    return 0;
+    return shipHeight;
 }
 
 void SDLPlayerShip::close() {

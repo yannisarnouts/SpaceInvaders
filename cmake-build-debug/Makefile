@@ -149,6 +149,33 @@ MVC/Game.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/Game.cpp.s
 .PHONY : MVC/Game.cpp.s
 
+SDLClasses/SDLAlien.obj: SDLClasses/SDLAlien.cpp.obj
+
+.PHONY : SDLClasses/SDLAlien.obj
+
+# target to build an object file
+SDLClasses/SDLAlien.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj
+.PHONY : SDLClasses/SDLAlien.cpp.obj
+
+SDLClasses/SDLAlien.i: SDLClasses/SDLAlien.cpp.i
+
+.PHONY : SDLClasses/SDLAlien.i
+
+# target to preprocess a source file
+SDLClasses/SDLAlien.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.i
+.PHONY : SDLClasses/SDLAlien.cpp.i
+
+SDLClasses/SDLAlien.s: SDLClasses/SDLAlien.cpp.s
+
+.PHONY : SDLClasses/SDLAlien.s
+
+# target to generate assembly for a file
+SDLClasses/SDLAlien.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.s
+.PHONY : SDLClasses/SDLAlien.cpp.s
+
 SDLClasses/SDLBackground.obj: SDLClasses/SDLBackground.cpp.obj
 
 .PHONY : SDLClasses/SDLBackground.obj
@@ -311,6 +338,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model/Alien.obj: model/Alien.cpp.obj
+
+.PHONY : model/Alien.obj
+
+# target to build an object file
+model/Alien.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Alien.cpp.obj
+.PHONY : model/Alien.cpp.obj
+
+model/Alien.i: model/Alien.cpp.i
+
+.PHONY : model/Alien.i
+
+# target to preprocess a source file
+model/Alien.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Alien.cpp.i
+.PHONY : model/Alien.cpp.i
+
+model/Alien.s: model/Alien.cpp.s
+
+.PHONY : model/Alien.s
+
+# target to generate assembly for a file
+model/Alien.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Alien.cpp.s
+.PHONY : model/Alien.cpp.s
+
 model/Background.obj: model/Background.cpp.obj
 
 .PHONY : model/Background.obj
@@ -377,6 +431,9 @@ help:
 	@echo ... MVC/Game.obj
 	@echo ... MVC/Game.i
 	@echo ... MVC/Game.s
+	@echo ... SDLClasses/SDLAlien.obj
+	@echo ... SDLClasses/SDLAlien.i
+	@echo ... SDLClasses/SDLAlien.s
 	@echo ... SDLClasses/SDLBackground.obj
 	@echo ... SDLClasses/SDLBackground.i
 	@echo ... SDLClasses/SDLBackground.s
@@ -395,6 +452,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... model/Alien.obj
+	@echo ... model/Alien.i
+	@echo ... model/Alien.s
 	@echo ... model/Background.obj
 	@echo ... model/Background.i
 	@echo ... model/Background.s

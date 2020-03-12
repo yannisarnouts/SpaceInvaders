@@ -14,9 +14,7 @@ public:
     SDLPlayerShip();
     SDLPlayerShip(SDL_Renderer *gRenderer, int shipWidth, int shipHeight, std::string imgPath);
     void Visualize() override;
-
     void close() override;
-
     int getXCoord() override;
     int getYCoord() override;
     int getWidth() override;

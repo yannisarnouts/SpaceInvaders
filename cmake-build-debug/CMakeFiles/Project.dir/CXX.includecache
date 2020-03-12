@@ -6,13 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.cpp
-iostream
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.cpp
+zconf.h
 -
-SDLPlayerShip.h
+Game.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h
+../SDLClasses/SDLPlayerShip.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
-../factory/Texture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+../model/Background.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
+../model/Alien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h
+string
+-
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
 ../model/PlayerShip.h
@@ -20,11 +30,29 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 ../factory/Texture.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+string
+-
+../model/PlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
+../model/Background.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
+../model/Alien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+../model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
 SDL2/SDL_render.h
 -
 string
 -
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
 

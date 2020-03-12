@@ -5,6 +5,7 @@
 #include "sdlFactory.h"
 #include "../SDLClasses/SDLPlayerShip.h"
 #include "../SDLClasses/SDLBackground.h"
+#include "../SDLClasses/SDLAlien.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
@@ -58,4 +59,8 @@ void sdlFactory::close() {
 
 Background *sdlFactory::createBackground(std::string path) {
     return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
+}
+
+Alien *sdlFactory::createAlien(AlienType alienType, std::string path) {
+    return new SDLAlien(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path, alienType);
 }

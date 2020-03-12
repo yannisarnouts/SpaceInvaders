@@ -6,8 +6,16 @@ CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../MVC/Game.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../SDLClasses/SDLPlayerShip.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../factory/Texture.h
+CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/MVC/Game.cpp.obj: ../model/PlayerShip.h
+
+CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../SDLClasses/SDLAlien.cpp
+CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../SDLClasses/SDLAlien.h
+CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../factory/Texture.h
+CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../model/AlienType.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj: ../SDLClasses/SDLBackground.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj: ../SDLClasses/SDLBackground.h
@@ -21,18 +29,23 @@ CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../factory/AbstractFactory.cpp
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.cpp
 CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.h
 
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLAlien.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLBackground.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLPlayerShip.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.cpp
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/PlayerShip.h
 
@@ -40,8 +53,13 @@ CMakeFiles/Project.dir/main.cpp.obj: ../MVC/Game.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/sdlFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/Project.dir/main.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/main.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/PlayerShip.h
+
+CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.cpp
+CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.h
 
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.cpp
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.h

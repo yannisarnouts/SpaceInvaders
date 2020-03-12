@@ -9,13 +9,14 @@
 #include <SDL2/SDL_video.h>
 #include <SDL2/SDL_render.h>
 #include "AbstractFactory.h"
+#include "../model/AlienType.h"
 
 class sdlFactory : public AbstractFactory {
 public:
     sdlFactory();
     void init(int wh, int ww) override;
     PlayerShip *createPlayerShip(std::string path) override;
-
+    Alien *createAlien(AlienType alienType, std::string path) override;
     Background *createBackground(std::string path) override;
 
     void render() override;
