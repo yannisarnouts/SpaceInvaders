@@ -4,6 +4,7 @@
 
 #include <SDL2/SDL_image.h>
 #include <cstdio>
+#include <iostream>
 #include "Texture.h"
 
 Texture::Texture(SDL_Renderer* renderer) {

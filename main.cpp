@@ -1,6 +1,6 @@
 #include <iostream>
 #include "factory/AbstractFactory.h"
-#include "MVC/Game.h"
+#include "controller/Game.h"
 #include "factory/sdlFactory.h"
 
 int main(int argv, char** args) {

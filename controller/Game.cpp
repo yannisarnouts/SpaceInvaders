@@ -3,6 +3,7 @@
 //
 
 #include <zconf.h>
+#include <iostream>
 #include "Game.h"
 #include "../SDLClasses/SDLPlayerShip.h"
 #include "../model/Background.h"
@@ -16,12 +17,11 @@ void Game::Run() {
     A->init(640, 480);
     Background *bg = A->createBackground(bgPath);
     PlayerShip *playerShip = A->createPlayerShip(shipPath);
-    Alien *alien = A->createAlien(AlienType::thomas, thomasAlien);
-    bool a = true;
-    while (a) {
+    Alien *alien = A->createAlien(AlienType::michiel, michielAlien);
+    while (A->pollEvents()) {
         bg->Visualize();
         playerShip->Visualize();
-        //alien->Visualize();
+        alien->Visualize();
         A->render();
     }
     bg->close();

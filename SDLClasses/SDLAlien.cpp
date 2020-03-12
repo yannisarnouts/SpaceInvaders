@@ -2,6 +2,7 @@
 // Created by Gebruiker on 12/03/2020.
 //
 
+#include <iostream>
 #include "SDLAlien.h"
 
 SDLAlien::SDLAlien() {}
@@ -13,10 +14,11 @@ SDLAlien::SDLAlien(SDL_Renderer *renderer, int width, int height, const std::str
     this->imgPath = imgPath;
     this->alienType = alienType;
     Texture *aTexture = new Texture(renderer);
+    texture = aTexture;
     aTexture->loadFromFile(imgPath);
 }
 void SDLAlien::Visualize() {
-    SDL_Rect renderQuad = {0, 0, alienWidth, alienHeight};
+    SDL_Rect renderQuad = {100, 100, alienWidth, alienHeight};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 

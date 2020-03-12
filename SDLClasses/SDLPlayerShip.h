@@ -19,6 +19,7 @@ public:
     int getYCoord() override;
     int getWidth() override;
     int getHeight() override;
+    void moveCar();
 
 private:
     SDL_Renderer* gRenderer;

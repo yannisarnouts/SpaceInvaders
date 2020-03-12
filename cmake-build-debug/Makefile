@@ -122,33 +122,6 @@ Project/fast:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
-MVC/Game.obj: MVC/Game.cpp.obj
-
-.PHONY : MVC/Game.obj
-
-# target to build an object file
-MVC/Game.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/Game.cpp.obj
-.PHONY : MVC/Game.cpp.obj
-
-MVC/Game.i: MVC/Game.cpp.i
-
-.PHONY : MVC/Game.i
-
-# target to preprocess a source file
-MVC/Game.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/Game.cpp.i
-.PHONY : MVC/Game.cpp.i
-
-MVC/Game.s: MVC/Game.cpp.s
-
-.PHONY : MVC/Game.s
-
-# target to generate assembly for a file
-MVC/Game.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MVC/Game.cpp.s
-.PHONY : MVC/Game.cpp.s
-
 SDLClasses/SDLAlien.obj: SDLClasses/SDLAlien.cpp.obj
 
 .PHONY : SDLClasses/SDLAlien.obj
@@ -229,6 +202,33 @@ SDLClasses/SDLPlayerShip.s: SDLClasses/SDLPlayerShip.cpp.s
 SDLClasses/SDLPlayerShip.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.s
 .PHONY : SDLClasses/SDLPlayerShip.cpp.s
+
+controller/Game.obj: controller/Game.cpp.obj
+
+.PHONY : controller/Game.obj
+
+# target to build an object file
+controller/Game.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/Game.cpp.obj
+.PHONY : controller/Game.cpp.obj
+
+controller/Game.i: controller/Game.cpp.i
+
+.PHONY : controller/Game.i
+
+# target to preprocess a source file
+controller/Game.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/Game.cpp.i
+.PHONY : controller/Game.cpp.i
+
+controller/Game.s: controller/Game.cpp.s
+
+.PHONY : controller/Game.s
+
+# target to generate assembly for a file
+controller/Game.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/Game.cpp.s
+.PHONY : controller/Game.cpp.s
 
 factory/AbstractFactory.obj: factory/AbstractFactory.cpp.obj
 
@@ -428,9 +428,6 @@ help:
 	@echo ... Project
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MVC/Game.obj
-	@echo ... MVC/Game.i
-	@echo ... MVC/Game.s
 	@echo ... SDLClasses/SDLAlien.obj
 	@echo ... SDLClasses/SDLAlien.i
 	@echo ... SDLClasses/SDLAlien.s
@@ -440,6 +437,9 @@ help:
 	@echo ... SDLClasses/SDLPlayerShip.obj
 	@echo ... SDLClasses/SDLPlayerShip.i
 	@echo ... SDLClasses/SDLPlayerShip.s
+	@echo ... controller/Game.obj
+	@echo ... controller/Game.i
+	@echo ... controller/Game.s
 	@echo ... factory/AbstractFactory.obj
 	@echo ... factory/AbstractFactory.i
 	@echo ... factory/AbstractFactory.s

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Project.dir/MVC/Game.cpp.obj"
   "CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj"
   "CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj"
   "CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj"
+  "CMakeFiles/Project.dir/controller/Game.cpp.obj"
   "CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj"
   "CMakeFiles/Project.dir/factory/Texture.cpp.obj"
   "CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj"

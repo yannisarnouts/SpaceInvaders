@@ -6,23 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.cpp
-zconf.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+SDL2/SDL_render.h
 -
-Game.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h
-../SDLClasses/SDLPlayerShip.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
-../model/Background.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
 ../model/Alien.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+../model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.h
+SDL2/SDL_render.h
+-
 string
 -
-../factory/AbstractFactory.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../model/Background.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
 ../model/PlayerShip.h
@@ -47,6 +49,32 @@ SDL2/SDL_render.h
 -
 string
 -
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.cpp
+sdlFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.h
+../SDLClasses/SDLPlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
+../SDLClasses/SDLBackground.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.h
+../SDLClasses/SDLAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+iostream
+-
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/sdlFactory.h
+SDL2/SDL_video.h
+-
+SDL2/SDL_render.h
+-
+AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
 

@@ -3,9 +3,11 @@
 //
 
 #include <iostream>
+#include <SDL2/SDL_events.h>
 #include "SDLPlayerShip.h"
 #include "../factory/Texture.h"
 
+SDL_Event ev;
 SDLPlayerShip::SDLPlayerShip() {
 }
 
@@ -23,6 +25,7 @@ SDLPlayerShip::SDLPlayerShip(SDL_Renderer *gRenderer, int width, int height, std
 
 
 void SDLPlayerShip::Visualize() {
+    moveCar();
     SDL_Rect renderQuad = {xCoord, yCoord, shipWidth, shipHeight};
     SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
     //renderQuad = {0, scrollingOffset - (getHeight()), getWidth(), getHeight()};
@@ -47,4 +50,12 @@ int SDLPlayerShip::getHeight() {
 
 void SDLPlayerShip::close() {
 
+}
+
+void SDLPlayerShip::moveCar() {
+    while (SDL_PollEvent(&ev) != 0) {
+        if (ev.type == SDL_KEYDOWN) {
+            std::cout << "key down";
+        }
+    }
 }

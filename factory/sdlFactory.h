@@ -18,9 +18,8 @@ public:
     PlayerShip *createPlayerShip(std::string path) override;
     Alien *createAlien(AlienType alienType, std::string path) override;
     Background *createBackground(std::string path) override;
-
+    bool pollEvents() override;
     void render() override;
-
     void close() override;
 
 private:

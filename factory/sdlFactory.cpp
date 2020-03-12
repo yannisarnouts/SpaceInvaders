@@ -8,6 +8,7 @@
 #include "../SDLClasses/SDLAlien.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <iostream>
 
 sdlFactory::sdlFactory() {}
 
@@ -63,4 +64,14 @@ Background *sdlFactory::createBackground(std::string path) {
 
 Alien *sdlFactory::createAlien(AlienType alienType, std::string path) {
     return new SDLAlien(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path, alienType);
+}
+
+bool sdlFactory::pollEvents() {
+    SDL_Event ev;
+    while (SDL_PollEvent(&ev) != 0) {
+        if (ev.type == SDL_QUIT) {
+            return false;
+        }
+    }
+    return true;
 }

@@ -80,12 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/MVC/Game.h">
-			<Option target="Project"/>
-		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -102,6 +96,15 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyPressSurfaces.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.cpp">
