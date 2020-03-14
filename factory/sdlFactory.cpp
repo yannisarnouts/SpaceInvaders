@@ -68,10 +68,11 @@ Alien *sdlFactory::createAlien(AlienType alienType, std::string path) {
 
 bool sdlFactory::pollEvents() {
     SDL_Event ev;
+    bool play = true;
     while (SDL_PollEvent(&ev) != 0) {
         if (ev.type == SDL_QUIT) {
-            return false;
+            play = false;
         }
     }
-    return true;
+    return play;
 }

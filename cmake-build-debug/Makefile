@@ -230,6 +230,33 @@ controller/Game.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/Game.cpp.s
 .PHONY : controller/Game.cpp.s
 
+controller/KeyHandler.obj: controller/KeyHandler.cpp.obj
+
+.PHONY : controller/KeyHandler.obj
+
+# target to build an object file
+controller/KeyHandler.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj
+.PHONY : controller/KeyHandler.cpp.obj
+
+controller/KeyHandler.i: controller/KeyHandler.cpp.i
+
+.PHONY : controller/KeyHandler.i
+
+# target to preprocess a source file
+controller/KeyHandler.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/KeyHandler.cpp.i
+.PHONY : controller/KeyHandler.cpp.i
+
+controller/KeyHandler.s: controller/KeyHandler.cpp.s
+
+.PHONY : controller/KeyHandler.s
+
+# target to generate assembly for a file
+controller/KeyHandler.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/KeyHandler.cpp.s
+.PHONY : controller/KeyHandler.cpp.s
+
 factory/AbstractFactory.obj: factory/AbstractFactory.cpp.obj
 
 .PHONY : factory/AbstractFactory.obj
@@ -440,6 +467,9 @@ help:
 	@echo ... controller/Game.obj
 	@echo ... controller/Game.i
 	@echo ... controller/Game.s
+	@echo ... controller/KeyHandler.obj
+	@echo ... controller/KeyHandler.i
+	@echo ... controller/KeyHandler.s
 	@echo ... factory/AbstractFactory.obj
 	@echo ... factory/AbstractFactory.i
 	@echo ... factory/AbstractFactory.s

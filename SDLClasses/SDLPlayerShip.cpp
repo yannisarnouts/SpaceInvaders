@@ -7,14 +7,14 @@
 #include "SDLPlayerShip.h"
 #include "../factory/Texture.h"
 
-SDL_Event ev;
 SDLPlayerShip::SDLPlayerShip() {
 }
 
 SDLPlayerShip::SDLPlayerShip(SDL_Renderer *gRenderer, int width, int height, std::string imgPath) {
+    this->screenWidth = width;
     this->shipWidth = width / 5;
     this->shipHeight = height / 5;
-    this->xCoord = width/2 - 50;
+    this->xCoord = width / 2 - 50;
     this->yCoord = height - (this->shipHeight + 10);
     this->gRenderer = gRenderer;
     this->imgPath = imgPath;
@@ -25,11 +25,9 @@ SDLPlayerShip::SDLPlayerShip(SDL_Renderer *gRenderer, int width, int height, std
 
 
 void SDLPlayerShip::Visualize() {
-    moveCar();
+    moveShip();
     SDL_Rect renderQuad = {xCoord, yCoord, shipWidth, shipHeight};
     SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
-    //renderQuad = {0, scrollingOffset - (getHeight()), getWidth(), getHeight()};
-    //SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
 }
 
 int SDLPlayerShip::getXCoord() {
@@ -52,10 +50,22 @@ void SDLPlayerShip::close() {
 
 }
 
-void SDLPlayerShip::moveCar() {
-    while (SDL_PollEvent(&ev) != 0) {
-        if (ev.type == SDL_KEYDOWN) {
-            std::cout << "key down";
+
+void SDLPlayerShip::moveShip() {
+    int direction = keyHandler->directions();
+    if(xCoord >= (this->screenWidth - this->shipWidth)) {
+        if (direction == KeyP::LEFT) {
+            xCoord = xCoord - 5;
+        }
+    } else if (xCoord <= 0) {
+        if (direction == KeyP::RIGHT) {
+            xCoord = xCoord + 5;
+        }
+    } else {
+        if (direction == KeyP::LEFT) {
+            xCoord = xCoord - 5;
+        } else if (direction == KeyP::RIGHT) {
+            xCoord = xCoord + 5;
         }
     }
 }

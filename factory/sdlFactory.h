@@ -10,6 +10,7 @@
 #include <SDL2/SDL_render.h>
 #include "AbstractFactory.h"
 #include "../model/AlienType.h"
+#include "../controller/KeyHandler.h"
 
 class sdlFactory : public AbstractFactory {
 public:

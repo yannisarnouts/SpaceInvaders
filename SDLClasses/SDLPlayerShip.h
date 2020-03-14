@@ -8,6 +8,7 @@
 
 #include "../model/PlayerShip.h"
 #include "../factory/Texture.h"
+#include "../controller/KeyHandler.h"
 
 class SDLPlayerShip : public PlayerShip {
 public:
@@ -19,14 +20,16 @@ public:
     int getYCoord() override;
     int getWidth() override;
     int getHeight() override;
-    void moveCar();
+    void moveShip();
 
 private:
     SDL_Renderer* gRenderer;
     Texture* texture = NULL;
     std::string imgPath;
     int shipWidth; int shipHeight;
+    int screenWidth;
     int xCoord; int yCoord;
+    KeyHandler* keyHandler;
 };
 
 
