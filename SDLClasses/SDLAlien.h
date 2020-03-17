@@ -15,7 +15,7 @@ class SDLAlien : public Alien {
 public:
     SDLAlien();
     SDLAlien(SDL_Renderer *renderer, int width, int height, const std::string &imgPath, AlienType alienType);
-    void Visualize() override;
+    void Visualize(int xPos, int yPos) override;
     void close() override;
     int getXPos() override;
     int getYPos() override;

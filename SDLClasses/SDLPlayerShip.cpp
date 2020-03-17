@@ -12,8 +12,8 @@ SDLPlayerShip::SDLPlayerShip() {
 
 SDLPlayerShip::SDLPlayerShip(SDL_Renderer *gRenderer, int width, int height, std::string imgPath) {
     this->screenWidth = width;
-    this->shipWidth = width / 5;
-    this->shipHeight = height / 5;
+    this->shipWidth = width / 7;
+    this->shipHeight = height / 7;
     this->xCoord = width / 2 - 50;
     this->yCoord = height - (this->shipHeight + 10);
     this->gRenderer = gRenderer;
@@ -49,8 +49,6 @@ int SDLPlayerShip::getHeight() {
 void SDLPlayerShip::close() {
 
 }
-
-
 void SDLPlayerShip::moveShip() {
     int direction = keyHandler->directions();
     if(xCoord >= (this->screenWidth - this->shipWidth)) {

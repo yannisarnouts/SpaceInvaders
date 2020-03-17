@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj"
   "CMakeFiles/Project.dir/main.cpp.obj"
   "CMakeFiles/Project.dir/model/Alien.cpp.obj"
+  "CMakeFiles/Project.dir/model/Aliens.cpp.obj"
   "CMakeFiles/Project.dir/model/Background.cpp.obj"
   "CMakeFiles/Project.dir/model/Bullet.cpp.obj"
   "CMakeFiles/Project.dir/model/PlayerShip.cpp.obj"

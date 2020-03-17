@@ -419,6 +419,33 @@ model/Alien.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Alien.cpp.s
 .PHONY : model/Alien.cpp.s
 
+model/Aliens.obj: model/Aliens.cpp.obj
+
+.PHONY : model/Aliens.obj
+
+# target to build an object file
+model/Aliens.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Aliens.cpp.obj
+.PHONY : model/Aliens.cpp.obj
+
+model/Aliens.i: model/Aliens.cpp.i
+
+.PHONY : model/Aliens.i
+
+# target to preprocess a source file
+model/Aliens.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Aliens.cpp.i
+.PHONY : model/Aliens.cpp.i
+
+model/Aliens.s: model/Aliens.cpp.s
+
+.PHONY : model/Aliens.s
+
+# target to generate assembly for a file
+model/Aliens.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Aliens.cpp.s
+.PHONY : model/Aliens.cpp.s
+
 model/Background.obj: model/Background.cpp.obj
 
 .PHONY : model/Background.obj
@@ -542,6 +569,9 @@ help:
 	@echo ... model/Alien.obj
 	@echo ... model/Alien.i
 	@echo ... model/Alien.s
+	@echo ... model/Aliens.obj
+	@echo ... model/Aliens.i
+	@echo ... model/Aliens.s
 	@echo ... model/Background.obj
 	@echo ... model/Background.i
 	@echo ... model/Background.s

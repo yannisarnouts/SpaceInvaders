@@ -33,6 +33,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Aliens.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/PlayerShip.h
@@ -82,6 +83,15 @@ CMakeFiles/Project.dir/main.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.cpp
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.h
+
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.cpp
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.h
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.cpp
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.h

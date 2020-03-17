@@ -9,7 +9,7 @@
 class Alien {
 public:
     Alien();
-    virtual void Visualize()=0;
+    virtual void Visualize(int xPos, int yPos)=0;
     virtual void close()=0;
     virtual int getXPos()=0;
     virtual int getYPos()=0;

@@ -28,6 +28,7 @@ private:
     int width; int height;
     int xCoord; int yCoord;
     std::string imgPath;
+    int screenHeight;
 };
 
 
