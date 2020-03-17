@@ -176,6 +176,33 @@ SDLClasses/SDLBackground.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.s
 .PHONY : SDLClasses/SDLBackground.cpp.s
 
+SDLClasses/SDLBullet.obj: SDLClasses/SDLBullet.cpp.obj
+
+.PHONY : SDLClasses/SDLBullet.obj
+
+# target to build an object file
+SDLClasses/SDLBullet.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj
+.PHONY : SDLClasses/SDLBullet.cpp.obj
+
+SDLClasses/SDLBullet.i: SDLClasses/SDLBullet.cpp.i
+
+.PHONY : SDLClasses/SDLBullet.i
+
+# target to preprocess a source file
+SDLClasses/SDLBullet.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.i
+.PHONY : SDLClasses/SDLBullet.cpp.i
+
+SDLClasses/SDLBullet.s: SDLClasses/SDLBullet.cpp.s
+
+.PHONY : SDLClasses/SDLBullet.s
+
+# target to generate assembly for a file
+SDLClasses/SDLBullet.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.s
+.PHONY : SDLClasses/SDLBullet.cpp.s
+
 SDLClasses/SDLPlayerShip.obj: SDLClasses/SDLPlayerShip.cpp.obj
 
 .PHONY : SDLClasses/SDLPlayerShip.obj
@@ -419,6 +446,33 @@ model/Background.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Background.cpp.s
 .PHONY : model/Background.cpp.s
 
+model/Bullet.obj: model/Bullet.cpp.obj
+
+.PHONY : model/Bullet.obj
+
+# target to build an object file
+model/Bullet.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Bullet.cpp.obj
+.PHONY : model/Bullet.cpp.obj
+
+model/Bullet.i: model/Bullet.cpp.i
+
+.PHONY : model/Bullet.i
+
+# target to preprocess a source file
+model/Bullet.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Bullet.cpp.i
+.PHONY : model/Bullet.cpp.i
+
+model/Bullet.s: model/Bullet.cpp.s
+
+.PHONY : model/Bullet.s
+
+# target to generate assembly for a file
+model/Bullet.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Bullet.cpp.s
+.PHONY : model/Bullet.cpp.s
+
 model/PlayerShip.obj: model/PlayerShip.cpp.obj
 
 .PHONY : model/PlayerShip.obj
@@ -461,6 +515,9 @@ help:
 	@echo ... SDLClasses/SDLBackground.obj
 	@echo ... SDLClasses/SDLBackground.i
 	@echo ... SDLClasses/SDLBackground.s
+	@echo ... SDLClasses/SDLBullet.obj
+	@echo ... SDLClasses/SDLBullet.i
+	@echo ... SDLClasses/SDLBullet.s
 	@echo ... SDLClasses/SDLPlayerShip.obj
 	@echo ... SDLClasses/SDLPlayerShip.i
 	@echo ... SDLClasses/SDLPlayerShip.s
@@ -488,6 +545,9 @@ help:
 	@echo ... model/Background.obj
 	@echo ... model/Background.i
 	@echo ... model/Background.s
+	@echo ... model/Bullet.obj
+	@echo ... model/Bullet.i
+	@echo ... model/Bullet.s
 	@echo ... model/PlayerShip.obj
 	@echo ... model/PlayerShip.i
 	@echo ... model/PlayerShip.s

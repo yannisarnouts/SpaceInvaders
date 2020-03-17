@@ -7,5 +7,5 @@
 
 #endif //PROJECT_KEY_H
 enum KeyP {
-    NONE, LEFT, RIGHT
+    NONE, LEFT, RIGHT, UP
 };

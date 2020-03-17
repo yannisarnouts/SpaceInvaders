@@ -6,6 +6,7 @@
 #include "../SDLClasses/SDLPlayerShip.h"
 #include "../SDLClasses/SDLBackground.h"
 #include "../SDLClasses/SDLAlien.h"
+#include "../SDLClasses/SDLBullet.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <iostream>
@@ -63,7 +64,7 @@ Background *sdlFactory::createBackground(std::string path) {
 }
 
 Alien *sdlFactory::createAlien(AlienType alienType, std::string path) {
-    return new SDLAlien(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path, alienType);
+    return new SDLAlien(gRenderer, SCREEN_WIDTH, SCREEN_HEIGHT, path, alienType);
 }
 
 bool sdlFactory::pollEvents() {
@@ -75,4 +76,8 @@ bool sdlFactory::pollEvents() {
         }
     }
     return play;
+}
+
+Bullet *sdlFactory::createBullet(std::string path, int xCoord, int yCoord) {
+    return new SDLBullet(gRenderer, SCREEN_WIDTH, SCREEN_HEIGHT, path, xCoord, yCoord);
 }

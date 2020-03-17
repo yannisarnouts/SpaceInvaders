@@ -18,6 +18,7 @@ public:
     void init(int wh, int ww) override;
     PlayerShip *createPlayerShip(std::string path) override;
     Alien *createAlien(AlienType alienType, std::string path) override;
+    Bullet *createBullet(std::string path, int xCoord, int yCoord) override;
     Background *createBackground(std::string path) override;
     bool pollEvents() override;
     void render() override;

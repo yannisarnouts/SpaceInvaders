@@ -11,6 +11,7 @@
 #include "../model/Background.h"
 #include "../model/Alien.h"
 #include "../model/AlienType.h"
+#include "../model/Bullet.h"
 
 class AbstractFactory {
 public:
@@ -18,6 +19,7 @@ public:
 
     virtual PlayerShip* createPlayerShip(std::string path) = 0;
     virtual Alien* createAlien(AlienType alienType, std::string path)=0;
+    virtual Bullet* createBullet(std::string path, int xCoord, int yCoord)=0;
     virtual Background* createBackground(std::string path) = 0;
     virtual bool pollEvents()=0;
     virtual void init(int wh,int ww)=0;

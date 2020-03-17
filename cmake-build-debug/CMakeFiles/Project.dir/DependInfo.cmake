@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj"
+  "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBullet.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/controller/Game.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj"
@@ -15,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/main.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Alien.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Background.cpp.obj"
+  "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Bullet.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/PlayerShip.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

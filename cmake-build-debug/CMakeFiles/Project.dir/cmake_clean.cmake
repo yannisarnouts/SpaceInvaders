@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj"
   "CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj"
+  "CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj"
   "CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj"
   "CMakeFiles/Project.dir/controller/Game.cpp.obj"
   "CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj"
@@ -10,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/main.cpp.obj"
   "CMakeFiles/Project.dir/model/Alien.cpp.obj"
   "CMakeFiles/Project.dir/model/Background.cpp.obj"
+  "CMakeFiles/Project.dir/model/Bullet.cpp.obj"
   "CMakeFiles/Project.dir/model/PlayerShip.cpp.obj"
   "Project.exe"
   "Project.exe.manifest"

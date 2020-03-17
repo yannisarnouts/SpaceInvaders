@@ -18,6 +18,7 @@ private:
     AbstractFactory *A;
     std::string shipPath = "../assets/spaceship.png";
     std::string bgPath = "../assets/bg.jpg";
+    std::string bulletPath = "../assets/bullet.png";
     std::string michielAlien = "../assets/michiel.png";
     std::string rubenAlien = "../assets/ruben.png";
     std::string thomasAlien = "../assets/thomas.png";
