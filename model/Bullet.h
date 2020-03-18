@@ -13,6 +13,7 @@ public:
     virtual void close()=0;
     virtual int getXCoord()=0;
     virtual int getYCoord()=0;
+    virtual void setYCoord(int yCoord)=0;
 };
 
 

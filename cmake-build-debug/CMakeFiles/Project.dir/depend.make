@@ -36,6 +36,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Aliens.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Canon.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyHandler.cpp
@@ -98,6 +99,17 @@ CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.h
 
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Bullet.cpp
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Bullet.h
+
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../controller/KeyHandler.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../controller/KeyP.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Canon.cpp
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Canon.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.cpp
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.h

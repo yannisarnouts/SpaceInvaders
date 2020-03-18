@@ -37,3 +37,7 @@ SDLBullet::SDLBullet(SDL_Renderer *renderer, int width, int height, const std::s
     texture = bTexture;
     bTexture->loadFromFile(this->imgPath);
 }
+
+void SDLBullet::setYCoord(int yCoord) {
+    SDLBullet::yCoord = yCoord;
+}

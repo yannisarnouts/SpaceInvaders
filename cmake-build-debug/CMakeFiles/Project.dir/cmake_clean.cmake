@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/model/Aliens.cpp.obj"
   "CMakeFiles/Project.dir/model/Background.cpp.obj"
   "CMakeFiles/Project.dir/model/Bullet.cpp.obj"
+  "CMakeFiles/Project.dir/model/Canon.cpp.obj"
   "CMakeFiles/Project.dir/model/PlayerShip.cpp.obj"
   "Project.exe"
   "Project.exe.manifest"

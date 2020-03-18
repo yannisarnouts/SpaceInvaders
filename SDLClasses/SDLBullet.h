@@ -15,12 +15,11 @@ public:
     SDLBullet();
 
     SDLBullet(SDL_Renderer *renderer, int width, int height, const std::string &imgPath, int xCoord, int yCoord);
-
     void Visualize(int xCoord, int yCoord) override;
-
     void close() override;
     int getXCoord() override;
     int getYCoord() override;
+    void setYCoord(int yCoord) override;
 
 private:
     SDL_Renderer* renderer;

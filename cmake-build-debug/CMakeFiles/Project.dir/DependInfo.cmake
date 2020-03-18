@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Aliens.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Background.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Bullet.cpp.obj"
+  "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Canon.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/PlayerShip.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

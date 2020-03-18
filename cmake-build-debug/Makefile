@@ -500,6 +500,33 @@ model/Bullet.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Bullet.cpp.s
 .PHONY : model/Bullet.cpp.s
 
+model/Canon.obj: model/Canon.cpp.obj
+
+.PHONY : model/Canon.obj
+
+# target to build an object file
+model/Canon.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Canon.cpp.obj
+.PHONY : model/Canon.cpp.obj
+
+model/Canon.i: model/Canon.cpp.i
+
+.PHONY : model/Canon.i
+
+# target to preprocess a source file
+model/Canon.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Canon.cpp.i
+.PHONY : model/Canon.cpp.i
+
+model/Canon.s: model/Canon.cpp.s
+
+.PHONY : model/Canon.s
+
+# target to generate assembly for a file
+model/Canon.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Canon.cpp.s
+.PHONY : model/Canon.cpp.s
+
 model/PlayerShip.obj: model/PlayerShip.cpp.obj
 
 .PHONY : model/PlayerShip.obj
@@ -578,6 +605,9 @@ help:
 	@echo ... model/Bullet.obj
 	@echo ... model/Bullet.i
 	@echo ... model/Bullet.s
+	@echo ... model/Canon.obj
+	@echo ... model/Canon.i
+	@echo ... model/Canon.s
 	@echo ... model/PlayerShip.obj
 	@echo ... model/PlayerShip.i
 	@echo ... model/PlayerShip.s

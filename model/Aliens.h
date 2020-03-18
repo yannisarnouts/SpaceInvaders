@@ -11,14 +11,8 @@
 class Aliens {
 public:
     Aliens(AbstractFactory *abstractFactory);
-    void Visualize(int y);
-    void Visualize2(int y);
-    void Visualize3(int y);
-    void Visualize4(int y);
-    void createAliens(int yCoord,std::string imgPath);
-    void createAliens2(int yCoord,std::string imgPath);
-    void createAliens3(int yCoord,std::string imgPath);
-    void createAliens4(int yCoord,std::string imgPath);
+    void Visualize(int y, AlienType alienType);
+    void createAliens(int number, AlienType alienType, std::string imgPath);
 
 private:
     AbstractFactory* abstractFactory;

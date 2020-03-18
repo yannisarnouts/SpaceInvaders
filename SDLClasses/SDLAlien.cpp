@@ -10,7 +10,7 @@ SDLAlien::SDLAlien() {}
 SDLAlien::SDLAlien(SDL_Renderer *renderer, int width, int height, const std::string &imgPath, AlienType alienType) {
     this->renderer = renderer;
     this->alienWidth = width/15;
-    this->alienHeight = height/15;
+    this->alienHeight = height/20;
     this->imgPath = imgPath;
     this->alienType = alienType;
     Texture *aTexture = new Texture(renderer);
@@ -18,7 +18,7 @@ SDLAlien::SDLAlien(SDL_Renderer *renderer, int width, int height, const std::str
     aTexture->loadFromFile(imgPath);
 }
 void SDLAlien::Visualize(int xPos, int yPos) {
-    SDL_Rect renderQuad = {xPos + 10, yPos, alienWidth, alienHeight};
+    SDL_Rect renderQuad = {xPos + 100, yPos, alienWidth, alienHeight};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 

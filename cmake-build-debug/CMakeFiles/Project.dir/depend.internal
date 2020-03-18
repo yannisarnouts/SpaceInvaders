@@ -37,6 +37,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.cpp
@@ -99,6 +100,17 @@ CMakeFiles/Project.dir/model/Background.cpp.obj
 CMakeFiles/Project.dir/model/Bullet.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
