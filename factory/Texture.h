@@ -11,9 +11,8 @@
 class Texture {
 public:
     Texture(SDL_Renderer* renderer);
-
     Texture();
-
+    void free();
     SDL_Texture *getTexture() const;
     bool loadFromFile(std::string path);
 

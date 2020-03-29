@@ -9,10 +9,17 @@
 class Alien {
 public:
     Alien();
-    virtual void Visualize(int xPos, int yPos)=0;
+    virtual void Visualize()=0;
     virtual void close()=0;
     virtual int getXPos()=0;
+    virtual void setYCoord(int yCoord)=0;
+    virtual void moveLeft()=0;
+    virtual void moveRight()=0;
     virtual int getYPos()=0;
+    virtual bool isGoDown()=0;
+    virtual void setGoDown(bool goDown)=0;
+    virtual int getAlienHeight()=0;
+    virtual bool isTurnLeft()=0;
 };
 
 

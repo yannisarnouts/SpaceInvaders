@@ -12,12 +12,12 @@
 #include "../model/AlienType.h"
 #include "../controller/KeyHandler.h"
 
-class sdlFactory : public AbstractFactory {
+class SDLFactory : public AbstractFactory {
 public:
-    sdlFactory();
-    void init(int wh, int ww) override;
+    SDLFactory();
+    void init() override;
     PlayerShip *createPlayerShip(std::string path) override;
-    Alien *createAlien(AlienType alienType, std::string path) override;
+    Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) override;
     Bullet *createBullet(std::string path, int xCoord, int yCoord) override;
     Background *createBackground(std::string path) override;
     bool pollEvents() override;
@@ -27,8 +27,8 @@ public:
 private:
     SDL_Window* gWindow = NULL;
     SDL_Renderer* gRenderer = NULL;
-    int SCREEN_HEIGHT;
-    int SCREEN_WIDTH;
+    int SCREEN_HEIGHT = 1280;
+    int SCREEN_WIDTH = 950;
 };
 
 

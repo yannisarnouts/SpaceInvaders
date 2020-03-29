@@ -108,18 +108,18 @@ CMakeFiles/Project.dir/controller/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/controller/Game.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\Game.cpp" -o CMakeFiles\Project.dir\controller\Game.cpp.s
 
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\factory\sdlFactory.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\factory\sdlFactory.cpp"
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/SDLFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\factory\SDLFactory.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\factory\SDLFactory.cpp"
 
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/factory/sdlFactory.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\factory\sdlFactory.cpp" > CMakeFiles\Project.dir\factory\sdlFactory.cpp.i
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/factory/SDLFactory.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\factory\SDLFactory.cpp" > CMakeFiles\Project.dir\factory\SDLFactory.cpp.i
 
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/factory/sdlFactory.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\factory\sdlFactory.cpp" -o CMakeFiles\Project.dir\factory\sdlFactory.cpp.s
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/factory/SDLFactory.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\factory\SDLFactory.cpp" -o CMakeFiles\Project.dir\factory\SDLFactory.cpp.s
 
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../SDLClasses/SDLPlayerShip.cpp
@@ -270,7 +270,7 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj" \
 "CMakeFiles/Project.dir/model/PlayerShip.cpp.obj" \
 "CMakeFiles/Project.dir/controller/Game.cpp.obj" \
-"CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj" \
+"CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj" \
 "CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj" \
 "CMakeFiles/Project.dir/factory/Texture.cpp.obj" \
 "CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj" \
@@ -290,7 +290,7 @@ Project.exe: CMakeFiles/Project.dir/main.cpp.obj
 Project.exe: CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/PlayerShip.cpp.obj
 Project.exe: CMakeFiles/Project.dir/controller/Game.cpp.obj
-Project.exe: CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj
+Project.exe: CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj
 Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj
 Project.exe: CMakeFiles/Project.dir/factory/Texture.cpp.obj
 Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj

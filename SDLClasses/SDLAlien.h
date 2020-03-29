@@ -14,11 +14,19 @@
 class SDLAlien : public Alien {
 public:
     SDLAlien();
-    SDLAlien(SDL_Renderer *renderer, int width, int height, const std::string &imgPath, AlienType alienType);
-    void Visualize(int xPos, int yPos) override;
+    SDLAlien(SDL_Renderer *renderer, int width, int height, const std::string &imgPath, AlienType alienType, int xPos, int yPos);
+    void Visualize() override;
+    void moveLeft() override;
+    void moveRight() override;
     void close() override;
     int getXPos() override;
     int getYPos() override;
+    void setYCoord(int yCoord) override ;
+    int getAlienHeight() override ;
+    bool isGoDown() override;
+    void setGoDown(bool goDown) override ;
+    bool isTurnLeft() override ;
+
 
 private:
     SDL_Renderer* renderer;
@@ -27,6 +35,8 @@ private:
     int xCoord; int yCoord;
     std::string imgPath;
     AlienType alienType;
+    int screenWidth; int screenHeight;
+    bool turnLeft = true; bool goDown = false;
 };
 
 

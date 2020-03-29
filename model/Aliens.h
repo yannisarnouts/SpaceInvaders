@@ -12,14 +12,14 @@ class Aliens {
 public:
     Aliens(AbstractFactory *abstractFactory);
     void Visualize(int y, AlienType alienType);
-    void createAliens(int number, AlienType alienType, std::string imgPath);
+    void VisualizeLeft(int y, AlienType alienType);
+    void VisualizeRight(int y, AlienType alienType);
+    void createAliens(int number, AlienType alienType, std::string imgPath, int y);
+    void moveAliens();
 
 private:
     AbstractFactory* abstractFactory;
-    Alien* aliens[11];
-    Alien* aliens2[11];
-    Alien* aliens3[11];
-    Alien* aliens4[11];
+    Alien* aliens[4][3];
     int yCoord;
 };
 

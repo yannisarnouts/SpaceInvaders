@@ -24,13 +24,9 @@ CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/PlayerShip.h
 
-CMakeFiles/Project.dir/controller/Game.cpp.obj: ../SDLClasses/SDLPlayerShip.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.h
-CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/KeyHandler.h
-CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../factory/AbstractFactory.h
-CMakeFiles/Project.dir/controller/Game.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Aliens.h
@@ -51,30 +47,30 @@ CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/PlayerShip.h
 
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLAlien.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLBackground.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLBullet.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLPlayerShip.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../controller/KeyHandler.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../controller/KeyP.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/SDLFactory.cpp
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/SDLFactory.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/Texture.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/PlayerShip.h
+
 CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.cpp
 CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.h
-
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLAlien.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLBackground.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLBullet.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../SDLClasses/SDLPlayerShip.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../controller/KeyHandler.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../controller/KeyP.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/AbstractFactory.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/Texture.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.cpp
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../factory/sdlFactory.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/Alien.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/AlienType.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/Background.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/Bullet.h
-CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/Game.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/AbstractFactory.h
-CMakeFiles/Project.dir/main.cpp.obj: ../factory/sdlFactory.h
+CMakeFiles/Project.dir/main.cpp.obj: ../factory/SDLFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/AlienType.h

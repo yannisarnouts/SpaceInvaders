@@ -20,7 +20,7 @@ public:
     int getYCoord() override;
     int getWidth() override;
     int getHeight() override;
-    void moveShip();
+    void moveShip() override;
 
 private:
     SDL_Renderer* gRenderer;

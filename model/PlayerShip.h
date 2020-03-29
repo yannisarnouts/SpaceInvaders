@@ -11,6 +11,7 @@ public:
     PlayerShip();
     virtual void Visualize()=0;
     virtual void close()=0;
+    virtual void moveShip()=0;
     virtual int getXCoord()=0;
     virtual int getYCoord()=0;
     virtual int getWidth()=0;

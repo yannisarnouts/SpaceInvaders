@@ -7,7 +7,7 @@
 #include <iostream>
 #include "Texture.h"
 
-Texture::Texture(SDL_Renderer* renderer) {
+Texture::Texture(SDL_Renderer *renderer) {
     this->renderer = renderer;
 }
 
@@ -17,9 +17,9 @@ SDL_Texture *Texture::getTexture() const {
 
 bool Texture::loadFromFile(std::string path) {
     bool ret = false;
-    SDL_Texture* newTexture = NULL;
-    SDL_Surface* tmpSurface = IMG_Load(path.c_str());
-    if ( tmpSurface == NULL ){
+    SDL_Texture *newTexture = NULL;
+    SDL_Surface *tmpSurface = IMG_Load(path.c_str());
+    if (tmpSurface == NULL) {
         printf("Unable to load image from %s", path.c_str());
         ret = false;
     } else {
@@ -39,4 +39,10 @@ bool Texture::loadFromFile(std::string path) {
     return ret;
 }
 
-
+void Texture::free() {
+    //Free texture if it exist
+    SDL_DestroyTexture(this->texture);
+    texture = NULL;
+    width = 0;
+    height = 0;
+}

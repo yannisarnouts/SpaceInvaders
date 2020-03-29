@@ -13,13 +13,16 @@
 class SDLBullet : public Bullet {
 public:
     SDLBullet();
-
     SDLBullet(SDL_Renderer *renderer, int width, int height, const std::string &imgPath, int xCoord, int yCoord);
-    void Visualize(int xCoord, int yCoord) override;
     void close() override;
     int getXCoord() override;
+    void setXCoord(int x) override;
     int getYCoord() override;
     void setYCoord(int yCoord) override;
+    int getHeight() override;
+    void setHeight(int height);
+    void shootBullet() override ;
+    void Visualize() override ;
 
 private:
     SDL_Renderer* renderer;
@@ -28,6 +31,7 @@ private:
     int xCoord; int yCoord;
     std::string imgPath;
     int screenHeight;
+
 };
 
 

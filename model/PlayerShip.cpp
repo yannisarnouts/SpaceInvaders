@@ -7,5 +7,4 @@ PlayerShip::PlayerShip() {
 
 }
 
-
-
+void PlayerShip::moveShip() {}

@@ -311,6 +311,33 @@ factory/AbstractFactory.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/AbstractFactory.cpp.s
 .PHONY : factory/AbstractFactory.cpp.s
 
+factory/SDLFactory.obj: factory/SDLFactory.cpp.obj
+
+.PHONY : factory/SDLFactory.obj
+
+# target to build an object file
+factory/SDLFactory.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj
+.PHONY : factory/SDLFactory.cpp.obj
+
+factory/SDLFactory.i: factory/SDLFactory.cpp.i
+
+.PHONY : factory/SDLFactory.i
+
+# target to preprocess a source file
+factory/SDLFactory.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/SDLFactory.cpp.i
+.PHONY : factory/SDLFactory.cpp.i
+
+factory/SDLFactory.s: factory/SDLFactory.cpp.s
+
+.PHONY : factory/SDLFactory.s
+
+# target to generate assembly for a file
+factory/SDLFactory.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/SDLFactory.cpp.s
+.PHONY : factory/SDLFactory.cpp.s
+
 factory/Texture.obj: factory/Texture.cpp.obj
 
 .PHONY : factory/Texture.obj
@@ -337,33 +364,6 @@ factory/Texture.s: factory/Texture.cpp.s
 factory/Texture.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/Texture.cpp.s
 .PHONY : factory/Texture.cpp.s
-
-factory/sdlFactory.obj: factory/sdlFactory.cpp.obj
-
-.PHONY : factory/sdlFactory.obj
-
-# target to build an object file
-factory/sdlFactory.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj
-.PHONY : factory/sdlFactory.cpp.obj
-
-factory/sdlFactory.i: factory/sdlFactory.cpp.i
-
-.PHONY : factory/sdlFactory.i
-
-# target to preprocess a source file
-factory/sdlFactory.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/sdlFactory.cpp.i
-.PHONY : factory/sdlFactory.cpp.i
-
-factory/sdlFactory.s: factory/sdlFactory.cpp.s
-
-.PHONY : factory/sdlFactory.s
-
-# target to generate assembly for a file
-factory/sdlFactory.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/sdlFactory.cpp.s
-.PHONY : factory/sdlFactory.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -584,12 +584,12 @@ help:
 	@echo ... factory/AbstractFactory.obj
 	@echo ... factory/AbstractFactory.i
 	@echo ... factory/AbstractFactory.s
+	@echo ... factory/SDLFactory.obj
+	@echo ... factory/SDLFactory.i
+	@echo ... factory/SDLFactory.s
 	@echo ... factory/Texture.obj
 	@echo ... factory/Texture.i
 	@echo ... factory/Texture.s
-	@echo ... factory/sdlFactory.obj
-	@echo ... factory/sdlFactory.i
-	@echo ... factory/sdlFactory.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -10,15 +10,19 @@
 
 class Canon {
 public:
-    Canon(AbstractFactory *abstractFactory);
-    void createBullet(std::string imgPath);
-    void Visualize(int shipX, int shipY);
-    void shoot();
+    Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip);
+    Bullet* createBullet(std::string imgPath, int shipX, int shipY);
+    void runCannon(std::string imgPath, int shipX, int shipY);
+    void fireCannon(Bullet* b);
+    void loadCannon();
 private:
     AbstractFactory* abstractFactory;
-    std::string imgPath;
+    std::string imgPath = "../assets/bullet.png";
+    PlayerShip* playerShip;
     int shipX; int shipY;
-    Bullet* bullet;
+    Bullet* bullets[100]; Bullet* firingBullets[100];
+    int canonLength = 100, nFiring = 0;
+    bool shoot = false;
 };
 
 

@@ -5,13 +5,15 @@
 #include <iostream>
 #include "SDLBullet.h"
 
-void SDLBullet::Visualize(int xCoord, int yCoord) {
-    SDL_Rect renderQuad = {xCoord, yCoord, this->width, this->height};
+void SDLBullet::Visualize() {
+    shootBullet();
+    SDL_Rect renderQuad = {this->xCoord, this->yCoord, this->width, this->height};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
+//    SDL_RenderClear(renderer);
 }
 
 void SDLBullet::close() {
-
+    this->texture->free();
 }
 
 int SDLBullet::getXCoord() {
@@ -40,4 +42,20 @@ SDLBullet::SDLBullet(SDL_Renderer *renderer, int width, int height, const std::s
 
 void SDLBullet::setYCoord(int yCoord) {
     SDLBullet::yCoord = yCoord;
+}
+
+void SDLBullet::setHeight(int height) {
+    SDLBullet::height = height;
+}
+
+int SDLBullet::getHeight() {
+    return height;
+}
+
+void SDLBullet::shootBullet() {
+    this->yCoord = this->yCoord - 10;
+}
+
+void SDLBullet::setXCoord(int x) {
+    SDLBullet::xCoord = x;
 }

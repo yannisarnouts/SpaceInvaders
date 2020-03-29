@@ -2,7 +2,7 @@
 // Created by Gebruiker on 8/03/2020.
 //
 
-#include "sdlFactory.h"
+#include "SDLFactory.h"
 #include "../SDLClasses/SDLPlayerShip.h"
 #include "../SDLClasses/SDLBackground.h"
 #include "../SDLClasses/SDLAlien.h"
@@ -11,16 +11,14 @@
 #include <SDL2/SDL_image.h>
 #include <iostream>
 
-sdlFactory::sdlFactory() {}
+SDLFactory::SDLFactory() {}
 
-void sdlFactory::init(int wh, int ww) {
-    SCREEN_WIDTH = ww;
-    SCREEN_HEIGHT = wh;
+void SDLFactory::init() {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
     } else {
         //Create window
-        gWindow = SDL_CreateWindow("SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, wh, ww, SDL_WINDOW_SHOWN);
+        gWindow = SDL_CreateWindow("SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_HEIGHT, SCREEN_WIDTH, SDL_WINDOW_SHOWN);
         if (gWindow == NULL) {
             printf("Window could not be created! SDL Error: %s\n", SDL_GetError());
         } else {
@@ -43,31 +41,31 @@ void sdlFactory::init(int wh, int ww) {
     }
 }
 
-void sdlFactory::render() {
+void SDLFactory::render() {
     //update the screen
     SDL_RenderPresent(gRenderer);
 }
 
-PlayerShip *sdlFactory::createPlayerShip(std::string path) {
+PlayerShip *SDLFactory::createPlayerShip(std::string path) {
     return new SDLPlayerShip(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
 }
 
-void sdlFactory::close() {
+void SDLFactory::close() {
     SDL_DestroyWindow(gWindow);
     gWindow = NULL;
     IMG_Quit();
     SDL_Quit();
 }
 
-Background *sdlFactory::createBackground(std::string path) {
+Background *SDLFactory::createBackground(std::string path) {
     return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
 }
 
-Alien *sdlFactory::createAlien(AlienType alienType, std::string path) {
-    return new SDLAlien(gRenderer, SCREEN_WIDTH, SCREEN_HEIGHT, path, alienType);
+Alien *SDLFactory::createAlien(AlienType alienType, std::string path, int xPos, int yPos) {
+    return new SDLAlien(gRenderer, SCREEN_WIDTH, SCREEN_HEIGHT, path, alienType, xPos, yPos);
 }
 
-bool sdlFactory::pollEvents() {
+bool SDLFactory::pollEvents() {
     SDL_Event ev;
     bool play = true;
     while (SDL_PollEvent(&ev) != 0) {
@@ -78,6 +76,6 @@ bool sdlFactory::pollEvents() {
     return play;
 }
 
-Bullet *sdlFactory::createBullet(std::string path, int xCoord, int yCoord) {
+Bullet *SDLFactory::createBullet(std::string path, int xCoord, int yCoord) {
     return new SDLBullet(gRenderer, SCREEN_WIDTH, SCREEN_HEIGHT, path, xCoord, yCoord);
 }
