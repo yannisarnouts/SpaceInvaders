@@ -13,7 +13,7 @@ void SDLAlien::Visualize() {
     } else {
         moveRight();
     }
-    SDL_Rect renderQuad = {this->getXCoord() + 100, this->getYCoord(), getAlienWidth(), getAlienHeight()};
+    SDL_Rect renderQuad = {this->getXCoord() + 100, this->getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
@@ -25,19 +25,17 @@ void SDLAlien::close() {
 void SDLAlien::moveRight() {
     this->setGoDown(false);
     this->setXCoord(this->getXCoord() + 2);
-    if (this->getXCoord() >= this->screenWidth) {
+    if (this->getXCoord() >= this->SCREEN_WIDTH) {
         this->setTurnLeft(true);
         this->setGoDown(true);
     }
 }
 
-SDLAlien::SDLAlien(int width, int height, AlienType alienType, int xPos, int yPos, SDL_Renderer *renderer,
-                   const std::string &imgPath) : Alien(width, height, alienType, xPos, yPos), renderer(renderer),
+SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer,
+                   const std::string &imgPath) : Alien(xCoord, yCoord, width, height, alienType), renderer(renderer),
                                                  imgPath(imgPath) {
     this->renderer = renderer;
     this->imgPath = imgPath;
-    this->screenHeight = height;
-    this->screenWidth = width;
     Texture *aTexture = new Texture(renderer);
     texture = aTexture;
     aTexture->loadFromFile(imgPath);

@@ -6,22 +6,15 @@
 #define PROJECT_BULLET_H
 
 
-class Bullet {
+#include "Entity.h"
+
+class Bullet : public Entity {
 public:
     Bullet();
-    Bullet(int width, int height, int xCoord, int yCoord);
-    int getWidth() const;
-    int getHeight() const;
-    int getXCoord() const;
-    void setXCoord(int xCoord);
-    int getYCoord() const;
+    Bullet(int xCoord, int yCoord, int width, int height);
     virtual void Visualize()=0;
     virtual void close()=0;
     void shootBullet();
-
-private:
-    int width; int height;
-    int xCoord; int yCoord;
 };
 
 

@@ -6,6 +6,7 @@ CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../SDLClasses/SDLAlien.h
 CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj: ../SDLClasses/SDLBackground.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj: ../SDLClasses/SDLBackground.h
@@ -16,12 +17,14 @@ CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../SDLClasses/SDLBullet.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../SDLClasses/SDLBullet.h
 CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../SDLClasses/SDLPlayerShip.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../SDLClasses/SDLPlayerShip.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../factory/Texture.h
+CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
@@ -33,6 +36,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Aliens.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Canon.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyHandler.cpp
@@ -45,6 +49,7 @@ CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLAlien.h
@@ -61,6 +66,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.cpp
@@ -76,11 +82,13 @@ CMakeFiles/Project.dir/main.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/main.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.cpp
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Alien.h
@@ -89,6 +97,7 @@ CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.cpp
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.cpp
@@ -96,6 +105,7 @@ CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.h
 
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Bullet.cpp
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../controller/KeyP.h
@@ -106,8 +116,13 @@ CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Canon.cpp
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Canon.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/PlayerShip.h
 
+CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.cpp
+CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.h
+
+CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.cpp
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.h
 

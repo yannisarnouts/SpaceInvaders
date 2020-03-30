@@ -9,13 +9,11 @@
 
 SDLPlayerShip::SDLPlayerShip() {
 }
-
-SDLPlayerShip::SDLPlayerShip(int shipWidth, int shipHeight, SDL_Renderer *gRenderer, const std::string &imgPath)
-        : PlayerShip(shipWidth, shipHeight), gRenderer(gRenderer), imgPath(imgPath) {
-    this->screenWidth = shipWidth;
+SDLPlayerShip::SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer,
+                             const std::string &imgPath) : PlayerShip(xCoord, yCoord, width, height),
+                                                           gRenderer(gRenderer), imgPath(imgPath) {
     this->gRenderer = gRenderer;
     this->imgPath = imgPath;
-    std::cout << this->getShipHeight();
     Texture *ssTexture = new Texture(gRenderer);
     texture = ssTexture;
     texture->loadFromFile(imgPath);
@@ -23,7 +21,7 @@ SDLPlayerShip::SDLPlayerShip(int shipWidth, int shipHeight, SDL_Renderer *gRende
 
 void SDLPlayerShip::Visualize() {
     moveShip();
-    SDL_Rect renderQuad = {getXCoord(), getYCoord(), getShipWidth(), getShipHeight()};
+    SDL_Rect renderQuad = {getXCoord(), getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
 }
 
@@ -33,7 +31,7 @@ void SDLPlayerShip::close() {
 
 void SDLPlayerShip::moveShip() {
     int direction = keyHandler->directions();
-    if (getXCoord() >= (this->screenWidth + this->getShipWidth())) {
+    if (getXCoord() >= (this->SCREEN_WIDTH + this->getWidth())) {
         if (direction == KeyP::LEFT) {
             setXCoord(getXCoord()- 5);
         }

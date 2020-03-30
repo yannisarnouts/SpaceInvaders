@@ -527,6 +527,33 @@ model/Canon.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Canon.cpp.s
 .PHONY : model/Canon.cpp.s
 
+model/Entity.obj: model/Entity.cpp.obj
+
+.PHONY : model/Entity.obj
+
+# target to build an object file
+model/Entity.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Entity.cpp.obj
+.PHONY : model/Entity.cpp.obj
+
+model/Entity.i: model/Entity.cpp.i
+
+.PHONY : model/Entity.i
+
+# target to preprocess a source file
+model/Entity.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Entity.cpp.i
+.PHONY : model/Entity.cpp.i
+
+model/Entity.s: model/Entity.cpp.s
+
+.PHONY : model/Entity.s
+
+# target to generate assembly for a file
+model/Entity.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Entity.cpp.s
+.PHONY : model/Entity.cpp.s
+
 model/PlayerShip.obj: model/PlayerShip.cpp.obj
 
 .PHONY : model/PlayerShip.obj
@@ -608,6 +635,9 @@ help:
 	@echo ... model/Canon.obj
 	@echo ... model/Canon.i
 	@echo ... model/Canon.s
+	@echo ... model/Entity.obj
+	@echo ... model/Entity.i
+	@echo ... model/Entity.s
 	@echo ... model/PlayerShip.obj
 	@echo ... model/PlayerShip.i
 	@echo ... model/PlayerShip.s

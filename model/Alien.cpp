@@ -7,40 +7,19 @@
 
 Alien::Alien() {}
 
-Alien::Alien(int width, int height, AlienType alienType, int xPos, int yPos) {
-    this->alienWidth = width / 15;
-    this->alienHeight = height / 20;
-    this->yCoord = yPos;
-    this->xCoord = xPos;
+
+Alien::Alien(int xCoord, int yCoord, int width, int height, AlienType alienType) : Entity(xCoord, yCoord, width,
+                                                                                          height),
+                                                                                   alienType(alienType) {
     this->alienType = alienType;
-}
-
-int Alien::getAlienWidth() const {
-    return alienWidth;
-}
-
-int Alien::getAlienHeight() const {
-    return alienHeight;
-}
-
-int Alien::getXCoord() const {
-    return xCoord;
-}
-
-int Alien::getYCoord() const {
-    return yCoord;
-}
-
-void Alien::setYCoord(int yCoord) {
-    Alien::yCoord = yCoord;
 }
 
 void Alien::moveLeft() {
     this->goDown = false;
     if (this->turnLeft) {
-        this->xCoord -= 2;
+        this->setXCoord(getXCoord() - 2);
     }
-    if (this->getXCoord() <= 0 - this->alienWidth) {
+    if (this->getXCoord() <= 0 - this->getWidth()) {
         this->turnLeft = false;
         this->goDown = true;
     }
@@ -60,8 +39,4 @@ bool Alien::isTurnLeft() const {
 
 void Alien::setTurnLeft(bool turnLeft) {
     Alien::turnLeft = turnLeft;
-}
-
-void Alien::setXCoord(int xCoord) {
-    Alien::xCoord = xCoord;
 }

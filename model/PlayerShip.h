@@ -6,25 +6,15 @@
 #define PROJECT_PLAYERSHIP_H
 
 
-class PlayerShip {
+#include "Entity.h"
+
+class PlayerShip : public Entity{
 public:
     PlayerShip();
-
-    PlayerShip(int shipWidth, int shipHeight);
-
+    PlayerShip(int xCoord, int yCoord, int width, int height);
     virtual void Visualize()=0;
     virtual void close()=0;
     virtual void moveShip()=0;
-    int getXCoord() const;
-    void setXCoord(int xCoord);
-    int getYCoord() const;
-    int getShipWidth() const;
-    int getShipHeight() const;
-
-private:
-    int xCoord; int yCoord;
-    int shipWidth; int shipHeight;
-
 };
 
 

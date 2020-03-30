@@ -14,8 +14,9 @@
 class SDLAlien : public Alien {
 public:
     SDLAlien();
-    SDLAlien(int width, int height, AlienType alienType, int xPos, int yPos, SDL_Renderer *renderer,
+    SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer,
              const std::string &imgPath);
+
     void Visualize() override;
     void moveRight() override;
     void close() override;
@@ -25,7 +26,7 @@ private:
     SDL_Renderer* renderer;
     Texture* texture = NULL;
     std::string imgPath;
-    int screenWidth; int screenHeight;
+    int SCREEN_WIDTH = 950;
 };
 
 

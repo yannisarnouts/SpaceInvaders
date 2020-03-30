@@ -7,30 +7,26 @@
 
 
 #include "AlienType.h"
+#include "Entity.h"
 
-class Alien {
+class Alien : public Entity {
 public:
     Alien();
-    Alien(int width, int height, AlienType alienType, int xPos, int yPos);
+
+    Alien(int xCoord, int yCoord, int width, int height, AlienType alienType);
+
+//    Alien(int width, int height, AlienType alienType, int xPos, int yPos);
     virtual void Visualize()=0;
     virtual void close()=0;
     virtual void moveRight()=0;
 
 private:
     bool turnLeft = true; bool goDown = false;
-    int xCoord; int yCoord;
-    int alienWidth; int alienHeight;
     AlienType alienType;
 
 public:
     int getAlienWidth() const;
     int getAlienHeight() const;
-    int getXCoord() const;
-
-    void setXCoord(int xCoord);
-
-    int getYCoord() const;
-    void setYCoord(int yCoord);
     bool isGoDown() const;
     void setGoDown(bool goDown);
     bool isTurnLeft() const;

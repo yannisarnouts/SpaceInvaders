@@ -47,7 +47,12 @@ void SDLFactory::render() {
 }
 
 PlayerShip *SDLFactory::createPlayerShip(std::string path) {
-    return new SDLPlayerShip(SCREEN_WIDTH, SCREEN_HEIGHT, gRenderer, path);
+    int sh = SCREEN_HEIGHT / 7;
+    int sw = SCREEN_WIDTH / 7;
+    int xc = SCREEN_WIDTH/2 - 50;
+    int yc = SCREEN_HEIGHT - 500;
+    std::cout << yc;
+    return new SDLPlayerShip(xc, yc, sw, sh, gRenderer, path);
 }
 
 void SDLFactory::close() {
@@ -62,7 +67,9 @@ Background *SDLFactory::createBackground(std::string path) {
 }
 
 Alien *SDLFactory::createAlien(AlienType alienType, std::string path, int xPos, int yPos) {
-    return new SDLAlien(SCREEN_WIDTH, SCREEN_HEIGHT, alienType ,xPos, yPos, gRenderer, path);
+    int alienWidth = SCREEN_WIDTH / 15;
+    int alienHeight = SCREEN_HEIGHT / 20;
+    return new SDLAlien(xPos, yPos, alienWidth, alienHeight, alienType, gRenderer, path);
 }
 
 bool SDLFactory::pollEvents() {
@@ -77,5 +84,7 @@ bool SDLFactory::pollEvents() {
 }
 
 Bullet *SDLFactory::createBullet(std::string path, int xCoord, int yCoord) {
-    return new SDLBullet(SCREEN_WIDTH, SCREEN_HEIGHT, xCoord, yCoord, gRenderer, path);
+    int bw = SCREEN_WIDTH/30;
+    int bh = SCREEN_HEIGHT/30;
+    return new SDLBullet(xCoord, yCoord, bw, bh, gRenderer, path);
 }
