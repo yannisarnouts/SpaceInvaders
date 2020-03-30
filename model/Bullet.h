@@ -9,14 +9,19 @@
 class Bullet {
 public:
     Bullet();
+    Bullet(int width, int height, int xCoord, int yCoord);
+    int getWidth() const;
+    int getHeight() const;
+    int getXCoord() const;
+    void setXCoord(int xCoord);
+    int getYCoord() const;
     virtual void Visualize()=0;
     virtual void close()=0;
-    virtual void shootBullet()=0;
-    virtual int getXCoord()=0;
-    virtual void setXCoord(int x)=0;
-    virtual int getYCoord()=0;
-    virtual void setYCoord(int yCoord)=0;
-    virtual int getHeight()=0;
+    void shootBullet();
+
+private:
+    int width; int height;
+    int xCoord; int yCoord;
 };
 
 

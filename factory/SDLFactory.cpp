@@ -77,5 +77,5 @@ bool SDLFactory::pollEvents() {
 }
 
 Bullet *SDLFactory::createBullet(std::string path, int xCoord, int yCoord) {
-    return new SDLBullet(gRenderer, SCREEN_WIDTH, SCREEN_HEIGHT, path, xCoord, yCoord);
+    return new SDLBullet(SCREEN_WIDTH, SCREEN_HEIGHT, xCoord, yCoord, gRenderer, path);
 }
