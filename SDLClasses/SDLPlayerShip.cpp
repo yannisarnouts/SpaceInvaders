@@ -10,60 +10,42 @@
 SDLPlayerShip::SDLPlayerShip() {
 }
 
-SDLPlayerShip::SDLPlayerShip(SDL_Renderer *gRenderer, int width, int height, std::string imgPath) {
-    this->screenWidth = width;
-    this->shipWidth = width / 7;
-    this->shipHeight = height / 7;
-    this->xCoord = width / 2 - 50;
-    this->yCoord = height - (this->shipHeight + 10);
+SDLPlayerShip::SDLPlayerShip(int shipWidth, int shipHeight, SDL_Renderer *gRenderer, const std::string &imgPath)
+        : PlayerShip(shipWidth, shipHeight), gRenderer(gRenderer), imgPath(imgPath) {
+    this->screenWidth = shipWidth;
     this->gRenderer = gRenderer;
     this->imgPath = imgPath;
+    std::cout << this->getShipHeight();
     Texture *ssTexture = new Texture(gRenderer);
     texture = ssTexture;
     texture->loadFromFile(imgPath);
 }
 
-
 void SDLPlayerShip::Visualize() {
     moveShip();
-    SDL_Rect renderQuad = {xCoord, yCoord, shipWidth, shipHeight};
+    SDL_Rect renderQuad = {getXCoord(), getYCoord(), getShipWidth(), getShipHeight()};
     SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
-}
-
-int SDLPlayerShip::getXCoord() {
-    return xCoord;
-}
-
-int SDLPlayerShip::getYCoord() {
-    return yCoord;
-}
-
-int SDLPlayerShip::getWidth() {
-    return shipWidth;
-}
-
-int SDLPlayerShip::getHeight() {
-    return shipHeight;
 }
 
 void SDLPlayerShip::close() {
 
 }
+
 void SDLPlayerShip::moveShip() {
     int direction = keyHandler->directions();
-    if(xCoord >= (this->screenWidth - this->shipWidth)) {
+    if (getXCoord() >= (this->screenWidth + this->getShipWidth())) {
         if (direction == KeyP::LEFT) {
-            xCoord = xCoord - 5;
+            setXCoord(getXCoord()- 5);
         }
-    } else if (xCoord <= 0) {
+    } else if (getXCoord() <= 0) {
         if (direction == KeyP::RIGHT) {
-            xCoord = xCoord + 5;
+            setXCoord(getXCoord() + 5);
         }
     } else {
         if (direction == KeyP::LEFT) {
-            xCoord = xCoord - 5;
+            setXCoord(getXCoord()- 5);
         } else if (direction == KeyP::RIGHT) {
-            xCoord = xCoord + 5;
+            setXCoord(getXCoord() + 5);
         }
     }
 }

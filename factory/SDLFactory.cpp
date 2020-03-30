@@ -47,7 +47,7 @@ void SDLFactory::render() {
 }
 
 PlayerShip *SDLFactory::createPlayerShip(std::string path) {
-    return new SDLPlayerShip(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
+    return new SDLPlayerShip(SCREEN_WIDTH, SCREEN_HEIGHT, gRenderer, path);
 }
 
 void SDLFactory::close() {

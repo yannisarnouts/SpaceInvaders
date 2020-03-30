@@ -13,22 +13,16 @@
 class SDLPlayerShip : public PlayerShip {
 public:
     SDLPlayerShip();
-    SDLPlayerShip(SDL_Renderer *gRenderer, int shipWidth, int shipHeight, std::string imgPath);
+    SDLPlayerShip(int shipWidth, int shipHeight, SDL_Renderer *gRenderer, const std::string &imgPath);
     void Visualize() override;
     void close() override;
-    int getXCoord() override;
-    int getYCoord() override;
-    int getWidth() override;
-    int getHeight() override;
     void moveShip() override;
 
 private:
     SDL_Renderer* gRenderer;
     Texture* texture = NULL;
     std::string imgPath;
-    int shipWidth; int shipHeight;
     int screenWidth;
-    int xCoord; int yCoord;
     KeyHandler* keyHandler;
 };
 
