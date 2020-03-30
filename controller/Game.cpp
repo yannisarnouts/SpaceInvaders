@@ -18,11 +18,11 @@ void Game::Run() {
     while (A->pollEvents()) {
         bg->Visualize();
         playerShip->Visualize();
-        aliens->Visualize(100, AlienType::michiel);
-//        aliens->Visualize(200, AlienType::thomas);
-//        aliens->Visualize(300, AlienType::ruben);
-//        aliens->Visualize(400, AlienType::clifford);
-        canon->runCannon(shipPath,playerShip->getXCoord(), playerShip->getYCoord());
+        aliens->Visualize(AlienType::michiel);
+        aliens->Visualize(AlienType::thomas);
+        aliens->Visualize(AlienType::ruben);
+        aliens->Visualize(AlienType::clifford);
+        canon->runCannon();
         A->render();
     }
     bg->close();

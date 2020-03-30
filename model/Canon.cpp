@@ -18,14 +18,13 @@ Bullet *Canon::createBullet(std::string imgPath, int shipX, int shipY) {
     return bullet;
 }
 
-void Canon::runCannon(std::string imgPath, int shipX, int shipY) {
+void Canon::runCannon() {
     KeyHandler keyHandler;
     int direction = keyHandler.directions();
     if (direction == KeyP::UP && !shoot) {
         canonLength--;
+        Bullet* bullet = createBullet(this->imgPath, this->playerShip->getXCoord(), this->playerShip->getYCoord());
         this->bullets[canonLength]->setXCoord(this->playerShip->getXCoord());
-        this->firingBullets[nFiring] = this->bullets[canonLength];
-        nFiring++;
         shoot = true;
     }
     if (canonLength == 1) {
@@ -41,7 +40,6 @@ void Canon::fireCannon(Bullet *b) {
         shoot = false;
     }
     b->Visualize();
-
 }
 
 void Canon::loadCannon() {

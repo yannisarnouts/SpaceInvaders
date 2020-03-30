@@ -6,11 +6,73 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.cpp
+iostream
+-
+SDLAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+SDL2/SDL_render.h
+-
+../model/Alien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+../model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.h
+SDL2/SDL_render.h
+-
+string
+-
+../model/Background.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBullet.h
+SDL2/SDL_render.h
+-
+../model/Bullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
+../model/PlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+../controller/KeyHandler.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.cpp
+Game.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.h
+../model/Aliens.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.h
+../model/Canon.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.h
+string
+-
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
 KeyP.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.cpp
+AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../model/PlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 string
@@ -26,9 +88,73 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 ../model/Bullet.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.cpp
+SDLFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.h
+../SDLClasses/SDLPlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
+../SDLClasses/SDLBackground.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.h
+../SDLClasses/SDLAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+../SDLClasses/SDLBullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBullet.h
+SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+iostream
+-
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.h
+SDL2/SDL_video.h
+-
+SDL2/SDL_render.h
+-
+AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+../controller/KeyHandler.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+SDL2/SDL_render.h
+-
+string
+-
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/main.cpp
+iostream
+-
+factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+controller/Game.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.h
+factory/SDLFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.cpp
+iostream
+-
+Alien.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+AlienType.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.cpp
+iostream
+-
+Aliens.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.h
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
 

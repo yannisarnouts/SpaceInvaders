@@ -11,15 +11,15 @@
 class Aliens {
 public:
     Aliens(AbstractFactory *abstractFactory);
-    void Visualize(int y, AlienType alienType);
-    void VisualizeLeft(int y, AlienType alienType);
-    void VisualizeRight(int y, AlienType alienType);
+    void Visualize(AlienType alienType);
+    void VisualizeLeft(AlienType alienType);
+    void VisualizeRight(AlienType alienType);
     void createAliens(int number, AlienType alienType, std::string imgPath, int y);
     void moveAliens();
 
 private:
     AbstractFactory* abstractFactory;
-    Alien* aliens[4][3];
+    Alien* aliens[4][10];
     int yCoord;
 };
 

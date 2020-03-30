@@ -80,6 +80,7 @@ CMakeFiles/Project.dir/main.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.cpp
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/AlienType.h
 
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Alien.h

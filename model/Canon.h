@@ -12,7 +12,7 @@ class Canon {
 public:
     Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip);
     Bullet* createBullet(std::string imgPath, int shipX, int shipY);
-    void runCannon(std::string imgPath, int shipX, int shipY);
+    void runCannon();
     void fireCannon(Bullet* b);
     void loadCannon();
 private:

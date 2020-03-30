@@ -7,10 +7,10 @@
 
 Aliens::Aliens(AbstractFactory *abstractFactory) {
     this->abstractFactory = abstractFactory;
-    createAliens(3, AlienType::clifford, "../assets/cliff.png", 100);
-    createAliens(3, AlienType::ruben, "../assets/ruben.png", 200);
-    createAliens(3, AlienType::thomas, "../assets/thomas.png", 300);
-    createAliens(3, AlienType::michiel, "../assets/michiel.png", 400);
+    createAliens(10, AlienType::clifford, "../assets/cliff.png", 100);
+    createAliens(10, AlienType::ruben, "../assets/ruben.png", 200);
+    createAliens(10, AlienType::thomas, "../assets/thomas.png", 300);
+    createAliens(10, AlienType::michiel, "../assets/michiel.png", 400);
 }
 
 void Aliens::createAliens(int number, AlienType alienType, std::string imgPath, int y) {
@@ -32,13 +32,13 @@ void Aliens::createAliens(int number, AlienType alienType, std::string imgPath, 
     }
 }
 
-void Aliens::Visualize(int y, AlienType alienType) {
+void Aliens::Visualize(AlienType alienType) {
     int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
-    int length = sizeof(this->aliens[0]) / rows;
-    if (this->aliens[0][length]->isTurnLeft()) {
-        VisualizeLeft(y, alienType);
-    } else {
-        VisualizeRight(y, alienType);
+    int length = (sizeof(this->aliens[0]) / rows) - 1;
+    if (this->aliens[0][0]->isTurnLeft()) {
+        VisualizeLeft(alienType);
+    } else if(!this->aliens[0][0]->isTurnLeft()) {
+        VisualizeRight(alienType);
     }
 }
 
@@ -47,29 +47,39 @@ void Aliens::moveAliens() {
     int length = sizeof(this->aliens[3]) / rows;
     if (this->aliens[0][0]->isGoDown()) {
         for (int i = 0; i < length; i++) {
-            this->aliens[0][i]->setYCoord(this->aliens[0][i]->getYPos() + 1);
+            this->aliens[0][i]->setYCoord(this->aliens[0][i]->getYCoord() + 1);
         }
     }
 }
 
-void Aliens::VisualizeLeft(int y, AlienType alienType) {
+void Aliens::VisualizeLeft(AlienType alienType) {
     int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
     int length = sizeof(this->aliens[0]) / rows;
-    for (int i = length; i > 0; i--) {
+    for (int i = 0; i < length; i++) {
         if (alienType == AlienType::michiel) {
             this->aliens[0][i]->Visualize();
-//            moveAliens();
+        } else if (alienType == AlienType::ruben) {
+            this->aliens[1][i]->Visualize();
+        } else if (alienType == AlienType::clifford) {
+            this->aliens[2][i]->Visualize();
+        }else if (alienType == AlienType::thomas) {
+            this->aliens[3][i]->Visualize();
         }
     }
 }
 
-void Aliens::VisualizeRight(int y, AlienType alienType) {
+void Aliens::VisualizeRight(AlienType alienType) {
     int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
-    int length = sizeof(this->aliens[0]) / rows;
-    for (int i = length; i > 0; i--) {
+    int length = (sizeof(this->aliens[0]) / rows) - 1;
+    for (int i = length; i >= 0; i--) {
         if (alienType == AlienType::michiel) {
             this->aliens[0][i]->Visualize();
-//            moveAliens();
+        } else if (alienType == AlienType::ruben) {
+            this->aliens[1][i]->Visualize();
+        } else if (alienType == AlienType::clifford) {
+            this->aliens[2][i]->Visualize();
+        }else if (alienType == AlienType::thomas) {
+            this->aliens[3][i]->Visualize();
         }
     }
 }

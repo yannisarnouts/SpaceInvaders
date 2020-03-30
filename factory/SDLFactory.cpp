@@ -62,7 +62,7 @@ Background *SDLFactory::createBackground(std::string path) {
 }
 
 Alien *SDLFactory::createAlien(AlienType alienType, std::string path, int xPos, int yPos) {
-    return new SDLAlien(gRenderer, SCREEN_WIDTH, SCREEN_HEIGHT, path, alienType, xPos, yPos);
+    return new SDLAlien(SCREEN_WIDTH, SCREEN_HEIGHT, alienType ,xPos, yPos, gRenderer, path);
 }
 
 bool SDLFactory::pollEvents() {
