@@ -19,6 +19,7 @@ public:
     void VisualizeRight(AlienType alienType);
     void createAliens(int number, AlienType alienType, std::string imgPath, int y);
     void moveAliens();
+    void handleCollision(int i, int j, int length);
 
 private:
     AbstractFactory* abstractFactory;

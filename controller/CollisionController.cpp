@@ -8,10 +8,5 @@
 CollisionController::CollisionController() {}
 
 bool CollisionController::bulletObject(Bullet *bullet, int xPos, int yPos) {
-    if (bullet->getYCoord() == yPos && (bullet->getXCoord() >= xPos - 50 && bullet->getXCoord() <= xPos +50)) {
-        std::cout << "HIT";
-        return true;
-    } else {
-        return true;
-    }
+    return bullet->getYCoord() == yPos && (bullet->getXCoord() >= xPos - 50 && bullet->getXCoord() <= xPos + 50);
 }

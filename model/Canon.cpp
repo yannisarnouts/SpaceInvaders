@@ -54,7 +54,13 @@ void Canon::loadCannon() {
 }
 
 bool Canon::checkCollision(int xPos, int yPos) {
-    collisionController->bulletObject(currentBullet, xPos, yPos);
-    return true;
+    if (collisionController->bulletObject(currentBullet, xPos, yPos)) {
+        shoot = false;
+        this->currentBullet->setYCoord(0);
+        return true;
+    } else {
+        return false;
+    }
+//    return collisionController->bulletObject(currentBullet, xPos, yPos);
 }
 

@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Aliens.h"
 
-Aliens::Aliens(AbstractFactory *abstractFactory, Canon* canon) {
+Aliens::Aliens(AbstractFactory *abstractFactory, Canon *canon) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
     createAliens(10, AlienType::clifford, "../assets/cliff.png", 100);
@@ -32,10 +32,8 @@ void Aliens::createAliens(int number, AlienType alienType, std::string imgPath, 
         }
     }
 }
-
+//TODO: fix after shot
 void Aliens::Visualize(AlienType alienType) {
-    int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
-    int length = (sizeof(this->aliens[0]) / rows) - 1;
     if (this->aliens[0][0]->isTurnLeft()) {
         VisualizeLeft(alienType);
     } else if (!this->aliens[0][0]->isTurnLeft()) {
@@ -58,8 +56,11 @@ void Aliens::VisualizeLeft(AlienType alienType) {
     int length = sizeof(this->aliens[0]) / rows;
     for (int i = 0; i < length; i++) {
         if (alienType == AlienType::michiel) {
-            this->aliens[0][i]->Visualize();
-            canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord());
+            if (!canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+                this->aliens[0][i]->Visualize();
+            } else {
+                handleCollision(0, i, length);
+            }
         } else if (alienType == AlienType::ruben) {
             this->aliens[1][i]->Visualize();
         } else if (alienType == AlienType::clifford) {
@@ -75,8 +76,11 @@ void Aliens::VisualizeRight(AlienType alienType) {
     int length = (sizeof(this->aliens[0]) / rows) - 1;
     for (int i = length; i >= 0; i--) {
         if (alienType == AlienType::michiel) {
-            this->aliens[0][i]->Visualize();
-            canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord());
+            if (!canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+                this->aliens[0][i]->Visualize();
+            } else {
+                handleCollision(0, i, length);
+            }
         } else if (alienType == AlienType::ruben) {
             this->aliens[1][i]->Visualize();
         } else if (alienType == AlienType::clifford) {
@@ -84,5 +88,11 @@ void Aliens::VisualizeRight(AlienType alienType) {
         } else if (alienType == AlienType::thomas) {
             this->aliens[3][i]->Visualize();
         }
+    }
+}
+
+void Aliens::handleCollision(int i, int j, int length) {
+    for (int k = j; k < length; ++k) {
+        this->aliens[i][k-1] = this->aliens[i][k];
     }
 }
