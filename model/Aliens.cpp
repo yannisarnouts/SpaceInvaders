@@ -8,10 +8,15 @@
 Aliens::Aliens(AbstractFactory *abstractFactory, Canon *canon) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
-    createAliens(10, AlienType::clifford, "../assets/cliff.png", 100);
-    createAliens(10, AlienType::ruben, "../assets/ruben.png", 200);
-    createAliens(10, AlienType::thomas, "../assets/thomas.png", 300);
     createAliens(10, AlienType::michiel, "../assets/michiel.png", 400);
+    createAliens(10, AlienType::ruben, "../assets/ruben.png", 200);
+    createAliens(10, AlienType::clifford, "../assets/cliff.png", 100);
+    createAliens(10, AlienType::thomas, "../assets/thomas.png", 300);
+    int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
+    this->michielLength = sizeof(this->aliens[0]) / rows;;
+    this->rubenLength = sizeof(this->aliens[1]) / rows;;
+    this->cliffordLength = sizeof(this->aliens[2]) / rows;;
+    this->thomasLength = sizeof(this->aliens[3]) / rows;;
 }
 
 void Aliens::createAliens(int number, AlienType alienType, std::string imgPath, int y) {
@@ -32,12 +37,17 @@ void Aliens::createAliens(int number, AlienType alienType, std::string imgPath, 
         }
     }
 }
+
 //TODO: fix after shot
 void Aliens::Visualize(AlienType alienType) {
-    if (this->aliens[0][0]->isTurnLeft()) {
-        VisualizeLeft(alienType);
-    } else if (!this->aliens[0][0]->isTurnLeft()) {
-        VisualizeRight(alienType);
+    if (alienType == AlienType::michiel) {
+        VisualizeType(alienType, michielLength);
+    } else if (alienType == AlienType::ruben) {
+        VisualizeType(alienType, rubenLength);
+    } else if (alienType == AlienType::clifford) {
+        VisualizeType(alienType, cliffordLength);
+    } else if (alienType == AlienType::thomas) {
+        VisualizeType(alienType, thomasLength);
     }
 }
 
@@ -51,48 +61,47 @@ void Aliens::moveAliens() {
     }
 }
 
-void Aliens::VisualizeLeft(AlienType alienType) {
-    int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
-    int length = sizeof(this->aliens[0]) / rows;
+void Aliens::VisualizeType(AlienType alienType, int length) {
     for (int i = 0; i < length; i++) {
         if (alienType == AlienType::michiel) {
             if (!canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
                 this->aliens[0][i]->Visualize();
             } else {
-                handleCollision(0, i, length);
+                handleCollision(0, i, length, alienType);
             }
         } else if (alienType == AlienType::ruben) {
-            this->aliens[1][i]->Visualize();
-        } else if (alienType == AlienType::clifford) {
-            this->aliens[2][i]->Visualize();
-        } else if (alienType == AlienType::thomas) {
-            this->aliens[3][i]->Visualize();
-        }
-    }
-}
-
-void Aliens::VisualizeRight(AlienType alienType) {
-    int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
-    int length = (sizeof(this->aliens[0]) / rows) - 1;
-    for (int i = length; i >= 0; i--) {
-        if (alienType == AlienType::michiel) {
-            if (!canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
-                this->aliens[0][i]->Visualize();
+            if (!canon->checkCollision(this->aliens[1][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+                this->aliens[1][i]->Visualize();
             } else {
-                handleCollision(0, i, length);
+                handleCollision(1, i, length, alienType);
             }
-        } else if (alienType == AlienType::ruben) {
-            this->aliens[1][i]->Visualize();
         } else if (alienType == AlienType::clifford) {
-            this->aliens[2][i]->Visualize();
+            if (!canon->checkCollision(this->aliens[2][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+                this->aliens[2][i]->Visualize();
+            } else {
+                handleCollision(2, i, length, alienType);
+            }
         } else if (alienType == AlienType::thomas) {
-            this->aliens[3][i]->Visualize();
+            if (!canon->checkCollision(this->aliens[3][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+                this->aliens[3][i]->Visualize();
+            } else {
+                handleCollision(3, i, length, alienType);
+            }
         }
     }
 }
 
-void Aliens::handleCollision(int i, int j, int length) {
+void Aliens::handleCollision(int i, int j, int length, AlienType alienType) {
     for (int k = j; k < length; ++k) {
         this->aliens[i][k-1] = this->aliens[i][k];
+    }
+    if (alienType == AlienType::michiel) {
+        michielLength--;
+    } else if (alienType == AlienType::ruben) {
+        rubenLength--;
+    } else if (alienType == AlienType::clifford) {
+        cliffordLength--;
+    } else if (alienType == AlienType::thomas) {
+        thomasLength--;
     }
 }

@@ -15,17 +15,17 @@ class Aliens {
 public:
     Aliens(AbstractFactory *abstractFactory, Canon* canon);
     void Visualize(AlienType alienType);
-    void VisualizeLeft(AlienType alienType);
-    void VisualizeRight(AlienType alienType);
+    void VisualizeType(AlienType alienType, int length);
     void createAliens(int number, AlienType alienType, std::string imgPath, int y);
     void moveAliens();
-    void handleCollision(int i, int j, int length);
+    void handleCollision(int i, int j, int length, AlienType alienType);
 
 private:
     AbstractFactory* abstractFactory;
     Alien* aliens[4][10];
     int yCoord;
     Canon* canon;
+    int michielLength, thomasLength, rubenLength, cliffordLength;
 };
 
 

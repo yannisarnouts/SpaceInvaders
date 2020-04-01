@@ -61,6 +61,5 @@ bool Canon::checkCollision(int xPos, int yPos) {
     } else {
         return false;
     }
-//    return collisionController->bulletObject(currentBullet, xPos, yPos);
 }
 
