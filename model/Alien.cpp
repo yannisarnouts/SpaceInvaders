@@ -14,15 +14,8 @@ Alien::Alien(int xCoord, int yCoord, int width, int height, AlienType alienType)
     this->alienType = alienType;
 }
 
-void Alien::moveLeft() {
-    this->goDown = false;
-    if (this->turnLeft) {
-        this->setXCoord(getXCoord() - 2);
-    }
-    if (this->getXCoord() <= 0 - this->getWidth()) {
-        this->turnLeft = false;
-        this->goDown = true;
-    }
+void Alien::move() {
+    setXCoord(getXCoord() + (2* getMoveAlien()));
 }
 
 bool Alien::isGoDown() const {
@@ -39,4 +32,12 @@ bool Alien::isTurnLeft() const {
 
 void Alien::setTurnLeft(bool turnLeft) {
     Alien::turnLeft = turnLeft;
+}
+
+void Alien::setMoveAlien(int moveAlien) {
+    Alien::moveAlien = moveAlien;
+}
+
+int Alien::getMoveAlien() const {
+    return moveAlien;
 }

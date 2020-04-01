@@ -10,12 +10,6 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/con
 ../model/Bullet.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
-KeyP.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
-
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 string
 -
@@ -38,23 +32,27 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.cpp
+iostream
+-
+Aliens.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.h
+vector
+-
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+Canon.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
+../controller/CollisionController.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
 Entity.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.cpp
-iostream
--
-zconf.h
--
-Canon.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
-../controller/KeyHandler.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
-../controller/CollisionController.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
 ../factory/AbstractFactory.h

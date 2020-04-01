@@ -8,10 +8,10 @@
 Aliens::Aliens(AbstractFactory *abstractFactory, Canon *canon) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
-    createAliens(10, AlienType::michiel, "../assets/michiel.png", 400);
-    createAliens(10, AlienType::ruben, "../assets/ruben.png", 200);
-    createAliens(10, AlienType::clifford, "../assets/cliff.png", 100);
-    createAliens(10, AlienType::thomas, "../assets/thomas.png", 300);
+    createAliens(9, AlienType::michiel, "../assets/michiel.png", 100);
+    createAliens(9, AlienType::ruben, "../assets/ruben.png", 200);
+    createAliens(9, AlienType::clifford, "../assets/cliff.png", 300);
+    createAliens(9, AlienType::thomas, "../assets/thomas.png", 400);
     int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
     this->michielLength = sizeof(this->aliens[0]) / rows;;
     this->rubenLength = sizeof(this->aliens[1]) / rows;;
@@ -51,13 +51,17 @@ void Aliens::Visualize(AlienType alienType) {
     }
 }
 
-void Aliens::moveAliens() {
-    int rows = sizeof(this->aliens) / sizeof(this->aliens[0]);
-    int length = sizeof(this->aliens[3]) / rows;
-    if (this->aliens[0][0]->isGoDown()) {
-        for (int i = 0; i < length; i++) {
-            this->aliens[0][i]->setYCoord(this->aliens[0][i]->getYCoord() + 1);
+void Aliens::moveAliens(int a, int length) {
+    for (int i = 0; i < length; ++i) {
+        int move = 0;
+        if (this->aliens[a][i]->getMoveAlien() > 0) {
+            move = -1;
+        } else {
+            move = 1;
         }
+        this->aliens[a][i]->setMoveAlien(move);
+//        this->aliens[a][i]->setYCoord(this->aliens[a][i]->getYCoord() + 1);
+        this->aliens[a][i]->setXCoord(this->aliens[a][i]->getXCoord());
     }
 }
 
@@ -65,24 +69,36 @@ void Aliens::VisualizeType(AlienType alienType, int length) {
     for (int i = 0; i < length; i++) {
         if (alienType == AlienType::michiel) {
             if (!canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+                if (this->aliens[0][i]->hitBoundary()) {
+                    moveAliens(0, michielLength);
+                }
                 this->aliens[0][i]->Visualize();
             } else {
                 handleCollision(0, i, length, alienType);
             }
         } else if (alienType == AlienType::ruben) {
-            if (!canon->checkCollision(this->aliens[1][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+            if (!canon->checkCollision(this->aliens[1][i]->getXCoord(), this->aliens[1][i]->getYCoord())) {
+                if (this->aliens[1][i]->hitBoundary()) {
+                    moveAliens(1, rubenLength);
+                }
                 this->aliens[1][i]->Visualize();
             } else {
                 handleCollision(1, i, length, alienType);
             }
         } else if (alienType == AlienType::clifford) {
-            if (!canon->checkCollision(this->aliens[2][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+            if (!canon->checkCollision(this->aliens[2][i]->getXCoord(), this->aliens[2][i]->getYCoord())) {
+                if (this->aliens[2][i]->hitBoundary()) {
+                    moveAliens(2, cliffordLength);
+                }
                 this->aliens[2][i]->Visualize();
             } else {
                 handleCollision(2, i, length, alienType);
             }
         } else if (alienType == AlienType::thomas) {
-            if (!canon->checkCollision(this->aliens[3][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+            if (!canon->checkCollision(this->aliens[3][i]->getXCoord(), this->aliens[3][i]->getYCoord())) {
+                if (this->aliens[3][i]->hitBoundary()) {
+                    moveAliens(3, thomasLength);
+                }
                 this->aliens[3][i]->Visualize();
             } else {
                 handleCollision(3, i, length, alienType);
@@ -93,7 +109,7 @@ void Aliens::VisualizeType(AlienType alienType, int length) {
 
 void Aliens::handleCollision(int i, int j, int length, AlienType alienType) {
     for (int k = j; k < length; ++k) {
-        this->aliens[i][k-1] = this->aliens[i][k];
+        this->aliens[i][k - 1] = this->aliens[i][k];
     }
     if (alienType == AlienType::michiel) {
         michielLength--;

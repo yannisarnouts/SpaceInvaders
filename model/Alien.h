@@ -13,12 +13,18 @@ class Alien : public Entity {
 public:
     Alien();
     Alien(int xCoord, int yCoord, int width, int height, AlienType alienType);
+    virtual bool hitBoundary()=0;
     virtual void Visualize()=0;
     virtual void close()=0;
+    void move();
+    int getMoveAlien() const;
+
+    void setMoveAlien(int moveAlien);
 
 private:
     bool turnLeft = true; bool goDown = false;
     AlienType alienType;
+    int moveAlien;
 
 public:
     bool isGoDown() const;

@@ -18,7 +18,9 @@ public:
              const std::string &imgPath);
 
     void Visualize() override;
-    void moveRight();
+
+    bool hitBoundary() override;
+
     void close() override;
 
 
