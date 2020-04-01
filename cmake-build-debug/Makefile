@@ -230,6 +230,33 @@ SDLClasses/SDLPlayerShip.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.s
 .PHONY : SDLClasses/SDLPlayerShip.cpp.s
 
+controller/CollisionController.obj: controller/CollisionController.cpp.obj
+
+.PHONY : controller/CollisionController.obj
+
+# target to build an object file
+controller/CollisionController.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/CollisionController.cpp.obj
+.PHONY : controller/CollisionController.cpp.obj
+
+controller/CollisionController.i: controller/CollisionController.cpp.i
+
+.PHONY : controller/CollisionController.i
+
+# target to preprocess a source file
+controller/CollisionController.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/CollisionController.cpp.i
+.PHONY : controller/CollisionController.cpp.i
+
+controller/CollisionController.s: controller/CollisionController.cpp.s
+
+.PHONY : controller/CollisionController.s
+
+# target to generate assembly for a file
+controller/CollisionController.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/CollisionController.cpp.s
+.PHONY : controller/CollisionController.cpp.s
+
 controller/Game.obj: controller/Game.cpp.obj
 
 .PHONY : controller/Game.obj
@@ -602,6 +629,9 @@ help:
 	@echo ... SDLClasses/SDLPlayerShip.obj
 	@echo ... SDLClasses/SDLPlayerShip.i
 	@echo ... SDLClasses/SDLPlayerShip.s
+	@echo ... controller/CollisionController.obj
+	@echo ... controller/CollisionController.i
+	@echo ... controller/CollisionController.s
 	@echo ... controller/Game.obj
 	@echo ... controller/Game.i
 	@echo ... controller/Game.s

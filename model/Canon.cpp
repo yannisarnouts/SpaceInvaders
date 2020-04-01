@@ -6,8 +6,12 @@
 #include <zconf.h>
 #include "Canon.h"
 #include "../controller/KeyHandler.h"
+#include "../controller/CollisionController.h"
+
+Canon::Canon() {}
 
 Canon::Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
+    this->currentBullet = abstractFactory->createBullet("", 0, 0);
     this->abstractFactory = abstractFactory;
     this->playerShip = playerShip;
     this->loadCannon();
@@ -23,7 +27,6 @@ void Canon::runCannon() {
     int direction = keyHandler.directions();
     if (direction == KeyP::UP && !shoot) {
         canonLength--;
-        Bullet* bullet = createBullet(this->imgPath, this->playerShip->getXCoord(), this->playerShip->getYCoord());
         this->bullets[canonLength]->setXCoord(this->playerShip->getXCoord());
         shoot = true;
     }
@@ -36,10 +39,12 @@ void Canon::runCannon() {
 }
 
 void Canon::fireCannon(Bullet *b) {
+    this->currentBullet = b;
     if (b->getYCoord() <= 5) {
         shoot = false;
     }
     b->Visualize();
+    checkCollision(100, 100);
 }
 
 void Canon::loadCannon() {
@@ -47,3 +52,9 @@ void Canon::loadCannon() {
         bullets[i] = createBullet(this->imgPath, this->playerShip->getXCoord(), this->playerShip->getYCoord());
     }
 }
+
+bool Canon::checkCollision(int xPos, int yPos) {
+    collisionController->bulletObject(currentBullet, xPos, yPos);
+    return true;
+}
+

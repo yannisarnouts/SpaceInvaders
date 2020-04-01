@@ -5,8 +5,9 @@
 #include <iostream>
 #include "Aliens.h"
 
-Aliens::Aliens(AbstractFactory *abstractFactory) {
+Aliens::Aliens(AbstractFactory *abstractFactory, Canon* canon) {
     this->abstractFactory = abstractFactory;
+    this->canon = canon;
     createAliens(10, AlienType::clifford, "../assets/cliff.png", 100);
     createAliens(10, AlienType::ruben, "../assets/ruben.png", 200);
     createAliens(10, AlienType::thomas, "../assets/thomas.png", 300);
@@ -37,7 +38,7 @@ void Aliens::Visualize(AlienType alienType) {
     int length = (sizeof(this->aliens[0]) / rows) - 1;
     if (this->aliens[0][0]->isTurnLeft()) {
         VisualizeLeft(alienType);
-    } else if(!this->aliens[0][0]->isTurnLeft()) {
+    } else if (!this->aliens[0][0]->isTurnLeft()) {
         VisualizeRight(alienType);
     }
 }
@@ -58,11 +59,12 @@ void Aliens::VisualizeLeft(AlienType alienType) {
     for (int i = 0; i < length; i++) {
         if (alienType == AlienType::michiel) {
             this->aliens[0][i]->Visualize();
+            canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord());
         } else if (alienType == AlienType::ruben) {
             this->aliens[1][i]->Visualize();
         } else if (alienType == AlienType::clifford) {
             this->aliens[2][i]->Visualize();
-        }else if (alienType == AlienType::thomas) {
+        } else if (alienType == AlienType::thomas) {
             this->aliens[3][i]->Visualize();
         }
     }
@@ -74,13 +76,13 @@ void Aliens::VisualizeRight(AlienType alienType) {
     for (int i = length; i >= 0; i--) {
         if (alienType == AlienType::michiel) {
             this->aliens[0][i]->Visualize();
+            canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord());
         } else if (alienType == AlienType::ruben) {
             this->aliens[1][i]->Visualize();
         } else if (alienType == AlienType::clifford) {
             this->aliens[2][i]->Visualize();
-        }else if (alienType == AlienType::thomas) {
+        } else if (alienType == AlienType::thomas) {
             this->aliens[3][i]->Visualize();
         }
     }
 }
-

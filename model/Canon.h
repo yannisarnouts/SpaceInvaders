@@ -7,22 +7,26 @@
 
 
 #include "../factory/AbstractFactory.h"
+#include "../controller/CollisionController.h"
 
 class Canon {
 public:
+    Canon();
     Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip);
     Bullet* createBullet(std::string imgPath, int shipX, int shipY);
     void runCannon();
     void fireCannon(Bullet* b);
     void loadCannon();
+    bool checkCollision(int xPos, int yPos);
 private:
     AbstractFactory* abstractFactory;
     std::string imgPath = "../assets/bullet.png";
     PlayerShip* playerShip;
-    int shipX; int shipY;
-    Bullet* bullets[100]; Bullet* firingBullets[100];
-    int canonLength = 100, nFiring = 0;
+    Bullet* bullets[100];
+    int canonLength = 100;
+    Bullet* currentBullet;
     bool shoot = false;
+    CollisionController* collisionController = new CollisionController();
 };
 
 

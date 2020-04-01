@@ -6,11 +6,14 @@
 #define PROJECT_ALIENS_H
 
 
+#include <vector>
 #include "../factory/AbstractFactory.h"
+#include "Canon.h"
+#include "../controller/CollisionController.h"
 
 class Aliens {
 public:
-    Aliens(AbstractFactory *abstractFactory);
+    Aliens(AbstractFactory *abstractFactory, Canon* canon);
     void Visualize(AlienType alienType);
     void VisualizeLeft(AlienType alienType);
     void VisualizeRight(AlienType alienType);
@@ -21,6 +24,7 @@ private:
     AbstractFactory* abstractFactory;
     Alien* aliens[4][10];
     int yCoord;
+    Canon* canon;
 };
 
 

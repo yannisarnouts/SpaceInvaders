@@ -1,6 +1,7 @@
 //
 // Created by Gebruiker on 3/03/2020.
 //
+#include <iostream>
 #include "Game.h"
 #include "../model/Aliens.h"
 #include "../model/Canon.h"
@@ -13,8 +14,8 @@ void Game::Run() {
     A->init();
     Background *bg = A->createBackground(bgPath);
     PlayerShip *playerShip = A->createPlayerShip(shipPath);
-    Aliens* aliens = new Aliens(this->A);
     Canon* canon = new Canon(this->A, playerShip);
+    Aliens* aliens = new Aliens(this->A, canon);
     while (A->pollEvents()) {
         bg->Visualize();
         playerShip->Visualize();
@@ -23,6 +24,7 @@ void Game::Run() {
         aliens->Visualize(AlienType::ruben);
         aliens->Visualize(AlienType::clifford);
         canon->runCannon();
+//        canon->checkCollision(100, 100);
         A->render();
     }
     bg->close();

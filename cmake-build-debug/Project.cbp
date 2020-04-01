@@ -104,6 +104,12 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.cpp">
 			<Option target="Project"/>
 		</Unit>

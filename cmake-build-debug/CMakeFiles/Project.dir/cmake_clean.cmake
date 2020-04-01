@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj"
   "CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj"
   "CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj"
+  "CMakeFiles/Project.dir/controller/CollisionController.cpp.obj"
   "CMakeFiles/Project.dir/controller/Game.cpp.obj"
   "CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj"
   "CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj"

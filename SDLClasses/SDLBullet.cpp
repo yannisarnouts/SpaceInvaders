@@ -21,7 +21,6 @@ void SDLBullet::Visualize() {
     shootBullet();
     SDL_Rect renderQuad = {getXCoord(), getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
-//    SDL_RenderClear(renderer);
 }
 
 void SDLBullet::close() {

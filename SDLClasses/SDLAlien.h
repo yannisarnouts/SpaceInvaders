@@ -18,7 +18,7 @@ public:
              const std::string &imgPath);
 
     void Visualize() override;
-    void moveRight() override;
+    void moveRight();
     void close() override;
 
 
