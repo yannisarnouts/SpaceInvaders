@@ -24,7 +24,6 @@ void Game::Run() {
         aliens->Visualize(AlienType::ruben);
         aliens->Visualize(AlienType::clifford);
         canon->runCannon();
-//        canon->checkCollision(100, 100);
         A->render();
     }
     bg->close();

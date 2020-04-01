@@ -15,7 +15,7 @@ Alien::Alien(int xCoord, int yCoord, int width, int height, AlienType alienType)
 }
 
 void Alien::move() {
-    setXCoord(getXCoord() + (2* getMoveAlien()));
+    setXCoord(getXCoord() + (2 * getMoveAlien()));
 }
 
 bool Alien::isGoDown() const {

@@ -8,5 +8,6 @@
 CollisionController::CollisionController() {}
 
 bool CollisionController::bulletObject(Bullet *bullet, int xPos, int yPos) {
-    return bullet->getYCoord() == yPos && (bullet->getXCoord() >= xPos - 50 && bullet->getXCoord() <= xPos + 50);
+    return (bullet->getYCoord() >= yPos - 15 && bullet->getYCoord() <= yPos + 15) &&
+           (bullet->getXCoord() >= xPos - 15 && bullet->getXCoord() <= xPos + 15);
 }

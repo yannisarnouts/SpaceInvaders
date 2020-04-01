@@ -44,7 +44,6 @@ void Canon::fireCannon(Bullet *b) {
         shoot = false;
     }
     b->Visualize();
-    checkCollision(100, 100);
 }
 
 void Canon::loadCannon() {

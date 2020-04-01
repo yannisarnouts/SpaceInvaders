@@ -10,5 +10,5 @@ Bullet::Bullet(int xCoord, int yCoord, int width, int height) : Entity(xCoord, y
 }
 
 void Bullet::shootBullet() {
-    setYCoord(getYCoord() - 10);
+    setYCoord(getYCoord() - 15);
 }

@@ -22,10 +22,11 @@ public:
 
 private:
     AbstractFactory* abstractFactory;
-    Alien* aliens[4][9];
+//    Alien* aliens[4][10];
+    std::vector<std::vector<Alien* >> aliens;
     int yCoord;
     Canon* canon;
-    int michielLength, thomasLength, rubenLength, cliffordLength;
+    int michielLength = 10, thomasLength = 10, rubenLength = 10, cliffordLength = 10;
 };
 
 
