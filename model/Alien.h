@@ -30,7 +30,7 @@ namespace Game {
 
     private:
         AlienType alienType;
-        int moveAlien;
+        int moveAlien = 1;
     };
 }
 

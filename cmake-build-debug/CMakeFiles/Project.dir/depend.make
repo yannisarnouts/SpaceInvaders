@@ -27,11 +27,25 @@ CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/PlayerShip.h
 
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.cpp
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/AlienCanon.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Canon.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/PlayerShip.h
+
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../controller/CollisionController.cpp
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/Entity.h
 
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/AlienManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.h
@@ -39,7 +53,6 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienCanon.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienType.h
-CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Aliens.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Canon.h
@@ -109,19 +122,6 @@ CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/PlayerShip.h
-
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../controller/CollisionController.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../factory/AbstractFactory.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Alien.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/AlienCanon.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/AlienType.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.cpp
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Background.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Bullet.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Canon.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Entity.h
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.cpp
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.h

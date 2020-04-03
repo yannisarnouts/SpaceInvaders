@@ -238,18 +238,18 @@ CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\SDLClasses\SDLBullet.cpp" -o CMakeFiles\Project.dir\SDLClasses\SDLBullet.cpp.s
 
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Project.dir/model/Aliens.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\model\Aliens.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Aliens.cpp"
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Project.dir/controller/AlienManager.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\controller\AlienManager.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\AlienManager.cpp"
 
-CMakeFiles/Project.dir/model/Aliens.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/model/Aliens.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Aliens.cpp" > CMakeFiles\Project.dir\model\Aliens.cpp.i
+CMakeFiles/Project.dir/controller/AlienManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/controller/AlienManager.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\AlienManager.cpp" > CMakeFiles\Project.dir\controller\AlienManager.cpp.i
 
-CMakeFiles/Project.dir/model/Aliens.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/model/Aliens.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Aliens.cpp" -o CMakeFiles\Project.dir\model\Aliens.cpp.s
+CMakeFiles/Project.dir/controller/AlienManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/controller/AlienManager.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\AlienManager.cpp" -o CMakeFiles\Project.dir\controller\AlienManager.cpp.s
 
 CMakeFiles/Project.dir/model/Canon.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Canon.cpp
@@ -332,7 +332,7 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj" \
 "CMakeFiles/Project.dir/model/Bullet.cpp.obj" \
 "CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj" \
-"CMakeFiles/Project.dir/model/Aliens.cpp.obj" \
+"CMakeFiles/Project.dir/controller/AlienManager.cpp.obj" \
 "CMakeFiles/Project.dir/model/Canon.cpp.obj" \
 "CMakeFiles/Project.dir/model/Entity.cpp.obj" \
 "CMakeFiles/Project.dir/controller/CollisionController.cpp.obj" \
@@ -356,7 +356,7 @@ Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj
 Project.exe: CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/Bullet.cpp.obj
 Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj
-Project.exe: CMakeFiles/Project.dir/model/Aliens.cpp.obj
+Project.exe: CMakeFiles/Project.dir/controller/AlienManager.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/Canon.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/Entity.cpp.obj
 Project.exe: CMakeFiles/Project.dir/controller/CollisionController.cpp.obj

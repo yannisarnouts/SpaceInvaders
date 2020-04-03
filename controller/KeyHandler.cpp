@@ -16,7 +16,7 @@ KeyP Game::KeyHandler::directions() {
         return KeyP::LEFT;
     } else if (currentKeyStates[ SDL_SCANCODE_RIGHT ]) {
         return KeyP::RIGHT;
-    } else if (currentKeyStates [ SDL_SCANCODE_UP ]) {
+    } else if (currentKeyStates [ SDL_SCANCODE_SPACE ]) {
         return KeyP::UP;
     } else {
         return KeyP::NONE;

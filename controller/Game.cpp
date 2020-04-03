@@ -3,7 +3,7 @@
 //
 #include <iostream>
 #include "Game.h"
-#include "../model/Aliens.h"
+#include "../controller/AlienManager.h"
 
 Game::Game::Game(AbstractFactory *_A) {
     A = _A;
@@ -14,7 +14,7 @@ void Game::Game::Run() {
     Background *bg = A->createBackground(bgPath);
     PlayerShip *playerShip = A->createPlayerShip(shipPath);
     Canon* canon = new Canon(this->A, playerShip);
-    Aliens* aliens = new Aliens(this->A, canon);
+    AlienManager* aliens = new AlienManager(this->A, canon);
     while (A->pollEvents()) {
         bg->Visualize();
         playerShip->Visualize();

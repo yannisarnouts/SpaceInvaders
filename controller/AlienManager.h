@@ -3,30 +3,24 @@
 //
 
 #ifndef PROJECT_ALIENS_H
-#define PROJECT_ALIENS_H
+#define PROJECT_ALIENMANAGER_H
 
 
 #include <vector>
 #include "../factory/AbstractFactory.h"
-#include "Canon.h"
-#include "../controller/CollisionController.h"
-#include "AlienCanon.h"
+#include "../model/Canon.h"
+#include "CollisionController.h"
+#include "../model/AlienCanon.h"
 
 namespace Game {
-    class Aliens {
+    class AlienManager {
     public:
-        Aliens(AbstractFactory *abstractFactory, Canon *canon);
-
+        AlienManager(AbstractFactory *abstractFactory, Canon *canon);
         void Visualize(AlienType alienType);
-
         void VisualizeType(AlienType alienType, int length);
-
         void createAliens(int number, AlienType alienType, std::string imgPath, int y);
-
-        void moveAliens(int a, int length);
-
+        void moveAndCheck(int a, int length);
         void handleCollision(int i, int j, int length, AlienType alienType);
-
         void alienShoot(int i, int j);
 
     private:

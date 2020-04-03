@@ -230,6 +230,33 @@ SDLClasses/SDLPlayerShip.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.s
 .PHONY : SDLClasses/SDLPlayerShip.cpp.s
 
+controller/AlienManager.obj: controller/AlienManager.cpp.obj
+
+.PHONY : controller/AlienManager.obj
+
+# target to build an object file
+controller/AlienManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/AlienManager.cpp.obj
+.PHONY : controller/AlienManager.cpp.obj
+
+controller/AlienManager.i: controller/AlienManager.cpp.i
+
+.PHONY : controller/AlienManager.i
+
+# target to preprocess a source file
+controller/AlienManager.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/AlienManager.cpp.i
+.PHONY : controller/AlienManager.cpp.i
+
+controller/AlienManager.s: controller/AlienManager.cpp.s
+
+.PHONY : controller/AlienManager.s
+
+# target to generate assembly for a file
+controller/AlienManager.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/AlienManager.cpp.s
+.PHONY : controller/AlienManager.cpp.s
+
 controller/CollisionController.obj: controller/CollisionController.cpp.obj
 
 .PHONY : controller/CollisionController.obj
@@ -473,33 +500,6 @@ model/AlienCanon.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienCanon.cpp.s
 .PHONY : model/AlienCanon.cpp.s
 
-model/Aliens.obj: model/Aliens.cpp.obj
-
-.PHONY : model/Aliens.obj
-
-# target to build an object file
-model/Aliens.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Aliens.cpp.obj
-.PHONY : model/Aliens.cpp.obj
-
-model/Aliens.i: model/Aliens.cpp.i
-
-.PHONY : model/Aliens.i
-
-# target to preprocess a source file
-model/Aliens.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Aliens.cpp.i
-.PHONY : model/Aliens.cpp.i
-
-model/Aliens.s: model/Aliens.cpp.s
-
-.PHONY : model/Aliens.s
-
-# target to generate assembly for a file
-model/Aliens.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Aliens.cpp.s
-.PHONY : model/Aliens.cpp.s
-
 model/Background.obj: model/Background.cpp.obj
 
 .PHONY : model/Background.obj
@@ -683,6 +683,9 @@ help:
 	@echo ... SDLClasses/SDLPlayerShip.obj
 	@echo ... SDLClasses/SDLPlayerShip.i
 	@echo ... SDLClasses/SDLPlayerShip.s
+	@echo ... controller/AlienManager.obj
+	@echo ... controller/AlienManager.i
+	@echo ... controller/AlienManager.s
 	@echo ... controller/CollisionController.obj
 	@echo ... controller/CollisionController.i
 	@echo ... controller/CollisionController.s
@@ -710,9 +713,6 @@ help:
 	@echo ... model/AlienCanon.obj
 	@echo ... model/AlienCanon.i
 	@echo ... model/AlienCanon.s
-	@echo ... model/Aliens.obj
-	@echo ... model/Aliens.i
-	@echo ... model/Aliens.s
 	@echo ... model/Background.obj
 	@echo ... model/Background.i
 	@echo ... model/Background.s
