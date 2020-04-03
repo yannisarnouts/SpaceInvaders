@@ -4,12 +4,12 @@
 
 #include "Score.h"
 
-Score::Score() {}
+Game::Score::Score() {}
 
-int Score::getPoints() const {
+int Game::Score::getPoints() const {
     return points;
 }
 
-void Score::setPoints(int points) {
+void Game::Score::setPoints(int points) {
     Score::points = points;
 }

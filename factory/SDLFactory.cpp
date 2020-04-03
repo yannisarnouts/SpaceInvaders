@@ -7,6 +7,7 @@
 #include "../SDLClasses/SDLBackground.h"
 #include "../SDLClasses/SDLAlien.h"
 #include "../SDLClasses/SDLBullet.h"
+#include "../SDLClasses/SDLScore.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <iostream>
@@ -87,3 +88,4 @@ Game::Bullet *SDL::SDLFactory::createBullet(std::string path, int xCoord, int yC
     int bh = SCREEN_HEIGHT/30;
     return new SDLBullet(xCoord, yCoord, bw, bh, gRenderer, path);
 }
+

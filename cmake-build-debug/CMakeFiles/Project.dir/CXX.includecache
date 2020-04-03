@@ -6,27 +6,31 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.cpp
-iostream
--
-SDLAlien.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
+../model/Bullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
-SDL2/SDL_render.h
--
-../model/Alien.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
-../factory/Texture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
-../model/AlienType.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
+KeyP.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
-SDL2/SDL_render.h
--
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 string
 -
+../model/PlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
+../model/Background.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
+../model/Alien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+../model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+../model/Bullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+../model/Score.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
 AlienType.h
@@ -36,5 +40,31 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+Entity.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.cpp
+Canon.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
+../controller/KeyHandler.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../controller/CollisionController.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
+Score.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
+Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
 

@@ -8,6 +8,7 @@
 
 #include <SDL2/SDL_render.h>
 #include <string>
+
 class Texture {
 public:
     Texture(SDL_Renderer* renderer);

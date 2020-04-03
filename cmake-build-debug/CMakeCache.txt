@@ -247,6 +247,15 @@ Project_SOURCE_DIR:STATIC=C:/Users/Gebruiker/Documents/school/semester 2/program
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=C:/MinGW/lib/cmake/SDL2
 
+//The directory containing a CMake configuration file for SDL2_TTF.
+SDL2_TTF_DIR:PATH=SDL2_TTF_DIR-NOTFOUND
+
+//Path to a file.
+SDL_TTF_INCLUDE_DIR:PATH=SDL_TTF_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+SDL_TTF_LIBRARY:FILEPATH=SDL_TTF_LIBRARY-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries

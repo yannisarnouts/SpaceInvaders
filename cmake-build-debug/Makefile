@@ -230,6 +230,33 @@ SDLClasses/SDLPlayerShip.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.s
 .PHONY : SDLClasses/SDLPlayerShip.cpp.s
 
+SDLClasses/SDLScore.obj: SDLClasses/SDLScore.cpp.obj
+
+.PHONY : SDLClasses/SDLScore.obj
+
+# target to build an object file
+SDLClasses/SDLScore.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj
+.PHONY : SDLClasses/SDLScore.cpp.obj
+
+SDLClasses/SDLScore.i: SDLClasses/SDLScore.cpp.i
+
+.PHONY : SDLClasses/SDLScore.i
+
+# target to preprocess a source file
+SDLClasses/SDLScore.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.i
+.PHONY : SDLClasses/SDLScore.cpp.i
+
+SDLClasses/SDLScore.s: SDLClasses/SDLScore.cpp.s
+
+.PHONY : SDLClasses/SDLScore.s
+
+# target to generate assembly for a file
+SDLClasses/SDLScore.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.s
+.PHONY : SDLClasses/SDLScore.cpp.s
+
 controller/AlienManager.obj: controller/AlienManager.cpp.obj
 
 .PHONY : controller/AlienManager.obj
@@ -391,6 +418,33 @@ factory/SDLFactory.s: factory/SDLFactory.cpp.s
 factory/SDLFactory.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/SDLFactory.cpp.s
 .PHONY : factory/SDLFactory.cpp.s
+
+factory/TextTexture.obj: factory/TextTexture.cpp.obj
+
+.PHONY : factory/TextTexture.obj
+
+# target to build an object file
+factory/TextTexture.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/TextTexture.cpp.obj
+.PHONY : factory/TextTexture.cpp.obj
+
+factory/TextTexture.i: factory/TextTexture.cpp.i
+
+.PHONY : factory/TextTexture.i
+
+# target to preprocess a source file
+factory/TextTexture.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/TextTexture.cpp.i
+.PHONY : factory/TextTexture.cpp.i
+
+factory/TextTexture.s: factory/TextTexture.cpp.s
+
+.PHONY : factory/TextTexture.s
+
+# target to generate assembly for a file
+factory/TextTexture.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/factory/TextTexture.cpp.s
+.PHONY : factory/TextTexture.cpp.s
 
 factory/Texture.obj: factory/Texture.cpp.obj
 
@@ -683,6 +737,9 @@ help:
 	@echo ... SDLClasses/SDLPlayerShip.obj
 	@echo ... SDLClasses/SDLPlayerShip.i
 	@echo ... SDLClasses/SDLPlayerShip.s
+	@echo ... SDLClasses/SDLScore.obj
+	@echo ... SDLClasses/SDLScore.i
+	@echo ... SDLClasses/SDLScore.s
 	@echo ... controller/AlienManager.obj
 	@echo ... controller/AlienManager.i
 	@echo ... controller/AlienManager.s
@@ -701,6 +758,9 @@ help:
 	@echo ... factory/SDLFactory.obj
 	@echo ... factory/SDLFactory.i
 	@echo ... factory/SDLFactory.s
+	@echo ... factory/TextTexture.obj
+	@echo ... factory/TextTexture.i
+	@echo ... factory/TextTexture.s
 	@echo ... factory/Texture.obj
 	@echo ... factory/Texture.i
 	@echo ... factory/Texture.s

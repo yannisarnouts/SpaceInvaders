@@ -8,6 +8,7 @@
 
 #include "../factory/AbstractFactory.h"
 #include "../controller/CollisionController.h"
+#include "Score.h"
 
 namespace Game {
     class Canon {
@@ -35,6 +36,7 @@ namespace Game {
         Bullet *currentBullet;
         bool shoot = false;
         CollisionController *collisionController = new CollisionController();
+        Score* score = new Score();
     };
 }
 

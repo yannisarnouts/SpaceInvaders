@@ -12,6 +12,7 @@
 #include "../model/Alien.h"
 #include "../model/AlienType.h"
 #include "../model/Bullet.h"
+#include "../model/Score.h"
 
 namespace Game {
     class AbstractFactory {

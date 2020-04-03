@@ -104,6 +104,12 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLScore.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLScore.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -141,6 +147,12 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TextTexture.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TextTexture.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.cpp">
