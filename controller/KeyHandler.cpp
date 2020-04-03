@@ -6,10 +6,10 @@
 #include <iostream>
 #include "KeyHandler.h"
 
-KeyHandler::KeyHandler() {
+Game::KeyHandler::KeyHandler() {
 }
 
-KeyP KeyHandler::directions() {
+KeyP Game::KeyHandler::directions() {
     // get snapshot of current state keyboard: https://wiki.libsdl.org/SDL_GetKeyboardState
     const Uint8* currentKeyStates = SDL_GetKeyboardState( NULL );
     if( currentKeyStates[ SDL_SCANCODE_LEFT ] ){

@@ -7,12 +7,13 @@
 
 
 #include "../model/Bullet.h"
+namespace Game {
+    class CollisionController {
+    public:
+        CollisionController();
 
-class CollisionController {
-public:
-    CollisionController();
-    bool bulletObject(Bullet* bullet, int xPos, int yPos);
-};
-
+        bool bulletObject(Bullet *bullet, int xPos, int yPos);
+    };
+}
 
 #endif //PROJECT_COLLISIONCONTROLLER_H

@@ -5,9 +5,9 @@
 #include <iostream>
 #include "CollisionController.h"
 
-CollisionController::CollisionController() {}
+Game::CollisionController::CollisionController() {}
 
-bool CollisionController::bulletObject(Bullet *bullet, int xPos, int yPos) {
-    return (bullet->getYCoord() >= yPos - 15 && bullet->getYCoord() <= yPos + 15) &&
-           (bullet->getXCoord() >= xPos - 15 && bullet->getXCoord() <= xPos + 15);
+bool Game::CollisionController::bulletObject(Bullet *bullet, int xPos, int yPos) {
+    return (bullet->getYCoord() >= yPos - bullet->getHeight()/2 && bullet->getYCoord() <= yPos + bullet->getHeight()/2) &&
+           (bullet->getXCoord() >= xPos - bullet->getHeight()/2 && bullet->getXCoord() <= xPos + bullet->getHeight()/2);
 }

@@ -9,21 +9,23 @@
 #include <string>
 #include "../factory/AbstractFactory.h"
 
-class Game {
-public:
-    Game(AbstractFactory *_A);
-    void Run();
+namespace Game {
+    class Game {
+    public:
+        Game(AbstractFactory *_A);
 
-private:
-    AbstractFactory *A;
-    std::string shipPath = "../assets/spaceship.png";
-    std::string bgPath = "../assets/bg.jpg";
-    std::string bulletPath = "../assets/bullet.png";
-    std::string michielAlien = "../assets/michiel.png";
-    std::string rubenAlien = "../assets/ruben.png";
-    std::string thomasAlien = "../assets/thomas.png";
-    std::string cliffAlien = "../assets/cliff.png";
-};
+        void Run();
 
+    private:
+        AbstractFactory *A;
+        std::string shipPath = "../assets/spaceship.png";
+        std::string bgPath = "../assets/bg.jpg";
+        std::string bulletPath = "../assets/bullet.png";
+        std::string michielAlien = "../assets/michiel.png";
+        std::string rubenAlien = "../assets/ruben.png";
+        std::string thomasAlien = "../assets/thomas.png";
+        std::string cliffAlien = "../assets/cliff.png";
+    };
+}
 
 #endif //PROJECT_GAME_H

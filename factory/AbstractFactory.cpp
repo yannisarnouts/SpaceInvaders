@@ -3,6 +3,5 @@
 //
 
 #include "AbstractFactory.h"
-#include "../model/PlayerShip.h"
 
-AbstractFactory::AbstractFactory() {}
+Game::AbstractFactory::AbstractFactory() {}

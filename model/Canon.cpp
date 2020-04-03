@@ -2,27 +2,24 @@
 // Created by Gebruiker on 18/03/2020.
 //
 
-#include <iostream>
-#include <zconf.h>
 #include "Canon.h"
 #include "../controller/KeyHandler.h"
-#include "../controller/CollisionController.h"
 
-Canon::Canon() {}
+Game::Canon::Canon() {}
 
-Canon::Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
+Game::Canon::Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
     this->currentBullet = abstractFactory->createBullet("", 0, 0);
     this->abstractFactory = abstractFactory;
     this->playerShip = playerShip;
     this->loadCannon();
 }
 
-Bullet *Canon::createBullet(std::string imgPath, int shipX, int shipY) {
+Game::Bullet* Game::Canon::createBullet(std::string imgPath, int shipX, int shipY) {
     Bullet *bullet = abstractFactory->createBullet(imgPath, shipX, shipY);
     return bullet;
 }
 
-void Canon::runCannon() {
+void Game::Canon::runCannon() {
     KeyHandler keyHandler;
     int direction = keyHandler.directions();
     if (direction == KeyP::UP && !shoot) {
@@ -38,7 +35,7 @@ void Canon::runCannon() {
     }
 }
 
-void Canon::fireCannon(Bullet *b) {
+void Game::Canon::fireCannon(Bullet *b) {
     this->currentBullet = b;
     if (b->getYCoord() <= 5) {
         shoot = false;
@@ -46,13 +43,13 @@ void Canon::fireCannon(Bullet *b) {
     b->Visualize();
 }
 
-void Canon::loadCannon() {
+void Game::Canon::loadCannon() {
     for (int i = 0; i < 100; ++i) {
         bullets[i] = createBullet(this->imgPath, this->playerShip->getXCoord(), this->playerShip->getYCoord());
     }
 }
 
-bool Canon::checkCollision(int xPos, int yPos) {
+bool Game::Canon::checkCollision(int xPos, int yPos) {
     if (collisionController->bulletObject(currentBullet, xPos, yPos)) {
         shoot = false;
         this->currentBullet->setYCoord(0);

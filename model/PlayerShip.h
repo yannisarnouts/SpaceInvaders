@@ -8,14 +8,19 @@
 
 #include "Entity.h"
 
-class PlayerShip : public Entity{
-public:
-    PlayerShip();
-    PlayerShip(int xCoord, int yCoord, int width, int height);
-    virtual void Visualize()=0;
-    virtual void close()=0;
-    virtual void moveShip()=0;
-};
+namespace Game {
+    class PlayerShip : public Entity {
+    public:
+        PlayerShip();
 
+        PlayerShip(int xCoord, int yCoord, int width, int height);
+
+        virtual void Visualize() = 0;
+
+        virtual void close() = 0;
+
+        virtual void moveShip() = 0;
+    };
+}
 
 #endif //PROJECT_PLAYERSHIP_H

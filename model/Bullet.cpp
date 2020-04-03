@@ -4,11 +4,11 @@
 
 #include "Bullet.h"
 
-Bullet::Bullet() {}
+Game::Bullet::Bullet() {}
 
-Bullet::Bullet(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {
+Game::Bullet::Bullet(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {
 }
 
-void Bullet::shootBullet() {
+void Game::Bullet::shootBullet() {
     setYCoord(getYCoord() - 15);
 }

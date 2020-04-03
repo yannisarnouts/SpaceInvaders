@@ -6,7 +6,7 @@
 #include "../factory/Texture.h"
 
 
-SDLBackground::SDLBackground(SDL_Renderer *renderer, int screenW, int screenH,
+SDL::SDLBackground::SDLBackground(SDL_Renderer *renderer, int screenW, int screenH,
                              const std::string &imgPath) {
     this->screenW = screenW;
     this->screenH = screenH;
@@ -17,12 +17,12 @@ SDLBackground::SDLBackground(SDL_Renderer *renderer, int screenW, int screenH,
     texture->loadFromFile(imgPath);
 }
 
-void SDLBackground::Visualize() {
+void SDL::SDLBackground::Visualize() {
     SDL_RenderClear(renderer);
     SDL_Rect renderQuad = {0, 0,screenW, screenH};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDLBackground::close() {
+void SDL::SDLBackground::close() {
     Background::close();
 }

@@ -4,11 +4,11 @@
 
 #include <iostream>
 #include "PlayerShip.h"
-PlayerShip::PlayerShip() {
+Game::PlayerShip::PlayerShip() {
 
 }
 
-void PlayerShip::moveShip() {}
+void Game::PlayerShip::moveShip() {}
 
-PlayerShip::PlayerShip(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {
+Game::PlayerShip::PlayerShip(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {
 }

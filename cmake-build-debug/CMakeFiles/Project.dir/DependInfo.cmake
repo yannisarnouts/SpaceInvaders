@@ -16,12 +16,14 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/factory/Texture.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/main.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Alien.cpp.obj"
+  "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/AlienCanon.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Aliens.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Aliens.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Background.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Bullet.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Canon.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Entity.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/PlayerShip.cpp.obj"
+  "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Score.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

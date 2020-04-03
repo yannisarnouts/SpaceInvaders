@@ -9,32 +9,29 @@
 #include "AlienType.h"
 #include "Entity.h"
 
-class Alien : public Entity {
-public:
-    Alien();
-    Alien(int xCoord, int yCoord, int width, int height, AlienType alienType);
-    virtual bool hitBoundary()=0;
-    virtual void Visualize()=0;
-    virtual void close()=0;
-    void move();
-    int getMoveAlien() const;
+namespace Game {
+    class Alien : public Entity {
+    public:
+        Alien();
 
-    void setMoveAlien(int moveAlien);
+        Alien(int xCoord, int yCoord, int width, int height, AlienType alienType);
 
-private:
-    bool turnLeft = true; bool goDown = false;
-    AlienType alienType;
-    int moveAlien;
+        virtual bool hitBoundary() = 0;
 
-public:
-    bool isGoDown() const;
-    void setGoDown(bool goDown);
-    bool isTurnLeft() const;
+        virtual void Visualize() = 0;
 
-    void setTurnLeft(bool turnLeft);
+        virtual void close() = 0;
 
-    void moveLeft();
-};
+        void move();
 
+        int getMoveAlien() const;
+
+        void setMoveAlien(int moveAlien);
+
+    private:
+        AlienType alienType;
+        int moveAlien;
+    };
+}
 
 #endif //PROJECT_ALIEN_H

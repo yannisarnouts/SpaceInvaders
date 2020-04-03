@@ -5,9 +5,9 @@
 #include <iostream>
 #include "Entity.h"
 
-Entity::Entity() {}
+Game::Entity::Entity() {}
 
-Entity::Entity(int xCoord, int yCoord, int width, int height) : xCoord(xCoord), yCoord(yCoord), width(width),
+Game::Entity::Entity(int xCoord, int yCoord, int width, int height) : xCoord(xCoord), yCoord(yCoord), width(width),
                                                                 height(height) {
     this->yCoord = yCoord;
     this->xCoord = xCoord;
@@ -15,36 +15,36 @@ Entity::Entity(int xCoord, int yCoord, int width, int height) : xCoord(xCoord), 
     this->height = height;
 }
 
-int Entity::getWidth() const {
+int Game::Entity::getWidth() const {
     return width;
 }
 
-void Entity::setWidth(int width) {
+void Game::Entity::setWidth(int width) {
     Entity::width = width;
 }
 
-int Entity::getHeight() const {
+int Game::Entity::getHeight() const {
     return height;
 }
 
-void Entity::setHeight(int height) {
+void Game::Entity::setHeight(int height) {
     Entity::height = height;
 }
 
 
-int Entity::getXCoord() const {
+int Game::Entity::getXCoord() const {
     return xCoord;
 }
 
-void Entity::setXCoord(int xCoord) {
+void Game::Entity::setXCoord(int xCoord) {
     Entity::xCoord = xCoord;
 }
 
-int Entity::getYCoord() const {
+int Game::Entity::getYCoord() const {
     return yCoord;
 }
 
-void Entity::setYCoord(int yCoord) {
+void Game::Entity::setYCoord(int yCoord) {
     Entity::yCoord = yCoord;
 }
 

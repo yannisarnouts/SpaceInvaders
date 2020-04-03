@@ -4,13 +4,12 @@
 #include <iostream>
 #include "Game.h"
 #include "../model/Aliens.h"
-#include "../model/Canon.h"
 
-Game::Game(AbstractFactory *_A) {
+Game::Game::Game(AbstractFactory *_A) {
     A = _A;
 }
 
-void Game::Run() {
+void Game::Game::Run() {
     A->init();
     Background *bg = A->createBackground(bgPath);
     PlayerShip *playerShip = A->createPlayerShip(shipPath);

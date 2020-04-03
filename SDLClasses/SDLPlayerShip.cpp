@@ -7,9 +7,9 @@
 #include "SDLPlayerShip.h"
 #include "../factory/Texture.h"
 
-SDLPlayerShip::SDLPlayerShip() {
+SDL::SDLPlayerShip::SDLPlayerShip() {
 }
-SDLPlayerShip::SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer,
+SDL::SDLPlayerShip::SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer,
                              const std::string &imgPath) : PlayerShip(xCoord, yCoord, width, height),
                                                            gRenderer(gRenderer), imgPath(imgPath) {
     this->gRenderer = gRenderer;
@@ -19,17 +19,17 @@ SDLPlayerShip::SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_
     texture->loadFromFile(imgPath);
 }
 
-void SDLPlayerShip::Visualize() {
+void SDL::SDLPlayerShip::Visualize() {
     moveShip();
     SDL_Rect renderQuad = {getXCoord(), getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDLPlayerShip::close() {
+void SDL::SDLPlayerShip::close() {
 
 }
 
-void SDLPlayerShip::moveShip() {
+void SDL::SDLPlayerShip::moveShip() {
     int direction = keyHandler->directions();
     if (getXCoord() >= (this->SCREEN_WIDTH + this->getWidth())) {
         if (direction == KeyP::LEFT) {

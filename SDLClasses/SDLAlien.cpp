@@ -5,19 +5,19 @@
 #include <iostream>
 #include "SDLAlien.h"
 
-SDLAlien::SDLAlien() {}
+SDL::SDLAlien::SDLAlien() {}
 
-void SDLAlien::Visualize() {
+void SDL::SDLAlien::Visualize() {
     move();
     SDL_Rect renderQuad = {this->getXCoord() + 100, this->getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDLAlien::close() {
+void SDL::SDLAlien::close() {
 
 }
 
-SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer,
+SDL::SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer,
                    const std::string &imgPath) : Alien(xCoord, yCoord, width, height, alienType), renderer(renderer),
                                                  imgPath(imgPath) {
     this->renderer = renderer;
@@ -27,7 +27,7 @@ SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alie
     aTexture->loadFromFile(imgPath);
 }
 
-bool SDLAlien::hitBoundary() {
+bool SDL::SDLAlien::hitBoundary() {
     if (getXCoord() <= 0) {
         setXCoord(0);
         return true;

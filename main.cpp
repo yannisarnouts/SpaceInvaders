@@ -4,8 +4,8 @@
 #include "factory/SDLFactory.h"
 
 int main(int argv, char** args) {
-    AbstractFactory *A = new SDLFactory();
-    Game *game = new Game(A);
+    Game::AbstractFactory *A = new SDL::SDLFactory();
+    Game::Game *game = new Game::Game(A);
     game->Run();
     return 0;
 }

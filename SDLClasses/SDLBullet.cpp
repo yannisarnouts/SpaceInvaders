@@ -5,9 +5,9 @@
 #include <iostream>
 #include "SDLBullet.h"
 
-SDLBullet::SDLBullet() {}
+SDL::SDLBullet::SDLBullet() {}
 
-SDLBullet::SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer, const std::string &imgPath)
+SDL::SDLBullet::SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer, const std::string &imgPath)
         : Bullet(xCoord, yCoord, width, height), renderer(renderer), imgPath(imgPath) {
     this->renderer = renderer;
     this->imgPath = imgPath;
@@ -17,12 +17,12 @@ SDLBullet::SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer
     bTexture->loadFromFile(this->imgPath);
 }
 
-void SDLBullet::Visualize() {
+void SDL::SDLBullet::Visualize() {
     shootBullet();
     SDL_Rect renderQuad = {getXCoord(), getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDLBullet::close() {
+void SDL::SDLBullet::close() {
     this->texture->free();
 }

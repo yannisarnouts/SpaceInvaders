@@ -11,25 +11,27 @@
 #include "../factory/Texture.h"
 #include "../model/AlienType.h"
 
-class SDLAlien : public Alien {
-public:
-    SDLAlien();
-    SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer,
-             const std::string &imgPath);
+namespace SDL {
+    class SDLAlien : public Game::Alien {
+    public:
+        SDLAlien();
 
-    void Visualize() override;
+        SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer,
+                 const std::string &imgPath);
 
-    bool hitBoundary() override;
+        void Visualize() override;
 
-    void close() override;
+        bool hitBoundary() override;
+
+        void close() override;
 
 
-private:
-    SDL_Renderer* renderer;
-    Texture* texture = NULL;
-    std::string imgPath;
-    int SCREEN_WIDTH = 950;
-};
-
+    private:
+        SDL_Renderer *renderer;
+        Texture *texture = NULL;
+        std::string imgPath;
+        int SCREEN_WIDTH = 950;
+    };
+}
 
 #endif //PROJECT_SDLALIEN_H

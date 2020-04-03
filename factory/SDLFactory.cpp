@@ -11,9 +11,9 @@
 #include <SDL2/SDL_image.h>
 #include <iostream>
 
-SDLFactory::SDLFactory() {}
+SDL::SDLFactory::SDLFactory() {}
 
-void SDLFactory::init() {
+void SDL::SDLFactory::init() {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
     } else {
@@ -41,12 +41,12 @@ void SDLFactory::init() {
     }
 }
 
-void SDLFactory::render() {
+void SDL::SDLFactory::render() {
     //update the screen
     SDL_RenderPresent(gRenderer);
 }
 
-PlayerShip *SDLFactory::createPlayerShip(std::string path) {
+Game::PlayerShip *SDL::SDLFactory::createPlayerShip(std::string path) {
     int sh = SCREEN_HEIGHT / 7;
     int sw = SCREEN_WIDTH / 7;
     int xc = SCREEN_WIDTH/2 - 50;
@@ -54,24 +54,24 @@ PlayerShip *SDLFactory::createPlayerShip(std::string path) {
     return new SDLPlayerShip(xc, yc, sw, sh, gRenderer, path);
 }
 
-void SDLFactory::close() {
+void SDL::SDLFactory::close() {
     SDL_DestroyWindow(gWindow);
     gWindow = NULL;
     IMG_Quit();
     SDL_Quit();
 }
 
-Background *SDLFactory::createBackground(std::string path) {
+Background *SDL::SDLFactory::createBackground(std::string path) {
     return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
 }
 
-Alien *SDLFactory::createAlien(AlienType alienType, std::string path, int xPos, int yPos) {
+Game::Alien *SDL::SDLFactory::createAlien(AlienType alienType, std::string path, int xPos, int yPos) {
     int alienWidth = SCREEN_WIDTH / 15;
     int alienHeight = SCREEN_HEIGHT / 20;
     return new SDLAlien(xPos, yPos, alienWidth, alienHeight, alienType, gRenderer, path);
 }
 
-bool SDLFactory::pollEvents() {
+bool SDL::SDLFactory::pollEvents() {
     SDL_Event ev;
     bool play = true;
     while (SDL_PollEvent(&ev) != 0) {
@@ -82,7 +82,7 @@ bool SDLFactory::pollEvents() {
     return play;
 }
 
-Bullet *SDLFactory::createBullet(std::string path, int xCoord, int yCoord) {
+Game::Bullet *SDL::SDLFactory::createBullet(std::string path, int xCoord, int yCoord) {
     int bw = SCREEN_WIDTH/30;
     int bh = SCREEN_HEIGHT/30;
     return new SDLBullet(xCoord, yCoord, bw, bh, gRenderer, path);

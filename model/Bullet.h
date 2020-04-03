@@ -8,14 +8,19 @@
 
 #include "Entity.h"
 
-class Bullet : public Entity {
-public:
-    Bullet();
-    Bullet(int xCoord, int yCoord, int width, int height);
-    virtual void Visualize()=0;
-    virtual void close()=0;
-    void shootBullet();
-};
+namespace Game {
+    class Bullet : public Entity {
+    public:
+        Bullet();
 
+        Bullet(int xCoord, int yCoord, int width, int height);
+
+        virtual void Visualize() = 0;
+
+        virtual void close() = 0;
+
+        void shootBullet();
+    };
+}
 
 #endif //PROJECT_BULLET_H

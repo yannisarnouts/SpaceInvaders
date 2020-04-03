@@ -10,22 +10,28 @@
 #include "../factory/Texture.h"
 #include "../controller/KeyHandler.h"
 
-class SDLPlayerShip : public PlayerShip {
-public:
-    SDLPlayerShip();
-    SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer, const std::string &imgPath);
-    void Visualize() override;
-    void close() override;
-    void moveShip() override;
+namespace SDL {
+    class SDLPlayerShip : public Game::PlayerShip {
+    public:
+        SDLPlayerShip();
 
-private:
-    SDL_Renderer* gRenderer;
-    Texture* texture = NULL;
-    std::string imgPath;
-    int SCREEN_HEIGHT = 1280;
-    int SCREEN_WIDTH = 950;
-    KeyHandler* keyHandler;
-};
+        SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer,
+                      const std::string &imgPath);
 
+        void Visualize() override;
+
+        void close() override;
+
+        void moveShip() override;
+
+    private:
+        SDL_Renderer *gRenderer;
+        Texture *texture = NULL;
+        std::string imgPath;
+        int SCREEN_HEIGHT = 1280;
+        int SCREEN_WIDTH = 950;
+        Game::KeyHandler *keyHandler;
+    };
+}
 
 #endif //PROJECT_SDLPLAYERSHIP_H

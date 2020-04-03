@@ -446,6 +446,33 @@ model/Alien.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Alien.cpp.s
 .PHONY : model/Alien.cpp.s
 
+model/AlienCanon.obj: model/AlienCanon.cpp.obj
+
+.PHONY : model/AlienCanon.obj
+
+# target to build an object file
+model/AlienCanon.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienCanon.cpp.obj
+.PHONY : model/AlienCanon.cpp.obj
+
+model/AlienCanon.i: model/AlienCanon.cpp.i
+
+.PHONY : model/AlienCanon.i
+
+# target to preprocess a source file
+model/AlienCanon.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienCanon.cpp.i
+.PHONY : model/AlienCanon.cpp.i
+
+model/AlienCanon.s: model/AlienCanon.cpp.s
+
+.PHONY : model/AlienCanon.s
+
+# target to generate assembly for a file
+model/AlienCanon.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienCanon.cpp.s
+.PHONY : model/AlienCanon.cpp.s
+
 model/Aliens.obj: model/Aliens.cpp.obj
 
 .PHONY : model/Aliens.obj
@@ -608,6 +635,33 @@ model/PlayerShip.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/PlayerShip.cpp.s
 .PHONY : model/PlayerShip.cpp.s
 
+model/Score.obj: model/Score.cpp.obj
+
+.PHONY : model/Score.obj
+
+# target to build an object file
+model/Score.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Score.cpp.obj
+.PHONY : model/Score.cpp.obj
+
+model/Score.i: model/Score.cpp.i
+
+.PHONY : model/Score.i
+
+# target to preprocess a source file
+model/Score.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Score.cpp.i
+.PHONY : model/Score.cpp.i
+
+model/Score.s: model/Score.cpp.s
+
+.PHONY : model/Score.s
+
+# target to generate assembly for a file
+model/Score.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Score.cpp.s
+.PHONY : model/Score.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -653,6 +707,9 @@ help:
 	@echo ... model/Alien.obj
 	@echo ... model/Alien.i
 	@echo ... model/Alien.s
+	@echo ... model/AlienCanon.obj
+	@echo ... model/AlienCanon.i
+	@echo ... model/AlienCanon.s
 	@echo ... model/Aliens.obj
 	@echo ... model/Aliens.i
 	@echo ... model/Aliens.s
@@ -671,6 +728,9 @@ help:
 	@echo ... model/PlayerShip.obj
 	@echo ... model/PlayerShip.i
 	@echo ... model/PlayerShip.s
+	@echo ... model/Score.obj
+	@echo ... model/Score.i
+	@echo ... model/Score.s
 .PHONY : help
 
 

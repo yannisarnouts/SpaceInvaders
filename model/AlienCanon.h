@@ -1,20 +1,19 @@
 //
-// Created by Gebruiker on 18/03/2020.
+// Created by Gebruiker on 1/04/2020.
 //
 
-#ifndef PROJECT_CANON_H
-#define PROJECT_CANON_H
+#ifndef PROJECT_ALIENCANON_H
+#define PROJECT_ALIENCANON_H
 
 
 #include "../factory/AbstractFactory.h"
 #include "../controller/CollisionController.h"
-
 namespace Game {
-    class Canon {
+    class AlienCanon {
     public:
-        Canon();
+        AlienCanon();
 
-        Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip);
+        AlienCanon(AbstractFactory *abstractFactory, Alien *alien);
 
         Bullet *createBullet(std::string imgPath, int shipX, int shipY);
 
@@ -24,12 +23,10 @@ namespace Game {
 
         void loadCannon();
 
-        bool checkCollision(int xPos, int yPos);
-
     private:
         AbstractFactory *abstractFactory;
         std::string imgPath = "../assets/bullet.png";
-        PlayerShip *playerShip;
+        Alien *alien;
         Bullet *bullets[100];
         int canonLength = 100;
         Bullet *currentBullet;
@@ -38,4 +35,4 @@ namespace Game {
     };
 }
 
-#endif //PROJECT_CANON_H
+#endif //PROJECT_ALIENCANON_H

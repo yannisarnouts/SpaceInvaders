@@ -8,10 +8,12 @@
 
 #include "KeyP.h"
 
-class KeyHandler {
-public:
-    KeyHandler();
-    KeyP directions();
-};
+namespace Game {
+    class KeyHandler {
+    public:
+        KeyHandler();
 
+        KeyP directions();
+    };
+}
 #endif //PROJECT_KEYHANDLER_H

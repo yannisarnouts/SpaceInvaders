@@ -11,21 +11,22 @@
 #include "../model/Background.h"
 #include "../factory/Texture.h"
 
-class SDLBackground : public Background{
-public:
-    SDLBackground(SDL_Renderer *renderer, int screenW, int screenH, const std::string &imgPath);
+namespace SDL {
+    class SDLBackground : public Background {
+    public:
+        SDLBackground(SDL_Renderer *renderer, int screenW, int screenH, const std::string &imgPath);
 
-    void Visualize() override;
+        void Visualize() override;
 
-    void close() override;
+        void close() override;
 
-private:
-    SDL_Renderer* renderer;
-    Texture* texture = NULL;
-    int screenW;
-    int screenH;
-    std::string imgPath;
-};
-
+    private:
+        SDL_Renderer *renderer;
+        Texture *texture = NULL;
+        int screenW;
+        int screenH;
+        std::string imgPath;
+    };
+}
 
 #endif //PROJECT_SDLBACKGROUND_H

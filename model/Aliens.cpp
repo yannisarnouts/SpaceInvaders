@@ -2,10 +2,10 @@
 // Created by Gebruiker on 17/03/2020.
 //
 
-#include <iostream>
 #include "Aliens.h"
+#include "AlienCanon.h"
 
-Aliens::Aliens(AbstractFactory *abstractFactory, Canon *canon) {
+Game::Aliens::Aliens(AbstractFactory *abstractFactory, Canon *canon) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
     createAliens(michielLength, AlienType::michiel, "../assets/michiel.png", 100);
@@ -14,7 +14,7 @@ Aliens::Aliens(AbstractFactory *abstractFactory, Canon *canon) {
     createAliens(thomasLength, AlienType::thomas, "../assets/thomas.png", 400);
 }
 
-void Aliens::createAliens(int number, AlienType alienType, std::string imgPath, int y) {
+void Game::Aliens::createAliens(int number, AlienType alienType, std::string imgPath, int y) {
     aliens.reserve(4);
     aliens[0].reserve(number);
     for (int i = 0; i < number; i++) {
@@ -35,7 +35,7 @@ void Aliens::createAliens(int number, AlienType alienType, std::string imgPath, 
     }
 }
 
-void Aliens::Visualize(AlienType alienType) {
+void Game::Aliens::Visualize(AlienType alienType) {
     if (alienType == AlienType::michiel) {
         VisualizeType(alienType, michielLength);
     } else if (alienType == AlienType::ruben) {
@@ -45,9 +45,15 @@ void Aliens::Visualize(AlienType alienType) {
     } else if (alienType == AlienType::thomas) {
         VisualizeType(alienType, thomasLength);
     }
+    int randi = rand() % 4;
+    int randj = rand() % 10;
+    int randa = rand() % 100;
+    if (randa == 42) {
+        this->alienShoot(randi, randj);
+    }
 }
 
-void Aliens::moveAliens(int a, int length) {
+void Game::Aliens::moveAliens(int a, int length) {
     int move = 0;
     for (int i = 0; i < length; i++) {
         if (this->aliens[a][i]->getMoveAlien() > 0) {
@@ -56,12 +62,12 @@ void Aliens::moveAliens(int a, int length) {
             move = 1;
         }
         this->aliens[a][i]->setMoveAlien(move);
-        this->aliens[a][i]->setYCoord(this->aliens[a][i]->getYCoord() + 2);
+        this->aliens[a][i]->setYCoord(this->aliens[a][i]->getYCoord() + 4);
         this->aliens[a][i]->setXCoord(this->aliens[a][i]->getXCoord());
     }
 }
 
-void Aliens::VisualizeType(AlienType alienType, int length) {
+void Game::Aliens::VisualizeType(AlienType alienType, int length) {
     for (int i = 0; i < length; ++i) {
         if (alienType == AlienType::michiel) {
             if (this->aliens[0][i]->hitBoundary()) {
@@ -103,7 +109,7 @@ void Aliens::VisualizeType(AlienType alienType, int length) {
     }
 }
 
-void Aliens::handleCollision(int i, int j, int length, AlienType alienType) {
+void Game::Aliens::handleCollision(int i, int j, int length, AlienType alienType) {
     for (int k = j; k < length; ++k) {
         this->aliens[i][k - 1] = this->aliens[i][k];
     }
@@ -116,4 +122,9 @@ void Aliens::handleCollision(int i, int j, int length, AlienType alienType) {
     } else if (alienType == AlienType::thomas) {
         thomasLength--;
     }
+}
+
+void Game::Aliens::alienShoot(int i, int j) {
+    this->alienCanon = new AlienCanon(this->abstractFactory, this->aliens[i][j]);
+    this->alienCanon->runCannon();
 }

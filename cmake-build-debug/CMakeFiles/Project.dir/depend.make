@@ -37,6 +37,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienCanon.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Aliens.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Background.h
@@ -96,9 +97,23 @@ CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Entity.h
 
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../controller/KeyHandler.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../controller/KeyP.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/AlienCanon.cpp
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/AlienCanon.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/PlayerShip.h
+
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/AlienCanon.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.cpp
 CMakeFiles/Project.dir/model/Aliens.cpp.obj: ../model/Aliens.h
@@ -134,4 +149,7 @@ CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.cpp
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.h
+
+CMakeFiles/Project.dir/model/Score.cpp.obj: ../model/Score.cpp
+CMakeFiles/Project.dir/model/Score.cpp.obj: ../model/Score.h
 

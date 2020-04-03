@@ -10,21 +10,24 @@
 #include "../model/Bullet.h"
 #include "../factory/Texture.h"
 
-class SDLBullet : public Bullet {
-public:
-    SDLBullet();
-    SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer, const std::string &imgPath);
+namespace SDL {
+    class SDLBullet : public Game::Bullet {
+    public:
+        SDLBullet();
 
-    void close() override;
-    void Visualize() override ;
+        SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer, const std::string &imgPath);
 
-private:
-    SDL_Renderer* renderer;
-    Texture *texture = NULL;
-    std::string imgPath;
-    int screenHeight;
+        void close() override;
 
-};
+        void Visualize() override;
 
+    private:
+        SDL_Renderer *renderer;
+        Texture *texture = NULL;
+        std::string imgPath;
+        int screenHeight;
+
+    };
+}
 
 #endif //PROJECT_SDLBULLET_H
