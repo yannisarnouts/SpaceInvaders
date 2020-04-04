@@ -7,22 +7,21 @@
 
 #include <SDL2/SDL_render.h>
 #include "../model/Score.h"
-#include "../factory/Texture.h"
+#include "../factory/TextTexture.h"
 
 namespace SDL {
-//    : public Game::Score
-    class SDLScore {
+    class SDLScore: public Game::Score {
     public:
         SDLScore();
 
         SDLScore(SDL_Renderer *renderer);
 
-        void Visualize();
+        void Visualize() override ;
         void close();
 
     private:
         SDL_Renderer *renderer;
-        Texture *texture = NULL;
+        TextTexture *texture = NULL;
     };
 }
 

@@ -31,7 +31,6 @@ CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLScore.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLScore.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TextTexture.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.cpp
@@ -92,6 +91,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TextTexture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h

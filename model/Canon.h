@@ -36,7 +36,7 @@ namespace Game {
         Bullet *currentBullet;
         bool shoot = false;
         CollisionController *collisionController = new CollisionController();
-        Score* score = new Score();
+        Score* score;
     };
 }
 

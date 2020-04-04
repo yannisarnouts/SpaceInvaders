@@ -13,42 +13,28 @@
   <component name="ChangeListManager">
     <list default="true" id="b67584d3-261a-4ca7-91f0-7de9e876b73c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLScore.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLScore.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLScore.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLScore.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/AlienManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/AlienManager.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/Game.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/Game.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/Texture.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/Texture.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/TextTexture.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/TextTexture.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/linklibs.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/linklibs.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/model/Canon.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/model/Canon.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/model/PlayerShip.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/model/PlayerShip.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/model/Score.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/model/Score.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/factory/AbstractFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/factory/AbstractFactory.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/factory/SDLFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/factory/SDLFactory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factory/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/factory/Texture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factory/SDLFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/factory/SDLFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factory/TextTexture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/factory/TextTexture.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factory/TextTexture.h" beforeDir="false" afterPath="$PROJECT_DIR$/factory/TextTexture.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Canon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Canon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Canon.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/Canon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/PlayerShip.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/PlayerShip.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Score.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Score.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Score.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/Score.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,15 +69,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\assets" />
+      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\factory" />
+      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller" />
+      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\resources" />
+      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\assets" />
       <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller" />
-      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\assets" />
-      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\resources" />
-      <recent name="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,7 +160,9 @@
       <workItem from="1585925682038" duration="182000" />
       <workItem from="1585925961670" duration="2101000" />
       <workItem from="1585936247091" duration="2226000" />
-      <workItem from="1585940431962" duration="237000" />
+      <workItem from="1585940431962" duration="268000" />
+      <workItem from="1585992712814" duration="1123000" />
+      <workItem from="1585995929440" duration="2111000" />
     </task>
     <servers />
   </component>
@@ -181,11 +170,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1390" y="280" key="#com.intellij.ide.util.MemberChooser" timestamp="1585938195287">
+    <state x="1205" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585997754333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1205" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585997754333" />
+    <state x="1390" y="280" key="#com.intellij.ide.util.MemberChooser" timestamp="1585993213688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1390" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1585938195287" />
-    <state x="1390" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585924339533" />
+    <state x="1390" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585993213688" />
     <state x="1170" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585752775645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,30 +194,30 @@
     <state x="-1032" y="305" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1583867190402" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1584990158721" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585917145380" />
-    <state width="1877" height="132" key="GridCell.Tab.0.bottom" timestamp="1585940659749">
+    <state width="914" height="132" key="GridCell.Tab.0.bottom" timestamp="1585998151175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="144" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1585165491942" />
     <state width="1877" height="173" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1585938475250" />
-    <state width="1877" height="132" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585940659749" />
-    <state width="1877" height="132" key="GridCell.Tab.0.center" timestamp="1585940659749">
+    <state width="914" height="132" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585998151175" />
+    <state width="914" height="132" key="GridCell.Tab.0.center" timestamp="1585998151175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="144" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1585165491942" />
     <state width="1877" height="173" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1585938475250" />
-    <state width="1877" height="132" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585940659749" />
-    <state width="1877" height="132" key="GridCell.Tab.0.left" timestamp="1585940659749">
+    <state width="914" height="132" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585998151175" />
+    <state width="914" height="132" key="GridCell.Tab.0.left" timestamp="1585998151175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="144" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1585165491942" />
     <state width="1877" height="173" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1585938475250" />
-    <state width="1877" height="132" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585940659749" />
-    <state width="1877" height="132" key="GridCell.Tab.0.right" timestamp="1585940659749">
+    <state width="914" height="132" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585998151175" />
+    <state width="914" height="132" key="GridCell.Tab.0.right" timestamp="1585998151175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="144" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1585165491942" />
     <state width="1877" height="173" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1585938475250" />
-    <state width="1877" height="132" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585940659749" />
+    <state width="914" height="132" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585998151175" />
     <state width="1877" height="173" key="GridCell.Tab.1.bottom" timestamp="1585938475251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

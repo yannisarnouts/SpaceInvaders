@@ -9,6 +9,7 @@ Game::Canon::Canon() {}
 
 Game::Canon::Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
     this->currentBullet = abstractFactory->createBullet("", 0, 0);
+    this->score = abstractFactory->createScore();
     this->abstractFactory = abstractFactory;
     this->playerShip = playerShip;
     this->loadCannon();
@@ -33,6 +34,7 @@ void Game::Canon::runCannon() {
     if (shoot) {
         this->fireCannon(this->bullets[canonLength]);
     }
+    score->Visualize();
 }
 
 void Game::Canon::fireCannon(Bullet *b) {
@@ -54,7 +56,6 @@ bool Game::Canon::checkCollision(int xPos, int yPos) {
         shoot = false;
         this->currentBullet->setYCoord(0);
         score->setPoints(score->getPoints() + 1);
-        printf("%d ", score->getPoints());
         return true;
     } else {
         return false;

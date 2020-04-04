@@ -11,7 +11,7 @@ namespace Game {
         Score();
         int getPoints() const;
         void setPoints(int points);
-//        virtual void Visualize() = 0;
+        virtual void Visualize() = 0;
 //        virtual void close() = 0;
     private:
         int points = 0;

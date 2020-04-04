@@ -14,9 +14,14 @@ TextTexture::TextTexture(SDL_Renderer *renderer) : renderer(renderer) {
 bool TextTexture::loadTexture(std::string text) {
     bool ret = false;
     SDL_Texture *newTexture = NULL;
-    SDL_Surface* tmpSurface; // = TTF_RenderText_Solid(gFont, text.c_str(), { 0, 0, 0 });
+    gFont = TTF_OpenFont("../assets/Arial.ttf", 25);
+    if (gFont == NULL) {
+        printf("failed to load font, error:  %s", gFont);
+    }
+    SDL_Color color = {255, 255, 255};
+    SDL_Surface *tmpSurface = TTF_RenderText_Solid(gFont, text.c_str(), color);
     if (tmpSurface == NULL) {
-        printf("Unable to load image from %s", text.c_str());
+        printf("Unable to load %s", text.c_str());
         ret = false;
     } else {
         newTexture = SDL_CreateTextureFromSurface(renderer, tmpSurface);
@@ -31,6 +36,7 @@ bool TextTexture::loadTexture(std::string text) {
         }
         SDL_FreeSurface(tmpSurface);
     }
+    texture = newTexture;
     return false;
 }
 
@@ -39,4 +45,8 @@ void TextTexture::free() {
     texture = NULL;
     width = 0;
     height = 0;
+}
+
+SDL_Texture *TextTexture::getTexture() const {
+    return texture;
 }

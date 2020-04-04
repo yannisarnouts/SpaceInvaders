@@ -25,6 +25,8 @@ namespace SDL {
 
         Game::Bullet *createBullet(std::string path, int xCoord, int yCoord) override;
 
+        Game::Score *createScore() override;
+
         Background *createBackground(std::string path) override;
 
         bool pollEvents() override;

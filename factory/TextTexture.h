@@ -15,6 +15,9 @@ public:
     TextTexture();
     TextTexture(SDL_Renderer *renderer);
     bool loadTexture(std::string text);
+
+    SDL_Texture *getTexture() const;
+
     void free();
 
 private:

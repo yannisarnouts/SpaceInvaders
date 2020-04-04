@@ -30,7 +30,6 @@ CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../SDLClasses/SDLScore.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../SDLClasses/SDLScore.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../factory/TextTexture.h
-CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../model/Score.h
 
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.cpp
@@ -91,6 +90,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/SDLFactory.cpp
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/SDLFactory.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/TextTexture.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/AlienType.h
