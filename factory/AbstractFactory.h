@@ -13,6 +13,7 @@
 #include "../model/AlienType.h"
 #include "../model/Bullet.h"
 #include "../model/Score.h"
+#include "../model/AlienBullet.h"
 
 namespace Game {
     class AbstractFactory {
@@ -24,6 +25,7 @@ namespace Game {
         virtual Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) = 0;
 
         virtual Bullet *createBullet(std::string path, int xCoord, int yCoord) = 0;
+        virtual AlienBullet* createAlienBullet(std::string path, int xCoord, int yCoord)=0;
         virtual Score *createScore() = 0;
         virtual Background *createBackground(std::string path) = 0;
 

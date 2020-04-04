@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -168,6 +174,12 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.cpp">

@@ -31,7 +31,7 @@ namespace Game {
         AbstractFactory *abstractFactory;
         std::string imgPath = "../assets/bullet.png";
         PlayerShip *playerShip;
-        Bullet *bullets[100];
+        Bullet *bullets[200];
         int canonLength = 100;
         Bullet *currentBullet;
         bool shoot = false;

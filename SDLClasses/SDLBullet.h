@@ -26,7 +26,6 @@ namespace SDL {
         Texture *texture = NULL;
         std::string imgPath;
         int screenHeight;
-
     };
 }
 

@@ -149,6 +149,33 @@ SDLClasses/SDLAlien.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.s
 .PHONY : SDLClasses/SDLAlien.cpp.s
 
+SDLClasses/SDLAlienBullet.obj: SDLClasses/SDLAlienBullet.cpp.obj
+
+.PHONY : SDLClasses/SDLAlienBullet.obj
+
+# target to build an object file
+SDLClasses/SDLAlienBullet.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj
+.PHONY : SDLClasses/SDLAlienBullet.cpp.obj
+
+SDLClasses/SDLAlienBullet.i: SDLClasses/SDLAlienBullet.cpp.i
+
+.PHONY : SDLClasses/SDLAlienBullet.i
+
+# target to preprocess a source file
+SDLClasses/SDLAlienBullet.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.i
+.PHONY : SDLClasses/SDLAlienBullet.cpp.i
+
+SDLClasses/SDLAlienBullet.s: SDLClasses/SDLAlienBullet.cpp.s
+
+.PHONY : SDLClasses/SDLAlienBullet.s
+
+# target to generate assembly for a file
+SDLClasses/SDLAlienBullet.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.s
+.PHONY : SDLClasses/SDLAlienBullet.cpp.s
+
 SDLClasses/SDLBackground.obj: SDLClasses/SDLBackground.cpp.obj
 
 .PHONY : SDLClasses/SDLBackground.obj
@@ -527,6 +554,33 @@ model/Alien.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Alien.cpp.s
 .PHONY : model/Alien.cpp.s
 
+model/AlienBullet.obj: model/AlienBullet.cpp.obj
+
+.PHONY : model/AlienBullet.obj
+
+# target to build an object file
+model/AlienBullet.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienBullet.cpp.obj
+.PHONY : model/AlienBullet.cpp.obj
+
+model/AlienBullet.i: model/AlienBullet.cpp.i
+
+.PHONY : model/AlienBullet.i
+
+# target to preprocess a source file
+model/AlienBullet.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienBullet.cpp.i
+.PHONY : model/AlienBullet.cpp.i
+
+model/AlienBullet.s: model/AlienBullet.cpp.s
+
+.PHONY : model/AlienBullet.s
+
+# target to generate assembly for a file
+model/AlienBullet.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienBullet.cpp.s
+.PHONY : model/AlienBullet.cpp.s
+
 model/AlienCanon.obj: model/AlienCanon.cpp.obj
 
 .PHONY : model/AlienCanon.obj
@@ -728,6 +782,9 @@ help:
 	@echo ... SDLClasses/SDLAlien.obj
 	@echo ... SDLClasses/SDLAlien.i
 	@echo ... SDLClasses/SDLAlien.s
+	@echo ... SDLClasses/SDLAlienBullet.obj
+	@echo ... SDLClasses/SDLAlienBullet.i
+	@echo ... SDLClasses/SDLAlienBullet.s
 	@echo ... SDLClasses/SDLBackground.obj
 	@echo ... SDLClasses/SDLBackground.i
 	@echo ... SDLClasses/SDLBackground.s
@@ -770,6 +827,9 @@ help:
 	@echo ... model/Alien.obj
 	@echo ... model/Alien.i
 	@echo ... model/Alien.s
+	@echo ... model/AlienBullet.obj
+	@echo ... model/AlienBullet.i
+	@echo ... model/AlienBullet.s
 	@echo ... model/AlienCanon.obj
 	@echo ... model/AlienCanon.i
 	@echo ... model/AlienCanon.s

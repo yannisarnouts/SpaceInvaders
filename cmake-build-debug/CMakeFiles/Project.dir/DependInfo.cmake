@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj"
+  "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBullet.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj"
@@ -19,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/factory/Texture.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/main.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Alien.cpp.obj"
+  "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/AlienBullet.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/AlienCanon.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Background.cpp.obj"
   "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.cpp" "C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/cmake-build-debug/CMakeFiles/Project.dir/model/Bullet.cpp.obj"

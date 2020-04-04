@@ -21,18 +21,17 @@ namespace Game {
         void createAliens(int number, AlienType alienType, std::string imgPath, int y);
         void moveAndCheck(int a, int length);
         void handleCollision(int i, int j, int length, AlienType alienType);
-        void alienShoot(int i, int j);
+        void alienShoot();
 
     private:
         AbstractFactory *abstractFactory;
 //    Alien* aliens[4][10];
         std::vector<std::vector<Alien * >> aliens;
-        int yCoord;
+        std::vector<AlienBullet*> bullets;
+        int bulletLength = 500;
         AlienCanon *alienCanon;
         Canon *canon;
         int michielLength = 10, thomasLength = 10, rubenLength = 10, cliffordLength = 10;
-        int cani = 100;
-        int canj = 100;
     };
 }
 

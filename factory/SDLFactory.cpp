@@ -8,6 +8,7 @@
 #include "../SDLClasses/SDLAlien.h"
 #include "../SDLClasses/SDLBullet.h"
 #include "../SDLClasses/SDLScore.h"
+#include "../SDLClasses/SDLAlienBullet.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
@@ -96,3 +97,8 @@ Game::Score *SDL::SDLFactory::createScore() {
     return new SDLScore(gRenderer);
 }
 
+Game::AlienBullet *SDL::SDLFactory::createAlienBullet(std::string path, int xCoord, int yCoord) {
+    int bw = SCREEN_WIDTH / 30;
+    int bh = SCREEN_HEIGHT / 30;
+    return new SDLAlienBullet(xCoord, yCoord, bw, bh, gRenderer, path);
+}

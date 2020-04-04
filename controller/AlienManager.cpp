@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include "AlienManager.h"
-#include "../model/AlienCanon.h"
 
 Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, Canon *canon) {
     this->abstractFactory = abstractFactory;
@@ -13,6 +12,10 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, Canon *canon)
     createAliens(rubenLength, AlienType::ruben, "../assets/ruben.png", 200);
     createAliens(cliffordLength, AlienType::clifford, "../assets/cliff.png", 300);
     createAliens(thomasLength, AlienType::thomas, "../assets/thomas.png", 400);
+    bullets.reserve(bulletLength);
+    for (int i = 0; i <= bulletLength; ++i) {
+        bullets.emplace_back(abstractFactory->createAlienBullet("../assets/bullet.png", this->aliens[0][0]->getXCoord(), this->aliens[0][0]->getYCoord()));
+    }
 }
 
 void Game::AlienManager::createAliens(int number, AlienType alienType, std::string imgPath, int y) {
@@ -46,6 +49,8 @@ void Game::AlienManager::Visualize(AlienType alienType) {
     } else if (alienType == AlienType::thomas) {
         VisualizeType(alienType, thomasLength);
     }
+    this->bullets[bulletLength]->Visualize();
+    alienShoot();
 }
 
 void Game::AlienManager::moveAndCheck(int a, int length) {
@@ -69,6 +74,7 @@ void Game::AlienManager::VisualizeType(AlienType alienType, int length) {
                 moveAndCheck(0, michielLength);
             }
             if (canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
+                this->aliens[0][i]->setAlive(false);
                 handleCollision(0, i, length, alienType);
             } else {
                 this->aliens[0][i]->Visualize();
@@ -78,6 +84,7 @@ void Game::AlienManager::VisualizeType(AlienType alienType, int length) {
                 moveAndCheck(1, rubenLength);
             }
             if (canon->checkCollision(this->aliens[1][i]->getXCoord(), this->aliens[1][i]->getYCoord())) {
+                this->aliens[1][i]->setAlive(false);
                 handleCollision(1, i, length, alienType);
             } else {
                 this->aliens[1][i]->Visualize();
@@ -87,6 +94,7 @@ void Game::AlienManager::VisualizeType(AlienType alienType, int length) {
                 moveAndCheck(2, cliffordLength);
             }
             if (canon->checkCollision(this->aliens[2][i]->getXCoord(), this->aliens[2][i]->getYCoord())) {
+                this->aliens[2][i]->setAlive(false);
                 handleCollision(2, i, length, alienType);
             } else {
                 this->aliens[2][i]->Visualize();
@@ -96,6 +104,7 @@ void Game::AlienManager::VisualizeType(AlienType alienType, int length) {
                 moveAndCheck(3, thomasLength);
             }
             if (canon->checkCollision(this->aliens[3][i]->getXCoord(), this->aliens[3][i]->getYCoord())) {
+                this->aliens[3][i]->setAlive(false);
                 handleCollision(3, i, length, alienType);
             } else {
                 this->aliens[3][i]->Visualize();
@@ -119,7 +128,15 @@ void Game::AlienManager::handleCollision(int i, int j, int length, AlienType ali
     }
 }
 
-void Game::AlienManager::alienShoot(int i, int j) {
-    this->alienCanon = new AlienCanon(this->abstractFactory, this->aliens[i][j]);
-    this->alienCanon->runCannon();
+void Game::AlienManager::alienShoot() {
+    int i = rand() % 4;
+    int j = rand() % 10;
+    int a = rand() % 200;
+    if (this->aliens[i][j]->isAlive()) {
+        if (a == 36) {
+            bulletLength--;
+            this->bullets[bulletLength]->setXCoord(this->aliens[i][j]->getXCoord());
+            this->bullets[bulletLength]->setYCoord(this->aliens[i][j]->getYCoord());
+        }
+    }
 }

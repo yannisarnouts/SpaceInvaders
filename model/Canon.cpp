@@ -28,7 +28,7 @@ void Game::Canon::runCannon() {
         this->bullets[canonLength]->setXCoord(this->playerShip->getXCoord());
         shoot = true;
     }
-    if (canonLength == 1) {
+    if (canonLength < 1) {
         this->loadCannon();
     }
     if (shoot) {
@@ -46,7 +46,7 @@ void Game::Canon::fireCannon(Bullet *b) {
 }
 
 void Game::Canon::loadCannon() {
-    for (int i = 0; i < 100; ++i) {
+    for (int i = 0; i < 200; ++i) {
         bullets[i] = createBullet(this->imgPath, this->playerShip->getXCoord(), this->playerShip->getYCoord());
     }
 }

@@ -15,7 +15,7 @@ SDL::SDLScore::SDLScore(SDL_Renderer *renderer) : renderer(renderer) {
 }
 
 void SDL::SDLScore::Visualize() {
-    this->texture->loadTexture("Points: " + std::to_string(getPoints()));
+    this->texture->loadTexture("Score: " + std::to_string(getPoints()));
     SDL_Rect renderQuad = {0, 0, 100, 100};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }

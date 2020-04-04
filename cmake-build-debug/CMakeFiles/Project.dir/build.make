@@ -342,6 +342,32 @@ CMakeFiles/Project.dir/factory/TextTexture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/factory/TextTexture.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\factory\TextTexture.cpp" -o CMakeFiles\Project.dir\factory\TextTexture.cpp.s
 
+CMakeFiles/Project.dir/model/AlienBullet.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/model/AlienBullet.cpp.obj: ../model/AlienBullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Project.dir/model/AlienBullet.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\model\AlienBullet.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\AlienBullet.cpp"
+
+CMakeFiles/Project.dir/model/AlienBullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/model/AlienBullet.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\AlienBullet.cpp" > CMakeFiles\Project.dir\model\AlienBullet.cpp.i
+
+CMakeFiles/Project.dir/model/AlienBullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/model/AlienBullet.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\AlienBullet.cpp" -o CMakeFiles\Project.dir\model\AlienBullet.cpp.s
+
+CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj: ../SDLClasses/SDLAlienBullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SDLClasses\SDLAlienBullet.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\SDLClasses\SDLAlienBullet.cpp"
+
+CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\SDLClasses\SDLAlienBullet.cpp" > CMakeFiles\Project.dir\SDLClasses\SDLAlienBullet.cpp.i
+
+CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\SDLClasses\SDLAlienBullet.cpp" -o CMakeFiles\Project.dir\SDLClasses\SDLAlienBullet.cpp.s
+
 # Object files for target Project
 Project_OBJECTS = \
 "CMakeFiles/Project.dir/main.cpp.obj" \
@@ -365,7 +391,9 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/model/AlienCanon.cpp.obj" \
 "CMakeFiles/Project.dir/model/Score.cpp.obj" \
 "CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj" \
-"CMakeFiles/Project.dir/factory/TextTexture.cpp.obj"
+"CMakeFiles/Project.dir/factory/TextTexture.cpp.obj" \
+"CMakeFiles/Project.dir/model/AlienBullet.cpp.obj" \
+"CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
@@ -392,11 +420,13 @@ Project.exe: CMakeFiles/Project.dir/model/AlienCanon.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/Score.cpp.obj
 Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj
 Project.exe: CMakeFiles/Project.dir/factory/TextTexture.cpp.obj
+Project.exe: CMakeFiles/Project.dir/model/AlienBullet.cpp.obj
+Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/linklibs.rsp
 Project.exe: CMakeFiles/Project.dir/objects1.rsp
 Project.exe: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

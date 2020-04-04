@@ -4,9 +4,18 @@
 CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
 CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.cpp
@@ -38,6 +47,7 @@ CMakeFiles/Project.dir/controller/AlienManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
@@ -58,6 +68,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
@@ -71,9 +82,12 @@ CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
@@ -82,10 +96,12 @@ CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLScore.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
@@ -94,6 +110,8 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TextTexture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
@@ -107,31 +125,17 @@ CMakeFiles/Project.dir/factory/Texture.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
 CMakeFiles/Project.dir/main.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/main.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
-CMakeFiles/Project.dir/model/Alien.cpp.obj
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.cpp
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
-CMakeFiles/Project.dir/model/AlienCanon.cpp.obj
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
- C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
@@ -139,6 +143,26 @@ CMakeFiles/Project.dir/model/AlienCanon.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
+CMakeFiles/Project.dir/model/Alien.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+CMakeFiles/Project.dir/model/AlienBullet.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+CMakeFiles/Project.dir/model/AlienCanon.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
 CMakeFiles/Project.dir/model/Background.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
@@ -152,6 +176,8 @@ CMakeFiles/Project.dir/model/Canon.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h

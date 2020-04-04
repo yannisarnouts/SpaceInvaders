@@ -24,3 +24,11 @@ void Game::Alien::setMoveAlien(int moveAlien) {
 int Game::Alien::getMoveAlien() const {
     return moveAlien;
 }
+
+bool Game::Alien::isAlive() const {
+    return alive;
+}
+
+void Game::Alien::setAlive(bool alive) {
+    Alien::alive = alive;
+}

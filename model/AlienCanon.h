@@ -6,14 +6,11 @@
 #define PROJECT_ALIENCANON_H
 
 
-#include "../factory/AbstractFactory.h"
 #include "../controller/CollisionController.h"
 namespace Game {
     class AlienCanon {
     public:
         AlienCanon();
-
-        AlienCanon(AbstractFactory *abstractFactory, Alien *alien);
 
         Bullet *createBullet(std::string imgPath, int shipX, int shipY);
 
@@ -24,9 +21,7 @@ namespace Game {
         void loadCannon();
 
     private:
-        AbstractFactory *abstractFactory;
         std::string imgPath = "../assets/bullet.png";
-        Alien *alien;
         Bullet *bullets[100];
         int canonLength = 100;
         Bullet *currentBullet;

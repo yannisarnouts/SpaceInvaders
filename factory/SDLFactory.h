@@ -11,6 +11,7 @@
 #include "AbstractFactory.h"
 #include "../model/AlienType.h"
 #include "../controller/KeyHandler.h"
+#include "../SDLClasses/SDLAlienBullet.h"
 
 namespace SDL {
     class SDLFactory : public Game::AbstractFactory {
@@ -24,6 +25,8 @@ namespace SDL {
         Game::Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) override;
 
         Game::Bullet *createBullet(std::string path, int xCoord, int yCoord) override;
+
+        Game::AlienBullet *createAlienBullet(std::string path, int xCoord, int yCoord) override;
 
         Game::Score *createScore() override;
 

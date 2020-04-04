@@ -6,15 +6,27 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.cpp
+iostream
+-
+AlienManager.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.h
+vector
+-
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+../model/Canon.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
+CollisionController.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
+../model/AlienCanon.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
 ../model/Bullet.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
-KeyP.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 string
@@ -31,12 +43,24 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
 ../model/Score.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
+../model/AlienBullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
 AlienType.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
 Entity.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+AlienCanon.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
+Entity.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
+../controller/CollisionController.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
 
@@ -45,12 +69,6 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
 Entity.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.cpp
-Canon.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
-../controller/KeyHandler.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h
 ../factory/AbstractFactory.h
