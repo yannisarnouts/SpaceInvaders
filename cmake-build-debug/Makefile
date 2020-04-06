@@ -230,6 +230,33 @@ SDLClasses/SDLBullet.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.s
 .PHONY : SDLClasses/SDLBullet.cpp.s
 
+SDLClasses/SDLLife.obj: SDLClasses/SDLLife.cpp.obj
+
+.PHONY : SDLClasses/SDLLife.obj
+
+# target to build an object file
+SDLClasses/SDLLife.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj
+.PHONY : SDLClasses/SDLLife.cpp.obj
+
+SDLClasses/SDLLife.i: SDLClasses/SDLLife.cpp.i
+
+.PHONY : SDLClasses/SDLLife.i
+
+# target to preprocess a source file
+SDLClasses/SDLLife.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.i
+.PHONY : SDLClasses/SDLLife.cpp.i
+
+SDLClasses/SDLLife.s: SDLClasses/SDLLife.cpp.s
+
+.PHONY : SDLClasses/SDLLife.s
+
+# target to generate assembly for a file
+SDLClasses/SDLLife.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.s
+.PHONY : SDLClasses/SDLLife.cpp.s
+
 SDLClasses/SDLPlayerShip.obj: SDLClasses/SDLPlayerShip.cpp.obj
 
 .PHONY : SDLClasses/SDLPlayerShip.obj
@@ -391,6 +418,33 @@ controller/KeyHandler.s: controller/KeyHandler.cpp.s
 controller/KeyHandler.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/KeyHandler.cpp.s
 .PHONY : controller/KeyHandler.cpp.s
+
+controller/PlayerManager.obj: controller/PlayerManager.cpp.obj
+
+.PHONY : controller/PlayerManager.obj
+
+# target to build an object file
+controller/PlayerManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj
+.PHONY : controller/PlayerManager.cpp.obj
+
+controller/PlayerManager.i: controller/PlayerManager.cpp.i
+
+.PHONY : controller/PlayerManager.i
+
+# target to preprocess a source file
+controller/PlayerManager.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/PlayerManager.cpp.i
+.PHONY : controller/PlayerManager.cpp.i
+
+controller/PlayerManager.s: controller/PlayerManager.cpp.s
+
+.PHONY : controller/PlayerManager.s
+
+# target to generate assembly for a file
+controller/PlayerManager.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/PlayerManager.cpp.s
+.PHONY : controller/PlayerManager.cpp.s
 
 factory/AbstractFactory.obj: factory/AbstractFactory.cpp.obj
 
@@ -716,6 +770,33 @@ model/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Entity.cpp.s
 .PHONY : model/Entity.cpp.s
 
+model/Life.obj: model/Life.cpp.obj
+
+.PHONY : model/Life.obj
+
+# target to build an object file
+model/Life.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Life.cpp.obj
+.PHONY : model/Life.cpp.obj
+
+model/Life.i: model/Life.cpp.i
+
+.PHONY : model/Life.i
+
+# target to preprocess a source file
+model/Life.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Life.cpp.i
+.PHONY : model/Life.cpp.i
+
+model/Life.s: model/Life.cpp.s
+
+.PHONY : model/Life.s
+
+# target to generate assembly for a file
+model/Life.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Life.cpp.s
+.PHONY : model/Life.cpp.s
+
 model/PlayerShip.obj: model/PlayerShip.cpp.obj
 
 .PHONY : model/PlayerShip.obj
@@ -791,6 +872,9 @@ help:
 	@echo ... SDLClasses/SDLBullet.obj
 	@echo ... SDLClasses/SDLBullet.i
 	@echo ... SDLClasses/SDLBullet.s
+	@echo ... SDLClasses/SDLLife.obj
+	@echo ... SDLClasses/SDLLife.i
+	@echo ... SDLClasses/SDLLife.s
 	@echo ... SDLClasses/SDLPlayerShip.obj
 	@echo ... SDLClasses/SDLPlayerShip.i
 	@echo ... SDLClasses/SDLPlayerShip.s
@@ -809,6 +893,9 @@ help:
 	@echo ... controller/KeyHandler.obj
 	@echo ... controller/KeyHandler.i
 	@echo ... controller/KeyHandler.s
+	@echo ... controller/PlayerManager.obj
+	@echo ... controller/PlayerManager.i
+	@echo ... controller/PlayerManager.s
 	@echo ... factory/AbstractFactory.obj
 	@echo ... factory/AbstractFactory.i
 	@echo ... factory/AbstractFactory.s
@@ -845,6 +932,9 @@ help:
 	@echo ... model/Entity.obj
 	@echo ... model/Entity.i
 	@echo ... model/Entity.s
+	@echo ... model/Life.obj
+	@echo ... model/Life.i
+	@echo ... model/Life.s
 	@echo ... model/PlayerShip.obj
 	@echo ... model/PlayerShip.i
 	@echo ... model/PlayerShip.s

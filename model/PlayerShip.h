@@ -16,6 +16,13 @@ namespace Game {
         virtual void Visualize() = 0;
         virtual void close() = 0;
         virtual void moveShip() = 0;
+
+        int getLife() const;
+
+        void setLife(int life);
+
+    private:
+        int life = 3;
     };
 }
 

@@ -8,13 +8,16 @@
 Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, Canon *canon) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
+    this->collisionController = new CollisionController();
+    this->currentBullet = abstractFactory->createAlienBullet("", -20, -20);
     createAliens(michielLength, AlienType::michiel, "../assets/michiel.png", 100);
     createAliens(rubenLength, AlienType::ruben, "../assets/ruben.png", 200);
     createAliens(cliffordLength, AlienType::clifford, "../assets/cliff.png", 300);
     createAliens(thomasLength, AlienType::thomas, "../assets/thomas.png", 400);
     bullets.reserve(bulletLength);
     for (int i = 0; i <= bulletLength; ++i) {
-        bullets.emplace_back(abstractFactory->createAlienBullet("../assets/bullet.png", this->aliens[0][0]->getXCoord(), this->aliens[0][0]->getYCoord()));
+        bullets.emplace_back(abstractFactory->createAlienBullet("../assets/bullet.png", this->aliens[1][1]->getXCoord(),
+                                                                this->aliens[1][1]->getYCoord()));
     }
 }
 
@@ -50,7 +53,10 @@ void Game::AlienManager::Visualize(AlienType alienType) {
         VisualizeType(alienType, thomasLength);
     }
     this->bullets[bulletLength]->Visualize();
-    alienShoot();
+    int a = rand() % 200;
+    if (a == 36) {
+        alienShoot();
+    }
 }
 
 void Game::AlienManager::moveAndCheck(int a, int length) {
@@ -131,12 +137,19 @@ void Game::AlienManager::handleCollision(int i, int j, int length, AlienType ali
 void Game::AlienManager::alienShoot() {
     int i = rand() % 4;
     int j = rand() % 10;
-    int a = rand() % 200;
     if (this->aliens[i][j]->isAlive()) {
-        if (a == 36) {
-            bulletLength--;
-            this->bullets[bulletLength]->setXCoord(this->aliens[i][j]->getXCoord());
-            this->bullets[bulletLength]->setYCoord(this->aliens[i][j]->getYCoord());
-        }
+        bulletLength--;
+        this->bullets[bulletLength]->setXCoord(this->aliens[i][j]->getXCoord());
+        this->bullets[bulletLength]->setYCoord(this->aliens[i][j]->getYCoord());
+        this->currentBullet = this->bullets[bulletLength];
+    }
+}
+
+bool Game::AlienManager::checkCollision(int xPos, int yPos) {
+    if (collisionController->bulletAlien(currentBullet, xPos, yPos)) {
+        this->currentBullet->setYCoord(0);
+        return true;
+    } else {
+        return false;
     }
 }

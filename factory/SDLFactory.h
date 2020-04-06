@@ -12,6 +12,7 @@
 #include "../model/AlienType.h"
 #include "../controller/KeyHandler.h"
 #include "../SDLClasses/SDLAlienBullet.h"
+#include "../SDLClasses/SDLLife.h"
 
 namespace SDL {
     class SDLFactory : public Game::AbstractFactory {
@@ -29,6 +30,8 @@ namespace SDL {
         Game::AlienBullet *createAlienBullet(std::string path, int xCoord, int yCoord) override;
 
         Game::Score *createScore() override;
+
+        Game::Life *createLife() override;
 
         Background *createBackground(std::string path) override;
 

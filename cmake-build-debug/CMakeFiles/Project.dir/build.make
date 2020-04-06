@@ -368,6 +368,45 @@ CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\SDLClasses\SDLAlienBullet.cpp" -o CMakeFiles\Project.dir\SDLClasses\SDLAlienBullet.cpp.s
 
+CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../SDLClasses/SDLLife.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SDLClasses\SDLLife.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\SDLClasses\SDLLife.cpp"
+
+CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\SDLClasses\SDLLife.cpp" > CMakeFiles\Project.dir\SDLClasses\SDLLife.cpp.i
+
+CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\SDLClasses\SDLLife.cpp" -o CMakeFiles\Project.dir\SDLClasses\SDLLife.cpp.s
+
+CMakeFiles/Project.dir/model/Life.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/model/Life.cpp.obj: ../model/Life.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Project.dir/model/Life.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\model\Life.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Life.cpp"
+
+CMakeFiles/Project.dir/model/Life.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/model/Life.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Life.cpp" > CMakeFiles\Project.dir\model\Life.cpp.i
+
+CMakeFiles/Project.dir/model/Life.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/model/Life.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Life.cpp" -o CMakeFiles\Project.dir\model\Life.cpp.s
+
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/PlayerManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\controller\PlayerManager.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\PlayerManager.cpp"
+
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/controller/PlayerManager.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\PlayerManager.cpp" > CMakeFiles\Project.dir\controller\PlayerManager.cpp.i
+
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/controller/PlayerManager.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\PlayerManager.cpp" -o CMakeFiles\Project.dir\controller\PlayerManager.cpp.s
+
 # Object files for target Project
 Project_OBJECTS = \
 "CMakeFiles/Project.dir/main.cpp.obj" \
@@ -393,7 +432,10 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj" \
 "CMakeFiles/Project.dir/factory/TextTexture.cpp.obj" \
 "CMakeFiles/Project.dir/model/AlienBullet.cpp.obj" \
-"CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj"
+"CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj" \
+"CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj" \
+"CMakeFiles/Project.dir/model/Life.cpp.obj" \
+"CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
@@ -422,11 +464,14 @@ Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj
 Project.exe: CMakeFiles/Project.dir/factory/TextTexture.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/AlienBullet.cpp.obj
 Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj
+Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj
+Project.exe: CMakeFiles/Project.dir/model/Life.cpp.obj
+Project.exe: CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/linklibs.rsp
 Project.exe: CMakeFiles/Project.dir/objects1.rsp
 Project.exe: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

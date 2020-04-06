@@ -12,6 +12,7 @@ Game::Canon::Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
     this->score = abstractFactory->createScore();
     this->abstractFactory = abstractFactory;
     this->playerShip = playerShip;
+    this->collisionController = new CollisionController();
     this->loadCannon();
 }
 

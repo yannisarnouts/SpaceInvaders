@@ -14,27 +14,27 @@
 #include "../model/Bullet.h"
 #include "../model/Score.h"
 #include "../model/AlienBullet.h"
+#include "../model/Life.h"
 
 namespace Game {
     class AbstractFactory {
     public:
         AbstractFactory();
-
+        // playership
         virtual PlayerShip *createPlayerShip(std::string path) = 0;
-
-        virtual Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) = 0;
-
+        virtual Life *createLife()=0;
         virtual Bullet *createBullet(std::string path, int xCoord, int yCoord) = 0;
-        virtual AlienBullet* createAlienBullet(std::string path, int xCoord, int yCoord)=0;
         virtual Score *createScore() = 0;
+
+        //Alien
+        virtual Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) = 0;
+        virtual AlienBullet* createAlienBullet(std::string path, int xCoord, int yCoord)=0;
+
+        //extra
         virtual Background *createBackground(std::string path) = 0;
-
         virtual bool pollEvents() = 0;
-
         virtual void init() = 0;
-
         virtual void render() = 0;
-
         virtual void close() = 0;
     };
 }

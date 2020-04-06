@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.cpp
-iostream
--
-AlienManager.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.h
-
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.h
 vector
 -
@@ -27,6 +21,28 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
 ../model/Bullet.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
+../model/AlienBullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.cpp
+iostream
+-
+Game.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.h
+../controller/AlienManager.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.h
+PlayerManager.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/PlayerManager.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/Game.h
+string
+-
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/PlayerManager.h
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 string
@@ -45,6 +61,8 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
 ../model/AlienBullet.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
+../model/Life.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Life.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Alien.h
 AlienType.h
@@ -79,6 +97,8 @@ Score.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Life.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
 Entity.h

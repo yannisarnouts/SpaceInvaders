@@ -35,7 +35,7 @@ namespace Game {
         int canonLength = 100;
         Bullet *currentBullet;
         bool shoot = false;
-        CollisionController *collisionController = new CollisionController();
+        CollisionController *collisionController;
         Score* score;
     };
 }

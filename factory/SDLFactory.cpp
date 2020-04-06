@@ -102,3 +102,7 @@ Game::AlienBullet *SDL::SDLFactory::createAlienBullet(std::string path, int xCoo
     int bh = SCREEN_HEIGHT / 30;
     return new SDLAlienBullet(xCoord, yCoord, bw, bh, gRenderer, path);
 }
+
+Game::Life *SDL::SDLFactory::createLife() {
+    return new SDLLife(gRenderer);
+}

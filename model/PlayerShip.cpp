@@ -12,3 +12,11 @@ void Game::PlayerShip::moveShip() {}
 
 Game::PlayerShip::PlayerShip(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {
 }
+
+int Game::PlayerShip::getLife() const {
+    return life;
+}
+
+void Game::PlayerShip::setLife(int life) {
+    PlayerShip::life = life;
+}
