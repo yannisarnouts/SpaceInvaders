@@ -13,6 +13,7 @@ Game::Canon::Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
     this->abstractFactory = abstractFactory;
     this->playerShip = playerShip;
     this->collisionController = new CollisionController();
+    this->timer = abstractFactory->createTimer();
     this->loadCannon();
 }
 
@@ -24,6 +25,7 @@ Game::Bullet *Game::Canon::createBullet(std::string imgPath, int shipX, int ship
 void Game::Canon::runCannon() {
     KeyHandler keyHandler;
     int direction = keyHandler.directions();
+    timer->update();
     if (direction == KeyP::UP && !shoot) {
         canonLength--;
         this->bullets[canonLength]->setXCoord(this->playerShip->getXCoord());
@@ -40,6 +42,7 @@ void Game::Canon::runCannon() {
 
 void Game::Canon::fireCannon(Bullet *b) {
     this->currentBullet = b;
+    this->currentBullet->setYCoord(this->currentBullet->getYCoord() - timer->getDeltaTime() * 10);
     if (b->getYCoord() <= 5) {
         shoot = false;
     }

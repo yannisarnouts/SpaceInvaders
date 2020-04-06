@@ -20,30 +20,10 @@ SDL::SDLPlayerShip::SDLPlayerShip(int xCoord, int yCoord, int width, int height,
 }
 
 void SDL::SDLPlayerShip::Visualize() {
-    moveShip();
     SDL_Rect renderQuad = {getXCoord(), getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
 }
 
 void SDL::SDLPlayerShip::close() {
 
-}
-
-void SDL::SDLPlayerShip::moveShip() {
-    int direction = keyHandler->directions();
-    if (getXCoord() >= (this->SCREEN_WIDTH + this->getWidth())) {
-        if (direction == KeyP::LEFT) {
-            setXCoord(getXCoord()- 5);
-        }
-    } else if (getXCoord() <= 0) {
-        if (direction == KeyP::RIGHT) {
-            setXCoord(getXCoord() + 5);
-        }
-    } else {
-        if (direction == KeyP::LEFT) {
-            setXCoord(getXCoord()- 5);
-        } else if (direction == KeyP::RIGHT) {
-            setXCoord(getXCoord() + 5);
-        }
-    }
 }

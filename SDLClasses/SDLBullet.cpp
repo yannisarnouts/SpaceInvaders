@@ -18,7 +18,6 @@ SDL::SDLBullet::SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Ren
 }
 
 void SDL::SDLBullet::Visualize() {
-    shootBullet();
     SDL_Rect renderQuad = {getXCoord(), getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }

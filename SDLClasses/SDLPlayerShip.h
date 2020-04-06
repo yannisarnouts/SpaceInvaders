@@ -17,12 +17,8 @@ namespace SDL {
 
         SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer,
                       const std::string &imgPath);
-
         void Visualize() override;
-
         void close() override;
-
-        void moveShip() override;
 
     private:
         SDL_Renderer *gRenderer;

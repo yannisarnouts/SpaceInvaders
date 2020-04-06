@@ -311,6 +311,33 @@ SDLClasses/SDLScore.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.s
 .PHONY : SDLClasses/SDLScore.cpp.s
 
+SDLClasses/SDLTimer.obj: SDLClasses/SDLTimer.cpp.obj
+
+.PHONY : SDLClasses/SDLTimer.obj
+
+# target to build an object file
+SDLClasses/SDLTimer.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.obj
+.PHONY : SDLClasses/SDLTimer.cpp.obj
+
+SDLClasses/SDLTimer.i: SDLClasses/SDLTimer.cpp.i
+
+.PHONY : SDLClasses/SDLTimer.i
+
+# target to preprocess a source file
+SDLClasses/SDLTimer.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.i
+.PHONY : SDLClasses/SDLTimer.cpp.i
+
+SDLClasses/SDLTimer.s: SDLClasses/SDLTimer.cpp.s
+
+.PHONY : SDLClasses/SDLTimer.s
+
+# target to generate assembly for a file
+SDLClasses/SDLTimer.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.s
+.PHONY : SDLClasses/SDLTimer.cpp.s
+
 controller/AlienManager.obj: controller/AlienManager.cpp.obj
 
 .PHONY : controller/AlienManager.obj
@@ -689,6 +716,33 @@ model/Background.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Background.cpp.s
 .PHONY : model/Background.cpp.s
 
+model/Bonus.obj: model/Bonus.cpp.obj
+
+.PHONY : model/Bonus.obj
+
+# target to build an object file
+model/Bonus.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Bonus.cpp.obj
+.PHONY : model/Bonus.cpp.obj
+
+model/Bonus.i: model/Bonus.cpp.i
+
+.PHONY : model/Bonus.i
+
+# target to preprocess a source file
+model/Bonus.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Bonus.cpp.i
+.PHONY : model/Bonus.cpp.i
+
+model/Bonus.s: model/Bonus.cpp.s
+
+.PHONY : model/Bonus.s
+
+# target to generate assembly for a file
+model/Bonus.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Bonus.cpp.s
+.PHONY : model/Bonus.cpp.s
+
 model/Bullet.obj: model/Bullet.cpp.obj
 
 .PHONY : model/Bullet.obj
@@ -851,6 +905,33 @@ model/Score.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Score.cpp.s
 .PHONY : model/Score.cpp.s
 
+model/Timer.obj: model/Timer.cpp.obj
+
+.PHONY : model/Timer.obj
+
+# target to build an object file
+model/Timer.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Timer.cpp.obj
+.PHONY : model/Timer.cpp.obj
+
+model/Timer.i: model/Timer.cpp.i
+
+.PHONY : model/Timer.i
+
+# target to preprocess a source file
+model/Timer.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Timer.cpp.i
+.PHONY : model/Timer.cpp.i
+
+model/Timer.s: model/Timer.cpp.s
+
+.PHONY : model/Timer.s
+
+# target to generate assembly for a file
+model/Timer.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Timer.cpp.s
+.PHONY : model/Timer.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -881,6 +962,9 @@ help:
 	@echo ... SDLClasses/SDLScore.obj
 	@echo ... SDLClasses/SDLScore.i
 	@echo ... SDLClasses/SDLScore.s
+	@echo ... SDLClasses/SDLTimer.obj
+	@echo ... SDLClasses/SDLTimer.i
+	@echo ... SDLClasses/SDLTimer.s
 	@echo ... controller/AlienManager.obj
 	@echo ... controller/AlienManager.i
 	@echo ... controller/AlienManager.s
@@ -923,6 +1007,9 @@ help:
 	@echo ... model/Background.obj
 	@echo ... model/Background.i
 	@echo ... model/Background.s
+	@echo ... model/Bonus.obj
+	@echo ... model/Bonus.i
+	@echo ... model/Bonus.s
 	@echo ... model/Bullet.obj
 	@echo ... model/Bullet.i
 	@echo ... model/Bullet.s
@@ -941,6 +1028,9 @@ help:
 	@echo ... model/Score.obj
 	@echo ... model/Score.i
 	@echo ... model/Score.s
+	@echo ... model/Timer.obj
+	@echo ... model/Timer.i
+	@echo ... model/Timer.s
 .PHONY : help
 
 

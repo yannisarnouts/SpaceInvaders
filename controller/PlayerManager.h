@@ -6,6 +6,7 @@
 #define PROJECT_PLAYERMANAGER_H
 
 #include "../factory/AbstractFactory.h"
+#include "KeyHandler.h"
 
 namespace Game {
     class PlayerManager {
@@ -15,11 +16,15 @@ namespace Game {
         PlayerShip *getPlayerShip() const;
         void runPlayer();
         void setLife();
+        void moveShip();
 
     private:
         AbstractFactory *abstractFactory;
         PlayerShip *playerShip;
         Life *life;
+        KeyHandler *keyHandler;
+        Timer *timer;
+        int SCREEN_WIDTH = 950;
         std::string shipPath = "../assets/spaceship.png";
     };
 }

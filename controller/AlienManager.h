@@ -11,6 +11,7 @@
 #include "../model/Canon.h"
 #include "CollisionController.h"
 #include "../model/AlienCanon.h"
+#include "../model/Timer.h"
 
 namespace Game {
     class AlienManager {

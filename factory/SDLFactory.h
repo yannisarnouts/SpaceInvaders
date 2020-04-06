@@ -35,6 +35,8 @@ namespace SDL {
 
         Background *createBackground(std::string path) override;
 
+        Game::Timer *createTimer() override;
+
         bool pollEvents() override;
 
         void render() override;

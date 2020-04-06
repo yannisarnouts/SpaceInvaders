@@ -72,7 +72,6 @@ void Game::AlienManager::moveAndCheck(int a, int length) {
         this->aliens[a][i]->setYCoord(this->aliens[a][i]->getYCoord() + 4);
     }
 }
-
 void Game::AlienManager::VisualizeType(AlienType alienType, int length) {
     for (int i = 0; i < length; ++i) {
         if (alienType == AlienType::michiel) {

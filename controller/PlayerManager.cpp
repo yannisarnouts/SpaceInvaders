@@ -10,6 +10,7 @@ Game::PlayerManager::PlayerManager(Game::AbstractFactory *abstractFactory) : abs
     this->abstractFactory = abstractFactory;
     this->playerShip = abstractFactory->createPlayerShip(shipPath);
     this->life = abstractFactory->createLife();
+    this->timer = abstractFactory->createTimer();
 }
 
 Game::PlayerShip *Game::PlayerManager::getPlayerShip() const {
@@ -17,6 +18,8 @@ Game::PlayerShip *Game::PlayerManager::getPlayerShip() const {
 }
 
 void Game::PlayerManager::runPlayer() {
+    timer->update();
+    moveShip();
     playerShip->Visualize();
     life->Visualize();
 }
@@ -24,4 +27,23 @@ void Game::PlayerManager::runPlayer() {
 void Game::PlayerManager::setLife() {
     getPlayerShip()->setLife(getPlayerShip()->getLife()-1);
     life->setLife(getPlayerShip()->getLife());
+}
+
+void Game::PlayerManager::moveShip() {
+    int direction = keyHandler->directions();
+    if (playerShip->getXCoord() >= (this->SCREEN_WIDTH + playerShip->getWidth())) {
+        if (direction == KeyP::LEFT) {
+            playerShip->setXCoord(playerShip->getXCoord()- timer->getDeltaTime() * 10);
+        }
+    } else if (playerShip->getXCoord() <= 0) {
+        if (direction == KeyP::RIGHT) {
+            playerShip->setXCoord(playerShip->getXCoord() + timer->getDeltaTime() * 10);
+        }
+    } else {
+        if (direction == KeyP::LEFT) {
+            playerShip->setXCoord(playerShip->getXCoord()- timer->getDeltaTime() * 10);
+        } else if (direction == KeyP::RIGHT) {
+            playerShip->setXCoord(playerShip->getXCoord() + timer->getDeltaTime() * 10);
+        }
+    }
 }

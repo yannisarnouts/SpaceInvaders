@@ -15,7 +15,6 @@ namespace Game {
         PlayerShip(int xCoord, int yCoord, int width, int height);
         virtual void Visualize() = 0;
         virtual void close() = 0;
-        virtual void moveShip() = 0;
 
         int getLife() const;
 

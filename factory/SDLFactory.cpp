@@ -9,6 +9,7 @@
 #include "../SDLClasses/SDLBullet.h"
 #include "../SDLClasses/SDLScore.h"
 #include "../SDLClasses/SDLAlienBullet.h"
+#include "../SDLClasses/SDLTimer.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
@@ -53,7 +54,7 @@ void SDL::SDLFactory::render() {
 Game::PlayerShip *SDL::SDLFactory::createPlayerShip(std::string path) {
     int sh = SCREEN_HEIGHT / 7;
     int sw = SCREEN_WIDTH / 7;
-    int xc = SCREEN_WIDTH / 2 - 50;
+    int xc = SCREEN_WIDTH / 2;
     int yc = SCREEN_HEIGHT - 550;
     return new SDLPlayerShip(xc, yc, sw, sh, gRenderer, path);
 }
@@ -105,4 +106,8 @@ Game::AlienBullet *SDL::SDLFactory::createAlienBullet(std::string path, int xCoo
 
 Game::Life *SDL::SDLFactory::createLife() {
     return new SDLLife(gRenderer);
+}
+
+Game::Timer *SDL::SDLFactory::createTimer() {
+    return new SDLTimer();
 }

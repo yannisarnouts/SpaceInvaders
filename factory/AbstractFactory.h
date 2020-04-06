@@ -15,6 +15,7 @@
 #include "../model/Score.h"
 #include "../model/AlienBullet.h"
 #include "../model/Life.h"
+#include "../model/Timer.h"
 
 namespace Game {
     class AbstractFactory {
@@ -32,6 +33,7 @@ namespace Game {
 
         //extra
         virtual Background *createBackground(std::string path) = 0;
+        virtual Timer *createTimer()=0;
         virtual bool pollEvents() = 0;
         virtual void init() = 0;
         virtual void render() = 0;

@@ -47,6 +47,10 @@ CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../SDLClasses/SDLScore.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../factory/TextTexture.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../model/Score.h
 
+CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.obj: ../SDLClasses/SDLTimer.cpp
+CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.obj: ../SDLClasses/SDLTimer.h
+CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.obj: ../model/Timer.h
+
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.cpp
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/CollisionController.h
@@ -62,6 +66,7 @@ CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../controller/CollisionController.cpp
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../controller/CollisionController.h
@@ -73,6 +78,8 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/AlienManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/KeyHandler.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/PlayerManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Alien.h
@@ -86,12 +93,15 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyHandler.cpp
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyP.h
 
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/KeyHandler.h
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/PlayerManager.cpp
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/PlayerManager.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../factory/AbstractFactory.h
@@ -105,6 +115,7 @@ CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../factory/AbstractFactory.cpp
@@ -119,6 +130,7 @@ CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLAlien.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLAlienBullet.h
@@ -127,6 +139,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLBullet.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLLife.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLPlayerShip.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLScore.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLTimer.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../controller/KeyP.h
@@ -145,6 +158,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/factory/TextTexture.cpp.obj: ../factory/TextTexture.cpp
 CMakeFiles/Project.dir/factory/TextTexture.cpp.obj: ../factory/TextTexture.h
@@ -173,6 +187,7 @@ CMakeFiles/Project.dir/main.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/main.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/model/Alien.cpp.obj: ../model/Alien.cpp
@@ -199,6 +214,10 @@ CMakeFiles/Project.dir/model/AlienCanon.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.cpp
 CMakeFiles/Project.dir/model/Background.cpp.obj: ../model/Background.h
 
+CMakeFiles/Project.dir/model/Bonus.cpp.obj: ../model/Bonus.cpp
+CMakeFiles/Project.dir/model/Bonus.cpp.obj: ../model/Bonus.h
+CMakeFiles/Project.dir/model/Bonus.cpp.obj: ../model/Entity.h
+
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Bullet.cpp
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Entity.h
@@ -219,6 +238,7 @@ CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.cpp
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.h
@@ -232,4 +252,7 @@ CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/model/Score.cpp.obj: ../model/Score.cpp
 CMakeFiles/Project.dir/model/Score.cpp.obj: ../model/Score.h
+
+CMakeFiles/Project.dir/model/Timer.cpp.obj: ../model/Timer.cpp
+CMakeFiles/Project.dir/model/Timer.cpp.obj: ../model/Timer.h
 

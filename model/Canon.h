@@ -34,6 +34,7 @@ namespace Game {
         Bullet *bullets[200];
         int canonLength = 100;
         Bullet *currentBullet;
+        Timer *timer;
         bool shoot = false;
         CollisionController *collisionController;
         Score* score;
