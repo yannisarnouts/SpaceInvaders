@@ -134,6 +134,12 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CanonManager.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CanonManager.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -225,12 +231,6 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Canon.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Entity.cpp">

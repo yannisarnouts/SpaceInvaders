@@ -5,15 +5,16 @@
 #include <iostream>
 #include "AlienManager.h"
 
-Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, Canon *canon) {
+Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
     this->collisionController = new CollisionController();
     this->currentBullet = abstractFactory->createAlienBullet("", -20, -20);
-    createAliens(michielLength, AlienType::michiel, "../assets/michiel.png", 100);
-    createAliens(rubenLength, AlienType::ruben, "../assets/ruben.png", 200);
-    createAliens(cliffordLength, AlienType::clifford, "../assets/cliff.png", 300);
-    createAliens(thomasLength, AlienType::thomas, "../assets/thomas.png", 400);
+    aliens.reserve(4);
+    createAliens(michielLength, AlienType::michiel, "../assets/michiel.png", 100, 0);
+    createAliens(rubenLength, AlienType::ruben, "../assets/ruben.png", 200, 1);
+    createAliens(cliffordLength, AlienType::clifford, "../assets/cliff.png", 300, 2);
+    createAliens(thomasLength, AlienType::thomas, "../assets/thomas.png", 400, 3);
     bullets.reserve(bulletLength);
     for (int i = 0; i <= bulletLength; ++i) {
         bullets.emplace_back(abstractFactory->createAlienBullet("../assets/bullet.png", this->aliens[1][1]->getXCoord(),
@@ -21,24 +22,12 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, Canon *canon)
     }
 }
 
-void Game::AlienManager::createAliens(int number, AlienType alienType, std::string imgPath, int y) {
-    aliens.reserve(4);
-    aliens[0].reserve(number);
+void Game::AlienManager::createAliens(int number, AlienType alienType, std::string imgPath, int y, int a) {
+    aliens[a].reserve(number);
     for (int i = 0; i < number; i++) {
         Alien *alien;
-        if (alienType == AlienType::michiel) {
-            alien = abstractFactory->createAlien(alienType, imgPath, i * 100, y);
-            this->aliens[0].emplace_back(alien);
-        } else if (alienType == AlienType::ruben) {
-            alien = abstractFactory->createAlien(alienType, imgPath, i * 100, y);
-            this->aliens[1].emplace_back(alien);
-        } else if (alienType == AlienType::clifford) {
-            alien = abstractFactory->createAlien(alienType, imgPath, i * 100, y);
-            this->aliens[2].emplace_back(alien);
-        } else if (alienType == AlienType::thomas) {
-            alien = abstractFactory->createAlien(alienType, imgPath, i * 100, y);
-            this->aliens[3].emplace_back(alien);
-        }
+        alien = abstractFactory->createAlien(alienType, imgPath, i * 100, y);
+        this->aliens[a].emplace_back(alien);
     }
 }
 
@@ -72,6 +61,7 @@ void Game::AlienManager::moveAndCheck(int a, int length) {
         this->aliens[a][i]->setYCoord(this->aliens[a][i]->getYCoord() + 4);
     }
 }
+
 void Game::AlienManager::VisualizeType(AlienType alienType, int length) {
     for (int i = 0; i < length; ++i) {
         if (alienType == AlienType::michiel) {

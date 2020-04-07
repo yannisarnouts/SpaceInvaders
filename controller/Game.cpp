@@ -15,7 +15,7 @@ void Game::Game::Run() {
     Background *bg = A->createBackground(bgPath);
     PlayerManager* playerManager = new PlayerManager(this->A);
     PlayerShip* playerShip = playerManager->getPlayerShip();
-    Canon* canon = new Canon(this->A, playerShip);
+    CanonManager* canon = new CanonManager(this->A, playerShip);
     AlienManager* aliens = new AlienManager(this->A, canon);
     while (A->pollEvents() && playerShip->getLife() > 0) {
         bg->Visualize();

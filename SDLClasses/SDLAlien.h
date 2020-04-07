@@ -20,9 +20,6 @@ namespace SDL {
                  const std::string &imgPath);
 
         void Visualize() override;
-
-        bool hitBoundary() override;
-
         void close() override;
 
 

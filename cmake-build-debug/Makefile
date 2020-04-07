@@ -365,6 +365,33 @@ controller/AlienManager.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/AlienManager.cpp.s
 .PHONY : controller/AlienManager.cpp.s
 
+controller/CanonManager.obj: controller/CanonManager.cpp.obj
+
+.PHONY : controller/CanonManager.obj
+
+# target to build an object file
+controller/CanonManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/CanonManager.cpp.obj
+.PHONY : controller/CanonManager.cpp.obj
+
+controller/CanonManager.i: controller/CanonManager.cpp.i
+
+.PHONY : controller/CanonManager.i
+
+# target to preprocess a source file
+controller/CanonManager.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/CanonManager.cpp.i
+.PHONY : controller/CanonManager.cpp.i
+
+controller/CanonManager.s: controller/CanonManager.cpp.s
+
+.PHONY : controller/CanonManager.s
+
+# target to generate assembly for a file
+controller/CanonManager.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/CanonManager.cpp.s
+.PHONY : controller/CanonManager.cpp.s
+
 controller/CollisionController.obj: controller/CollisionController.cpp.obj
 
 .PHONY : controller/CollisionController.obj
@@ -770,33 +797,6 @@ model/Bullet.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Bullet.cpp.s
 .PHONY : model/Bullet.cpp.s
 
-model/Canon.obj: model/Canon.cpp.obj
-
-.PHONY : model/Canon.obj
-
-# target to build an object file
-model/Canon.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Canon.cpp.obj
-.PHONY : model/Canon.cpp.obj
-
-model/Canon.i: model/Canon.cpp.i
-
-.PHONY : model/Canon.i
-
-# target to preprocess a source file
-model/Canon.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Canon.cpp.i
-.PHONY : model/Canon.cpp.i
-
-model/Canon.s: model/Canon.cpp.s
-
-.PHONY : model/Canon.s
-
-# target to generate assembly for a file
-model/Canon.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Canon.cpp.s
-.PHONY : model/Canon.cpp.s
-
 model/Entity.obj: model/Entity.cpp.obj
 
 .PHONY : model/Entity.obj
@@ -968,6 +968,9 @@ help:
 	@echo ... controller/AlienManager.obj
 	@echo ... controller/AlienManager.i
 	@echo ... controller/AlienManager.s
+	@echo ... controller/CanonManager.obj
+	@echo ... controller/CanonManager.i
+	@echo ... controller/CanonManager.s
 	@echo ... controller/CollisionController.obj
 	@echo ... controller/CollisionController.i
 	@echo ... controller/CollisionController.s
@@ -1013,9 +1016,6 @@ help:
 	@echo ... model/Bullet.obj
 	@echo ... model/Bullet.i
 	@echo ... model/Bullet.s
-	@echo ... model/Canon.obj
-	@echo ... model/Canon.i
-	@echo ... model/Canon.s
 	@echo ... model/Entity.obj
 	@echo ... model/Entity.i
 	@echo ... model/Entity.s

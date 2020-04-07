@@ -53,6 +53,7 @@ CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.cpp
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/CanonManager.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Alien.h
@@ -61,12 +62,29 @@ CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/AlienCanon.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Bullet.h
-CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Canon.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Score.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Timer.h
+
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/CanonManager.cpp
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/CanonManager.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/KeyHandler.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/KeyP.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/AlienBullet.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/AlienCanon.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Life.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/PlayerShip.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../controller/CollisionController.cpp
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../controller/CollisionController.h
@@ -75,6 +93,7 @@ CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/AlienManager.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CanonManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.h
@@ -88,7 +107,6 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienCanon.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Background.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Bullet.h
-CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Canon.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/PlayerShip.h
@@ -221,24 +239,6 @@ CMakeFiles/Project.dir/model/Bonus.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Bullet.cpp
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Entity.h
-
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../controller/CollisionController.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../controller/KeyHandler.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../controller/KeyP.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../factory/AbstractFactory.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Alien.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/AlienBullet.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/AlienCanon.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/AlienType.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Background.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Bullet.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Canon.cpp
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Canon.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Entity.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Life.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/PlayerShip.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Score.h
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.cpp
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.h

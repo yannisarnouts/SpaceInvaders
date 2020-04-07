@@ -2,29 +2,23 @@
 // Created by Gebruiker on 18/03/2020.
 //
 
-#ifndef PROJECT_CANON_H
-#define PROJECT_CANON_H
+#ifndef PROJECT_CANONMANAGER_H
+#define PROJECT_CANONMANAGER_H
 
 
 #include "../factory/AbstractFactory.h"
-#include "../controller/CollisionController.h"
-#include "Score.h"
+#include "CollisionController.h"
+#include "../model/Score.h"
 
 namespace Game {
-    class Canon {
+    class CanonManager {
     public:
-        Canon();
-
-        Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip);
-
+        CanonManager();
+        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip);
         Bullet *createBullet(std::string imgPath, int shipX, int shipY);
-
         void runCannon();
-
         void fireCannon(Bullet *b);
-
         void loadCannon();
-
         bool checkCollision(int xPos, int yPos);
 
     private:
@@ -41,4 +35,4 @@ namespace Game {
     };
 }
 
-#endif //PROJECT_CANON_H
+#endif //PROJECT_CANONMANAGER_H

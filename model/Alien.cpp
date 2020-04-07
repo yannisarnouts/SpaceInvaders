@@ -32,3 +32,15 @@ bool Game::Alien::isAlive() const {
 void Game::Alien::setAlive(bool alive) {
     Alien::alive = alive;
 }
+
+bool Game::Alien::hitBoundary() {
+    if (getXCoord() <= 0) {
+        setXCoord(0);
+        return true;
+    } else if (getXCoord() >= SCREEN_WIDTH) {
+        setXCoord(SCREEN_WIDTH);
+        return true;
+    } else {
+        return false;
+    }
+}

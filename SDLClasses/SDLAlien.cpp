@@ -27,17 +27,5 @@ SDL::SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType
     aTexture->loadFromFile(imgPath);
 }
 
-bool SDL::SDLAlien::hitBoundary() {
-    if (getXCoord() <= 0) {
-        setXCoord(0);
-        return true;
-    } else if (getXCoord() >= SCREEN_WIDTH) {
-        setXCoord(SCREEN_WIDTH);
-        return true;
-    } else {
-        return false;
-    }
-}
-
 
 

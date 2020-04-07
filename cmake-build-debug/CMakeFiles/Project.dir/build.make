@@ -251,18 +251,18 @@ CMakeFiles/Project.dir/controller/AlienManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/controller/AlienManager.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\AlienManager.cpp" -o CMakeFiles\Project.dir\controller\AlienManager.cpp.s
 
-CMakeFiles/Project.dir/model/Canon.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/model/Canon.cpp.obj: ../model/Canon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Project.dir/model/Canon.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\model\Canon.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Canon.cpp"
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/CanonManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Project.dir/controller/CanonManager.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\controller\CanonManager.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\CanonManager.cpp"
 
-CMakeFiles/Project.dir/model/Canon.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/model/Canon.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Canon.cpp" > CMakeFiles\Project.dir\model\Canon.cpp.i
+CMakeFiles/Project.dir/controller/CanonManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/controller/CanonManager.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\CanonManager.cpp" > CMakeFiles\Project.dir\controller\CanonManager.cpp.i
 
-CMakeFiles/Project.dir/model/Canon.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/model/Canon.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\model\Canon.cpp" -o CMakeFiles\Project.dir\model\Canon.cpp.s
+CMakeFiles/Project.dir/controller/CanonManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/controller/CanonManager.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\controller\CanonManager.cpp" -o CMakeFiles\Project.dir\controller\CanonManager.cpp.s
 
 CMakeFiles/Project.dir/model/Entity.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.cpp
@@ -463,7 +463,7 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/model/Bullet.cpp.obj" \
 "CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj" \
 "CMakeFiles/Project.dir/controller/AlienManager.cpp.obj" \
-"CMakeFiles/Project.dir/model/Canon.cpp.obj" \
+"CMakeFiles/Project.dir/controller/CanonManager.cpp.obj" \
 "CMakeFiles/Project.dir/model/Entity.cpp.obj" \
 "CMakeFiles/Project.dir/controller/CollisionController.cpp.obj" \
 "CMakeFiles/Project.dir/model/AlienCanon.cpp.obj" \
@@ -497,7 +497,7 @@ Project.exe: CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/Bullet.cpp.obj
 Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj
 Project.exe: CMakeFiles/Project.dir/controller/AlienManager.cpp.obj
-Project.exe: CMakeFiles/Project.dir/model/Canon.cpp.obj
+Project.exe: CMakeFiles/Project.dir/controller/CanonManager.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/Entity.cpp.obj
 Project.exe: CMakeFiles/Project.dir/controller/CollisionController.cpp.obj
 Project.exe: CMakeFiles/Project.dir/model/AlienCanon.cpp.obj

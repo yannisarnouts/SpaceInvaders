@@ -15,15 +15,13 @@ namespace Game {
     public:
         Alien();
         Alien(int xCoord, int yCoord, int width, int height, AlienType alienType);
-        virtual bool hitBoundary() = 0;
+        bool hitBoundary();
         virtual void Visualize() = 0;
         virtual void close() = 0;
         void move();
         int getMoveAlien() const;
         void setMoveAlien(int moveAlien);
-
         bool isAlive() const;
-
         void setAlive(bool alive);
 
     private:
@@ -31,6 +29,7 @@ namespace Game {
         int moveAlien = 1;
         AlienCanon* alienCanon;
         bool alive = true;
+        int SCREEN_WIDTH = 950;
     };
 }
 

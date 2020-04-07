@@ -2,12 +2,12 @@
 // Created by Gebruiker on 18/03/2020.
 //
 
-#include "Canon.h"
-#include "../controller/KeyHandler.h"
+#include "CanonManager.h"
+#include "KeyHandler.h"
 
-Game::Canon::Canon() {}
+Game::CanonManager::CanonManager() {}
 
-Game::Canon::Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
+Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
     this->currentBullet = abstractFactory->createBullet("", 0, 0);
     this->score = abstractFactory->createScore();
     this->abstractFactory = abstractFactory;
@@ -17,12 +17,12 @@ Game::Canon::Canon(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
     this->loadCannon();
 }
 
-Game::Bullet *Game::Canon::createBullet(std::string imgPath, int shipX, int shipY) {
+Game::Bullet *Game::CanonManager::createBullet(std::string imgPath, int shipX, int shipY) {
     Bullet *bullet = abstractFactory->createBullet(imgPath, shipX, shipY);
     return bullet;
 }
 
-void Game::Canon::runCannon() {
+void Game::CanonManager::runCannon() {
     KeyHandler keyHandler;
     int direction = keyHandler.directions();
     timer->update();
@@ -40,7 +40,7 @@ void Game::Canon::runCannon() {
     score->Visualize();
 }
 
-void Game::Canon::fireCannon(Bullet *b) {
+void Game::CanonManager::fireCannon(Bullet *b) {
     this->currentBullet = b;
     this->currentBullet->setYCoord(this->currentBullet->getYCoord() - timer->getDeltaTime() * 10);
     if (b->getYCoord() <= 5) {
@@ -49,13 +49,13 @@ void Game::Canon::fireCannon(Bullet *b) {
     b->Visualize();
 }
 
-void Game::Canon::loadCannon() {
+void Game::CanonManager::loadCannon() {
     for (int i = 0; i < 200; ++i) {
         bullets[i] = createBullet(this->imgPath, this->playerShip->getXCoord(), this->playerShip->getYCoord());
     }
 }
 
-bool Game::Canon::checkCollision(int xPos, int yPos) {
+bool Game::CanonManager::checkCollision(int xPos, int yPos) {
     if (collisionController->bulletObject(currentBullet, xPos, yPos)) {
         shoot = false;
         this->currentBullet->setYCoord(0);

@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.cpp
+iostream
+-
+SDLAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
 SDL2/SDL_render.h
 -
@@ -16,69 +22,33 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/fac
 ../model/AlienType.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.h
-SDL2/SDL_render.h
--
-../factory/Texture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
-../model/AlienBullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.h
-SDL2/SDL_render.h
--
-string
--
-../model/Background.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Background.h
-../factory/Texture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBullet.h
-SDL2/SDL_render.h
--
-../model/Bullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Bullet.h
-../factory/Texture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLLife.h
-SDL2/SDL_render.h
--
-../factory/TextTexture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TextTexture.h
-../model/Life.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Life.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.cpp
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.cpp
 iostream
 -
-SDL2/SDL_events.h
+AlienManager.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/AlienManager.h
+vector
 -
-SDLPlayerShip.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
-../factory/Texture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
-../model/PlayerShip.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/PlayerShip.h
-../factory/Texture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
-../controller/KeyHandler.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLScore.h
-SDL2/SDL_render.h
--
-../model/Score.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
-../factory/TextTexture.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TextTexture.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLTimer.h
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+CollisionController.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
+../model/AlienCanon.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienCanon.h
 ../model/Timer.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Timer.h
+CanonManager.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CanonManager.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CanonManager.h
+../factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
+CollisionController.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
+../model/Score.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Score.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/CollisionController.h
 ../model/Bullet.h
@@ -86,12 +56,6 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 ../model/AlienBullet.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienBullet.h
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
-KeyP.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyP.h
-
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
 string
 -
@@ -113,54 +77,6 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/mod
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Life.h
 ../model/Timer.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/Timer.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.cpp
-SDLFactory.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.h
-../SDLClasses/SDLPlayerShip.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLPlayerShip.h
-../SDLClasses/SDLBackground.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBackground.h
-../SDLClasses/SDLAlien.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlien.h
-../SDLClasses/SDLBullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLBullet.h
-../SDLClasses/SDLScore.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLScore.h
-../SDLClasses/SDLAlienBullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.h
-../SDLClasses/SDLTimer.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLTimer.h
-SDL2/SDL.h
--
-SDL2/SDL_image.h
--
-SDL2/SDL_ttf.h
--
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/SDLFactory.h
-SDL2/SDL_video.h
--
-SDL2/SDL_render.h
--
-AbstractFactory.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/AbstractFactory.h
-../model/AlienType.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/model/AlienType.h
-../controller/KeyHandler.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/controller/KeyHandler.h
-../SDLClasses/SDLAlienBullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLAlienBullet.h
-../SDLClasses/SDLLife.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/SDLClasses/SDLLife.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/TextTexture.h
-SDL2/SDL_render.h
--
-string
--
-SDL2/SDL_ttf.h
--
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/Project/factory/Texture.h
 SDL2/SDL_render.h
