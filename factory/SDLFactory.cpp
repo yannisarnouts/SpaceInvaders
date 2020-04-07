@@ -10,6 +10,7 @@
 #include "../SDLClasses/SDLScore.h"
 #include "../SDLClasses/SDLAlienBullet.h"
 #include "../SDLClasses/SDLTimer.h"
+#include "../SDLClasses/SDLBonus.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
@@ -110,4 +111,10 @@ Game::Life *SDL::SDLFactory::createLife() {
 
 Game::Timer *SDL::SDLFactory::createTimer() {
     return new SDLTimer();
+}
+
+Game::Bonus *SDL::SDLFactory::createBonus(int xPos, int yPos, Game::BonusType bonusType) {
+    int gw = SCREEN_WIDTH / 30;
+    int gh = SCREEN_HEIGHT / 30;
+    return new SDLBonus(xPos, yPos, gw, gh, bonusType, gRenderer);
 }

@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project"
+CMAKE_SOURCE_DIR = "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders\cmake-build-debug\CMakeFiles" "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\Project\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -202,6 +202,33 @@ SDLClasses/SDLBackground.s: SDLClasses/SDLBackground.cpp.s
 SDLClasses/SDLBackground.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBackground.cpp.s
 .PHONY : SDLClasses/SDLBackground.cpp.s
+
+SDLClasses/SDLBonus.obj: SDLClasses/SDLBonus.cpp.obj
+
+.PHONY : SDLClasses/SDLBonus.obj
+
+# target to build an object file
+SDLClasses/SDLBonus.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBonus.cpp.obj
+.PHONY : SDLClasses/SDLBonus.cpp.obj
+
+SDLClasses/SDLBonus.i: SDLClasses/SDLBonus.cpp.i
+
+.PHONY : SDLClasses/SDLBonus.i
+
+# target to preprocess a source file
+SDLClasses/SDLBonus.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBonus.cpp.i
+.PHONY : SDLClasses/SDLBonus.cpp.i
+
+SDLClasses/SDLBonus.s: SDLClasses/SDLBonus.cpp.s
+
+.PHONY : SDLClasses/SDLBonus.s
+
+# target to generate assembly for a file
+SDLClasses/SDLBonus.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBonus.cpp.s
+.PHONY : SDLClasses/SDLBonus.cpp.s
 
 SDLClasses/SDLBullet.obj: SDLClasses/SDLBullet.cpp.obj
 
@@ -364,6 +391,33 @@ controller/AlienManager.s: controller/AlienManager.cpp.s
 controller/AlienManager.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/AlienManager.cpp.s
 .PHONY : controller/AlienManager.cpp.s
+
+controller/BonusManager.obj: controller/BonusManager.cpp.obj
+
+.PHONY : controller/BonusManager.obj
+
+# target to build an object file
+controller/BonusManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/BonusManager.cpp.obj
+.PHONY : controller/BonusManager.cpp.obj
+
+controller/BonusManager.i: controller/BonusManager.cpp.i
+
+.PHONY : controller/BonusManager.i
+
+# target to preprocess a source file
+controller/BonusManager.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/BonusManager.cpp.i
+.PHONY : controller/BonusManager.cpp.i
+
+controller/BonusManager.s: controller/BonusManager.cpp.s
+
+.PHONY : controller/BonusManager.s
+
+# target to generate assembly for a file
+controller/BonusManager.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/BonusManager.cpp.s
+.PHONY : controller/BonusManager.cpp.s
 
 controller/CanonManager.obj: controller/CanonManager.cpp.obj
 
@@ -950,6 +1004,9 @@ help:
 	@echo ... SDLClasses/SDLBackground.obj
 	@echo ... SDLClasses/SDLBackground.i
 	@echo ... SDLClasses/SDLBackground.s
+	@echo ... SDLClasses/SDLBonus.obj
+	@echo ... SDLClasses/SDLBonus.i
+	@echo ... SDLClasses/SDLBonus.s
 	@echo ... SDLClasses/SDLBullet.obj
 	@echo ... SDLClasses/SDLBullet.i
 	@echo ... SDLClasses/SDLBullet.s
@@ -968,6 +1025,9 @@ help:
 	@echo ... controller/AlienManager.obj
 	@echo ... controller/AlienManager.i
 	@echo ... controller/AlienManager.s
+	@echo ... controller/BonusManager.obj
+	@echo ... controller/BonusManager.i
+	@echo ... controller/BonusManager.s
 	@echo ... controller/CanonManager.obj
 	@echo ... controller/CanonManager.i
 	@echo ... controller/CanonManager.s

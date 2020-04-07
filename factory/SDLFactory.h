@@ -29,6 +29,8 @@ namespace SDL {
 
         Game::AlienBullet *createAlienBullet(std::string path, int xCoord, int yCoord) override;
 
+        Game::Bonus *createBonus(int xPos, int yPos, Game::BonusType bonusType) override;
+
         Game::Score *createScore() override;
 
         Game::Life *createLife() override;

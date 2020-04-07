@@ -5,3 +5,13 @@
 #include "Bonus.h"
 
 Game::Bonus::Bonus() {}
+
+Game::Bonus::Bonus(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {}
+
+Game::Bonus::Bonus(int xCoord, int yCoord, int width, int height, Game::BonusType bonusType) : Entity(xCoord, yCoord,
+                                                                                                      width, height),
+                                                                                               bonusType(bonusType) {}
+
+Game::BonusType Game::Bonus::getBonusType() const {
+    return bonusType;
+}

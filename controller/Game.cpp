@@ -5,6 +5,7 @@
 #include "Game.h"
 #include "../controller/AlienManager.h"
 #include "PlayerManager.h"
+#include "BonusManager.h"
 
 Game::Game::Game(AbstractFactory *_A) {
     A = _A;
@@ -13,10 +14,11 @@ Game::Game::Game(AbstractFactory *_A) {
 void Game::Game::Run() {
     A->init();
     Background *bg = A->createBackground(bgPath);
-    PlayerManager* playerManager = new PlayerManager(this->A);
-    PlayerShip* playerShip = playerManager->getPlayerShip();
-    CanonManager* canon = new CanonManager(this->A, playerShip);
-    AlienManager* aliens = new AlienManager(this->A, canon);
+    PlayerManager *playerManager = new PlayerManager(this->A);
+    PlayerShip *playerShip = playerManager->getPlayerShip();
+    CanonManager *canon = new CanonManager(this->A, playerShip);
+    AlienManager *aliens = new AlienManager(this->A, canon);
+    BonusManager *bonusManager = new BonusManager(this->A);
     while (A->pollEvents() && playerShip->getLife() > 0) {
         bg->Visualize();
         playerManager->runPlayer();
@@ -27,6 +29,7 @@ void Game::Game::Run() {
         if(aliens->checkCollision(playerShip->getXCoord(), playerShip->getYCoord())) {
             playerManager->setLife();
         };
+        bonusManager->runBonusses();
         canon->runCannon();
         A->render();
     }
