@@ -8,7 +8,7 @@ Game::PlayerManager::PlayerManager() {}
 
 Game::PlayerManager::PlayerManager(Game::AbstractFactory *abstractFactory) : abstractFactory(abstractFactory) {
     this->abstractFactory = abstractFactory;
-    this->playerShip = abstractFactory->createPlayerShip(shipPath);
+    this->playerShip = abstractFactory->createPlayerShip();
     this->life = abstractFactory->createLife();
     this->timer = abstractFactory->createTimer();
 }

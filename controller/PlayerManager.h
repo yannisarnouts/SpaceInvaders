@@ -25,7 +25,7 @@ namespace Game {
         KeyHandler *keyHandler;
         Timer *timer;
         int SCREEN_WIDTH = 950;
-        std::string shipPath = "../assets/spaceship.png";
+        std::string shipPath = "";
     };
 }
 

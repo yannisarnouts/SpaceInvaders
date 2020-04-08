@@ -21,11 +21,11 @@ namespace SDL {
 
         void init() override;
 
-        Game::PlayerShip *createPlayerShip(std::string path) override;
+        Game::PlayerShip *createPlayerShip() override;
 
         Game::Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) override;
 
-        Game::Bullet *createBullet(std::string path, int xCoord, int yCoord) override;
+        Game::Bullet *createBullet(int xCoord, int yCoord) override;
 
         Game::AlienBullet *createAlienBullet(std::string path, int xCoord, int yCoord) override;
 

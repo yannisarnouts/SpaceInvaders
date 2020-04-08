@@ -7,10 +7,9 @@
 
 SDL::SDLBullet::SDLBullet() {}
 
-SDL::SDLBullet::SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer, const std::string &imgPath)
-        : Bullet(xCoord, yCoord, width, height), renderer(renderer), imgPath(imgPath) {
+SDL::SDLBullet::SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer)
+        : Bullet(xCoord, yCoord, width, height), renderer(renderer) {
     this->renderer = renderer;
-    this->imgPath = imgPath;
     this->screenHeight = height;
     Texture *bTexture = new Texture(renderer);
     texture = bTexture;

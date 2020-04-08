@@ -7,7 +7,6 @@
 SDL::SDLBonus::SDLBonus() {}
 
 void SDL::SDLBonus::Visualize() {
-    printf("%d ", getXCoord());
     SDL_Rect renderQuad = {getXCoord(), getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }

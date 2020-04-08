@@ -9,14 +9,12 @@
 
 SDL::SDLPlayerShip::SDLPlayerShip() {
 }
-SDL::SDLPlayerShip::SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer,
-                             const std::string &imgPath) : PlayerShip(xCoord, yCoord, width, height),
-                                                           gRenderer(gRenderer), imgPath(imgPath) {
+SDL::SDLPlayerShip::SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer) : PlayerShip(xCoord, yCoord, width, height),
+                                                           gRenderer(gRenderer) {
     this->gRenderer = gRenderer;
-    this->imgPath = imgPath;
     Texture *ssTexture = new Texture(gRenderer);
     texture = ssTexture;
-    texture->loadFromFile(imgPath);
+    texture->loadFromFile(shipPath);
 }
 
 void SDL::SDLPlayerShip::Visualize() {

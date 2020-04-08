@@ -15,7 +15,7 @@ namespace Game {
     public:
         CanonManager();
         CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip);
-        Bullet *createBullet(std::string imgPath, int shipX, int shipY);
+        Bullet *createBullet(int shipX, int shipY);
         void runCannon();
         void fireCannon(Bullet *b);
         void loadCannon();
@@ -23,7 +23,6 @@ namespace Game {
 
     private:
         AbstractFactory *abstractFactory;
-        std::string imgPath = "../assets/bullet.png";
         PlayerShip *playerShip;
         Bullet *bullets[200];
         int canonLength = 100;

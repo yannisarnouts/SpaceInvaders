@@ -15,8 +15,7 @@ namespace SDL {
     public:
         SDLPlayerShip();
 
-        SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer,
-                      const std::string &imgPath);
+        SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer);
         void Visualize() override;
         void close() override;
 
@@ -27,6 +26,7 @@ namespace SDL {
         int SCREEN_HEIGHT = 1280;
         int SCREEN_WIDTH = 950;
         Game::KeyHandler *keyHandler;
+        std::string shipPath = "../assets/spaceship.png";
     };
 }
 

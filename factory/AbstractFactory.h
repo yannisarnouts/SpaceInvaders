@@ -23,9 +23,9 @@ namespace Game {
     public:
         AbstractFactory();
         // playership
-        virtual PlayerShip *createPlayerShip(std::string path) = 0;
+        virtual PlayerShip *createPlayerShip() = 0;
         virtual Life *createLife()=0;
-        virtual Bullet *createBullet(std::string path, int xCoord, int yCoord) = 0;
+        virtual Bullet *createBullet(int xCoord, int yCoord) = 0;
         virtual Score *createScore() = 0;
 
         //Alien

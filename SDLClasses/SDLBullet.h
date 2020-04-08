@@ -15,7 +15,7 @@ namespace SDL {
     public:
         SDLBullet();
 
-        SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer, const std::string &imgPath);
+        SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
 
         void close() override;
 
@@ -24,7 +24,7 @@ namespace SDL {
     private:
         SDL_Renderer *renderer;
         Texture *texture = NULL;
-        std::string imgPath;
+        std::string imgPath = "../assets/bullet.png";
         int screenHeight;
     };
 }

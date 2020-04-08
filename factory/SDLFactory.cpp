@@ -52,12 +52,12 @@ void SDL::SDLFactory::render() {
     SDL_RenderPresent(gRenderer);
 }
 
-Game::PlayerShip *SDL::SDLFactory::createPlayerShip(std::string path) {
+Game::PlayerShip *SDL::SDLFactory::createPlayerShip() {
     int sh = SCREEN_HEIGHT / 7;
     int sw = SCREEN_WIDTH / 7;
     int xc = SCREEN_WIDTH / 2;
     int yc = SCREEN_HEIGHT - 550;
-    return new SDLPlayerShip(xc, yc, sw, sh, gRenderer, path);
+    return new SDLPlayerShip(xc, yc, sw, sh, gRenderer);
 }
 
 void SDL::SDLFactory::close() {
@@ -89,10 +89,10 @@ bool SDL::SDLFactory::pollEvents() {
     return play;
 }
 
-Game::Bullet *SDL::SDLFactory::createBullet(std::string path, int xCoord, int yCoord) {
+Game::Bullet *SDL::SDLFactory::createBullet(int xCoord, int yCoord) {
     int bw = SCREEN_WIDTH / 30;
     int bh = SCREEN_HEIGHT / 30;
-    return new SDLBullet(xCoord, yCoord, bw, bh, gRenderer, path);
+    return new SDLBullet(xCoord, yCoord, bw, bh, gRenderer);
 }
 
 Game::Score *SDL::SDLFactory::createScore() {

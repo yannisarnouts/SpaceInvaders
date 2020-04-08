@@ -8,7 +8,7 @@
 Game::CanonManager::CanonManager() {}
 
 Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
-    this->currentBullet = abstractFactory->createBullet("", 0, 0);
+    this->currentBullet = abstractFactory->createBullet(0, 0);
     this->score = abstractFactory->createScore();
     this->abstractFactory = abstractFactory;
     this->playerShip = playerShip;
@@ -17,8 +17,8 @@ Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *p
     this->loadCannon();
 }
 
-Game::Bullet *Game::CanonManager::createBullet(std::string imgPath, int shipX, int shipY) {
-    Bullet *bullet = abstractFactory->createBullet(imgPath, shipX, shipY);
+Game::Bullet *Game::CanonManager::createBullet(int shipX, int shipY) {
+    Bullet *bullet = abstractFactory->createBullet(shipX, shipY);
     return bullet;
 }
 
@@ -51,7 +51,7 @@ void Game::CanonManager::fireCannon(Bullet *b) {
 
 void Game::CanonManager::loadCannon() {
     for (int i = 0; i < 200; ++i) {
-        bullets[i] = createBullet(this->imgPath, this->playerShip->getXCoord(), this->playerShip->getYCoord());
+        bullets[i] = createBullet(this->playerShip->getXCoord(), this->playerShip->getYCoord());
     }
 }
 
