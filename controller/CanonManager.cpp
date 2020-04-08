@@ -56,7 +56,7 @@ void Game::CanonManager::loadCannon() {
 }
 
 bool Game::CanonManager::checkCollision(int xPos, int yPos) {
-    if (collisionController->bulletObject(currentBullet, xPos, yPos)) {
+    if (collisionController->bulletPlayerShip(currentBullet, xPos, yPos)) {
         shoot = false;
         this->currentBullet->setYCoord(0);
         score->setPoints(score->getPoints() + 1);
@@ -64,5 +64,9 @@ bool Game::CanonManager::checkCollision(int xPos, int yPos) {
     } else {
         return false;
     }
+}
+
+Game::Score *Game::CanonManager::getScore() const {
+    return score;
 }
 

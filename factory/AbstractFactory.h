@@ -33,7 +33,7 @@ namespace Game {
         virtual AlienBullet* createAlienBullet(std::string path, int xCoord, int yCoord)=0;
 
         //extra
-        virtual Bonus *createBonus(int xPos, int yPos, Game::BonusType bonusType)=0;
+        virtual Bonus *createBonus(int xPos, int yPos, BonusType bonusType)=0;
         virtual Background *createBackground(std::string path) = 0;
         virtual Timer *createTimer()=0;
         virtual bool pollEvents() = 0;

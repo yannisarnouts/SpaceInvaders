@@ -21,6 +21,8 @@ namespace Game {
         void loadCannon();
         bool checkCollision(int xPos, int yPos);
 
+        Score *getScore() const;
+
     private:
         AbstractFactory *abstractFactory;
         PlayerShip *playerShip;

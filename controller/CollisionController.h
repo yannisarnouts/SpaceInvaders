@@ -8,14 +8,17 @@
 
 #include "../model/Bullet.h"
 #include "../model/AlienBullet.h"
+#include "../model/Bonus.h"
+#include "../model/PlayerShip.h"
 
 namespace Game {
     class CollisionController {
     public:
         CollisionController();
 
-        bool bulletObject(Bullet *bullet, int xPos, int yPos);
+        bool bulletPlayerShip(Bullet *bullet, int xPos, int yPos);
         bool bulletAlien(AlienBullet *bullet, int xPos, int yPos);
+        bool bonusPlayerShip(Bonus *bonus, PlayerShip *playerShip);
     };
 }
 

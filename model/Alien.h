@@ -8,7 +8,6 @@
 
 #include "AlienType.h"
 #include "Entity.h"
-#include "AlienCanon.h"
 
 namespace Game {
     class Alien : public Entity {
@@ -27,7 +26,6 @@ namespace Game {
     private:
         AlienType alienType;
         int moveAlien = 1;
-        AlienCanon* alienCanon;
         bool alive = true;
         int SCREEN_WIDTH = 950;
     };

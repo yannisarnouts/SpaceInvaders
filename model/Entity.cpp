@@ -48,3 +48,11 @@ void Game::Entity::setYCoord(int yCoord) {
     Entity::yCoord = yCoord;
 }
 
+int Game::Entity::getSpeed() const {
+    return speed;
+}
+
+void Game::Entity::setSpeed(int speed) {
+    Entity::speed = speed;
+}
+

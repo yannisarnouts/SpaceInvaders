@@ -16,6 +16,9 @@ namespace Game {
         PlayerShip *getPlayerShip() const;
         void runPlayer();
         void setLife();
+
+        void setLife1(Life *life);
+
         void moveShip();
 
     private:
@@ -25,7 +28,6 @@ namespace Game {
         KeyHandler *keyHandler;
         Timer *timer;
         int SCREEN_WIDTH = 950;
-        std::string shipPath = "";
     };
 }
 

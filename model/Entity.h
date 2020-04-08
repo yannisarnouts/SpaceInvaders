@@ -28,11 +28,16 @@ namespace Game {
 
         void setHeight(int height);
 
+        int getSpeed() const;
+
+        void setSpeed(int speed);
+
     private:
         int xCoord;
         int yCoord;
         int width;
         int height;
+        int speed = 10;
     };
 }
 

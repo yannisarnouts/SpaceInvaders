@@ -22,7 +22,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/main.cpp.obj"
   "CMakeFiles/Project.dir/model/Alien.cpp.obj"
   "CMakeFiles/Project.dir/model/AlienBullet.cpp.obj"
-  "CMakeFiles/Project.dir/model/AlienCanon.cpp.obj"
   "CMakeFiles/Project.dir/model/Background.cpp.obj"
   "CMakeFiles/Project.dir/model/Bonus.cpp.obj"
   "CMakeFiles/Project.dir/model/Bullet.cpp.obj"

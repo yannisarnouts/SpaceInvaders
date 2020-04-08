@@ -743,33 +743,6 @@ model/AlienBullet.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienBullet.cpp.s
 .PHONY : model/AlienBullet.cpp.s
 
-model/AlienCanon.obj: model/AlienCanon.cpp.obj
-
-.PHONY : model/AlienCanon.obj
-
-# target to build an object file
-model/AlienCanon.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienCanon.cpp.obj
-.PHONY : model/AlienCanon.cpp.obj
-
-model/AlienCanon.i: model/AlienCanon.cpp.i
-
-.PHONY : model/AlienCanon.i
-
-# target to preprocess a source file
-model/AlienCanon.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienCanon.cpp.i
-.PHONY : model/AlienCanon.cpp.i
-
-model/AlienCanon.s: model/AlienCanon.cpp.s
-
-.PHONY : model/AlienCanon.s
-
-# target to generate assembly for a file
-model/AlienCanon.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/AlienCanon.cpp.s
-.PHONY : model/AlienCanon.cpp.s
-
 model/Background.obj: model/Background.cpp.obj
 
 .PHONY : model/Background.obj
@@ -1064,9 +1037,6 @@ help:
 	@echo ... model/AlienBullet.obj
 	@echo ... model/AlienBullet.i
 	@echo ... model/AlienBullet.s
-	@echo ... model/AlienCanon.obj
-	@echo ... model/AlienCanon.i
-	@echo ... model/AlienCanon.s
 	@echo ... model/Background.obj
 	@echo ... model/Background.i
 	@echo ... model/Background.s

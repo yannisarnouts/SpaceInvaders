@@ -18,7 +18,7 @@ void Game::Game::Run() {
     PlayerShip *playerShip = playerManager->getPlayerShip();
     CanonManager *canon = new CanonManager(this->A, playerShip);
     AlienManager *aliens = new AlienManager(this->A, canon);
-    BonusManager *bonusManager = new BonusManager(this->A);
+    BonusManager *bonusManager = new BonusManager(this->A, playerManager, canon);
     while (A->pollEvents() && playerShip->getLife() > 0) {
         bg->Visualize();
         playerManager->runPlayer();

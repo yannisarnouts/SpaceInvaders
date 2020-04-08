@@ -9,7 +9,6 @@
 #include <vector>
 #include "../factory/AbstractFactory.h"
 #include "CollisionController.h"
-#include "../model/AlienCanon.h"
 #include "../model/Timer.h"
 #include "CanonManager.h"
 
@@ -30,7 +29,6 @@ namespace Game {
         std::vector<std::vector<Alien * >> aliens;
         std::vector<AlienBullet*> bullets;
         int bulletLength = 500;
-        AlienCanon *alienCanon;
         CanonManager *canon; AlienBullet *currentBullet;
         CollisionController *collisionController;
         int michielLength = 10, thomasLength = 10, rubenLength = 10, cliffordLength = 10;

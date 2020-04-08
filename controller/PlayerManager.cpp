@@ -33,17 +33,17 @@ void Game::PlayerManager::moveShip() {
     int direction = keyHandler->directions();
     if (playerShip->getXCoord() >= (this->SCREEN_WIDTH + playerShip->getWidth())) {
         if (direction == KeyP::LEFT) {
-            playerShip->setXCoord(playerShip->getXCoord()- timer->getDeltaTime() * 10);
+            playerShip->setXCoord(playerShip->getXCoord()- timer->getDeltaTime() * playerShip->getSpeed());
         }
     } else if (playerShip->getXCoord() <= 0) {
         if (direction == KeyP::RIGHT) {
-            playerShip->setXCoord(playerShip->getXCoord() + timer->getDeltaTime() * 10);
+            playerShip->setXCoord(playerShip->getXCoord() + timer->getDeltaTime() * playerShip->getSpeed());
         }
     } else {
         if (direction == KeyP::LEFT) {
-            playerShip->setXCoord(playerShip->getXCoord()- timer->getDeltaTime() * 10);
+            playerShip->setXCoord(playerShip->getXCoord()- timer->getDeltaTime() * playerShip->getSpeed());
         } else if (direction == KeyP::RIGHT) {
-            playerShip->setXCoord(playerShip->getXCoord() + timer->getDeltaTime() * 10);
+            playerShip->setXCoord(playerShip->getXCoord() + timer->getDeltaTime() * playerShip->getSpeed());
         }
     }
 }
