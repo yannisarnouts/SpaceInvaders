@@ -17,15 +17,16 @@ namespace Game {
         void createBonusses();
         void Visualize();
         void runBonusses();
-        void fireBonusses(int i);
+        void fireBonusses();
 
     private:
         AbstractFactory *abstractFactory;
-        Bonus *currentBonus;
         std::vector<Bonus*> bonusses;
         Timer *timer;
         int SCREEN_WIDTH = 950;
+        int SCREEN_HEIGHT = 1280;
         bool runBonus = false;
+        int i = -1;
     };
 }
 

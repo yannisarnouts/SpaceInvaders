@@ -9,7 +9,6 @@ Game::BonusManager::BonusManager() {}
 
 Game::BonusManager::BonusManager(Game::AbstractFactory *abstractFactory) : abstractFactory(abstractFactory) {
     this->abstractFactory = abstractFactory;
-    this->currentBonus = abstractFactory->createBonus(100, 100, BonusType::LIFES);
     this->timer = abstractFactory->createTimer();
     createBonusses();
 }
@@ -18,7 +17,7 @@ Game::BonusManager::BonusManager(Game::AbstractFactory *abstractFactory) : abstr
 void Game::BonusManager::createBonusses() {
     bonusses.reserve(10);
     for (int i = 0; i < 10; ++i) {
-        bonusses.emplace_back(abstractFactory->createBonus(rand() % SCREEN_WIDTH, 0, BonusType(rand() % 4)));
+        bonusses.emplace_back(abstractFactory->createBonus(rand() % SCREEN_WIDTH, -100, BonusType(rand() % 4)));
     }
 }
 
@@ -31,16 +30,19 @@ void Game::BonusManager::Visualize() {
 void Game::BonusManager::runBonusses() {
     timer->update();
     Visualize();
-    int a = rand() % 10;
-    if (a == 1) {
+    int a = rand() % 300;
+    if (a == 38 && !runBonus) {
         runBonus = true;
+        i = rand() % 10;
     }
-    while (runBonus) {
-        int i = rand() % 10;
-        fireBonusses(i);
+    if (runBonus) {
+        fireBonusses();
+    }
+    if (this->bonusses[i]->getYCoord() > SCREEN_HEIGHT) {
+        runBonus = false;
     }
 }
 
-void Game::BonusManager::fireBonusses(int i) {
-    this->bonusses[i]->setYCoord(this->bonusses[i]->getYCoord() + 10);
+void Game::BonusManager::fireBonusses() {
+    this->bonusses[i]->setYCoord(this->bonusses[i]->getYCoord() + timer->getDeltaTime() * 5);
 }
