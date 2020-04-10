@@ -62,7 +62,8 @@ bool Game::BonusManager::checkCollision() {
         } else if (bonusType == BonusType::SPEED) {
             playerShip->setSpeed( timer->getDeltaTime() * 15);
         } else if (bonusType == BonusType::BADLUCK) {
-            playerShip->setSpeed( timer->getDeltaTime() * 15);
+            printf("BADLUCK");
+            playerShip->setSpeed( timer->getDeltaTime() * 5);
             canonManager->getScore()->setPoints(canonManager->getScore()->getPoints() - 10);
         }
         return true;

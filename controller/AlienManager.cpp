@@ -33,13 +33,13 @@ void Game::AlienManager::createAliens(int number, AlienType alienType, std::stri
 
 void Game::AlienManager::Visualize(AlienType alienType) {
     if (alienType == AlienType::michiel) {
-        VisualizeType(alienType, michielLength);
+        VisualizeType(alienType, 0, michielLength);
     } else if (alienType == AlienType::ruben) {
-        VisualizeType(alienType, rubenLength);
+        VisualizeType(alienType, 1, rubenLength);
     } else if (alienType == AlienType::clifford) {
-        VisualizeType(alienType, cliffordLength);
+        VisualizeType(alienType, 2, cliffordLength);
     } else if (alienType == AlienType::thomas) {
-        VisualizeType(alienType, thomasLength);
+        VisualizeType(alienType, 3, thomasLength);
     }
     this->bullets[bulletLength]->Visualize();
     int a = rand() % 200;
@@ -62,48 +62,30 @@ void Game::AlienManager::moveAndCheck(int a, int length) {
     }
 }
 
-void Game::AlienManager::VisualizeType(AlienType alienType, int length) {
+void Game::AlienManager::VisualizeType(AlienType alienType, int a, int length) {
     for (int i = 0; i < length; ++i) {
         if (alienType == AlienType::michiel) {
-            if (this->aliens[0][i]->hitBoundary()) {
-                moveAndCheck(0, michielLength);
-            }
-            if (canon->checkCollision(this->aliens[0][i]->getXCoord(), this->aliens[0][i]->getYCoord())) {
-                this->aliens[0][i]->setAlive(false);
-                handleCollision(0, i, length, alienType);
-            } else {
-                this->aliens[0][i]->Visualize();
+            if (this->aliens[a][i]->hitBoundary()) {
+                moveAndCheck(a, michielLength);
             }
         } else if (alienType == AlienType::ruben) {
-            if (this->aliens[1][i]->hitBoundary()) {
-                moveAndCheck(1, rubenLength);
-            }
-            if (canon->checkCollision(this->aliens[1][i]->getXCoord(), this->aliens[1][i]->getYCoord())) {
-                this->aliens[1][i]->setAlive(false);
-                handleCollision(1, i, length, alienType);
-            } else {
-                this->aliens[1][i]->Visualize();
+            if (this->aliens[a][i]->hitBoundary()) {
+                moveAndCheck(a, rubenLength);
             }
         } else if (alienType == AlienType::clifford) {
-            if (this->aliens[2][i]->hitBoundary()) {
-                moveAndCheck(2, cliffordLength);
-            }
-            if (canon->checkCollision(this->aliens[2][i]->getXCoord(), this->aliens[2][i]->getYCoord())) {
-                this->aliens[2][i]->setAlive(false);
-                handleCollision(2, i, length, alienType);
-            } else {
-                this->aliens[2][i]->Visualize();
+            if (this->aliens[a][i]->hitBoundary()) {
+                moveAndCheck(a, cliffordLength);
             }
         } else if (alienType == AlienType::thomas) {
-            if (this->aliens[3][i]->hitBoundary()) {
-                moveAndCheck(3, thomasLength);
+            if (this->aliens[a][i]->hitBoundary()) {
+                moveAndCheck(a, thomasLength);
             }
-            if (canon->checkCollision(this->aliens[3][i]->getXCoord(), this->aliens[3][i]->getYCoord())) {
-                this->aliens[3][i]->setAlive(false);
-                handleCollision(3, i, length, alienType);
-            } else {
-                this->aliens[3][i]->Visualize();
-            }
+        }
+        if (canon->checkCollision(this->aliens[a][i]->getXCoord(), this->aliens[a][i]->getYCoord())) {
+            this->aliens[a][i]->setAlive(false);
+            handleCollision(a, i, length, alienType);
+        } else {
+            this->aliens[a][i]->Visualize();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Game {
     public:
         AlienManager(AbstractFactory *abstractFactory, CanonManager *canon);
         void Visualize(AlienType alienType);
-        void VisualizeType(AlienType alienType, int length);
+        void VisualizeType(AlienType alienType, int a, int length);
         void createAliens(int number, AlienType alienType, std::string imgPath, int y, int a);
         void moveAndCheck(int a, int length);
         void handleCollision(int i, int j, int length, AlienType alienType);
