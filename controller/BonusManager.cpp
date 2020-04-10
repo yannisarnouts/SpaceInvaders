@@ -7,7 +7,8 @@
 
 Game::BonusManager::BonusManager() {}
 
-Game::BonusManager::BonusManager(Game::AbstractFactory *abstractFactory, Game::PlayerManager *playerManager, Game::CanonManager *canonManager) {
+Game::BonusManager::BonusManager(Game::AbstractFactory *abstractFactory, Game::PlayerManager *playerManager,
+                                 Game::CanonManager *canonManager) {
     this->abstractFactory = abstractFactory;
     this->collisionController = new CollisionController();
     this->timer = abstractFactory->createTimer();
@@ -19,7 +20,7 @@ Game::BonusManager::BonusManager(Game::AbstractFactory *abstractFactory, Game::P
 void Game::BonusManager::createBonusses() {
     bonusses.reserve(10);
     for (int i = 0; i < 10; ++i) {
-        bonusses.emplace_back(abstractFactory->createBonus(rand() % SCREEN_WIDTH, -100, BonusType(rand() % 4 )));
+        bonusses.emplace_back(abstractFactory->createBonus(rand() % SCREEN_WIDTH, -100, BonusType(rand() % 4)));
     }
 }
 
@@ -32,7 +33,6 @@ void Game::BonusManager::Visualize() {
 void Game::BonusManager::runBonusses() {
     timer->update();
     Visualize();
-    checkCollision();
     int a = rand() % 100;
     if (a == 38 && !runBonus) {
         runBonus = true;
@@ -40,9 +40,10 @@ void Game::BonusManager::runBonusses() {
     }
     if (runBonus) {
         fireBonusses();
-    }
-    if (this->bonusses[i]->getYCoord() > SCREEN_HEIGHT) {
-        runBonus = false;
+        checkCollision();
+        if (this->bonusses[i]->getYCoord() > SCREEN_HEIGHT) {
+            runBonus = false;
+        }
     }
 }
 

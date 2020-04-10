@@ -34,6 +34,12 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvade
 ../model/Score.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Score.h
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.cpp
+iostream
+-
+CollisionController.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h
 ../model/Bullet.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bullet.h
