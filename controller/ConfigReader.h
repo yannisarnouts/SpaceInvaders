@@ -19,10 +19,16 @@ public:
     void setScreenHeight(int screenHeight);
     int getShipSpeed() const;
     void setShipSpeed(int shipSpeed);
-
     int getShipLife() const;
-
     void setShipLife(int shipLife);
+    int getBulletSpeed() const;
+    void setBulletSpeed(int bulletSpeed);
+    int getBonusSpeed() const;
+    void setBonusSpeed(int bonusSpeed);
+
+    int getCanonLength() const;
+
+    void setCanonLength(int canonLength);
 
 private:
     // read config file
@@ -35,6 +41,9 @@ private:
     int screen_height;
     int shipSpeed;
     int shipLife;
+    int bonusSpeed;
+    int bulletSpeed;
+    int canonLength;
 };
 
 

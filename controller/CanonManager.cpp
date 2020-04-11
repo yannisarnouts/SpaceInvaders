@@ -7,7 +7,9 @@
 
 Game::CanonManager::CanonManager() {}
 
-Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip) {
+Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader) {
+    this->configReader = configReader;
+    this->canonLength = configReader->getCanonLength();
     this->currentBullet = abstractFactory->createBullet(0, 0);
     this->score = abstractFactory->createScore();
     this->abstractFactory = abstractFactory;
@@ -26,7 +28,7 @@ void Game::CanonManager::runCannon() {
     KeyHandler keyHandler;
     int direction = keyHandler.directions();
     timer->update();
-    if (direction == KeyP::UP && !shoot) {
+    if (direction == KeyP::UP && !shoot && canonLength > 1) {
         canonLength--;
         this->bullets[canonLength]->setXCoord(this->playerShip->getXCoord());
         shoot = true;
@@ -42,7 +44,7 @@ void Game::CanonManager::runCannon() {
 
 void Game::CanonManager::fireCannon(Bullet *b) {
     this->currentBullet = b;
-    this->currentBullet->setYCoord(this->currentBullet->getYCoord() - timer->getDeltaTime() * 10);
+    this->currentBullet->setYCoord(this->currentBullet->getYCoord() - timer->getDeltaTime() * configReader->getBulletSpeed());
     if (b->getYCoord() <= 5) {
         shoot = false;
     }

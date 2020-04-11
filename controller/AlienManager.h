@@ -11,11 +11,12 @@
 #include "CollisionController.h"
 #include "../model/Timer.h"
 #include "CanonManager.h"
+#include "ConfigReader.h"
 
 namespace Game {
     class AlienManager {
     public:
-        AlienManager(AbstractFactory *abstractFactory, CanonManager *canon);
+        AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader);
         void Visualize(AlienType alienType);
         void VisualizeType(AlienType alienType, int a, int length);
         void createAliens(int number, AlienType alienType, std::string imgPath, int y, int a);
@@ -31,7 +32,8 @@ namespace Game {
         int bulletLength = 500;
         CanonManager *canon; AlienBullet *currentBullet;
         CollisionController *collisionController;
-        int michielLength = 10, thomasLength = 10, rubenLength = 10, cliffordLength = 10;
+        ConfigReader *configReader;
+        int michielLength = 10, thomasLength = 10, bossLength = 10, cliffordLength = 10;
     };
 }
 

@@ -58,7 +58,7 @@ Game::PlayerShip *SDL::SDLFactory::createPlayerShip() {
     int sh = SCREEN_HEIGHT / 7;
     int sw = SCREEN_WIDTH / 7;
     int xc = SCREEN_WIDTH / 2;
-    int yc = SCREEN_HEIGHT - 550;
+    int yc = SCREEN_HEIGHT / 1.7;
     return new SDLPlayerShip(xc, yc, sw, sh, gRenderer);
 }
 

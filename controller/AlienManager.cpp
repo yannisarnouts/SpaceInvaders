@@ -5,14 +5,15 @@
 #include <iostream>
 #include "AlienManager.h"
 
-Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon) {
+Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
+    this->configReader = configReader;
     this->collisionController = new CollisionController();
     this->currentBullet = abstractFactory->createAlienBullet("", -20, -20);
     aliens.reserve(4);
-    createAliens(michielLength, AlienType::michiel, "../assets/michiel.png", 100, 0);
-    createAliens(rubenLength, AlienType::ruben, "../assets/ruben.png", 200, 1);
+    createAliens(bossLength, AlienType::boss, "../assets/boss.png", 100, 0);
+    createAliens(michielLength, AlienType::michiel, "../assets/michiel.png", 200, 1);
     createAliens(cliffordLength, AlienType::clifford, "../assets/cliff.png", 300, 2);
     createAliens(thomasLength, AlienType::thomas, "../assets/thomas.png", 400, 3);
     bullets.reserve(bulletLength);
@@ -34,8 +35,8 @@ void Game::AlienManager::createAliens(int number, AlienType alienType, std::stri
 void Game::AlienManager::Visualize(AlienType alienType) {
     if (alienType == AlienType::michiel) {
         VisualizeType(alienType, 0, michielLength);
-    } else if (alienType == AlienType::ruben) {
-        VisualizeType(alienType, 1, rubenLength);
+    } else if (alienType == AlienType::boss) {
+        VisualizeType(alienType, 1, bossLength);
     } else if (alienType == AlienType::clifford) {
         VisualizeType(alienType, 2, cliffordLength);
     } else if (alienType == AlienType::thomas) {
@@ -67,8 +68,8 @@ void Game::AlienManager::VisualizeType(AlienType alienType, int a, int length) {
     for (int i = 0; i < length; ++i) {
         if (alienType == AlienType::michiel) {
             len = michielLength;
-        } else if (alienType == AlienType::ruben) {
-            len = rubenLength;
+        } else if (alienType == AlienType::boss) {
+            len = bossLength;
         } else if (alienType == AlienType::clifford) {
             len = cliffordLength;
         } else if (alienType == AlienType::thomas) {
@@ -92,8 +93,8 @@ void Game::AlienManager::handleCollision(int i, int j, int length, AlienType ali
     }
     if (alienType == AlienType::michiel) {
         michielLength--;
-    } else if (alienType == AlienType::ruben) {
-        rubenLength--;
+    } else if (alienType == AlienType::boss) {
+        bossLength--;
     } else if (alienType == AlienType::clifford) {
         cliffordLength--;
     } else if (alienType == AlienType::thomas) {

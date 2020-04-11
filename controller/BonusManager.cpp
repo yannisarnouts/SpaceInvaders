@@ -8,19 +8,20 @@
 Game::BonusManager::BonusManager() {}
 
 Game::BonusManager::BonusManager(Game::AbstractFactory *abstractFactory, Game::PlayerManager *playerManager,
-                                 Game::CanonManager *canonManager) {
+                                 Game::CanonManager *canonManager, ConfigReader *configReader) {
     this->abstractFactory = abstractFactory;
     this->collisionController = new CollisionController();
     this->timer = abstractFactory->createTimer();
     this->playerShip = playerManager->getPlayerShip();
     this->canonManager = canonManager;
+    this->configReader = configReader;
     createBonusses();
 }
 
 void Game::BonusManager::createBonusses() {
     bonusses.reserve(10);
     for (int i = 0; i < 10; ++i) {
-        bonusses.emplace_back(abstractFactory->createBonus(rand() % SCREEN_WIDTH, -100, BonusType(rand() % 4)));
+        bonusses.emplace_back(abstractFactory->createBonus(rand() % configReader->getScreenWidth(), -100, BonusType(rand() % 4)));
     }
 }
 
@@ -41,19 +42,19 @@ void Game::BonusManager::runBonusses() {
     if (runBonus) {
         fireBonusses();
         checkCollision();
-        if (this->bonusses[i]->getYCoord() > SCREEN_HEIGHT) {
+        if (this->bonusses[i]->getYCoord() > configReader->getScreenHeight()) {
             runBonus = false;
         }
     }
 }
 
 void Game::BonusManager::fireBonusses() {
-    this->bonusses[i]->setYCoord(this->bonusses[i]->getYCoord() + timer->getDeltaTime() * 5);
+    this->bonusses[i]->setYCoord(this->bonusses[i]->getYCoord() + timer->getDeltaTime() * configReader->getBonusSpeed());
 }
 
 bool Game::BonusManager::checkCollision() {
     if (collisionController->bonusPlayerShip(this->bonusses[i], this->playerShip)) {
-        this->bonusses[i]->setYCoord(SCREEN_HEIGHT);
+        this->bonusses[i]->setYCoord(configReader->getScreenHeight());
         bonusType = bonusses[i]->getBonusType();
         if (bonusType == BonusType::LIFES) {
             playerShip->setLife(playerShip->getLife() * 2);

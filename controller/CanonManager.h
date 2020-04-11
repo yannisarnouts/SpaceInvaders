@@ -9,12 +9,13 @@
 #include "../factory/AbstractFactory.h"
 #include "CollisionController.h"
 #include "../model/Score.h"
+#include "ConfigReader.h"
 
 namespace Game {
     class CanonManager {
     public:
         CanonManager();
-        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip);
+        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader);
         Bullet *createBullet(int shipX, int shipY);
         void runCannon();
         void fireCannon(Bullet *b);
@@ -27,11 +28,12 @@ namespace Game {
         AbstractFactory *abstractFactory;
         PlayerShip *playerShip;
         Bullet *bullets[200];
-        int canonLength = 100;
+        int canonLength;
         Bullet *currentBullet;
         Timer *timer;
         bool shoot = false;
         CollisionController *collisionController;
+        ConfigReader *configReader;
         Score* score;
     };
 }

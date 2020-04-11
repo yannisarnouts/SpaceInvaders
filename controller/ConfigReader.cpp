@@ -29,6 +29,12 @@ void ConfigReader::setValue(std::string line, int value) {
         setShipSpeed(value);
     } else if (line == "LIFE") {
         setShipLife(value);
+    } else if (line == "BONUSSPEED") {
+        setBonusSpeed(value);
+    } else if (line == "BULLETSPEED") {
+        setBulletSpeed(value);
+    } else if (line == "CANONLENGTH") {
+        setCanonLength(value);
     }
 }
 
@@ -62,4 +68,28 @@ int ConfigReader::getShipLife() const {
 
 void ConfigReader::setShipLife(int shipLife) {
     ConfigReader::shipLife = shipLife;
+}
+
+int ConfigReader::getBulletSpeed() const {
+    return bulletSpeed;
+}
+
+void ConfigReader::setBulletSpeed(int bulletSpeed) {
+    ConfigReader::bulletSpeed = bulletSpeed;
+}
+
+int ConfigReader::getBonusSpeed() const {
+    return bonusSpeed;
+}
+
+void ConfigReader::setBonusSpeed(int bonusSpeed) {
+    ConfigReader::bonusSpeed = bonusSpeed;
+}
+
+int ConfigReader::getCanonLength() const {
+    return canonLength;
+}
+
+void ConfigReader::setCanonLength(int canonLength) {
+    ConfigReader::canonLength = canonLength;
 }

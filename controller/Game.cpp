@@ -17,15 +17,15 @@ void Game::Game::Run() {
     Background *bg = A->createBackground(bgPath);;
     PlayerManager *playerManager = new PlayerManager(this->A, configReader);
     PlayerShip *playerShip = playerManager->getPlayerShip();
-    CanonManager *canon = new CanonManager(this->A, playerShip);
-    AlienManager *aliens = new AlienManager(this->A, canon);
-    BonusManager *bonusManager = new BonusManager(this->A, playerManager, canon);
+    CanonManager *canon = new CanonManager(this->A, playerShip, configReader);
+    AlienManager *aliens = new AlienManager(this->A, canon, configReader);
+    BonusManager *bonusManager = new BonusManager(this->A, playerManager, canon, configReader);
     while (A->pollEvents() && playerShip->getLife() > 0) {
         bg->Visualize();
         playerManager->runPlayer();
         aliens->Visualize(AlienType::michiel);
         aliens->Visualize(AlienType::thomas);
-        aliens->Visualize(AlienType::ruben);
+        aliens->Visualize(AlienType::boss);
         aliens->Visualize(AlienType::clifford);
         if(aliens->checkCollision(playerShip->getXCoord(), playerShip->getYCoord())) {
             playerManager->setLife();

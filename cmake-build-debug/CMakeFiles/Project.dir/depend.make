@@ -56,6 +56,7 @@ CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManag
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/AlienManager.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/CanonManager.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/AlienBullet.h
@@ -95,6 +96,7 @@ CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/Timer.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/CanonManager.cpp
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/CanonManager.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../factory/AbstractFactory.h

@@ -6,7 +6,7 @@
 #define PROJECT_ALIENTYPE_H
 
 
-enum AlienType { ruben, clifford, thomas, michiel};
+enum AlienType { boss, clifford, thomas, michiel};
 
 
 #endif //PROJECT_ALIENTYPE_H

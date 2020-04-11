@@ -57,6 +57,7 @@ CMakeFiles/Project.dir/controller/AlienManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/AlienManager.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/ConfigReader.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/AbstractFactory.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienBullet.h
@@ -96,6 +97,7 @@ CMakeFiles/Project.dir/controller/CanonManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/ConfigReader.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyHandler.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyP.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/AbstractFactory.h

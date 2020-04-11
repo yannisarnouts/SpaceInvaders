@@ -16,7 +16,7 @@ namespace Game {
     class BonusManager {
     public:
         BonusManager();
-        BonusManager(AbstractFactory *abstractFactory, PlayerManager *playerManager, CanonManager *canonManager);
+        BonusManager(AbstractFactory *abstractFactory, PlayerManager *playerManager, CanonManager *canonManager, ConfigReader *configReader);
         void createBonusses();
         void Visualize();
         void runBonusses();
@@ -32,9 +32,9 @@ namespace Game {
         CanonManager *canonManager;
         PlayerManager *playerManager;
         BonusType bonusType;
-        int SCREEN_WIDTH = 950;
-        int SCREEN_HEIGHT = 1280;
+        ConfigReader *configReader;
         bool runBonus = false;
+        int bonusLength;
         int i = -1;
     };
 }
