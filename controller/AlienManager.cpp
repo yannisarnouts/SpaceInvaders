@@ -63,23 +63,19 @@ void Game::AlienManager::moveAndCheck(int a, int length) {
 }
 
 void Game::AlienManager::VisualizeType(AlienType alienType, int a, int length) {
+    int len = 0;
     for (int i = 0; i < length; ++i) {
         if (alienType == AlienType::michiel) {
-            if (this->aliens[a][i]->hitBoundary()) {
-                moveAndCheck(a, michielLength);
-            }
+            len = michielLength;
         } else if (alienType == AlienType::ruben) {
-            if (this->aliens[a][i]->hitBoundary()) {
-                moveAndCheck(a, rubenLength);
-            }
+            len = rubenLength;
         } else if (alienType == AlienType::clifford) {
-            if (this->aliens[a][i]->hitBoundary()) {
-                moveAndCheck(a, cliffordLength);
-            }
+            len = cliffordLength;
         } else if (alienType == AlienType::thomas) {
-            if (this->aliens[a][i]->hitBoundary()) {
-                moveAndCheck(a, thomasLength);
-            }
+            len = thomasLength;
+        }
+        if (this->aliens[a][i]->hitBoundary()) {
+            moveAndCheck(a, len);
         }
         if (canon->checkCollision(this->aliens[a][i]->getXCoord(), this->aliens[a][i]->getYCoord())) {
             this->aliens[a][i]->setAlive(false);

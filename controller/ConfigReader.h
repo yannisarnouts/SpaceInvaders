@@ -17,16 +17,24 @@ public:
     void setScreenWidth(int screenWidth);
     int getScreenHeight() const;
     void setScreenHeight(int screenHeight);
+    int getShipSpeed() const;
+    void setShipSpeed(int shipSpeed);
+
+    int getShipLife() const;
+
+    void setShipLife(int shipLife);
 
 private:
     // read config file
     std::ifstream input;
-    std::string configFile = "..\\test.txt";
+    std::string configFile = "..\\config.txt";
     std::string line;
     int value;
     // config settings
     int screen_width;
     int screen_height;
+    int shipSpeed;
+    int shipLife;
 };
 
 

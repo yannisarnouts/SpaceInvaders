@@ -6,10 +6,12 @@
 
 Game::PlayerManager::PlayerManager() {}
 
-Game::PlayerManager::PlayerManager(Game::AbstractFactory *abstractFactory) : abstractFactory(abstractFactory) {
+Game::PlayerManager::PlayerManager(Game::AbstractFactory *abstractFactory, ConfigReader *configReader) : abstractFactory(abstractFactory) {
     this->abstractFactory = abstractFactory;
+    this->configReader = configReader;
     this->playerShip = abstractFactory->createPlayerShip();
     this->life = abstractFactory->createLife();
+    initShip();
     this->timer = abstractFactory->createTimer();
 }
 
@@ -31,7 +33,7 @@ void Game::PlayerManager::setLife() {
 
 void Game::PlayerManager::moveShip() {
     int direction = keyHandler->directions();
-    if (playerShip->getXCoord() >= (this->SCREEN_WIDTH + playerShip->getWidth())) {
+    if (playerShip->getXCoord() >= (this->configReader->getScreenWidth() + playerShip->getWidth())) {
         if (direction == KeyP::LEFT) {
             playerShip->setXCoord(playerShip->getXCoord()- timer->getDeltaTime() * playerShip->getSpeed());
         }
@@ -46,4 +48,10 @@ void Game::PlayerManager::moveShip() {
             playerShip->setXCoord(playerShip->getXCoord() + timer->getDeltaTime() * playerShip->getSpeed());
         }
     }
+}
+
+void Game::PlayerManager::initShip() {
+    this->playerShip->setSpeed(configReader->getShipSpeed());
+    this->playerShip->setLife(configReader->getShipLife());
+    this->life->setLife(configReader->getShipLife());
 }

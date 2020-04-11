@@ -25,6 +25,10 @@ void ConfigReader::setValue(std::string line, int value) {
         setScreenWidth(value);
     } else if (line == "SCREENWIDTH") {
         setScreenHeight(value);
+    } else if (line == "SHIPSPEED") {
+        setShipSpeed(value);
+    } else if (line == "LIFE") {
+        setShipLife(value);
     }
 }
 
@@ -42,4 +46,20 @@ int ConfigReader::getScreenHeight() const {
 
 void ConfigReader::setScreenHeight(int screenHeight) {
     screen_height = screenHeight;
+}
+
+int ConfigReader::getShipSpeed() const {
+    return shipSpeed;
+}
+
+void ConfigReader::setShipSpeed(int shipSpeed) {
+    ConfigReader::shipSpeed = shipSpeed;
+}
+
+int ConfigReader::getShipLife() const {
+    return shipLife;
+}
+
+void ConfigReader::setShipLife(int shipLife) {
+    ConfigReader::shipLife = shipLife;
 }

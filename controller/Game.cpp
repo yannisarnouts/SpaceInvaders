@@ -6,14 +6,16 @@
 #include "../controller/AlienManager.h"
 #include "PlayerManager.h"
 #include "BonusManager.h"
+#include "ConfigReader.h"
 
 Game::Game::Game(AbstractFactory *_A) {
     A = _A;
 }
 
 void Game::Game::Run() {
-    Background *bg = A->createBackground(bgPath);
-    PlayerManager *playerManager = new PlayerManager(this->A);
+    ConfigReader *configReader = new ConfigReader();
+    Background *bg = A->createBackground(bgPath);;
+    PlayerManager *playerManager = new PlayerManager(this->A, configReader);
     PlayerShip *playerShip = playerManager->getPlayerShip();
     CanonManager *canon = new CanonManager(this->A, playerShip);
     AlienManager *aliens = new AlienManager(this->A, canon);

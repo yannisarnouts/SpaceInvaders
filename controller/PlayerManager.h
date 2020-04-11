@@ -7,19 +7,18 @@
 
 #include "../factory/AbstractFactory.h"
 #include "KeyHandler.h"
+#include "ConfigReader.h"
 
 namespace Game {
     class PlayerManager {
     public:
         PlayerManager();
-        PlayerManager(AbstractFactory *abstractFactory);
+        PlayerManager(AbstractFactory *abstractFactory, ConfigReader *configReader);
         PlayerShip *getPlayerShip() const;
         void runPlayer();
         void setLife();
-
-        void setLife1(Life *life);
-
         void moveShip();
+        void initShip();
 
     private:
         AbstractFactory *abstractFactory;
@@ -27,7 +26,7 @@ namespace Game {
         Life *life;
         KeyHandler *keyHandler;
         Timer *timer;
-        int SCREEN_WIDTH = 950;
+        ConfigReader *configReader;
     };
 }
 

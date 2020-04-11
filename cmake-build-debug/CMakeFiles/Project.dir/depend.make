@@ -74,6 +74,7 @@ CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../controller/BonusManag
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../controller/BonusManager.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../controller/CanonManager.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../controller/PlayerManager.h
@@ -126,6 +127,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/AlienManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/BonusManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CanonManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/KeyHandler.h
@@ -149,6 +151,7 @@ CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyHandler.c
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyP.h
 
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/PlayerManager.cpp
