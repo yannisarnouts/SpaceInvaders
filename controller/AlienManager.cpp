@@ -42,8 +42,8 @@ void Game::AlienManager::Visualize(AlienType alienType) {
         VisualizeType(alienType, 3, thomasLength);
     }
     this->bullets[bulletLength]->Visualize();
-    int a = rand() % 200;
-    if (a == 36) {
+    int a = rand() % 250;
+    if (a == 136) {
         alienShoot();
     }
 }

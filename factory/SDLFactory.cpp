@@ -16,9 +16,10 @@
 #include <SDL2/SDL_ttf.h>
 #include <iostream>
 
-SDL::SDLFactory::SDLFactory() {}
-
-void SDL::SDLFactory::init() {
+SDL::SDLFactory::SDLFactory() {
+    configReader = new ConfigReader();
+    SCREEN_HEIGHT = configReader->getScreenHeight();
+    SCREEN_WIDTH = configReader->getScreenWidth();
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
     } else if (TTF_Init() < 0) {
@@ -118,4 +119,12 @@ Game::Bonus *SDL::SDLFactory::createBonus(int xPos, int yPos, Game::BonusType bo
     int gw = SCREEN_WIDTH / 30;
     int gh = SCREEN_HEIGHT / 30;
     return new SDLBonus(xPos, yPos, gw, gh, bonusType, gRenderer);
+}
+
+void SDL::SDLFactory::setScreenHeight(int screenHeight) {
+    SCREEN_HEIGHT = screenHeight;
+}
+
+void SDL::SDLFactory::setScreenWidth(int screenWidth) {
+    SCREEN_WIDTH = screenWidth;
 }

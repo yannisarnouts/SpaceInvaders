@@ -13,31 +13,31 @@
 #include "../controller/KeyHandler.h"
 #include "../SDLClasses/SDLAlienBullet.h"
 #include "../SDLClasses/SDLLife.h"
+#include "../controller/ConfigReader.h"
 
 namespace SDL {
     class SDLFactory : public Game::AbstractFactory {
     public:
         SDLFactory();
-
-        void init() override;
-
+        // playership classes
         Game::PlayerShip *createPlayerShip() override;
-
-        Game::Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) override;
-
         Game::Bullet *createBullet(int xCoord, int yCoord) override;
-
-        Game::AlienBullet *createAlienBullet(std::string path, int xCoord, int yCoord) override;
-
-        Game::Bonus *createBonus(int xPos, int yPos, Game::BonusType bonusType) override;
-
         Game::Score *createScore() override;
-
         Game::Life *createLife() override;
 
-        Background *createBackground(std::string path) override;
+        // alien classes
+        Game::Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) override;
+        Game::AlienBullet *createAlienBullet(std::string path, int xCoord, int yCoord) override;
 
+        // other game classes
+        Game::Bonus *createBonus(int xPos, int yPos, Game::BonusType bonusType) override;
+        Background *createBackground(std::string path) override;
         Game::Timer *createTimer() override;
+
+        // config
+        void setScreenHeight(int screenHeight);
+
+        void setScreenWidth(int screenWidth);
 
         bool pollEvents() override;
 
@@ -48,8 +48,9 @@ namespace SDL {
     private:
         SDL_Window *gWindow = NULL;
         SDL_Renderer *gRenderer = NULL;
-        int SCREEN_HEIGHT = 1280;
-        int SCREEN_WIDTH = 950;
+        int SCREEN_HEIGHT;
+        int SCREEN_WIDTH;
+        ConfigReader *configReader;
     };
 }
 

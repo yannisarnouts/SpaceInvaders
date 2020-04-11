@@ -1,4 +1,3 @@
-#include <iostream>
 #include "factory/AbstractFactory.h"
 #include "controller/Game.h"
 #include "factory/SDLFactory.h"

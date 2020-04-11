@@ -12,7 +12,6 @@ Game::Game::Game(AbstractFactory *_A) {
 }
 
 void Game::Game::Run() {
-    A->init();
     Background *bg = A->createBackground(bgPath);
     PlayerManager *playerManager = new PlayerManager(this->A);
     PlayerShip *playerShip = playerManager->getPlayerShip();

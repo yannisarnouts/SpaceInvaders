@@ -473,6 +473,33 @@ controller/CollisionController.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/CollisionController.cpp.s
 .PHONY : controller/CollisionController.cpp.s
 
+controller/ConfigReader.obj: controller/ConfigReader.cpp.obj
+
+.PHONY : controller/ConfigReader.obj
+
+# target to build an object file
+controller/ConfigReader.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/ConfigReader.cpp.obj
+.PHONY : controller/ConfigReader.cpp.obj
+
+controller/ConfigReader.i: controller/ConfigReader.cpp.i
+
+.PHONY : controller/ConfigReader.i
+
+# target to preprocess a source file
+controller/ConfigReader.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/ConfigReader.cpp.i
+.PHONY : controller/ConfigReader.cpp.i
+
+controller/ConfigReader.s: controller/ConfigReader.cpp.s
+
+.PHONY : controller/ConfigReader.s
+
+# target to generate assembly for a file
+controller/ConfigReader.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/ConfigReader.cpp.s
+.PHONY : controller/ConfigReader.cpp.s
+
 controller/Game.obj: controller/Game.cpp.obj
 
 .PHONY : controller/Game.obj
@@ -1007,6 +1034,9 @@ help:
 	@echo ... controller/CollisionController.obj
 	@echo ... controller/CollisionController.i
 	@echo ... controller/CollisionController.s
+	@echo ... controller/ConfigReader.obj
+	@echo ... controller/ConfigReader.i
+	@echo ... controller/ConfigReader.s
 	@echo ... controller/Game.obj
 	@echo ... controller/Game.i
 	@echo ... controller/Game.s

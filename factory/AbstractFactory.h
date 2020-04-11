@@ -37,7 +37,6 @@ namespace Game {
         virtual Background *createBackground(std::string path) = 0;
         virtual Timer *createTimer()=0;
         virtual bool pollEvents() = 0;
-        virtual void init() = 0;
         virtual void render() = 0;
         virtual void close() = 0;
     };
