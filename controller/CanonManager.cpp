@@ -82,3 +82,7 @@ Game::Score *Game::CanonManager::getScore() const {
     return score;
 }
 
+int Game::CanonManager::getBulletsFired() {
+    return 200 - canonLength;
+}
+

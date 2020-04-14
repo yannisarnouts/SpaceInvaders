@@ -101,6 +101,7 @@ void Game::AlienManager::handleCollision(int i, int j, int length, AlienType ali
         thomasLength--;
     }
     alienLength--;
+    aliensKilled++;
 }
 
 void Game::AlienManager::alienShoot() {
@@ -125,4 +126,8 @@ bool Game::AlienManager::checkCollision(int xPos, int yPos) {
 
 int Game::AlienManager::getAlienLength() const {
     return alienLength;
+}
+
+int Game::AlienManager::getAliensKilled() const {
+    return aliensKilled;
 }

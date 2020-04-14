@@ -2,6 +2,7 @@
 // Created by Gebruiker on 3/03/2020.
 //
 #include <iostream>
+#include <time.h>
 #include "Game.h"
 #include "PlayerManager.h"
 #include "BonusManager.h"
@@ -13,6 +14,7 @@ Game::Game::Game(AbstractFactory *_A) {
 }
 
 void Game::Game::Run() {
+    start = time(0);
     configReader = new ConfigReader();
     bg = A->createBackground(bgPath);;
     playerManager = new PlayerManager(this->A, configReader);
@@ -45,5 +47,9 @@ void Game::Game::updateStatistics() {
     FileWriter *fileWriter = new FileWriter();
     fileWriter->setPoints(canon->getScore()->getPoints());
     fileWriter->setLifesLeft(playerShip->getLife());
+    fileWriter->setTimePlayed(difftime(time(0), start));
+    fileWriter->setBulletsFired(canon->getBulletsFired());
+    fileWriter->setBonussesCaught(bonusManager->getBonussesCaught());
+    fileWriter->setAliensKilled(aliens->getAliensKilled());
     fileWriter->writeStats();
 }

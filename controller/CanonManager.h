@@ -21,7 +21,7 @@ namespace Game {
         void fireCannon(Bullet *b);
         void loadCannon();
         bool checkCollision(Alien *alien);
-
+        int getBulletsFired();
         Score *getScore() const;
 
     private:

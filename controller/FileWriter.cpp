@@ -3,6 +3,7 @@
 //
 
 #include <fstream>
+#include <ctime>
 #include "FileWriter.h"
 
 FileWriter::FileWriter() {}
@@ -15,12 +16,13 @@ void FileWriter::writeStats() {
     del_line("..\\stats.html", fSize-2);
     statsFile.open("..\\stats.html", std::ios_base::app);
     statsFile << "\t\t\t<tr>\n";
-    statsFile << "\t\t\t\t<td>";
-    statsFile << std::to_string(getPoints());
-    statsFile << "</td>\n";
-    statsFile << "\t\t\t\t<td>";
-    statsFile << std::to_string(getLifesLeft());
-    statsFile << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << ctime(&now) << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << std::to_string(getTimePlayed()) << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << std::to_string(getPoints()) << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << std::to_string(getAliensKilled()) << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << std::to_string(getLifesLeft()) << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << std::to_string(getBulletsFired()) << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << std::to_string(getBonussesCaught()) << "</td>\n";
     statsFile << "\t\t\t</tr>\n";
     statsFile << "\t\t</table>\n";
     statsFile << "\t</body>\n";
@@ -72,4 +74,36 @@ int FileWriter::getFileSize() {
         fileSize++;
     }
     return fileSize;
+}
+
+double FileWriter::getTimePlayed() const {
+    return timePlayed;
+}
+
+void FileWriter::setTimePlayed(double timePlayed) {
+    FileWriter::timePlayed = timePlayed;
+}
+
+int FileWriter::getBulletsFired() const {
+    return bulletsFired;
+}
+
+void FileWriter::setBulletsFired(int bulletsFired) {
+    FileWriter::bulletsFired = bulletsFired;
+}
+
+int FileWriter::getBonussesCaught() const {
+    return bonussesCaught;
+}
+
+void FileWriter::setBonussesCaught(int bonussesCaught) {
+    FileWriter::bonussesCaught = bonussesCaught;
+}
+
+int FileWriter::getAliensKilled() const {
+    return aliensKilled;
+}
+
+void FileWriter::setAliensKilled(int aliensKilled) {
+    FileWriter::aliensKilled = aliensKilled;
 }

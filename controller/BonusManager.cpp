@@ -56,6 +56,7 @@ bool Game::BonusManager::checkCollision() {
     if (collisionController->bonusPlayerShip(this->bonusses[i], this->playerShip)) {
         this->bonusses[i]->setYCoord(configReader->getScreenHeight());
         bonusType = bonusses[i]->getBonusType();
+        bonussesCaught++;
         if (bonusType == BonusType::LIFES) {
             playerShip->setLife(playerShip->getLife() * 2);
         } else if (bonusType == BonusType::POINTS) {
@@ -69,4 +70,8 @@ bool Game::BonusManager::checkCollision() {
         return true;
     }
     return false;
+}
+
+int Game::BonusManager::getBonussesCaught() const {
+    return bonussesCaught;
 }

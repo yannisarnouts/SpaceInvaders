@@ -29,6 +29,7 @@ namespace Game {
         CanonManager *canon;
         AlienManager *aliens;
         BonusManager *bonusManager;
+        time_t start;
         std::string bgPath = "../assets/bg.jpg";
     };
 }

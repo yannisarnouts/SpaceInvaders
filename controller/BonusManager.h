@@ -23,6 +23,8 @@ namespace Game {
         void fireBonusses();
         bool checkCollision();
 
+        int getBonussesCaught() const;
+
     private:
         AbstractFactory *abstractFactory;
         std::vector<Bonus*> bonusses;
@@ -34,7 +36,7 @@ namespace Game {
         BonusType bonusType;
         ConfigReader *configReader;
         bool runBonus = false;
-        int bonusLength;
+        int bonussesCaught;
         int i = -1;
     };
 }

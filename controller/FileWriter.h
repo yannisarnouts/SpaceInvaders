@@ -17,13 +17,29 @@ public:
     void setPoints(int points);
     int getLifesLeft() const;
     void setLifesLeft(int lifesLeft);
+    double getTimePlayed() const;
+    void setTimePlayed(double timePlayed);
+    int getBulletsFired() const;
+    void setBulletsFired(int bulletsFired);
+    int getBonussesCaught() const;
+    void setBonussesCaught(int bonussesCaught);
+
+    int getAliensKilled() const;
+
+    void setAliensKilled(int aliensKilled);
+
     int getFileSize();
 
 private:
     std::string file;
     int points;
     int lifesLeft;
+    double timePlayed;
+    int bulletsFired;
+    int bonussesCaught;
     int fileSize = 0;
+    int aliensKilled;
+    time_t now = time(0);
 };
 
 
