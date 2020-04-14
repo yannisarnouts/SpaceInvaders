@@ -23,6 +23,8 @@ namespace Game {
         bool isAlive() const;
         void setAlive(bool alive);
 
+        AlienType getAlienType() const;
+
     private:
         AlienType alienType;
         int moveAlien = 1;

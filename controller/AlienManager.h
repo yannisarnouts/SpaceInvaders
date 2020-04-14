@@ -28,6 +28,7 @@ namespace Game {
     private:
         AbstractFactory *abstractFactory;
         std::vector<std::vector<Alien * >> aliens;
+//        Alien *aliens[4][10];
         std::vector<AlienBullet*> bullets;
         int bulletLength = 500;
         CanonManager *canon; AlienBullet *currentBullet;

@@ -10,13 +10,14 @@
 #include "../model/AlienBullet.h"
 #include "../model/Bonus.h"
 #include "../model/PlayerShip.h"
+#include "../model/Alien.h"
 
 namespace Game {
     class CollisionController {
     public:
         CollisionController();
 
-        bool bulletPlayerShip(Bullet *bullet, int xPos, int yPos);
+        AlienType bulletPlayerShip(Bullet *bullet, Alien *alien);
         bool bulletAlien(AlienBullet *bullet, int xPos, int yPos);
         bool bonusPlayerShip(Bonus *bonus, PlayerShip *playerShip);
     };

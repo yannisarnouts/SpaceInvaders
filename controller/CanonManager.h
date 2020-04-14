@@ -20,7 +20,7 @@ namespace Game {
         void runCannon();
         void fireCannon(Bullet *b);
         void loadCannon();
-        bool checkCollision(int xPos, int yPos);
+        bool checkCollision(Alien *alien);
 
         Score *getScore() const;
 

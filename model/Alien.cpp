@@ -44,3 +44,7 @@ bool Game::Alien::hitBoundary() {
         return false;
     }
 }
+
+AlienType Game::Alien::getAlienType() const {
+    return alienType;
+}

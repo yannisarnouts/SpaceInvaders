@@ -58,8 +58,7 @@ void Game::AlienManager::moveAndCheck(int a, int length) {
             move = 1;
         }
         this->aliens[a][i]->setMoveAlien(move);
-        this->aliens[a][i]->setXCoord(this->aliens[a][i]->getXCoord());
-        this->aliens[a][i]->setYCoord(this->aliens[a][i]->getYCoord() + 4);
+        this->aliens[a][i]->setYCoord(this->aliens[a][i]->getYCoord() + configReader->getAlienSpeed());
     }
 }
 
@@ -78,7 +77,7 @@ void Game::AlienManager::VisualizeType(AlienType alienType, int a, int length) {
         if (this->aliens[a][i]->hitBoundary()) {
             moveAndCheck(a, len);
         }
-        if (canon->checkCollision(this->aliens[a][i]->getXCoord(), this->aliens[a][i]->getYCoord())) {
+        if (canon->checkCollision(this->aliens[a][i])) {
             this->aliens[a][i]->setAlive(false);
             handleCollision(a, i, length, alienType);
         } else {

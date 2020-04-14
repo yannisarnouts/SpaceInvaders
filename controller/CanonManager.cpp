@@ -33,7 +33,7 @@ void Game::CanonManager::runCannon() {
         this->bullets[canonLength]->setXCoord(this->playerShip->getXCoord());
         shoot = true;
     }
-    if (canonLength < 1) {
+    if (canonLength <= 1) {
         this->loadCannon();
     }
     if (shoot) {
@@ -52,16 +52,26 @@ void Game::CanonManager::fireCannon(Bullet *b) {
 }
 
 void Game::CanonManager::loadCannon() {
+    canonLength = 200;
     for (int i = 0; i < 200; ++i) {
         bullets[i] = createBullet(this->playerShip->getXCoord(), this->playerShip->getYCoord());
     }
 }
 
-bool Game::CanonManager::checkCollision(int xPos, int yPos) {
-    if (collisionController->bulletPlayerShip(currentBullet, xPos, yPos)) {
+bool Game::CanonManager::checkCollision(Alien *alien) {
+    AlienType resultType = collisionController->bulletPlayerShip(currentBullet, alien);
+    if (resultType != AlienType(1000)) {
         shoot = false;
         this->currentBullet->setYCoord(0);
-        score->setPoints(score->getPoints() + 1);
+        if  (resultType == AlienType::thomas) {
+            score->setPoints(score->getPoints() + 1);
+        } else if (resultType == AlienType::clifford) {
+            score->setPoints(score->getPoints() + 2);
+        } else if (resultType == AlienType::michiel) {
+            score->setPoints(score->getPoints() + 4);
+        } else if (resultType == AlienType::boss) {
+            score->setPoints(score->getPoints() + 5);
+        }
         return true;
     } else {
         return false;

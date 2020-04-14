@@ -6,25 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/AlienManager.cpp
-iostream
--
-AlienManager.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/AlienManager.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/AlienManager.h
-vector
--
-../factory/AbstractFactory.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/AbstractFactory.h
-CollisionController.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h
-../model/Timer.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Timer.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.cpp
 CanonManager.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.h
-ConfigReader.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/ConfigReader.h
+KeyHandler.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyHandler.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.h
 ../factory/AbstractFactory.h
@@ -45,6 +31,8 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvade
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bonus.h
 ../model/PlayerShip.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/PlayerShip.h
+../model/Alien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/ConfigReader.h
 xmllite.h
@@ -53,6 +41,12 @@ iostream
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/iostream
 fstream
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/fstream
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyHandler.h
+KeyP.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyP.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyP.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/AbstractFactory.h
 string

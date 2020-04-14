@@ -25,10 +25,12 @@ public:
     void setBulletSpeed(int bulletSpeed);
     int getBonusSpeed() const;
     void setBonusSpeed(int bonusSpeed);
-
     int getCanonLength() const;
-
     void setCanonLength(int canonLength);
+
+    int getAlienSpeed() const;
+
+    void setAlienSpeed(int alienSpeed);
 
 private:
     // read config file
@@ -44,6 +46,7 @@ private:
     int bonusSpeed;
     int bulletSpeed;
     int canonLength;
+    int alienSpeed;
 };
 
 

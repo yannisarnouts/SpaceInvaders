@@ -35,6 +35,8 @@ void ConfigReader::setValue(std::string line, int value) {
         setBulletSpeed(value);
     } else if (line == "CANONLENGTH") {
         setCanonLength(value);
+    } else if (line == "ALIENSPEED") {
+        setAlienSpeed(value);
     }
 }
 
@@ -92,4 +94,12 @@ int ConfigReader::getCanonLength() const {
 
 void ConfigReader::setCanonLength(int canonLength) {
     ConfigReader::canonLength = canonLength;
+}
+
+int ConfigReader::getAlienSpeed() const {
+    return alienSpeed;
+}
+
+void ConfigReader::setAlienSpeed(int alienSpeed) {
+    ConfigReader::alienSpeed = alienSpeed;
 }

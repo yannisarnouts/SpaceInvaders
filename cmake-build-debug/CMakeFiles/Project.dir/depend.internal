@@ -6,6 +6,8 @@ CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLAlien.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienType.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.h
 CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLAlienBullet.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLAlienBullet.h
@@ -116,7 +118,9 @@ CMakeFiles/Project.dir/controller/CanonManager.cpp.obj
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bonus.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bullet.h

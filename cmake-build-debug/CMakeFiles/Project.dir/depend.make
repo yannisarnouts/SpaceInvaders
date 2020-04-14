@@ -5,6 +5,8 @@ CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../SDLClasses/SDLAlien.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../SDLClasses/SDLAlien.h
 CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/SDLClasses/SDLAlien.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj: ../SDLClasses/SDLAlienBullet.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj: ../SDLClasses/SDLAlienBullet.h
@@ -115,7 +117,9 @@ CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../controller/CollisionController.cpp
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/Alien.h
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/AlienBullet.h
+CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/AlienType.h
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/Bullet.h
