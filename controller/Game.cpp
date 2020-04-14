@@ -34,7 +34,7 @@ void Game::Game::Run() {
         canon->runCannon();
         A->render();
     }
-//    updateStatistics(canon);
+    updateStatistics();
     bg->close();
     playerManager->getPlayerShip()->close();
     //alien->close();
@@ -43,5 +43,7 @@ void Game::Game::Run() {
 
 void Game::Game::updateStatistics() {
     FileWriter *fileWriter = new FileWriter();
-    fileWriter->writeFile("HIGH_SCORE=");
+    fileWriter->setPoints(canon->getScore()->getPoints());
+    fileWriter->setLifesLeft(playerShip->getLife());
+    fileWriter->writeStats();
 }

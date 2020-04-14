@@ -11,10 +11,19 @@
 class FileWriter {
 public:
     FileWriter();
-    void writeFile(std::string text);
+    void writeStats();
+    void del_line(const char *file_name, int n);
+    int getPoints() const;
+    void setPoints(int points);
+    int getLifesLeft() const;
+    void setLifesLeft(int lifesLeft);
+    int getFileSize();
 
 private:
     std::string file;
+    int points;
+    int lifesLeft;
+    int fileSize = 0;
 };
 
 
