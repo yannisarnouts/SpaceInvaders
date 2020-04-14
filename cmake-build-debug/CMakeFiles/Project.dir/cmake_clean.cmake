@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/controller/CanonManager.cpp.obj"
   "CMakeFiles/Project.dir/controller/CollisionController.cpp.obj"
   "CMakeFiles/Project.dir/controller/ConfigReader.cpp.obj"
+  "CMakeFiles/Project.dir/controller/FileWriter.cpp.obj"
   "CMakeFiles/Project.dir/controller/Game.cpp.obj"
   "CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj"
   "CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj"

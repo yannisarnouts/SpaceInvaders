@@ -129,6 +129,9 @@ CMakeFiles/Project.dir/controller/CollisionController.cpp.obj: ../model/PlayerSh
 CMakeFiles/Project.dir/controller/ConfigReader.cpp.obj: ../controller/ConfigReader.cpp
 CMakeFiles/Project.dir/controller/ConfigReader.cpp.obj: ../controller/ConfigReader.h
 
+CMakeFiles/Project.dir/controller/FileWriter.cpp.obj: ../controller/FileWriter.cpp
+CMakeFiles/Project.dir/controller/FileWriter.cpp.obj: ../controller/FileWriter.h
+
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/AlienManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/BonusManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CanonManager.h

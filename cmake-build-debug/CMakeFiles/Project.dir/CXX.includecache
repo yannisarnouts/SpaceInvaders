@@ -6,107 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.cpp
-CanonManager.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.h
-KeyHandler.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyHandler.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.h
-../factory/AbstractFactory.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/AbstractFactory.h
-CollisionController.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h
-../model/Score.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Score.h
-ConfigReader.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/ConfigReader.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h
-../model/Bullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bullet.h
-../model/AlienBullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienBullet.h
-../model/Bonus.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bonus.h
-../model/PlayerShip.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/PlayerShip.h
-../model/Alien.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/ConfigReader.h
-xmllite.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/xmllite.h
-iostream
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/iostream
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/FileWriter.cpp
 fstream
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/fstream
+-
+FileWriter.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/FileWriter.h
 
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyHandler.h
-KeyP.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyP.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyP.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/FileWriter.h
 string
 -
-../model/PlayerShip.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/PlayerShip.h
-../model/Background.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Background.h
-../model/Alien.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.h
-../model/AlienType.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienType.h
-../model/Bullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bullet.h
-../model/Score.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Score.h
-../model/AlienBullet.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienBullet.h
-../model/Life.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Life.h
-../model/Timer.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Timer.h
-../model/Bonus.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bonus.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.h
-AlienType.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienType.h
-Entity.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienBullet.h
-Entity.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienType.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Background.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bonus.h
-Entity.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.h
-BonusType.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/BonusType.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/BonusType.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bullet.h
-Entity.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Life.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/PlayerShip.h
-Entity.h
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Score.h
-
-C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Timer.h
 

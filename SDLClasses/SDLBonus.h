@@ -23,7 +23,7 @@ namespace SDL {
     private:
         SDL_Renderer *renderer;
         Texture *texture = NULL;
-        std::string imgPath = "../assets/bonus.jpg";
+        std::string imgPath = "../assets/bonus.png";
         int SCREEN_WIDTH = 950;
     };
 }

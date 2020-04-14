@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders"
+CMAKE_SOURCE_DIR = "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders\cmake-build-debug\CMakeFiles" "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\cmake-build-debug\CMakeFiles" "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\SpaceInvaders\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -499,6 +499,33 @@ controller/ConfigReader.s: controller/ConfigReader.cpp.s
 controller/ConfigReader.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/ConfigReader.cpp.s
 .PHONY : controller/ConfigReader.cpp.s
+
+controller/FileWriter.obj: controller/FileWriter.cpp.obj
+
+.PHONY : controller/FileWriter.obj
+
+# target to build an object file
+controller/FileWriter.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/FileWriter.cpp.obj
+.PHONY : controller/FileWriter.cpp.obj
+
+controller/FileWriter.i: controller/FileWriter.cpp.i
+
+.PHONY : controller/FileWriter.i
+
+# target to preprocess a source file
+controller/FileWriter.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/FileWriter.cpp.i
+.PHONY : controller/FileWriter.cpp.i
+
+controller/FileWriter.s: controller/FileWriter.cpp.s
+
+.PHONY : controller/FileWriter.s
+
+# target to generate assembly for a file
+controller/FileWriter.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/FileWriter.cpp.s
+.PHONY : controller/FileWriter.cpp.s
 
 controller/Game.obj: controller/Game.cpp.obj
 
@@ -1037,6 +1064,9 @@ help:
 	@echo ... controller/ConfigReader.obj
 	@echo ... controller/ConfigReader.i
 	@echo ... controller/ConfigReader.s
+	@echo ... controller/FileWriter.obj
+	@echo ... controller/FileWriter.i
+	@echo ... controller/FileWriter.s
 	@echo ... controller/Game.obj
 	@echo ... controller/Game.i
 	@echo ... controller/Game.s

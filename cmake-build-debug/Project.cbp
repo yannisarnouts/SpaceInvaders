@@ -5,21 +5,21 @@
 		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\MinGW\;CMake Files\..\..\..\..\..\..\..\MinGW\lib\;CMake Files\..\..\..\..\..\..\..\MinGW\lib\cmake\;CMake Files\..\..\..\..\..\..\..\MinGW\lib\cmake\SDL2\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\MinGW\;CMake Files\..\..\..\..\..\..\..\..\MinGW\lib\;CMake Files\..\..\..\..\..\..\..\..\MinGW\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\MinGW\lib\cmake\SDL2\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project">
-				<Option output="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug"/>
+				<Option output="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project/fast">
-				<Option output="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug"/>
+				<Option output="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,233 +53,239 @@
 					<Add directory="C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLAlien.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLAlien.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLAlienBullet.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlienBullet.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLAlienBullet.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlienBullet.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLBackground.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBackground.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLBackground.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBackground.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLBonus.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBonus.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLBonus.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBonus.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLBullet.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBullet.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLBullet.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBullet.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLLife.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLife.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLLife.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLife.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLPlayerShip.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLPlayerShip.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLPlayerShip.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLPlayerShip.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLScore.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLScore.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLScore.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLScore.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLTimer.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLTimer.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/SDLClasses/SDLTimer.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLTimer.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/AlienManager.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/AlienManager.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/AlienManager.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/AlienManager.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/BonusManager.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/BonusManager.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/BonusManager.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/BonusManager.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/CanonManager.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CanonManager.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/CanonManager.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/CollisionController.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/CollisionController.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/CollisionController.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/ConfigReader.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/ConfigReader.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/ConfigReader.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/ConfigReader.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/Game.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/FileWriter.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/Game.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/FileWriter.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyHandler.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/Game.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyHandler.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/Game.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/KeyP.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/KeyHandler.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/PlayerManager.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/KeyHandler.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/controller/PlayerManager.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/KeyP.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/AbstractFactory.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/PlayerManager.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/AbstractFactory.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/PlayerManager.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/SDLFactory.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/AbstractFactory.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/SDLFactory.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/AbstractFactory.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/TextTexture.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/SDLFactory.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/TextTexture.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/SDLFactory.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/Texture.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/TextTexture.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/factory/Texture.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/TextTexture.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/main.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Alien.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/main.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienBullet.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Alien.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienBullet.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Alien.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/AlienType.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/AlienBullet.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Background.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/AlienBullet.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Background.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/AlienType.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bonus.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Background.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bonus.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Background.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bullet.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bonus.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Bullet.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bonus.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Entity.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Life.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Life.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/PlayerShip.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/PlayerShip.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Score.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Score.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Timer.cpp">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/model/Timer.h">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/CMakeLists.txt">
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Timer.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Timer.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/SpaceInvaders/../../../../../../../MinGW/lib/cmake/SDL2/sdl2-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\MinGW\lib\cmake\SDL2\"/>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/../../../../../../../../MinGW/lib/cmake/SDL2/sdl2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\MinGW\lib\cmake\SDL2\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

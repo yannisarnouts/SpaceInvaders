@@ -34,6 +34,7 @@ void Game::Game::Run() {
         canon->runCannon();
         A->render();
     }
+//    std::cout << pl
     bg->close();
     playerManager->getPlayerShip()->close();
     //alien->close();
