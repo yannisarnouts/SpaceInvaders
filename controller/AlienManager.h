@@ -25,6 +25,8 @@ namespace Game {
         bool checkCollision(int xPos, int yPos);
         void alienShoot();
 
+        int getAlienLength() const;
+
     private:
         AbstractFactory *abstractFactory;
         std::vector<std::vector<Alien * >> aliens;
@@ -35,6 +37,7 @@ namespace Game {
         CollisionController *collisionController;
         ConfigReader *configReader;
         int michielLength = 10, thomasLength = 10, bossLength = 10, cliffordLength = 10;
+        int alienLength;
     };
 }
 

@@ -137,6 +137,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/BonusManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CanonManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/ConfigReader.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/FileWriter.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/KeyHandler.h
@@ -232,10 +233,15 @@ CMakeFiles/Project.dir/factory/Texture.cpp.obj: ../factory/Texture.h
 
 CMakeFiles/Project.dir/main.cpp.obj: ../SDLClasses/SDLAlienBullet.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SDLClasses/SDLLife.h
+CMakeFiles/Project.dir/main.cpp.obj: ../controller/AlienManager.h
+CMakeFiles/Project.dir/main.cpp.obj: ../controller/BonusManager.h
+CMakeFiles/Project.dir/main.cpp.obj: ../controller/CanonManager.h
+CMakeFiles/Project.dir/main.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/Game.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/KeyP.h
+CMakeFiles/Project.dir/main.cpp.obj: ../controller/PlayerManager.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/SDLFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/TextTexture.h

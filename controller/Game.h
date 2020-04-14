@@ -8,22 +8,28 @@
 
 #include <string>
 #include "../factory/AbstractFactory.h"
+#include "CanonManager.h"
+#include "PlayerManager.h"
+#include "AlienManager.h"
+#include "BonusManager.h"
 
 namespace Game {
     class Game {
     public:
         Game(AbstractFactory *_A);
-
         void Run();
+        void updateStatistics();
 
     private:
         AbstractFactory *A;
+        ConfigReader *configReader;
+        Background *bg;
+        PlayerManager *playerManager;
+        PlayerShip *playerShip;
+        CanonManager *canon;
+        AlienManager *aliens;
+        BonusManager *bonusManager;
         std::string bgPath = "../assets/bg.jpg";
-        std::string bulletPath = "../assets/bullet.png";
-        std::string michielAlien = "../assets/boss.png";
-        std::string rubenAlien = "../assets/michiel.png";
-        std::string thomasAlien = "../assets/thomas.png";
-        std::string cliffAlien = "../assets/cliff.png";
     };
 }
 

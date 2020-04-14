@@ -11,7 +11,7 @@
 class FileWriter {
 public:
     FileWriter();
-    FileWriter(const std::string &file);
+    void writeFile(std::string text);
 
 private:
     std::string file;

@@ -6,8 +6,8 @@
 #include "FileWriter.h"
 FileWriter::FileWriter() {}
 
-FileWriter::FileWriter(const std::string &file) : file(file) {
+void FileWriter::writeFile(std::string text) {
     std::ofstream MyFile("..\\stats.txt");
-    MyFile << "file written";
+    MyFile << text;
     MyFile.close();
 }

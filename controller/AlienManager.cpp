@@ -16,6 +16,7 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager 
     createAliens(michielLength, AlienType::michiel, "../assets/michiel.png", 200, 1);
     createAliens(cliffordLength, AlienType::clifford, "../assets/cliff.png", 300, 2);
     createAliens(thomasLength, AlienType::thomas, "../assets/thomas.png", 400, 3);
+    this->alienLength = bossLength + michielLength + cliffordLength + thomasLength;
     bullets.reserve(bulletLength);
     for (int i = 0; i <= bulletLength; ++i) {
         bullets.emplace_back(abstractFactory->createAlienBullet("../assets/bullet.png", this->aliens[1][1]->getXCoord(),
@@ -99,6 +100,7 @@ void Game::AlienManager::handleCollision(int i, int j, int length, AlienType ali
     } else if (alienType == AlienType::thomas) {
         thomasLength--;
     }
+    alienLength--;
 }
 
 void Game::AlienManager::alienShoot() {
@@ -119,4 +121,8 @@ bool Game::AlienManager::checkCollision(int xPos, int yPos) {
     } else {
         return false;
     }
+}
+
+int Game::AlienManager::getAlienLength() const {
+    return alienLength;
 }

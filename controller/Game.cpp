@@ -3,24 +3,24 @@
 //
 #include <iostream>
 #include "Game.h"
-#include "../controller/AlienManager.h"
 #include "PlayerManager.h"
 #include "BonusManager.h"
 #include "ConfigReader.h"
+#include "FileWriter.h"
 
 Game::Game::Game(AbstractFactory *_A) {
     A = _A;
 }
 
 void Game::Game::Run() {
-    ConfigReader *configReader = new ConfigReader();
-    Background *bg = A->createBackground(bgPath);;
-    PlayerManager *playerManager = new PlayerManager(this->A, configReader);
-    PlayerShip *playerShip = playerManager->getPlayerShip();
-    CanonManager *canon = new CanonManager(this->A, playerShip, configReader);
-    AlienManager *aliens = new AlienManager(this->A, canon, configReader);
-    BonusManager *bonusManager = new BonusManager(this->A, playerManager, canon, configReader);
-    while (A->pollEvents() && playerShip->getLife() > 0) {
+    configReader = new ConfigReader();
+    bg = A->createBackground(bgPath);;
+    playerManager = new PlayerManager(this->A, configReader);
+    playerShip = playerManager->getPlayerShip();
+    canon = new CanonManager(this->A, playerShip, configReader);
+    aliens = new AlienManager(this->A, canon, configReader);
+    bonusManager = new BonusManager(this->A, playerManager, canon, configReader);
+    while (A->pollEvents() && playerShip->getLife() > 0 && aliens->getAlienLength() > 0) {
         bg->Visualize();
         playerManager->runPlayer();
         aliens->Visualize(AlienType::michiel);
@@ -34,9 +34,14 @@ void Game::Game::Run() {
         canon->runCannon();
         A->render();
     }
-//    std::cout << pl
+//    updateStatistics(canon);
     bg->close();
     playerManager->getPlayerShip()->close();
     //alien->close();
     A->close();
+}
+
+void Game::Game::updateStatistics() {
+    FileWriter *fileWriter = new FileWriter();
+    fileWriter->writeFile("HIGH_SCORE=");
 }
