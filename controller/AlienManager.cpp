@@ -10,15 +10,16 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager 
     this->canon = canon;
     this->configReader = configReader;
     this->collisionController = new CollisionController();
-    this->currentBullet = abstractFactory->createAlienBullet("", -20, -20);
-    aliens.reserve(configReader->getAlienTypes());
-    for (int i = 0; i < configReader->getAlienTypes(); ++i) {
-        createAliens(10, AlienType(i), (i + 1) * 100, i);
-    }
+    this->currentBullet = abstractFactory->createAlienBullet(-20, -20);
+    aliens.reserve(4);
+    createAliens(10, AlienType::boss,100, 0);
+    createAliens(10, AlienType::michiel,200, 1);
+    createAliens(10, AlienType::clifford,300, 2);
+    createAliens(10, AlienType::thomas,400, 3);
     this->alienLength = bossLength + michielLength + cliffordLength + thomasLength;
     bullets.reserve(bulletLength);
     for (int i = 0; i <= bulletLength; ++i) {
-        bullets.emplace_back(abstractFactory->createAlienBullet("../assets/bullet.png", this->aliens[1][1]->getXCoord(),
+        bullets.emplace_back(abstractFactory->createAlienBullet(this->aliens[1][1]->getXCoord(),
                                                                 this->aliens[1][1]->getYCoord()));
     }
 }

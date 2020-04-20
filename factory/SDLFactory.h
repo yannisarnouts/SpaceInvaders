@@ -27,7 +27,7 @@ namespace SDL {
 
         // alien classes
         Game::Alien *createAlien(AlienType alienType, int xPos, int yPos) override;
-        Game::AlienBullet *createAlienBullet(std::string path, int xCoord, int yCoord) override;
+        Game::AlienBullet *createAlienBullet(int xCoord, int yCoord) override;
 
         // other game classes
         Game::Bonus *createBonus(int xPos, int yPos, Game::BonusType bonusType) override;

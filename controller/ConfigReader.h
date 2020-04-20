@@ -30,10 +30,6 @@ public:
     int getAlienSpeed() const;
     void setAlienSpeed(int alienSpeed);
 
-    int getAlienTypes() const;
-
-    void setAlienTypes(int alienTypes);
-
 private:
     // read config file
     std::ifstream input;
@@ -49,7 +45,6 @@ private:
     int bulletSpeed;
     int canonLength;
     int alienSpeed;
-    int alienTypes;
 };
 
 

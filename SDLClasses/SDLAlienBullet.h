@@ -13,7 +13,7 @@ namespace SDL {
 class SDLAlienBullet : public Game::AlienBullet {
 public:
     SDLAlienBullet();
-    SDLAlienBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer, const std::string &imgPath);
+    SDLAlienBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
 
     void Visualize() override;
 
@@ -22,7 +22,7 @@ public:
 private:
     SDL_Renderer *renderer;
     Texture *texture = NULL;
-    std::string imgPath;
+    std::string imgPath = "../assets/bullet.png";
 };
 }
 

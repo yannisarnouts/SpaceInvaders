@@ -6,8 +6,7 @@
 
 SDL::SDLAlienBullet::SDLAlienBullet() {}
 
-SDL::SDLAlienBullet::SDLAlienBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer,
-                                    const std::string &imgPath) {
+SDL::SDLAlienBullet::SDLAlienBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer) {
     this->renderer = renderer;
     this->imgPath = imgPath;
     Texture *bTexture = new Texture(renderer);

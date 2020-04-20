@@ -101,10 +101,10 @@ Game::Score *SDL::SDLFactory::createScore() {
     return new SDLScore(gRenderer);
 }
 
-Game::AlienBullet *SDL::SDLFactory::createAlienBullet(std::string path, int xCoord, int yCoord) {
+Game::AlienBullet *SDL::SDLFactory::createAlienBullet(int xCoord, int yCoord) {
     int bw = SCREEN_WIDTH / 30;
     int bh = SCREEN_HEIGHT / 30;
-    return new SDLAlienBullet(xCoord, yCoord, bw, bh, gRenderer, path);
+    return new SDLAlienBullet(xCoord, yCoord, bw, bh, gRenderer);
 }
 
 Game::Life *SDL::SDLFactory::createLife() {
