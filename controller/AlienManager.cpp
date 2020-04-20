@@ -12,10 +12,10 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager 
     this->collisionController = new CollisionController();
     this->currentBullet = abstractFactory->createAlienBullet(-20, -20);
     aliens.reserve(4);
-    createAliens(10, AlienType::boss,100, 0);
-    createAliens(10, AlienType::michiel,200, 1);
-    createAliens(10, AlienType::clifford,300, 2);
-    createAliens(10, AlienType::thomas,400, 3);
+    createAliens(bossLength, AlienType::boss,100, 0);
+    createAliens(michielLength, AlienType::michiel,200, 1);
+    createAliens(cliffordLength, AlienType::clifford,300, 2);
+    createAliens(thomasLength, AlienType::thomas,400, 3);
     this->alienLength = bossLength + michielLength + cliffordLength + thomasLength;
     bullets.reserve(bulletLength);
     for (int i = 0; i <= bulletLength; ++i) {
@@ -116,8 +116,8 @@ void Game::AlienManager::alienShoot() {
     }
 }
 
-bool Game::AlienManager::checkCollision(int xPos, int yPos) {
-    if (collisionController->bulletAlien(currentBullet, xPos, yPos)) {
+bool Game::AlienManager::checkCollision(PlayerShip *playership) {
+    if (collisionController->bulletAlien(currentBullet, playership)) {
         this->currentBullet->setYCoord(0);
         return true;
     } else {

@@ -29,7 +29,7 @@ void Game::Game::Run() {
         aliens->Visualize(AlienType::thomas);
         aliens->Visualize(AlienType::boss);
         aliens->Visualize(AlienType::clifford);
-        if(aliens->checkCollision(playerShip->getXCoord(), playerShip->getYCoord())) {
+        if(aliens->checkCollision(playerShip)) {
             playerManager->setLife();
         };
         bonusManager->runBonusses();

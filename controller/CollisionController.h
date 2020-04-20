@@ -18,7 +18,7 @@ namespace Game {
         CollisionController();
 
         AlienType bulletPlayerShip(Bullet *bullet, Alien *alien);
-        bool bulletAlien(AlienBullet *bullet, int xPos, int yPos);
+        bool bulletAlien(AlienBullet *bullet, PlayerShip *playerShip);
         bool bonusPlayerShip(Bonus *bonus, PlayerShip *playerShip);
     };
 }
