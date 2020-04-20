@@ -16,13 +16,20 @@ void SDL::SDLAlien::close() {
 
 }
 
-SDL::SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer,
-                   const std::string &imgPath) : Alien(xCoord, yCoord, width, height, alienType), renderer(renderer),
-                                                 imgPath(imgPath) {
+SDL::SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer) : Alien(xCoord, yCoord, width, height, alienType), renderer(renderer) {
     this->renderer = renderer;
-    this->imgPath = imgPath;
     Texture *aTexture = new Texture(renderer);
     texture = aTexture;
+    std::string imgPath;
+    if (alienType == AlienType::boss) {
+        imgPath = bossPath;
+    } else if (alienType == AlienType::michiel) {
+        imgPath = michielPath;
+    } else if (alienType == AlienType::clifford) {
+        imgPath = cliffPath;
+    } else if (alienType == AlienType::thomas) {
+        imgPath = thomasPath;
+    }
     aTexture->loadFromFile(imgPath);
 }
 

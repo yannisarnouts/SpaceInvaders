@@ -11,11 +11,10 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager 
     this->configReader = configReader;
     this->collisionController = new CollisionController();
     this->currentBullet = abstractFactory->createAlienBullet("", -20, -20);
-    aliens.reserve(4);
-    createAliens(bossLength, AlienType::boss, "../assets/boss.png", 100, 0);
-    createAliens(michielLength, AlienType::michiel, "../assets/michiel.png", 200, 1);
-    createAliens(cliffordLength, AlienType::clifford, "../assets/cliff.png", 300, 2);
-    createAliens(thomasLength, AlienType::thomas, "../assets/thomas.png", 400, 3);
+    aliens.reserve(configReader->getAlienTypes());
+    for (int i = 0; i < configReader->getAlienTypes(); ++i) {
+        createAliens(10, AlienType(i), (i + 1) * 100, i);
+    }
     this->alienLength = bossLength + michielLength + cliffordLength + thomasLength;
     bullets.reserve(bulletLength);
     for (int i = 0; i <= bulletLength; ++i) {
@@ -24,11 +23,11 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager 
     }
 }
 
-void Game::AlienManager::createAliens(int number, AlienType alienType, std::string imgPath, int y, int a) {
+void Game::AlienManager::createAliens(int number, AlienType alienType, int y, int a) {
     aliens[a].reserve(number);
     for (int i = 0; i < number; i++) {
         Alien *alien;
-        alien = abstractFactory->createAlien(alienType, imgPath, i * 100, y);
+        alien = abstractFactory->createAlien(alienType, i * 100, y);
         this->aliens[a].emplace_back(alien);
     }
 }

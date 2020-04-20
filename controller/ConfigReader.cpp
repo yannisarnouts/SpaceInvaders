@@ -37,6 +37,8 @@ void ConfigReader::setValue(std::string line, int value) {
         setCanonLength(value);
     } else if (line == "ALIENSPEED") {
         setAlienSpeed(value);
+    } else if (line == "ALIENTYPES") {
+        setAlienTypes(value);
     }
 }
 
@@ -102,4 +104,12 @@ int ConfigReader::getAlienSpeed() const {
 
 void ConfigReader::setAlienSpeed(int alienSpeed) {
     ConfigReader::alienSpeed = alienSpeed;
+}
+
+int ConfigReader::getAlienTypes() const {
+    return alienTypes;
+}
+
+void ConfigReader::setAlienTypes(int alienTypes) {
+    ConfigReader::alienTypes = alienTypes;
 }

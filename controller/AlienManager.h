@@ -19,7 +19,7 @@ namespace Game {
         AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader);
         void Visualize(AlienType alienType);
         void VisualizeType(AlienType alienType, int a, int length);
-        void createAliens(int number, AlienType alienType, std::string imgPath, int y, int a);
+        void createAliens(int number, AlienType alienType, int y, int a);
         void moveAndCheck(int a, int length);
         void handleCollision(int i, int j, int length, AlienType alienType);
         bool checkCollision(int xPos, int yPos);

@@ -16,8 +16,7 @@ namespace SDL {
     public:
         SDLAlien();
 
-        SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer,
-                 const std::string &imgPath);
+        SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer);
 
         void Visualize() override;
         void close() override;
@@ -26,7 +25,10 @@ namespace SDL {
     private:
         SDL_Renderer *renderer;
         Texture *texture = NULL;
-        std::string imgPath;
+        std::string bossPath = "../assets/boss.png";
+        std::string michielPath = "../assets/michiel.png";
+        std::string cliffPath = "../assets/cliff.png";
+        std::string thomasPath = "../assets/thomas.png";
         int SCREEN_WIDTH = 950;
     };
 }

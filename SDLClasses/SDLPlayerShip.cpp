@@ -2,7 +2,6 @@
 // Created by Gebruiker on 8/03/2020.
 //
 
-#include <iostream>
 #include <SDL2/SDL_events.h>
 #include "SDLPlayerShip.h"
 #include "../factory/Texture.h"

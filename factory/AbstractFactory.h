@@ -29,7 +29,8 @@ namespace Game {
         virtual Score *createScore() = 0;
 
         //Alien
-        virtual Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) = 0;
+//        std::string path
+        virtual Alien *createAlien(AlienType alienType, int xPos, int yPos) = 0;
         virtual AlienBullet* createAlienBullet(std::string path, int xCoord, int yCoord)=0;
 
         //extra

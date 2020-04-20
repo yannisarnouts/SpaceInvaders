@@ -74,10 +74,10 @@ Background *SDL::SDLFactory::createBackground(std::string path) {
     return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
 }
 
-Game::Alien *SDL::SDLFactory::createAlien(AlienType alienType, std::string path, int xPos, int yPos) {
+Game::Alien *SDL::SDLFactory::createAlien(AlienType alienType, int xPos, int yPos) {
     int alienWidth = SCREEN_WIDTH / 15;
     int alienHeight = SCREEN_HEIGHT / 20;
-    return new SDLAlien(xPos, yPos, alienWidth, alienHeight, alienType, gRenderer, path);
+    return new SDLAlien(xPos, yPos, alienWidth, alienHeight, alienType, gRenderer);
 }
 
 bool SDL::SDLFactory::pollEvents() {

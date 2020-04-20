@@ -26,7 +26,7 @@ namespace SDL {
         Game::Life *createLife() override;
 
         // alien classes
-        Game::Alien *createAlien(AlienType alienType, std::string path, int xPos, int yPos) override;
+        Game::Alien *createAlien(AlienType alienType, int xPos, int yPos) override;
         Game::AlienBullet *createAlienBullet(std::string path, int xCoord, int yCoord) override;
 
         // other game classes
