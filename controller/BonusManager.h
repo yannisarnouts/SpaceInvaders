@@ -36,7 +36,7 @@ namespace Game {
         BonusType bonusType;
         ConfigReader *configReader;
         bool runBonus = false;
-        int bonussesCaught;
+        int bonussesCaught = 0;
         int i = -1;
     };
 }

@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.cpp
+iostream
+-
+SDLAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.h
+SDL2/SDL_render.h
+-
+../model/Alien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Alien.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
+../model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/AlienType.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/AlienManager.cpp
 iostream
 -
@@ -79,6 +95,12 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/Spa
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Timer.h
 ../model/Bonus.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bonus.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
+SDL2/SDL_render.h
+-
+string
+-
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Alien.h
 AlienType.h

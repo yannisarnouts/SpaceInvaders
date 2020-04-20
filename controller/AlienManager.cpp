@@ -84,6 +84,7 @@ void Game::AlienManager::VisualizeType(AlienType alienType, int a, int length) {
         } else {
             this->aliens[a][i]->Visualize();
         }
+        this->aliens[a][i]->move();
     }
 }
 

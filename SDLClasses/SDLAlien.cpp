@@ -8,7 +8,6 @@
 SDL::SDLAlien::SDLAlien() {}
 
 void SDL::SDLAlien::Visualize() {
-    move();
     SDL_Rect renderQuad = {this->getXCoord() + 100, this->getYCoord(), getWidth(), getHeight()};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }

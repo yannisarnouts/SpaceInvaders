@@ -29,7 +29,6 @@ void FileWriter::writeStats() {
     statsFile << "</html>\n";
     statsFile.close();
 }
-
 void FileWriter::del_line(const char *file_name, int n) {
     std::ifstream fin(file_name);
     std::ofstream fout;
