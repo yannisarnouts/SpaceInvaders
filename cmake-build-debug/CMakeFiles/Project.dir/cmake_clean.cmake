@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/controller/FileWriter.cpp.obj"
   "CMakeFiles/Project.dir/controller/Game.cpp.obj"
   "CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj"
+  "CMakeFiles/Project.dir/controller/LevelManager.cpp.obj"
   "CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj"
   "CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj"
   "CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj"

@@ -9,5 +9,5 @@ Game::AlienBullet::AlienBullet() {}
 Game::AlienBullet::AlienBullet(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {}
 
 void Game::AlienBullet::shootBullet() {
-    setYCoord(getYCoord() + 5);
+    setYCoord(getYCoord() + 10);
 }

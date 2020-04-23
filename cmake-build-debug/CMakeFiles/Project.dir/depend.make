@@ -142,6 +142,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.cpp
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/Game.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/KeyP.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/LevelManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../controller/PlayerManager.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Alien.h
@@ -160,6 +161,30 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Timer.h
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyHandler.cpp
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/controller/KeyHandler.cpp.obj: ../controller/KeyP.h
+
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/AlienManager.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/BonusManager.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/CanonManager.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/CollisionController.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/ConfigReader.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/KeyHandler.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/KeyP.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/LevelManager.cpp
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/LevelManager.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../controller/PlayerManager.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../factory/AbstractFactory.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Alien.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/AlienBullet.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/AlienType.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Background.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Bonus.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/BonusType.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Bullet.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Life.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/PlayerShip.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Score.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Timer.h
 
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../controller/KeyHandler.h
@@ -241,6 +266,7 @@ CMakeFiles/Project.dir/main.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/Game.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/KeyP.h
+CMakeFiles/Project.dir/main.cpp.obj: ../controller/LevelManager.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/PlayerManager.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/AbstractFactory.h
 CMakeFiles/Project.dir/main.cpp.obj: ../factory/SDLFactory.h

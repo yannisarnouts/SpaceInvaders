@@ -2,7 +2,6 @@
 // Created by Gebruiker on 17/03/2020.
 //
 
-#include <iostream>
 #include "SDLBullet.h"
 
 SDL::SDLBullet::SDLBullet() {}

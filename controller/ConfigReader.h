@@ -30,6 +30,10 @@ public:
     int getAlienSpeed() const;
     void setAlienSpeed(int alienSpeed);
 
+    int getLevel() const;
+
+    void setLevel(int level);
+
 private:
     // read config file
     std::ifstream input;
@@ -45,6 +49,7 @@ private:
     int bulletSpeed;
     int canonLength;
     int alienSpeed;
+    int level;
 };
 
 

@@ -5,113 +5,82 @@
 #include <iostream>
 #include "AlienManager.h"
 
-Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader) {
+Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
     this->configReader = configReader;
     this->collisionController = new CollisionController();
-    this->currentBullet = abstractFactory->createAlienBullet(-20, -20);
-    aliens.reserve(4);
-    createAliens(bossLength, AlienType::boss,100, 0);
-    createAliens(michielLength, AlienType::michiel,200, 1);
-    createAliens(cliffordLength, AlienType::clifford,300, 2);
-    createAliens(thomasLength, AlienType::thomas,400, 3);
-    this->alienLength = bossLength + michielLength + cliffordLength + thomasLength;
+    this->currentBullet = abstractFactory->createAlienBullet(-20, configReader->getScreenHeight() + 100);
+    this->level = level;
+    initLevel();
     bullets.reserve(bulletLength);
     for (int i = 0; i <= bulletLength; ++i) {
-        bullets.emplace_back(abstractFactory->createAlienBullet(this->aliens[1][1]->getXCoord(),
-                                                                this->aliens[1][1]->getYCoord()));
+        bullets.emplace_back(abstractFactory->createAlienBullet(this->aliens[8]->getXCoord(),
+                                                                this->aliens[8]->getYCoord()));
     }
 }
 
-void Game::AlienManager::createAliens(int number, AlienType alienType, int y, int a) {
-    aliens[a].reserve(number);
-    for (int i = 0; i < number; i++) {
-        Alien *alien;
-        alien = abstractFactory->createAlien(alienType, i * 100, y);
-        this->aliens[a].emplace_back(alien);
+void Game::AlienManager::createAliens() {
+    for (int i = 0; i < alienLength; i++) {
+        if (i < alienLength/alienTypes) {
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::boss, i * 100, 100));
+        } else if (i >= alienLength/alienTypes && i < 16) {
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::michiel, (i - 8) * 100, 200));
+        } else if (i >= 16 && i < 24) {
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::clifford, (i - 16) * 100, 300));
+        } else if (i >= 24 && i < alienLength) {
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::thomas, (i - 24) * 100, 400));
+        }
     }
 }
 
-void Game::AlienManager::Visualize(AlienType alienType) {
-    if (alienType == AlienType::michiel) {
-        VisualizeType(alienType, 0, michielLength);
-    } else if (alienType == AlienType::boss) {
-        VisualizeType(alienType, 1, bossLength);
-    } else if (alienType == AlienType::clifford) {
-        VisualizeType(alienType, 2, cliffordLength);
-    } else if (alienType == AlienType::thomas) {
-        VisualizeType(alienType, 3, thomasLength);
+void Game::AlienManager::Visualize() {
+    for (int i = 0; i < alienLength; i++) {
+        this->aliens[i]->Visualize();
+        this->aliens[i]->move();
+        if (this->aliens[i]->hitBoundary()) {
+            moveAndCheck(alienLength);
+        }
+        if (canon->checkCollision(this->aliens[i])) {
+            this->aliens[i]->setAlive(false);
+            handleCollision(i, alienLength);
+        } else {
+            this->aliens[i]->Visualize();
+        }
     }
     this->bullets[bulletLength]->Visualize();
-    int a = rand() % 250;
-    if (a == 136) {
-        alienShoot();
+    this->bullets[bulletLength]->shootBullet();
+    int a = rand() % 200;
+    if (a == 36) {
+        alienShoot(alienLength);
     }
 }
 
-void Game::AlienManager::moveAndCheck(int a, int length) {
-    int move = 0;
+void Game::AlienManager::moveAndCheck(int length) {
     for (int i = 0; i < length; i++) {
-        if (this->aliens[a][i]->getMoveAlien() > 0) {
+        int move = aliens[i]->getMoveAlien();
+        if (this->aliens[i]->getMoveAlien() > 0) {
             move = -1;
         } else {
             move = 1;
         }
-        this->aliens[a][i]->setMoveAlien(move);
-        this->aliens[a][i]->setYCoord(this->aliens[a][i]->getYCoord() + configReader->getAlienSpeed());
+        this->aliens[i]->setMoveAlien(move);
+        this->aliens[i]->setYCoord(this->aliens[i]->getYCoord() + configReader->getAlienSpeed());
     }
 }
 
-void Game::AlienManager::VisualizeType(AlienType alienType, int a, int length) {
-    int len = 0;
-    for (int i = 0; i < length; ++i) {
-        if (alienType == AlienType::michiel) {
-            len = michielLength;
-        } else if (alienType == AlienType::boss) {
-            len = bossLength;
-        } else if (alienType == AlienType::clifford) {
-            len = cliffordLength;
-        } else if (alienType == AlienType::thomas) {
-            len = thomasLength;
-        }
-        if (this->aliens[a][i]->hitBoundary()) {
-            moveAndCheck(a, len);
-        }
-        if (canon->checkCollision(this->aliens[a][i])) {
-            this->aliens[a][i]->setAlive(false);
-            handleCollision(a, i, length, alienType);
-        } else {
-            this->aliens[a][i]->Visualize();
-        }
-        this->aliens[a][i]->move();
-    }
-}
-
-void Game::AlienManager::handleCollision(int i, int j, int length, AlienType alienType) {
-    for (int k = j; k < length; ++k) {
-        this->aliens[i][k - 1] = this->aliens[i][k];
-    }
-    if (alienType == AlienType::michiel) {
-        michielLength--;
-    } else if (alienType == AlienType::boss) {
-        bossLength--;
-    } else if (alienType == AlienType::clifford) {
-        cliffordLength--;
-    } else if (alienType == AlienType::thomas) {
-        thomasLength--;
-    }
+void Game::AlienManager::handleCollision(int i, int length) {
+    this->aliens.erase(aliens.begin() + i);
     alienLength--;
     aliensKilled++;
 }
 
-void Game::AlienManager::alienShoot() {
-    int i = rand() % 4;
-    int j = rand() % 10;
-    if (this->aliens[i][j]->isAlive()) {
+void Game::AlienManager::alienShoot(int a) {
+    int i = rand() % a;
+    if (this->aliens[i]->isAlive()) {
         bulletLength--;
-        this->bullets[bulletLength]->setXCoord(this->aliens[i][j]->getXCoord());
-        this->bullets[bulletLength]->setYCoord(this->aliens[i][j]->getYCoord());
+        this->bullets[bulletLength]->setXCoord(this->aliens[i]->getXCoord());
+        this->bullets[bulletLength]->setYCoord(this->aliens[i]->getYCoord());
         this->currentBullet = this->bullets[bulletLength];
     }
 }
@@ -131,4 +100,11 @@ int Game::AlienManager::getAlienLength() const {
 
 int Game::AlienManager::getAliensKilled() const {
     return aliensKilled;
+}
+
+void Game::AlienManager::initLevel() {
+    alienLength = 32;
+    aliens.reserve(alienLength);
+    alienTypes = 4;
+    createAliens();
 }

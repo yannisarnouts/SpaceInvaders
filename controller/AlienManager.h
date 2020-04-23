@@ -16,29 +16,27 @@
 namespace Game {
     class AlienManager {
     public:
-        AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader);
-        void Visualize(AlienType alienType);
-        void VisualizeType(AlienType alienType, int a, int length);
-        void createAliens(int number, AlienType alienType, int y, int a);
-        void moveAndCheck(int a, int length);
-        void handleCollision(int i, int j, int length, AlienType alienType);
+        AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level);
+        void Visualize();
+        void createAliens();
+        void moveAndCheck(int length);
+        void handleCollision(int i, int length);
         bool checkCollision(PlayerShip *playerShip);
-        void alienShoot();
+        void alienShoot(int a);
         int getAlienLength() const;
-
         int getAliensKilled() const;
+        void initLevel();
 
     private:
         AbstractFactory *abstractFactory;
-        std::vector<std::vector<Alien * >> aliens;
-//        Alien *aliens[4][10];
+        std::vector<Alien * > aliens;
         std::vector<AlienBullet*> bullets;
         int bulletLength = 500;
         CanonManager *canon; AlienBullet *currentBullet;
         CollisionController *collisionController;
         ConfigReader *configReader;
-        int michielLength = 10, thomasLength = 10, bossLength = 10, cliffordLength = 10;
-        int alienLength; int aliensKilled;
+        int alienLength; int aliensKilled; int alienTypes;
+        int level;
     };
 }
 

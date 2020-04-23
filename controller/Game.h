@@ -8,10 +8,7 @@
 
 #include <string>
 #include "../factory/AbstractFactory.h"
-#include "CanonManager.h"
-#include "PlayerManager.h"
-#include "AlienManager.h"
-#include "BonusManager.h"
+#include "LevelManager.h"
 
 namespace Game {
     class Game {
@@ -24,11 +21,7 @@ namespace Game {
         AbstractFactory *A;
         ConfigReader *configReader;
         Background *bg;
-        PlayerManager *playerManager;
-        PlayerShip *playerShip;
-        CanonManager *canon;
-        AlienManager *aliens;
-        BonusManager *bonusManager;
+        LevelManager *levelManager;
         time_t start;
         std::string bgPath = "../assets/bg.jpg";
     };

@@ -9,7 +9,7 @@ Game::CollisionController::CollisionController() {}
 
 AlienType Game::CollisionController::bulletPlayerShip(Bullet *bullet, Alien *alien) {
     if ((bullet->getXCoord() >= (alien->getXCoord() - alien->getWidth()) && bullet->getXCoord() <= (alien->getXCoord() + alien->getWidth())) &&
-            (bullet->getYCoord() >= alien->getYCoord() - alien->getHeight() && bullet->getYCoord() <= alien->getYCoord() + alien->getHeight())) {
+        (bullet->getYCoord() >= alien->getYCoord() - alien->getHeight() && bullet->getYCoord() <= alien->getYCoord() + alien->getHeight())) {
         return alien->getAlienType();
     } else {
         return AlienType(1000);
@@ -25,7 +25,7 @@ bool Game::CollisionController::bulletAlien(Game::AlienBullet *bullet, PlayerShi
 }
 
 bool Game::CollisionController::bonusPlayerShip(Game::Bonus *bonus, PlayerShip *playerShip) {
-    if ((bonus->getYCoord() == playerShip->getYCoord()) && (bonus->getXCoord() >= playerShip->getXCoord() - playerShip->getHeight()/2 && bonus->getXCoord() <= playerShip->getXCoord() + playerShip->getHeight()/2)) {
+    if (((bonus->getYCoord() >= playerShip->getYCoord()-bonus->getHeight()/2) && (bonus->getYCoord() <= playerShip->getYCoord() + bonus->getHeight()/2)) && (bonus->getXCoord() >= playerShip->getXCoord() - playerShip->getWidth() && bonus->getXCoord() <= playerShip->getXCoord() + playerShip->getWidth())) {
         return true;
     } else {
         return false;

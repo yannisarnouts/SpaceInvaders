@@ -6,6 +6,7 @@
 #define PROJECT_CANONMANAGER_H
 
 
+#include <vector>
 #include "../factory/AbstractFactory.h"
 #include "CollisionController.h"
 #include "../model/Score.h"
@@ -15,7 +16,7 @@ namespace Game {
     class CanonManager {
     public:
         CanonManager();
-        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader);
+        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level);
         Bullet *createBullet(int shipX, int shipY);
         void runCannon();
         void fireCannon(Bullet *b);
@@ -27,7 +28,7 @@ namespace Game {
     private:
         AbstractFactory *abstractFactory;
         PlayerShip *playerShip;
-        Bullet *bullets[200];
+        std::vector<Bullet *> bullets;
         int canonLength;
         Bullet *currentBullet;
         Timer *timer;
@@ -35,6 +36,7 @@ namespace Game {
         CollisionController *collisionController;
         ConfigReader *configReader;
         Score* score;
+        int level;
     };
 }
 

@@ -581,6 +581,33 @@ controller/KeyHandler.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/KeyHandler.cpp.s
 .PHONY : controller/KeyHandler.cpp.s
 
+controller/LevelManager.obj: controller/LevelManager.cpp.obj
+
+.PHONY : controller/LevelManager.obj
+
+# target to build an object file
+controller/LevelManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/LevelManager.cpp.obj
+.PHONY : controller/LevelManager.cpp.obj
+
+controller/LevelManager.i: controller/LevelManager.cpp.i
+
+.PHONY : controller/LevelManager.i
+
+# target to preprocess a source file
+controller/LevelManager.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/LevelManager.cpp.i
+.PHONY : controller/LevelManager.cpp.i
+
+controller/LevelManager.s: controller/LevelManager.cpp.s
+
+.PHONY : controller/LevelManager.s
+
+# target to generate assembly for a file
+controller/LevelManager.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/controller/LevelManager.cpp.s
+.PHONY : controller/LevelManager.cpp.s
+
 controller/PlayerManager.obj: controller/PlayerManager.cpp.obj
 
 .PHONY : controller/PlayerManager.obj
@@ -1073,6 +1100,9 @@ help:
 	@echo ... controller/KeyHandler.obj
 	@echo ... controller/KeyHandler.i
 	@echo ... controller/KeyHandler.s
+	@echo ... controller/LevelManager.obj
+	@echo ... controller/LevelManager.i
+	@echo ... controller/LevelManager.s
 	@echo ... controller/PlayerManager.obj
 	@echo ... controller/PlayerManager.i
 	@echo ... controller/PlayerManager.s
