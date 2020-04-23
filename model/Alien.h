@@ -19,7 +19,7 @@ namespace Game {
         virtual void close() = 0;
         void move();
         int getMoveAlien() const;
-        void setMoveAlien(int moveAlien);
+        void setMoveDirection(int moveAlien);
         bool isAlive() const;
         void setAlive(bool alive);
 

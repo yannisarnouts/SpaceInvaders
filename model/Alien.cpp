@@ -14,10 +14,10 @@ Game::Alien::Alien(int xCoord, int yCoord, int width, int height, AlienType alie
 }
 
 void Game::Alien::move() {
-    setXCoord(getXCoord() + (2 * getMoveAlien()));
+    setXCoord(getXCoord() + (3 * getMoveAlien()));
 }
 
-void Game::Alien::setMoveAlien(int moveAlien) {
+void Game::Alien::setMoveDirection(int moveAlien) {
     Alien::moveAlien = moveAlien;
 }
 
@@ -34,11 +34,11 @@ void Game::Alien::setAlive(bool alive) {
 }
 
 bool Game::Alien::hitBoundary() {
-    if (getXCoord() <= 0) {
-        setXCoord(0);
+    if (getXCoord() <= 0 - getWidth()) {
+//        setXCoord(0 - getWidth());
         return true;
-    } else if (getXCoord() >= SCREEN_WIDTH) {
-        setXCoord(SCREEN_WIDTH);
+    } else if (getXCoord() >= SCREEN_WIDTH + getWidth()) {
+//        setXCoord(SCREEN_WIDTH + getWidth());
         return true;
     } else {
         return false;

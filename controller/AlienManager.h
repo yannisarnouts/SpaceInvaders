@@ -22,7 +22,7 @@ namespace Game {
         void moveAndCheck(int length);
         void handleCollision(int i, int length);
         bool checkCollision(PlayerShip *playerShip);
-        void alienShoot(int a);
+        void alienShoot();
         int getAlienLength() const;
         int getAliensKilled() const;
         void initLevel();

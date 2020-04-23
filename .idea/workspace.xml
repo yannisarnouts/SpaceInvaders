@@ -13,46 +13,20 @@
   <component name="ChangeListManager">
     <list default="true" id="b67584d3-261a-4ca7-91f0-7de9e876b73c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLAlienBullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLAlienBullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLBullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLBullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLAlienBullet.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/AlienManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/AlienManager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/BonusManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/BonusManager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/CanonManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/CanonManager.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/CollisionController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/CollisionController.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/ConfigReader.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/ConfigReader.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/Game.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/Game.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/factory/sdlFactory.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/LevelManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/LevelManager.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/model/AlienBullet.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/model/AlienBullet.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/AlienManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/AlienManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/AlienManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/controller/AlienManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/BonusManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/BonusManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CanonManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CanonManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CanonManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CanonManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/CollisionController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CollisionController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/ConfigReader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ConfigReader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/ConfigReader.h" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ConfigReader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/AlienBullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/AlienBullet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Alien.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Alien.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Alien.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/Alien.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/stats.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +209,7 @@
       <workItem from="1587547315214" duration="1129000" />
       <workItem from="1587554243296" duration="1122000" />
       <workItem from="1587646609183" duration="9421000" />
-      <workItem from="1587657760450" duration="1007000" />
+      <workItem from="1587657760450" duration="2740000" />
     </task>
     <servers />
   </component>
@@ -271,29 +245,29 @@
     <state x="-1032" y="305" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1583867190402" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587657814137" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586622592273" />
-    <state width="1877" height="138" key="GridCell.Tab.0.bottom" timestamp="1587658751017">
+    <state width="1877" height="138" key="GridCell.Tab.0.bottom" timestamp="1587660586008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="144" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1585165491942" />
-    <state width="1877" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587658751017" />
+    <state width="1877" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587660586008" />
     <state width="1877" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587555366326" />
-    <state width="1877" height="138" key="GridCell.Tab.0.center" timestamp="1587658751017">
+    <state width="1877" height="138" key="GridCell.Tab.0.center" timestamp="1587660586008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="144" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1585165491942" />
-    <state width="1877" height="138" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587658751017" />
+    <state width="1877" height="138" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587660586008" />
     <state width="1877" height="138" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587555366326" />
-    <state width="1877" height="138" key="GridCell.Tab.0.left" timestamp="1587658751017">
+    <state width="1877" height="138" key="GridCell.Tab.0.left" timestamp="1587660586008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="144" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1585165491942" />
-    <state width="1877" height="138" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587658751017" />
+    <state width="1877" height="138" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587660586008" />
     <state width="1877" height="138" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587555366326" />
-    <state width="1877" height="138" key="GridCell.Tab.0.right" timestamp="1587658751017">
+    <state width="1877" height="138" key="GridCell.Tab.0.right" timestamp="1587660586008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="144" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1585165491942" />
-    <state width="1877" height="138" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587658751017" />
+    <state width="1877" height="138" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587660586008" />
     <state width="1877" height="138" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587555366326" />
     <state width="1877" height="259" key="GridCell.Tab.1.bottom" timestamp="1587657741915">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -323,9 +297,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="179" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585926478133" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1585675299208">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1587659519867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587659519867" />
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1585675299208" />
     <state x="1156" y="175" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586535984152">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -365,10 +340,10 @@
     </state>
     <state x="701" y="169" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1586886600413" />
     <state x="701" y="169" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586182065288" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1586884543959">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1587659520401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1586884543959" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587659520401" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586369512944" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587555167728">
       <screen x="0" y="0" width="1920" height="1040" />
