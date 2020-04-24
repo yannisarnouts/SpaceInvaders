@@ -21,3 +21,7 @@ Game::BonusType Game::Bonus::getBonusType() const {
 void Game::Bonus::setBonusType(Game::BonusType bonusType) {
     Bonus::bonusType = bonusType;
 }
+
+Game::Bonus::~Bonus() {
+
+}

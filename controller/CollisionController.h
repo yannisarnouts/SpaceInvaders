@@ -16,7 +16,6 @@ namespace Game {
     class CollisionController {
     public:
         CollisionController();
-
         AlienType bulletPlayerShip(Bullet *bullet, Alien *alien);
         bool bulletAlien(AlienBullet *bullet, PlayerShip *playerShip);
         bool bonusPlayerShip(Bonus *bonus, PlayerShip *playerShip);

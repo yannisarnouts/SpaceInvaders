@@ -13,11 +13,11 @@ namespace SDL {
     class SDLScore: public Game::Score {
     public:
         SDLScore();
-
         SDLScore(SDL_Renderer *renderer);
 
+        virtual ~SDLScore();
+
         void Visualize() override ;
-        void close();
 
     private:
         SDL_Renderer *renderer;

@@ -48,3 +48,7 @@ bool Game::Alien::hitBoundary() {
 AlienType Game::Alien::getAlienType() const {
     return alienType;
 }
+
+Game::Alien::~Alien() {
+
+}

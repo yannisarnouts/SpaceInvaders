@@ -9,6 +9,7 @@ namespace Game {
     class Life {
     public:
         Life();
+        virtual ~Life();
         virtual void Visualize()=0;
         int getLife() const;
         void setLife(int life);

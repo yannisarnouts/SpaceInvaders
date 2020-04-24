@@ -14,7 +14,8 @@ class SDLLife: public Game::Life {
     public:
         SDLLife();
         SDLLife(SDL_Renderer *renderer);
-        void Visualize() override ;
+    virtual ~SDLLife();
+    void Visualize() override ;
 
     private:
         SDL_Renderer *renderer;

@@ -75,3 +75,7 @@ bool Game::BonusManager::checkCollision() {
 int Game::BonusManager::getBonussesCaught() const {
     return bonussesCaught;
 }
+
+Game::BonusManager::~BonusManager() {
+
+}

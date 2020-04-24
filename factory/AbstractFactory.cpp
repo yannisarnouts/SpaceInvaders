@@ -5,3 +5,7 @@
 #include "AbstractFactory.h"
 
 Game::AbstractFactory::AbstractFactory() {}
+
+Game::AbstractFactory::~AbstractFactory() {
+
+}

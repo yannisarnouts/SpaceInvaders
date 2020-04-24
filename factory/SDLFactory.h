@@ -19,6 +19,7 @@ namespace SDL {
     class SDLFactory : public Game::AbstractFactory {
     public:
         SDLFactory();
+        virtual ~SDLFactory();
         // playership classes
         Game::PlayerShip *createPlayerShip() override;
         Game::Bullet *createBullet(int xCoord, int yCoord) override;

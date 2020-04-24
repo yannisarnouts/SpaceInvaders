@@ -21,6 +21,6 @@ void SDL::SDLPlayerShip::Visualize() {
     SDL_RenderCopy(gRenderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDL::SDLPlayerShip::close() {
-
+SDL::SDLPlayerShip::~SDLPlayerShip() {
+    texture->free();
 }

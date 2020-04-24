@@ -7,3 +7,9 @@
 const float Game::Timer::getTargetDeltatime() const {
     return TARGET_DELTATIME;
 }
+
+Game::Timer::Timer() {}
+
+Game::Timer::~Timer() {
+
+}

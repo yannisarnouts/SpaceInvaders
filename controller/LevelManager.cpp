@@ -45,3 +45,7 @@ Game::BonusManager *Game::LevelManager::getBonusManager() const {
     return bonusManager;
 }
 
+Game::LevelManager::~LevelManager() {
+
+}
+

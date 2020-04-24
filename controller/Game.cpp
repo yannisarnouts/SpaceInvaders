@@ -27,9 +27,6 @@ void Game::Game::Run() {
         A->render();
     }
     updateStatistics();
-    bg->close();
-//    playerManager->getPlayerShip()->close();
-//    alien->close();
     A->close();
 }
 
@@ -42,4 +39,8 @@ void Game::Game::updateStatistics() {
     fileWriter->setBonussesCaught(levelManager->getBonusManager()->getBonussesCaught());
     fileWriter->setAliensKilled(levelManager->getAliens()->getAliensKilled());
     fileWriter->writeStats();
+}
+
+Game::Game::~Game() {
+
 }

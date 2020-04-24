@@ -17,6 +17,7 @@ namespace Game {
     public:
         BonusManager();
         BonusManager(AbstractFactory *abstractFactory, PlayerManager *playerManager, CanonManager *canonManager, ConfigReader *configReader);
+        virtual ~BonusManager();
         void createBonusses();
         void Visualize();
         void runBonusses();

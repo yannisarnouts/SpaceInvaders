@@ -17,6 +17,7 @@ namespace Game {
     public:
         LevelManager();
         LevelManager(ConfigReader *configReader, AbstractFactory *abstractFactory);
+        virtual ~LevelManager();
         int getLevel() const;
         void setLevel(int level);
 

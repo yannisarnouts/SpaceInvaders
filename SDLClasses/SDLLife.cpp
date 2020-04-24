@@ -17,3 +17,7 @@ void SDL::SDLLife::Visualize() {
     SDL_Rect renderQuad = {SCREEN_WIDTH, 0, 100, 100};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
+
+SDL::SDLLife::~SDLLife() {
+    texture->free();
+}

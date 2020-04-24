@@ -9,8 +9,8 @@
 class Background {
 public:
     Background();
+    virtual ~Background();
     virtual void Visualize()=0;
-    virtual void close()=0;
 };
 
 

@@ -23,6 +23,6 @@ void SDL::SDLBackground::Visualize() {
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDL::SDLBackground::close() {
-    Background::close();
+SDL::SDLBackground::~SDLBackground() {
+    texture->free();
 }

@@ -12,10 +12,6 @@ void SDL::SDLAlien::Visualize() {
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDL::SDLAlien::close() {
-
-}
-
 SDL::SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer) : Alien(xCoord, yCoord, width, height, alienType), renderer(renderer) {
     this->renderer = renderer;
     Texture *aTexture = new Texture(renderer);
@@ -31,6 +27,10 @@ SDL::SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType
         imgPath = thomasPath;
     }
     aTexture->loadFromFile(imgPath);
+}
+
+SDL::SDLAlien::~SDLAlien() {
+    texture->free();
 }
 
 

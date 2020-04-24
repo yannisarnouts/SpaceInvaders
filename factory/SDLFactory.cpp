@@ -128,3 +128,11 @@ void SDL::SDLFactory::setScreenHeight(int screenHeight) {
 void SDL::SDLFactory::setScreenWidth(int screenWidth) {
     SCREEN_WIDTH = screenWidth;
 }
+
+SDL::SDLFactory::~SDLFactory() {
+    SDL_DestroyRenderer(gRenderer);
+    SDL_DestroyWindow(gWindow);
+    IMG_Quit();
+    TTF_Quit();
+    SDL_Quit();
+}

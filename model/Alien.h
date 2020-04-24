@@ -14,9 +14,9 @@ namespace Game {
     public:
         Alien();
         Alien(int xCoord, int yCoord, int width, int height, AlienType alienType);
+        virtual ~Alien();
         bool hitBoundary();
         virtual void Visualize() = 0;
-        virtual void close() = 0;
         void move();
         int getMoveAlien() const;
         void setMoveDirection(int moveAlien);

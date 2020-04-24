@@ -14,9 +14,8 @@ namespace Game {
         Bonus();
         Bonus(int xCoord, int yCoord, int width, int height);
         Bonus(int xCoord, int yCoord, int width, int height, BonusType bonusType);
+        virtual ~Bonus();
         virtual void Visualize() = 0;
-        virtual void close() = 0;
-
         BonusType getBonusType() const;
 
         void setBonusType(BonusType bonusType);

@@ -14,6 +14,9 @@ namespace Game {
     class Game {
     public:
         Game(AbstractFactory *_A);
+
+        virtual ~Game();
+
         void Run();
         void updateStatistics();
 

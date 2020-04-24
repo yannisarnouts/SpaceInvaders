@@ -1,7 +1,10 @@
 //
 // Created by Gebruiker on 6/04/2020.
 //
-
+/*
+ * PlayerManager
+ * Manages PlayerShip
+ */
 #ifndef PROJECT_PLAYERMANAGER_H
 #define PROJECT_PLAYERMANAGER_H
 
@@ -14,6 +17,9 @@ namespace Game {
     public:
         PlayerManager();
         PlayerManager(AbstractFactory *abstractFactory, ConfigReader *configReader);
+
+        virtual ~PlayerManager();
+
         PlayerShip *getPlayerShip() const;
         void runPlayer();
         void setLife();

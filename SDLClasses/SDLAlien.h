@@ -15,11 +15,9 @@ namespace SDL {
     class SDLAlien : public Game::Alien {
     public:
         SDLAlien();
-
         SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer);
-
+        ~SDLAlien();
         void Visualize() override;
-        void close() override;
 
 
     private:

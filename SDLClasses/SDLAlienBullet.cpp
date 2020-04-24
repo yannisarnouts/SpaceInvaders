@@ -21,6 +21,6 @@ void SDL::SDLAlienBullet::Visualize() {
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDL::SDLAlienBullet::close() {
-    this->texture->free();
+SDL::SDLAlienBullet::~SDLAlienBullet() {
+    texture->free();
 }

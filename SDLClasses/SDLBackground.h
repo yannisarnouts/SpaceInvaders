@@ -15,10 +15,8 @@ namespace SDL {
     class SDLBackground : public Background {
     public:
         SDLBackground(SDL_Renderer *renderer, int screenW, int screenH, const std::string &imgPath);
-
+        virtual ~SDLBackground();
         void Visualize() override;
-
-        void close() override;
 
     private:
         SDL_Renderer *renderer;

@@ -22,6 +22,7 @@ namespace Game {
     class AbstractFactory {
     public:
         AbstractFactory();
+        virtual ~AbstractFactory();
         // playership
         virtual PlayerShip *createPlayerShip() = 0;
         virtual Life *createLife()=0;

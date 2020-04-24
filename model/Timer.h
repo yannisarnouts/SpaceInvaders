@@ -8,11 +8,11 @@
 namespace Game {
     class Timer {
     public:
+        Timer();
+        virtual ~Timer();
         virtual double getDeltaTime() = 0;
         virtual void update() = 0;
-
         const float getTargetDeltatime() const;
-
         virtual void reset() = 0;
 
     private:

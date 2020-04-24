@@ -90,3 +90,7 @@ int Game::CanonManager::getBulletsFired() {
     return 200 - canonLength;
 }
 
+Game::CanonManager::~CanonManager() {
+
+}
+

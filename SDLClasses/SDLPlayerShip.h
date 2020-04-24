@@ -14,18 +14,13 @@ namespace SDL {
     class SDLPlayerShip : public Game::PlayerShip {
     public:
         SDLPlayerShip();
-
         SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer);
+        virtual ~SDLPlayerShip();
         void Visualize() override;
-        void close() override;
 
     private:
         SDL_Renderer *gRenderer;
         Texture *texture = NULL;
-        std::string imgPath;
-        int SCREEN_HEIGHT = 1280;
-        int SCREEN_WIDTH = 950;
-        Game::KeyHandler *keyHandler;
         std::string shipPath = "../assets/spaceship.png";
     };
 }

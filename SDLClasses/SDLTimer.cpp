@@ -28,3 +28,7 @@ void SDL::SDLTimer::reset() {
     deltaTime = 0;
     elapsedTicks = 0;
 }
+
+SDL::SDLTimer::~SDLTimer() {
+
+}

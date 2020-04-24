@@ -11,12 +11,10 @@ namespace Game {
     class AlienBullet : public Entity {
     public:
         AlienBullet();
-
         AlienBullet(int xCoord, int yCoord, int width, int height);
+        virtual ~AlienBullet();
         void shootBullet();
         virtual void Visualize() = 0;
-
-        virtual void close() = 0;
     };
 }
 

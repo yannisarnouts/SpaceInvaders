@@ -17,3 +17,7 @@ int Game::PlayerShip::getLife() const {
 void Game::PlayerShip::setLife(int life) {
     PlayerShip::life = life;
 }
+
+Game::PlayerShip::~PlayerShip() {
+
+}

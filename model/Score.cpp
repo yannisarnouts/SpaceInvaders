@@ -13,3 +13,7 @@ int Game::Score::getPoints() const {
 void Game::Score::setPoints(int points) {
     Score::points = points;
 }
+
+Game::Score::~Score() {
+
+}

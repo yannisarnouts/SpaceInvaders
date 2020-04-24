@@ -12,9 +12,6 @@ void SDL::SDLBonus::Visualize() {
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDL::SDLBonus::close() {
-}
-
 SDL::SDLBonus::SDLBonus(int xCoord, int yCoord, int width, int height, Game::BonusType bonusType,
                         SDL_Renderer *renderer) {
     this->renderer = renderer;
@@ -25,4 +22,8 @@ SDL::SDLBonus::SDLBonus(int xCoord, int yCoord, int width, int height, Game::Bon
     Texture *aTexture = new Texture(renderer);
     texture = aTexture;
     aTexture->loadFromFile(imgPath);
+}
+
+SDL::SDLBonus::~SDLBonus() {
+    texture->free();
 }

@@ -14,11 +14,9 @@ namespace SDL {
     class SDLBullet : public Game::Bullet {
     public:
         SDLBullet();
-
         SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
 
-        void close() override;
-
+        virtual ~SDLBullet();
         void Visualize() override;
 
     private:

@@ -20,7 +20,6 @@ void SDL::SDLScore::Visualize() {
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDL::SDLScore::close() {
-
+SDL::SDLScore::~SDLScore() {
+    texture->free();
 }
-

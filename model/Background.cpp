@@ -10,6 +10,6 @@ void Background::Visualize() {
 
 }
 
-void Background::close() {
+Background::~Background() {
 
 }

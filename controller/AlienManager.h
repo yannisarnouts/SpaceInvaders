@@ -1,7 +1,9 @@
 //
 // Created by Gebruiker on 17/03/2020.
 //
-
+/*
+ * Manages Aliens
+ */
 #ifndef PROJECT_ALIENS_H
 #define PROJECT_ALIENMANAGER_H
 
@@ -17,10 +19,11 @@ namespace Game {
     class AlienManager {
     public:
         AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level);
+        virtual ~AlienManager();
         void Visualize();
         void createAliens();
         void moveAndCheck(int length);
-        void handleCollision(int i, int length);
+        void handleCollision(int i);
         bool checkCollision(PlayerShip *playerShip);
         void alienShoot();
         int getAlienLength() const;
@@ -36,6 +39,7 @@ namespace Game {
         CollisionController *collisionController;
         ConfigReader *configReader;
         int alienLength; int aliensKilled; int alienTypes;
+        int bossLength; int thomasLength; int cliffLength; int michielLength;
         int level;
     };
 }

@@ -20,6 +20,6 @@ void SDL::SDLBullet::Visualize() {
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
-void SDL::SDLBullet::close() {
-    this->texture->free();
+SDL::SDLBullet::~SDLBullet() {
+    texture->free();
 }

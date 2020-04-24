@@ -13,3 +13,7 @@ int Game::Life::getLife() const {
 void Game::Life::setLife(int life) {
     Life::life = life;
 }
+
+Game::Life::~Life() {
+
+}

@@ -19,6 +19,12 @@ Game::PlayerShip *Game::PlayerManager::getPlayerShip() const {
     return playerShip;
 }
 
+/*
+ * Method to run the player
+ * Update timer
+ * Visualize and move ship
+ * Visualize life
+ */
 void Game::PlayerManager::runPlayer() {
     timer->update();
     moveShip();
@@ -31,6 +37,9 @@ void Game::PlayerManager::setLife() {
     life->setLife(getPlayerShip()->getLife());
 }
 
+/*
+ * moveShip checks whether the ship is still between the boundaries and moves the player
+ */
 void Game::PlayerManager::moveShip() {
     int direction = keyHandler->directions();
     if (playerShip->getXCoord() >= (this->configReader->getScreenWidth() + playerShip->getWidth())) {
@@ -54,4 +63,8 @@ void Game::PlayerManager::initShip() {
     this->playerShip->setSpeed(configReader->getShipSpeed());
     this->playerShip->setLife(configReader->getShipLife());
     this->life->setLife(configReader->getShipLife());
+}
+
+Game::PlayerManager::~PlayerManager() {
+
 }

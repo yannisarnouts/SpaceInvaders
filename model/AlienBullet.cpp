@@ -11,3 +11,7 @@ Game::AlienBullet::AlienBullet(int xCoord, int yCoord, int width, int height) : 
 void Game::AlienBullet::shootBullet() {
     setYCoord(getYCoord() + 10);
 }
+
+Game::AlienBullet::~AlienBullet() {
+
+}
