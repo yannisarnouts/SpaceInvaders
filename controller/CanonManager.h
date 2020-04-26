@@ -16,7 +16,7 @@ namespace Game {
     class CanonManager {
     public:
         CanonManager();
-        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level);
+        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level, int initScore,int initBulletsFired);
         virtual ~CanonManager();
         Bullet *createBullet(int shipX, int shipY);
         void runCannon();
@@ -30,7 +30,7 @@ namespace Game {
         AbstractFactory *abstractFactory;
         PlayerShip *playerShip;
         std::vector<Bullet *> bullets;
-        int canonLength;
+        int canonLength; int bulletsFired;
         Bullet *currentBullet;
         Timer *timer;
         bool shoot = false;

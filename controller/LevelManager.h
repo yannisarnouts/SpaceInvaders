@@ -20,16 +20,26 @@ namespace Game {
         virtual ~LevelManager();
         int getLevel() const;
         void setLevel(int level);
-
         PlayerManager *getPlayerManager() const;
-
         PlayerShip *getPlayerShip() const;
-
         CanonManager *getCanon() const;
-
         AlienManager *getAliens() const;
-
         BonusManager *getBonusManager() const;
+        void createLevel();
+        bool isHasWon() const;
+        void setHasWon(bool hasWon);
+        int getScore() const;
+        void setScore(int score);
+        int getBonusses() const;
+        void setBonusses(int bonusses);
+        int getShipLife() const;
+        void setShipLife(int shipLife);
+        int getAliensKilled() const;
+        void setAliensKilled(int aliensKilled);
+
+        int getBulletsFired() const;
+
+        void setBulletsFired(int bulletsFired);
 
     private:
         int level;
@@ -40,6 +50,12 @@ namespace Game {
         CanonManager *canon;
         AlienManager *aliens;
         BonusManager *bonusManager;
+        bool hasWon = false;
+        int score = 0;
+        int bonusses = 0;
+        int shipLife;
+        int aliensKilled = 0;
+        int bulletsFired = 0;
     };
 }
 

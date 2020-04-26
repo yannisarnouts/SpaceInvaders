@@ -5,12 +5,13 @@
 #include <iostream>
 #include "AlienManager.h"
 
-Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level) {
+Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level, int initAliensKilled) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
     this->configReader = configReader;
     this->collisionController = new CollisionController();
     this->currentBullet = abstractFactory->createAlienBullet(-20, configReader->getScreenHeight() + 100);
+    this->aliensKilled = initAliensKilled;
     this->level = level;
     initLevel();
     bullets.reserve(bulletLength);
@@ -34,6 +35,8 @@ void Game::AlienManager::createAliens() {
             this->aliens.emplace_back(abstractFactory->createAlien(AlienType::clifford, (i - bossLength - michielLength) * 100, 300));
         } else if (i >= bossLength + michielLength + cliffLength && i < bossLength + michielLength + cliffLength + thomasLength && alienTypes > 3) {
             this->aliens.emplace_back(abstractFactory->createAlien(AlienType::thomas, (i - bossLength - michielLength - cliffLength) * 100, 400));
+        } else if (i >= bossLength + michielLength + cliffLength + thomasLength && i < bossLength + michielLength + cliffLength + thomasLength + michielLength && alienTypes > 4) {
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::michiel, (i - bossLength - michielLength - cliffLength - thomasLength) * 100, 500));
         }
     }
 }
@@ -59,7 +62,7 @@ void Game::AlienManager::Visualize() {
     }
     this->bullets[bulletLength]->Visualize();
     this->bullets[bulletLength]->shootBullet();
-    int a = rand() % 200;
+    int a = rand() % 200 / level;
     if (a == 36) {
         alienShoot();
     }
@@ -137,7 +140,7 @@ void Game::AlienManager::initLevel() {
     } else if (level == 3) {
         bossLength = 10; cliffLength = 10; michielLength = 10; thomasLength = 10;
         alienTypes = 5;
-        alienLength = bossLength + michielLength + cliffLength + thomasLength;
+        alienLength = bossLength + michielLength + cliffLength + thomasLength + michielLength;
     }
     aliens.reserve(alienLength);
     createAliens();

@@ -23,15 +23,17 @@ public:
     void setBulletsFired(int bulletsFired);
     int getBonussesCaught() const;
     void setBonussesCaught(int bonussesCaught);
-
     int getAliensKilled() const;
-
     void setAliensKilled(int aliensKilled);
-
     int getFileSize();
+
+    int getLevel() const;
+
+    void setLevel(int level);
 
 private:
     std::string file;
+    int level;
     int points;
     int lifesLeft;
     double timePlayed;

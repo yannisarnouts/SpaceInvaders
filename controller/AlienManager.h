@@ -18,7 +18,7 @@
 namespace Game {
     class AlienManager {
     public:
-        AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level);
+        AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level, int initAliensKilled);
         virtual ~AlienManager();
         void Visualize();
         void createAliens();

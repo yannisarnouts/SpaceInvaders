@@ -8,7 +8,7 @@
 Game::CollisionController::CollisionController() {}
 
 AlienType Game::CollisionController::bulletPlayerShip(Bullet *bullet, Alien *alien) {
-    if ((bullet->getXCoord() >= (alien->getXCoord()) && bullet->getXCoord() <= (alien->getXCoord() + alien->getWidth())) &&
+    if ((bullet->getXCoord() >= (alien->getXCoord() - alien->getWidth()) && bullet->getXCoord() <= (alien->getXCoord() + 100)) &&
         (bullet->getYCoord() >= alien->getYCoord() - alien->getHeight() && bullet->getYCoord() <= alien->getYCoord() + alien->getHeight())) {
         return alien->getAlienType();
     } else {

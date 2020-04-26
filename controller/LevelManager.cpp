@@ -9,12 +9,7 @@ Game::LevelManager::LevelManager() {}
 Game::LevelManager::LevelManager(ConfigReader *configReader, AbstractFactory *abstractFactory) : configReader(configReader) {
     this->A = abstractFactory;
     this->configReader = new ConfigReader();
-    this->level = configReader->getLevel();
-    playerManager = new PlayerManager(this->A, configReader);
-    playerShip = playerManager->getPlayerShip();
-    canon = new CanonManager(this->A, playerShip, configReader, level);
-    aliens = new AlienManager(this->A, canon, configReader, level);
-    bonusManager = new BonusManager(this->A, playerManager, canon, configReader);
+    this->setShipLife(configReader->getShipLife());
 }
 
 int Game::LevelManager::getLevel() const {
@@ -49,3 +44,58 @@ Game::LevelManager::~LevelManager() {
 
 }
 
+void Game::LevelManager::createLevel() {
+    playerManager = new PlayerManager(this->A, configReader, shipLife);
+    playerShip = playerManager->getPlayerShip();
+    canon = new CanonManager(this->A, playerShip, configReader, level, score, bulletsFired);
+    aliens = new AlienManager(this->A, canon, configReader, level, aliensKilled);
+    bonusManager = new BonusManager(this->A, playerManager, canon, configReader);
+}
+
+bool Game::LevelManager::isHasWon() const {
+    return hasWon;
+}
+
+void Game::LevelManager::setHasWon(bool hasWon) {
+    LevelManager::hasWon = hasWon;
+}
+
+int Game::LevelManager::getScore() const {
+    return score;
+}
+
+void Game::LevelManager::setScore(int score) {
+    LevelManager::score = score;
+}
+
+int Game::LevelManager::getBonusses() const {
+    return bonusses;
+}
+
+void Game::LevelManager::setBonusses(int bonusses) {
+    LevelManager::bonusses = bonusses;
+}
+
+int Game::LevelManager::getShipLife() const {
+    return shipLife;
+}
+
+void Game::LevelManager::setShipLife(int shipLife) {
+    LevelManager::shipLife = shipLife;
+}
+
+int Game::LevelManager::getAliensKilled() const {
+    return aliensKilled;
+}
+
+void Game::LevelManager::setAliensKilled(int aliensKilled) {
+    LevelManager::aliensKilled = aliensKilled;
+}
+
+int Game::LevelManager::getBulletsFired() const {
+    return bulletsFired;
+}
+
+void Game::LevelManager::setBulletsFired(int bulletsFired) {
+    LevelManager::bulletsFired = bulletsFired;
+}

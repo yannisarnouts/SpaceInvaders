@@ -18,6 +18,7 @@ void FileWriter::writeStats() {
     statsFile << "\t\t\t<tr>\n";
     statsFile << "\t\t\t\t<td>" << ctime(&now) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getTimePlayed()) << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << std::to_string(getLevel()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getPoints()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getAliensKilled()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getLifesLeft()) << "</td>\n";
@@ -105,4 +106,12 @@ int FileWriter::getAliensKilled() const {
 
 void FileWriter::setAliensKilled(int aliensKilled) {
     FileWriter::aliensKilled = aliensKilled;
+}
+
+int FileWriter::getLevel() const {
+    return level;
+}
+
+void FileWriter::setLevel(int level) {
+    FileWriter::level = level;
 }

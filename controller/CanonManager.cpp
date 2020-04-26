@@ -7,9 +7,10 @@
 
 Game::CanonManager::CanonManager() {}
 
-Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level) {
+Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level, int initScore, int initBulletsFired) {
     this->configReader = configReader;
     this->canonLength = configReader->getCanonLength();
+    this->bulletsFired = initBulletsFired;
     this->currentBullet = abstractFactory->createBullet(0, 0);
     this->score = abstractFactory->createScore();
     this->abstractFactory = abstractFactory;
@@ -17,6 +18,7 @@ Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *p
     this->collisionController = new CollisionController();
     this->timer = abstractFactory->createTimer();
     this->level = level;
+    this->score->setPoints(initScore);
     this->loadCannon();
 }
 
@@ -30,7 +32,7 @@ void Game::CanonManager::runCannon() {
     int direction = keyHandler.directions();
     timer->update();
     if (direction == KeyP::UP && !shoot) {
-        canonLength--;
+        canonLength--; bulletsFired++;
         this->bullets[canonLength]->setXCoord(this->playerShip->getXCoord());
         shoot = true;
     }
@@ -87,7 +89,7 @@ Game::Score *Game::CanonManager::getScore() const {
 }
 
 int Game::CanonManager::getBulletsFired() {
-    return 200 - canonLength;
+    return bulletsFired;
 }
 
 Game::CanonManager::~CanonManager() {

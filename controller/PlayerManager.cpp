@@ -6,13 +6,15 @@
 
 Game::PlayerManager::PlayerManager() {}
 
-Game::PlayerManager::PlayerManager(Game::AbstractFactory *abstractFactory, ConfigReader *configReader) : abstractFactory(abstractFactory) {
+Game::PlayerManager::PlayerManager(Game::AbstractFactory *abstractFactory, ConfigReader *configReader, int initLife) : abstractFactory(abstractFactory) {
     this->abstractFactory = abstractFactory;
     this->configReader = configReader;
     this->playerShip = abstractFactory->createPlayerShip();
     this->life = abstractFactory->createLife();
-    initShip();
     this->timer = abstractFactory->createTimer();
+    life->setLife(initLife);
+    playerShip->setLife(initLife);
+    this->playerShip->setSpeed(configReader->getShipSpeed());
 }
 
 Game::PlayerShip *Game::PlayerManager::getPlayerShip() const {
@@ -57,12 +59,6 @@ void Game::PlayerManager::moveShip() {
             playerShip->setXCoord(playerShip->getXCoord() + timer->getDeltaTime() * playerShip->getSpeed());
         }
     }
-}
-
-void Game::PlayerManager::initShip() {
-    this->playerShip->setSpeed(configReader->getShipSpeed());
-    this->playerShip->setLife(configReader->getShipLife());
-    this->life->setLife(configReader->getShipLife());
 }
 
 Game::PlayerManager::~PlayerManager() {

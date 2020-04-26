@@ -16,15 +16,12 @@ namespace Game {
     class PlayerManager {
     public:
         PlayerManager();
-        PlayerManager(AbstractFactory *abstractFactory, ConfigReader *configReader);
-
+        PlayerManager(AbstractFactory *abstractFactory, ConfigReader *configReader, int initLife);
         virtual ~PlayerManager();
-
         PlayerShip *getPlayerShip() const;
         void runPlayer();
         void setLife();
         void moveShip();
-        void initShip();
 
     private:
         AbstractFactory *abstractFactory;
