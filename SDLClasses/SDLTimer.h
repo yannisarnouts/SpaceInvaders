@@ -11,9 +11,7 @@ namespace SDL {
     class SDLTimer : public Game::Timer {
     public:
         SDLTimer();
-
-        virtual ~SDLTimer();
-
+        ~SDLTimer();
         double getDeltaTime() override;
         void update() override;
         void reset() override;

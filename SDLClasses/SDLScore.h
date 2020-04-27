@@ -14,9 +14,7 @@ namespace SDL {
     public:
         SDLScore();
         SDLScore(SDL_Renderer *renderer);
-
-        virtual ~SDLScore();
-
+        ~SDLScore();
         void Visualize() override ;
 
     private:

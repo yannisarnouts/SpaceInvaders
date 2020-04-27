@@ -110,6 +110,12 @@
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBullet.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLevel.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLevel.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLife.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -261,6 +267,12 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.cpp">

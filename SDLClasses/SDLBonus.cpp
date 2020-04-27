@@ -2,7 +2,6 @@
 // Created by Gebruiker on 7/04/2020.
 //
 
-#include <iostream>
 #include "SDLBonus.h"
 
 SDL::SDLBonus::SDLBonus() {}

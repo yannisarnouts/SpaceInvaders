@@ -13,11 +13,11 @@ Game::Game::Game(AbstractFactory *_A) {
 void Game::Game::Run() {
     start = time(0);
     configReader = new ConfigReader();
-    bg = A->createBackground(bgPath);
+    bg = A->createBackground();
     levelManager = new LevelManager(configReader, this->A);
     for (int i = 1; i <= 3; i++) {
         if (levelManager->isHasWon() || i == 1) {
-            levelManager->setLevel(i);
+            levelManager->getLevel()->setLevel(i);
             levelManager->createLevel();
         } else {
             break;
@@ -32,6 +32,7 @@ void Game::Game::Run() {
             };
             levelManager->getBonusManager()->runBonusses();
             levelManager->getCanon()->runCannon();
+            levelManager->getLevel()->Visualize();
             A->render();
             if (levelManager->getAliens()->getAlienLength() == 0) {
                 levelManager->setHasWon(true);
@@ -51,7 +52,7 @@ void Game::Game::Run() {
 
 void Game::Game::updateStatistics() {
     FileWriter *fileWriter = new FileWriter();
-    fileWriter->setLevel(levelManager->getLevel());
+    fileWriter->setLevel(levelManager->getLevel()->getLevel());
     fileWriter->setPoints(levelManager->getCanon()->getScore()->getPoints());
     fileWriter->setLifesLeft(levelManager->getPlayerShip()->getLife());
     fileWriter->setTimePlayed(difftime(time(0), start));
@@ -62,5 +63,6 @@ void Game::Game::updateStatistics() {
 }
 
 Game::Game::~Game() {
-
+    delete levelManager;
+    delete configReader;
 }

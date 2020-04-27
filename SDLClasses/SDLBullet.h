@@ -15,8 +15,7 @@ namespace SDL {
     public:
         SDLBullet();
         SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
-
-        virtual ~SDLBullet();
+        ~SDLBullet();
         void Visualize() override;
 
     private:

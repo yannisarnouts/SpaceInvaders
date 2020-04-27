@@ -18,8 +18,6 @@ namespace Game {
         LevelManager();
         LevelManager(ConfigReader *configReader, AbstractFactory *abstractFactory);
         virtual ~LevelManager();
-        int getLevel() const;
-        void setLevel(int level);
         PlayerManager *getPlayerManager() const;
         PlayerShip *getPlayerShip() const;
         CanonManager *getCanon() const;
@@ -36,13 +34,15 @@ namespace Game {
         void setShipLife(int shipLife);
         int getAliensKilled() const;
         void setAliensKilled(int aliensKilled);
-
         int getBulletsFired() const;
-
         void setBulletsFired(int bulletsFired);
 
+        Level *getLevel() const;
+
+        void setLevel(Level *level);
+
     private:
-        int level;
+        Level *level;
         AbstractFactory *A;
         ConfigReader *configReader;
         PlayerManager *playerManager;

@@ -14,7 +14,7 @@ class SDLAlienBullet : public Game::AlienBullet {
 public:
     SDLAlienBullet();
     SDLAlienBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
-    virtual ~SDLAlienBullet();
+    ~SDLAlienBullet();
     void Visualize() override;
 private:
     SDL_Renderer *renderer;

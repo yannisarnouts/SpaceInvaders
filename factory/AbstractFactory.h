@@ -17,6 +17,7 @@
 #include "../model/Life.h"
 #include "../model/Timer.h"
 #include "../model/Bonus.h"
+#include "../model/Level.h"
 
 namespace Game {
     class AbstractFactory {
@@ -35,7 +36,8 @@ namespace Game {
 
         //extra
         virtual Bonus *createBonus(int xPos, int yPos, BonusType bonusType)=0;
-        virtual Background *createBackground(std::string path) = 0;
+        virtual Level *createLevel()=0;
+        virtual Background *createBackground() = 0;
         virtual Timer *createTimer()=0;
         virtual bool pollEvents() = 0;
         virtual void render() = 0;

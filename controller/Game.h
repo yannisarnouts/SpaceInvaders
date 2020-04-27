@@ -14,9 +14,7 @@ namespace Game {
     class Game {
     public:
         Game(AbstractFactory *_A);
-
         virtual ~Game();
-
         void Run();
         void updateStatistics();
 
@@ -26,7 +24,6 @@ namespace Game {
         Background *bg;
         LevelManager *levelManager;
         time_t start;
-        std::string bgPath = "../assets/bg.jpg";
     };
 }
 

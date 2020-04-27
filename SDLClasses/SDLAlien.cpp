@@ -2,7 +2,6 @@
 // Created by Gebruiker on 12/03/2020.
 //
 
-#include <iostream>
 #include "SDLAlien.h"
 
 SDL::SDLAlien::SDLAlien() {}

@@ -6,15 +6,13 @@
 #include "../factory/Texture.h"
 
 
-SDL::SDLBackground::SDLBackground(SDL_Renderer *renderer, int screenW, int screenH,
-                             const std::string &imgPath) {
+SDL::SDLBackground::SDLBackground(SDL_Renderer *renderer, int screenW, int screenH) {
     this->screenW = screenW;
     this->screenH = screenH;
-    this->imgPath = imgPath;
     this->renderer = renderer;
     Texture* aTexture = new Texture(renderer);
     this->texture = aTexture;
-    texture->loadFromFile(imgPath);
+    texture->loadFromFile(this->bgPath);
 }
 
 void SDL::SDLBackground::Visualize() {

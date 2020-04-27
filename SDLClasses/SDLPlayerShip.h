@@ -15,7 +15,7 @@ namespace SDL {
     public:
         SDLPlayerShip();
         SDLPlayerShip(int xCoord, int yCoord, int width, int height, SDL_Renderer *gRenderer);
-        virtual ~SDLPlayerShip();
+        ~SDLPlayerShip();
         void Visualize() override;
 
     private:

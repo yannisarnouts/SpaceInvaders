@@ -14,8 +14,8 @@
 namespace SDL {
     class SDLBackground : public Background {
     public:
-        SDLBackground(SDL_Renderer *renderer, int screenW, int screenH, const std::string &imgPath);
-        virtual ~SDLBackground();
+        SDLBackground(SDL_Renderer *renderer, int screenW, int screenH);
+        ~SDLBackground();
         void Visualize() override;
 
     private:
@@ -23,7 +23,7 @@ namespace SDL {
         Texture *texture = NULL;
         int screenW;
         int screenH;
-        std::string imgPath;
+        std::string bgPath = "../assets/bg.jpg";
     };
 }
 

@@ -12,9 +12,9 @@
 namespace SDL {
 class SDLLife: public Game::Life {
     public:
-        SDLLife();
-        SDLLife(SDL_Renderer *renderer);
-    virtual ~SDLLife();
+    SDLLife();
+    SDLLife(SDL_Renderer *renderer);
+    ~SDLLife();
     void Visualize() override ;
 
     private:

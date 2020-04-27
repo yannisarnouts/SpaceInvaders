@@ -498,6 +498,32 @@ CMakeFiles/Project.dir/controller/LevelManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/controller/LevelManager.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\controller\LevelManager.cpp" -o CMakeFiles\Project.dir\controller\LevelManager.cpp.s
 
+CMakeFiles/Project.dir/model/Level.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/model/Level.cpp.obj: ../model/Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/Project.dir/model/Level.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\model\Level.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\model\Level.cpp"
+
+CMakeFiles/Project.dir/model/Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/model/Level.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\model\Level.cpp" > CMakeFiles\Project.dir\model\Level.cpp.i
+
+CMakeFiles/Project.dir/model/Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/model/Level.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\model\Level.cpp" -o CMakeFiles\Project.dir\model\Level.cpp.s
+
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../SDLClasses/SDLLevel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SDLClasses\SDLLevel.cpp.obj -c "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\SDLClasses\SDLLevel.cpp"
+
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\SDLClasses\SDLLevel.cpp" > CMakeFiles\Project.dir\SDLClasses\SDLLevel.cpp.i
+
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\SDLClasses\SDLLevel.cpp" -o CMakeFiles\Project.dir\SDLClasses\SDLLevel.cpp.s
+
 # Object files for target Project
 Project_OBJECTS = \
 "CMakeFiles/Project.dir/main.cpp.obj" \
@@ -533,7 +559,9 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/SDLClasses/SDLBonus.cpp.obj" \
 "CMakeFiles/Project.dir/controller/ConfigReader.cpp.obj" \
 "CMakeFiles/Project.dir/controller/FileWriter.cpp.obj" \
-"CMakeFiles/Project.dir/controller/LevelManager.cpp.obj"
+"CMakeFiles/Project.dir/controller/LevelManager.cpp.obj" \
+"CMakeFiles/Project.dir/model/Level.cpp.obj" \
+"CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
@@ -572,11 +600,13 @@ Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLBonus.cpp.obj
 Project.exe: CMakeFiles/Project.dir/controller/ConfigReader.cpp.obj
 Project.exe: CMakeFiles/Project.dir/controller/FileWriter.cpp.obj
 Project.exe: CMakeFiles/Project.dir/controller/LevelManager.cpp.obj
+Project.exe: CMakeFiles/Project.dir/model/Level.cpp.obj
+Project.exe: CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/linklibs.rsp
 Project.exe: CMakeFiles/Project.dir/objects1.rsp
 Project.exe: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Gebruiker\Documents\school\semester 2\programmeertechnieken\project\SpaceInvaders\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

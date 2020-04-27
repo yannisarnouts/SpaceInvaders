@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.cpp
+SDLAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.h
+SDL2/SDL_render.h
+-
+../model/Alien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Alien.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
+../model/AlienType.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/AlienType.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlienBullet.h
 SDL2/SDL_render.h
 -
@@ -14,6 +28,46 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/Spa
 ../model/AlienBullet.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/AlienBullet.h
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBackground.cpp
+SDLBackground.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBackground.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBackground.h
+SDL2/SDL_render.h
+-
+string
+-
+../model/Background.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Background.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBonus.h
+SDL2/SDL_render.h
+-
+../model/Bonus.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bonus.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBullet.h
+SDL2/SDL_render.h
+-
+../model/Bullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLevel.h
+SDL2/SDL_render.h
+-
+../model/Level.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
+../factory/TextTexture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/TextTexture.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLife.h
 SDL2/SDL_render.h
 -
@@ -21,6 +75,26 @@ SDL2/SDL_render.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/TextTexture.h
 ../model/Life.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLPlayerShip.h
+../model/PlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
+../factory/Texture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
+../controller/KeyHandler.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/KeyHandler.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLScore.h
+SDL2/SDL_render.h
+-
+../model/Score.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
+../factory/TextTexture.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/TextTexture.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLTimer.h
+../model/Timer.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Timer.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/AlienManager.cpp
 iostream
@@ -144,6 +218,10 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/Spa
 BonusManager.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/BonusManager.h
 
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/PlayerManager.cpp
+PlayerManager.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/PlayerManager.h
+
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/PlayerManager.h
 ../factory/AbstractFactory.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/AbstractFactory.h
@@ -151,6 +229,10 @@ KeyHandler.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/KeyHandler.h
 ConfigReader.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/controller/ConfigReader.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/AbstractFactory.cpp
+AbstractFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/AbstractFactory.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/AbstractFactory.h
 string
@@ -175,10 +257,40 @@ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/Spa
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Timer.h
 ../model/Bonus.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bonus.h
+../model/Level.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/SDLFactory.cpp
+SDLFactory.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/SDLFactory.h
+../SDLClasses/SDLPlayerShip.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLPlayerShip.h
+../SDLClasses/SDLBackground.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBackground.h
+../SDLClasses/SDLAlien.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlien.h
+../SDLClasses/SDLBullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBullet.h
+../SDLClasses/SDLScore.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLScore.h
+../SDLClasses/SDLAlienBullet.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLAlienBullet.h
+../SDLClasses/SDLTimer.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLTimer.h
+../SDLClasses/SDLBonus.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBonus.h
+../SDLClasses/SDLLevel.h
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLevel.h
+SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+SDL2/SDL_ttf.h
+-
+iostream
+-
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/SDLFactory.h
-SDL2/SDL_video.h
--
 SDL2/SDL_render.h
 -
 AbstractFactory.h
@@ -243,6 +355,8 @@ Entity.h
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+
+C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
 
 C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
 

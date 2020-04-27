@@ -6,7 +6,6 @@
 #define PROJECT_SDLFACTORY_H
 
 
-#include <SDL2/SDL_video.h>
 #include <SDL2/SDL_render.h>
 #include "AbstractFactory.h"
 #include "../model/AlienType.h"
@@ -32,8 +31,10 @@ namespace SDL {
 
         // other game classes
         Game::Bonus *createBonus(int xPos, int yPos, Game::BonusType bonusType) override;
-        Background *createBackground(std::string path) override;
+        Background *createBackground() override;
         Game::Timer *createTimer() override;
+
+        Game::Level *createLevel() override;
 
         // config
         void setScreenHeight(int screenHeight);

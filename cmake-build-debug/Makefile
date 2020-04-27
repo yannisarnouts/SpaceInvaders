@@ -257,6 +257,33 @@ SDLClasses/SDLBullet.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.s
 .PHONY : SDLClasses/SDLBullet.cpp.s
 
+SDLClasses/SDLLevel.obj: SDLClasses/SDLLevel.cpp.obj
+
+.PHONY : SDLClasses/SDLLevel.obj
+
+# target to build an object file
+SDLClasses/SDLLevel.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj
+.PHONY : SDLClasses/SDLLevel.cpp.obj
+
+SDLClasses/SDLLevel.i: SDLClasses/SDLLevel.cpp.i
+
+.PHONY : SDLClasses/SDLLevel.i
+
+# target to preprocess a source file
+SDLClasses/SDLLevel.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.i
+.PHONY : SDLClasses/SDLLevel.cpp.i
+
+SDLClasses/SDLLevel.s: SDLClasses/SDLLevel.cpp.s
+
+.PHONY : SDLClasses/SDLLevel.s
+
+# target to generate assembly for a file
+SDLClasses/SDLLevel.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.s
+.PHONY : SDLClasses/SDLLevel.cpp.s
+
 SDLClasses/SDLLife.obj: SDLClasses/SDLLife.cpp.obj
 
 .PHONY : SDLClasses/SDLLife.obj
@@ -932,6 +959,33 @@ model/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Entity.cpp.s
 .PHONY : model/Entity.cpp.s
 
+model/Level.obj: model/Level.cpp.obj
+
+.PHONY : model/Level.obj
+
+# target to build an object file
+model/Level.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Level.cpp.obj
+.PHONY : model/Level.cpp.obj
+
+model/Level.i: model/Level.cpp.i
+
+.PHONY : model/Level.i
+
+# target to preprocess a source file
+model/Level.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Level.cpp.i
+.PHONY : model/Level.cpp.i
+
+model/Level.s: model/Level.cpp.s
+
+.PHONY : model/Level.s
+
+# target to generate assembly for a file
+model/Level.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/model/Level.cpp.s
+.PHONY : model/Level.cpp.s
+
 model/Life.obj: model/Life.cpp.obj
 
 .PHONY : model/Life.obj
@@ -1064,6 +1118,9 @@ help:
 	@echo ... SDLClasses/SDLBullet.obj
 	@echo ... SDLClasses/SDLBullet.i
 	@echo ... SDLClasses/SDLBullet.s
+	@echo ... SDLClasses/SDLLevel.obj
+	@echo ... SDLClasses/SDLLevel.i
+	@echo ... SDLClasses/SDLLevel.s
 	@echo ... SDLClasses/SDLLife.obj
 	@echo ... SDLClasses/SDLLife.i
 	@echo ... SDLClasses/SDLLife.s
@@ -1139,6 +1196,9 @@ help:
 	@echo ... model/Entity.obj
 	@echo ... model/Entity.i
 	@echo ... model/Entity.s
+	@echo ... model/Level.obj
+	@echo ... model/Level.i
+	@echo ... model/Level.s
 	@echo ... model/Life.obj
 	@echo ... model/Life.i
 	@echo ... model/Life.s

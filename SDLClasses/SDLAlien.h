@@ -27,7 +27,6 @@ namespace SDL {
         std::string michielPath = "../assets/michiel.png";
         std::string cliffPath = "../assets/cliff.png";
         std::string thomasPath = "../assets/thomas.png";
-        int SCREEN_WIDTH = 950;
     };
 }
 

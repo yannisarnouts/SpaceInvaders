@@ -32,6 +32,11 @@ CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../factory/Texture.h
 CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../model/Entity.h
 
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../SDLClasses/SDLLevel.cpp
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../SDLClasses/SDLLevel.h
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../factory/TextTexture.h
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../model/Level.h
+
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../SDLClasses/SDLLife.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../SDLClasses/SDLLife.h
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../factory/TextTexture.h
@@ -68,6 +73,7 @@ CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/AlienManager.cpp.obj: ../model/Score.h
@@ -90,6 +96,7 @@ CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/BonusManager.cpp.obj: ../model/Score.h
@@ -110,6 +117,7 @@ CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/CanonManager.cpp.obj: ../model/Score.h
@@ -153,6 +161,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/Game.cpp.obj: ../model/Score.h
@@ -181,6 +190,7 @@ CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/LevelManager.cpp.obj: ../model/Score.h
@@ -200,6 +210,7 @@ CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj: ../model/Score.h
@@ -215,6 +226,7 @@ CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj: ../model/Score.h
@@ -225,6 +237,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLAlienBullet.
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLBackground.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLBonus.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLBullet.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLLevel.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLLife.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLPlayerShip.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../SDLClasses/SDLScore.h
@@ -245,6 +258,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj: ../model/Score.h
@@ -281,6 +295,7 @@ CMakeFiles/Project.dir/main.cpp.obj: ../model/Bonus.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/BonusType.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Bullet.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Entity.h
+CMakeFiles/Project.dir/main.cpp.obj: ../model/Level.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Life.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/PlayerShip.h
 CMakeFiles/Project.dir/main.cpp.obj: ../model/Score.h
@@ -309,6 +324,9 @@ CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.cpp
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.h
+
+CMakeFiles/Project.dir/model/Level.cpp.obj: ../model/Level.cpp
+CMakeFiles/Project.dir/model/Level.cpp.obj: ../model/Level.h
 
 CMakeFiles/Project.dir/model/Life.cpp.obj: ../model/Life.cpp
 CMakeFiles/Project.dir/model/Life.cpp.obj: ../model/Life.h

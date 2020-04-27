@@ -32,6 +32,11 @@ CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/Texture.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLevel.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLevel.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/factory/TextTexture.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLife.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLife.h
@@ -69,6 +74,7 @@ CMakeFiles/Project.dir/controller/AlienManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -91,6 +97,7 @@ CMakeFiles/Project.dir/controller/BonusManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -111,6 +118,7 @@ CMakeFiles/Project.dir/controller/CanonManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -154,6 +162,7 @@ CMakeFiles/Project.dir/controller/Game.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -182,6 +191,7 @@ CMakeFiles/Project.dir/controller/LevelManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -201,6 +211,7 @@ CMakeFiles/Project.dir/controller/PlayerManager.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -216,6 +227,7 @@ CMakeFiles/Project.dir/factory/AbstractFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -226,6 +238,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBackground.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBonus.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLBullet.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLevel.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLLife.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLPlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/SDLClasses/SDLScore.h
@@ -246,6 +259,7 @@ CMakeFiles/Project.dir/factory/SDLFactory.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -282,6 +296,7 @@ CMakeFiles/Project.dir/main.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/BonusType.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Bullet.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/PlayerShip.h
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Score.h
@@ -310,6 +325,9 @@ CMakeFiles/Project.dir/model/Bullet.cpp.obj
 CMakeFiles/Project.dir/model/Entity.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Entity.h
+CMakeFiles/Project.dir/model/Level.cpp.obj
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.cpp
+ C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Level.h
 CMakeFiles/Project.dir/model/Life.cpp.obj
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.cpp
  C:/Users/Gebruiker/Documents/school/semester 2/programmeertechnieken/project/SpaceInvaders/model/Life.h

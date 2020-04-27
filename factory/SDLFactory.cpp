@@ -11,6 +11,7 @@
 #include "../SDLClasses/SDLAlienBullet.h"
 #include "../SDLClasses/SDLTimer.h"
 #include "../SDLClasses/SDLBonus.h"
+#include "../SDLClasses/SDLLevel.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
@@ -70,8 +71,8 @@ void SDL::SDLFactory::close() {
     SDL_Quit();
 }
 
-Background *SDL::SDLFactory::createBackground(std::string path) {
-    return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH, path);
+Background *SDL::SDLFactory::createBackground() {
+    return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH);
 }
 
 Game::Alien *SDL::SDLFactory::createAlien(AlienType alienType, int xPos, int yPos) {
@@ -135,4 +136,8 @@ SDL::SDLFactory::~SDLFactory() {
     IMG_Quit();
     TTF_Quit();
     SDL_Quit();
+}
+
+Game::Level *SDL::SDLFactory::createLevel() {
+    return new SDLLevel(gRenderer);
 }

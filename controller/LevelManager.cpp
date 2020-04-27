@@ -10,14 +10,7 @@ Game::LevelManager::LevelManager(ConfigReader *configReader, AbstractFactory *ab
     this->A = abstractFactory;
     this->configReader = new ConfigReader();
     this->setShipLife(configReader->getShipLife());
-}
-
-int Game::LevelManager::getLevel() const {
-    return level;
-}
-
-void Game::LevelManager::setLevel(int level) {
-    LevelManager::level = level;
+    this->level = abstractFactory->createLevel();
 }
 
 Game::PlayerManager *Game::LevelManager::getPlayerManager() const {
@@ -41,14 +34,17 @@ Game::BonusManager *Game::LevelManager::getBonusManager() const {
 }
 
 Game::LevelManager::~LevelManager() {
-
+    delete bonusManager;
+    delete aliens;
+    delete bonusManager;
+    delete canon;
 }
 
 void Game::LevelManager::createLevel() {
     playerManager = new PlayerManager(this->A, configReader, shipLife);
     playerShip = playerManager->getPlayerShip();
-    canon = new CanonManager(this->A, playerShip, configReader, level, score, bulletsFired);
-    aliens = new AlienManager(this->A, canon, configReader, level, aliensKilled);
+    canon = new CanonManager(this->A, playerShip, configReader, level->getLevel(), score, bulletsFired);
+    aliens = new AlienManager(this->A, canon, configReader, level->getLevel(), aliensKilled);
     bonusManager = new BonusManager(this->A, playerManager, canon, configReader);
 }
 
@@ -98,4 +94,12 @@ int Game::LevelManager::getBulletsFired() const {
 
 void Game::LevelManager::setBulletsFired(int bulletsFired) {
     LevelManager::bulletsFired = bulletsFired;
+}
+
+Game::Level *Game::LevelManager::getLevel() const {
+    return level;
+}
+
+void Game::LevelManager::setLevel(Game::Level *level) {
+    LevelManager::level = level;
 }
