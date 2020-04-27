@@ -22,6 +22,4 @@ void Game::Bonus::setBonusType(Game::BonusType bonusType) {
     Bonus::bonusType = bonusType;
 }
 
-Game::Bonus::~Bonus() {
-
-}
+Game::Bonus::~Bonus() {}

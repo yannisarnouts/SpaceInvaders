@@ -77,7 +77,7 @@ int Game::BonusManager::getBonussesCaught() const {
 }
 
 Game::BonusManager::~BonusManager() {
-    for (Bonus *bonus: bonusses) {
+    for (auto &bonus: bonusses) {
         delete bonus;
     }
 }

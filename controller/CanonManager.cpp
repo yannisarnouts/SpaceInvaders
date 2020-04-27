@@ -93,7 +93,7 @@ int Game::CanonManager::getBulletsFired() {
 }
 
 Game::CanonManager::~CanonManager() {
-    for (Bullet *bullet : bullets) {
+    for (auto &bullet : bullets) {
         delete bullet;
     }
 }

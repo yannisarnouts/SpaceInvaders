@@ -33,6 +33,7 @@ void Game::Game::Run() {
         levelManager->setShipLife(levelManager->getPlayerShip()->getLife());
         levelManager->setAliensKilled(levelManager->getAliensKilled() + levelManager->getAliens()->getAliensKilled());
         levelManager->setBulletsFired(levelManager->getBulletsFired() + levelManager->getCanon()->getBulletsFired());
+        levelManager->cleanLevel();
     }
     updateStatistics();
 }

@@ -11,12 +11,13 @@ FileWriter::FileWriter() {}
 void FileWriter::writeStats() {
     std::ofstream statsFile;
     int fSize = getFileSize();
+    time_t now = time(0);
     del_line("..\\stats.html", fSize);
     del_line("..\\stats.html", fSize-1);
     del_line("..\\stats.html", fSize-2);
     statsFile.open("..\\stats.html", std::ios_base::app);
     statsFile << "\t\t\t<tr>\n";
-    statsFile << "\t\t\t\t<td>" << std::to_string(getTimePlayed()) << "</td>\n";
+    statsFile << "\t\t\t\t<td>" << ctime(&now) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getLevel()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getPoints()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getAliensKilled()) << "</td>\n";
@@ -73,14 +74,6 @@ int FileWriter::getFileSize() {
         fileSize++;
     }
     return fileSize;
-}
-
-double FileWriter::getTimePlayed() const {
-    return timePlayed;
-}
-
-void FileWriter::setTimePlayed(double timePlayed) {
-    FileWriter::timePlayed = timePlayed;
 }
 
 int FileWriter::getBulletsFired() const {

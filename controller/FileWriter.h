@@ -17,8 +17,6 @@ public:
     void setPoints(int points);
     int getLifesLeft() const;
     void setLifesLeft(int lifesLeft);
-    double getTimePlayed() const;
-    void setTimePlayed(double timePlayed);
     int getBulletsFired() const;
     void setBulletsFired(int bulletsFired);
     int getBonussesCaught() const;

@@ -147,7 +147,7 @@ void Game::AlienManager::initLevel() {
 }
 
 Game::AlienManager::~AlienManager() {
-    for (Alien *alien : aliens) {
+    for (auto &alien : aliens) {
         delete alien;
     }
 }

@@ -14,7 +14,7 @@ namespace SDL {
     public:
         SDLBonus();
         SDLBonus(int xCoord, int yCoord, int width, int height, Game::BonusType bonusType, SDL_Renderer *renderer);
-        ~SDLBonus();
+        ~SDLBonus() override;
         void Visualize() override;
 
     private:
