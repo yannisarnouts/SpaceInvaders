@@ -63,14 +63,6 @@ Game::PlayerShip *SDL::SDLFactory::createPlayerShip() {
     return new SDLPlayerShip(xc, yc, sw, sh, gRenderer);
 }
 
-void SDL::SDLFactory::close() {
-    SDL_DestroyWindow(gWindow);
-    gWindow = NULL;
-    IMG_Quit();
-    TTF_Quit();
-    SDL_Quit();
-}
-
 Background *SDL::SDLFactory::createBackground() {
     return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH);
 }
@@ -120,14 +112,6 @@ Game::Bonus *SDL::SDLFactory::createBonus(int xPos, int yPos, Game::BonusType bo
     int gw = SCREEN_WIDTH / 30;
     int gh = SCREEN_HEIGHT / 30;
     return new SDLBonus(xPos, yPos, gw, gh, bonusType, gRenderer);
-}
-
-void SDL::SDLFactory::setScreenHeight(int screenHeight) {
-    SCREEN_HEIGHT = screenHeight;
-}
-
-void SDL::SDLFactory::setScreenWidth(int screenWidth) {
-    SCREEN_WIDTH = screenWidth;
 }
 
 SDL::SDLFactory::~SDLFactory() {

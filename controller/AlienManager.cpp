@@ -10,7 +10,6 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager 
     this->canon = canon;
     this->configReader = configReader;
     this->collisionController = new CollisionController();
-    this->currentBullet = abstractFactory->createAlienBullet(-20, configReader->getScreenHeight() + 100);
     this->aliensKilled = initAliensKilled;
     this->level = level;
     initLevel();
@@ -19,6 +18,7 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager 
         bullets.emplace_back(abstractFactory->createAlienBullet(this->aliens[8]->getXCoord(),
                                                                 this->aliens[8]->getYCoord()));
     }
+    this->currentBullet = bullets[0];
 }
 
 /*
@@ -147,5 +147,7 @@ void Game::AlienManager::initLevel() {
 }
 
 Game::AlienManager::~AlienManager() {
-
+    for (Alien *alien : aliens) {
+        delete alien;
+    }
 }

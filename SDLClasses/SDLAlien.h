@@ -16,7 +16,7 @@ namespace SDL {
     public:
         SDLAlien();
         SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer);
-        ~SDLAlien();
+        ~SDLAlien() override;
         void Visualize() override;
 
 

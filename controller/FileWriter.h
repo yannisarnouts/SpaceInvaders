@@ -41,7 +41,6 @@ private:
     int bonussesCaught;
     int fileSize = 0;
     int aliensKilled;
-    time_t now = time(0);
 };
 
 

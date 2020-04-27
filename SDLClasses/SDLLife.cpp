@@ -13,7 +13,8 @@ SDL::SDLLife::SDLLife(SDL_Renderer *renderer) : renderer(renderer) {
 }
 
 void SDL::SDLLife::Visualize() {
-    this->texture->loadTexture("Lifes: " + std::to_string(getLife()));
+    std::string life = std::to_string(getLife());
+    this->texture->loadTexture("Lifes: " + life);
     SDL_Rect renderQuad = {SCREEN_WIDTH, 0, 100, 100};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }

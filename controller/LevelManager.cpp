@@ -34,6 +34,7 @@ Game::BonusManager *Game::LevelManager::getBonusManager() const {
 }
 
 Game::LevelManager::~LevelManager() {
+    delete level;
     delete bonusManager;
     delete aliens;
     delete bonusManager;
@@ -102,4 +103,27 @@ Game::Level *Game::LevelManager::getLevel() const {
 
 void Game::LevelManager::setLevel(Game::Level *level) {
     LevelManager::level = level;
+}
+
+void Game::LevelManager::runLevel() {
+    getPlayerManager()->runPlayer();
+    getAliens()->Visualize();
+    if (getAliens()->checkCollision(getPlayerShip())) {
+        getPlayerManager()->setLife();
+    }
+    getBonusManager()->runBonusses();
+    getCanon()->runCannon();
+    getLevel()->Visualize();
+    if (getAliens()->getAlienLength() == 0) {
+        setHasWon(true);
+    } else if (getPlayerShip()->getLife() > 0 || !(A->pollEvents())) {
+        setHasWon(false);
+    }
+}
+
+void Game::LevelManager::cleanLevel() {
+    delete bonusManager;
+    delete aliens;
+    delete bonusManager;
+    delete canon;
 }

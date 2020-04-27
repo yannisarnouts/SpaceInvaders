@@ -58,7 +58,7 @@ bool Game::BonusManager::checkCollision() {
         bonusType = bonusses[i]->getBonusType();
         bonussesCaught++;
         if (bonusType == BonusType::LIFES) {
-            playerShip->setLife(playerShip->getLife() * 2);
+            playerShip->setLife(5);
         } else if (bonusType == BonusType::POINTS) {
             canonManager->getScore()->setPoints(canonManager->getScore()->getPoints() + 5);
         } else if (bonusType == BonusType::SPEED) {
@@ -77,5 +77,7 @@ int Game::BonusManager::getBonussesCaught() const {
 }
 
 Game::BonusManager::~BonusManager() {
-
+    for (Bonus *bonus: bonusses) {
+        delete bonus;
+    }
 }

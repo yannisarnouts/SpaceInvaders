@@ -16,7 +16,6 @@ void FileWriter::writeStats() {
     del_line("..\\stats.html", fSize-2);
     statsFile.open("..\\stats.html", std::ios_base::app);
     statsFile << "\t\t\t<tr>\n";
-    statsFile << "\t\t\t\t<td>" << ctime(&now) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getTimePlayed()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getLevel()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getPoints()) << "</td>\n";

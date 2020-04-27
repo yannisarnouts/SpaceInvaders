@@ -36,10 +36,10 @@ namespace Game {
         void setAliensKilled(int aliensKilled);
         int getBulletsFired() const;
         void setBulletsFired(int bulletsFired);
-
         Level *getLevel() const;
-
         void setLevel(Level *level);
+        void runLevel();
+        void cleanLevel();
 
     private:
         Level *level;

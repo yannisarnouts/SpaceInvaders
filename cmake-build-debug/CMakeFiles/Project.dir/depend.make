@@ -277,6 +277,7 @@ CMakeFiles/Project.dir/main.cpp.obj: ../controller/BonusManager.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/CanonManager.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/CollisionController.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/ConfigReader.h
+CMakeFiles/Project.dir/main.cpp.obj: ../controller/FileWriter.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/Game.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/main.cpp.obj: ../controller/KeyP.h

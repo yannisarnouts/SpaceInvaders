@@ -55,7 +55,7 @@ void Game::CanonManager::loadCannon() {
     switch (level) {
         case 1: canonLength = 500; break;
         case 2: canonLength = 100; break;
-        case 3: canonLength = 50; break;
+        case 3: canonLength = 60; break;
         default: canonLength = 500;
     }
     bullets.reserve(canonLength);
@@ -93,6 +93,8 @@ int Game::CanonManager::getBulletsFired() {
 }
 
 Game::CanonManager::~CanonManager() {
-
+    for (Bullet *bullet : bullets) {
+        delete bullet;
+    }
 }
 

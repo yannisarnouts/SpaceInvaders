@@ -62,5 +62,6 @@ void Game::PlayerManager::moveShip() {
 }
 
 Game::PlayerManager::~PlayerManager() {
-
+    delete life;
+    delete playerShip;
 }

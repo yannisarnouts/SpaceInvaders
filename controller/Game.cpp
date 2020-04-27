@@ -4,17 +4,16 @@
 #include <ctime>
 #include "Game.h"
 #include "ConfigReader.h"
-#include "FileWriter.h"
 
 Game::Game::Game(AbstractFactory *_A) {
     A = _A;
+    this->timer = A->createTimer();
+    bg = A->createBackground();
+    configReader = new ConfigReader();
+    levelManager = new LevelManager(configReader, this->A);
 }
 
 void Game::Game::Run() {
-    start = time(0);
-    configReader = new ConfigReader();
-    bg = A->createBackground();
-    levelManager = new LevelManager(configReader, this->A);
     for (int i = 1; i <= 3; i++) {
         if (levelManager->isHasWon() || i == 1) {
             levelManager->getLevel()->setLevel(i);
@@ -25,20 +24,9 @@ void Game::Game::Run() {
         while (A->pollEvents() && levelManager->getPlayerShip()->getLife() > 0 &&
                levelManager->getAliens()->getAlienLength() > 0) {
             bg->Visualize();
-            levelManager->getPlayerManager()->runPlayer();
-            levelManager->getAliens()->Visualize();
-            if (levelManager->getAliens()->checkCollision(levelManager->getPlayerShip())) {
-                levelManager->getPlayerManager()->setLife();
-            };
-            levelManager->getBonusManager()->runBonusses();
-            levelManager->getCanon()->runCannon();
-            levelManager->getLevel()->Visualize();
+            levelManager->runLevel();
             A->render();
-            if (levelManager->getAliens()->getAlienLength() == 0) {
-                levelManager->setHasWon(true);
-            } else if (levelManager->getPlayerShip()->getLife() > 0 || !(A->pollEvents())) {
-                levelManager->setHasWon(false);
-            }
+            timer->update();
         }
         levelManager->setScore(levelManager->getCanon()->getScore()->getPoints());
         levelManager->setBonusses(levelManager->getBonusses() + levelManager->getBonusManager()->getBonussesCaught());
@@ -47,15 +35,13 @@ void Game::Game::Run() {
         levelManager->setBulletsFired(levelManager->getBulletsFired() + levelManager->getCanon()->getBulletsFired());
     }
     updateStatistics();
-    A->close();
 }
 
 void Game::Game::updateStatistics() {
-    FileWriter *fileWriter = new FileWriter();
+    fileWriter = new FileWriter();
     fileWriter->setLevel(levelManager->getLevel()->getLevel());
     fileWriter->setPoints(levelManager->getCanon()->getScore()->getPoints());
     fileWriter->setLifesLeft(levelManager->getPlayerShip()->getLife());
-    fileWriter->setTimePlayed(difftime(time(0), start));
     fileWriter->setBulletsFired(levelManager->getBulletsFired());
     fileWriter->setBonussesCaught(levelManager->getBonusses());
     fileWriter->setAliensKilled(levelManager->getAliensKilled());
@@ -65,4 +51,6 @@ void Game::Game::updateStatistics() {
 Game::Game::~Game() {
     delete levelManager;
     delete configReader;
+    delete fileWriter;
+    delete timer;
 }

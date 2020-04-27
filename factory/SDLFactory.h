@@ -18,7 +18,7 @@ namespace SDL {
     class SDLFactory : public Game::AbstractFactory {
     public:
         SDLFactory();
-        virtual ~SDLFactory();
+        ~SDLFactory() override;
         // playership classes
         Game::PlayerShip *createPlayerShip() override;
         Game::Bullet *createBullet(int xCoord, int yCoord) override;
@@ -33,19 +33,11 @@ namespace SDL {
         Game::Bonus *createBonus(int xPos, int yPos, Game::BonusType bonusType) override;
         Background *createBackground() override;
         Game::Timer *createTimer() override;
-
         Game::Level *createLevel() override;
 
         // config
-        void setScreenHeight(int screenHeight);
-
-        void setScreenWidth(int screenWidth);
-
         bool pollEvents() override;
-
         void render() override;
-
-        void close() override;
 
     private:
         SDL_Window *gWindow = NULL;

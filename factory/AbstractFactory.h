@@ -41,7 +41,6 @@ namespace Game {
         virtual Timer *createTimer()=0;
         virtual bool pollEvents() = 0;
         virtual void render() = 0;
-        virtual void close() = 0;
     };
 }
 

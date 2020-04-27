@@ -9,6 +9,7 @@
 #include <string>
 #include "../factory/AbstractFactory.h"
 #include "LevelManager.h"
+#include "FileWriter.h"
 
 namespace Game {
     class Game {
@@ -23,7 +24,8 @@ namespace Game {
         ConfigReader *configReader;
         Background *bg;
         LevelManager *levelManager;
-        time_t start;
+        Timer *timer;
+        FileWriter *fileWriter;
     };
 }
 
