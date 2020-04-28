@@ -44,7 +44,7 @@ void Game::PlayerManager::setLife() {
  */
 void Game::PlayerManager::moveShip() {
     int direction = keyHandler->directions();
-    if (playerShip->getXCoord() >= (this->configReader->getScreenWidth() + playerShip->getWidth())) {
+    if (playerShip->getXCoord() >= (this->configReader->getScreenWidth() - playerShip->getWidth())) {
         if (direction == KeyP::LEFT) {
             playerShip->setXCoord(playerShip->getXCoord()- timer->getDeltaTime() * playerShip->getSpeed());
         }

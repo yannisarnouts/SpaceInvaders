@@ -8,6 +8,7 @@
 #include <SDL2/SDL_render.h>
 #include "../factory/TextTexture.h"
 #include "../model/Life.h"
+#include "../controller/ConfigReader.h"
 
 namespace SDL {
 class SDLLife: public Game::Life {
@@ -21,6 +22,7 @@ class SDLLife: public Game::Life {
         SDL_Renderer *renderer;
         TextTexture *texture = NULL;
         int SCREEN_WIDTH = 950;
+        ConfigReader *configReader;
 };
 }
 

@@ -15,7 +15,7 @@ namespace Game {
         Alien();
         Alien(int xCoord, int yCoord, int width, int height, AlienType alienType);
         virtual ~Alien();
-        bool hitBoundary();
+        bool hitBoundary(int field_width);
         virtual void Visualize() = 0;
         void move();
         int getMoveAlien() const;
@@ -29,7 +29,6 @@ namespace Game {
         AlienType alienType;
         int moveAlien = 1;
         bool alive = true;
-        int SCREEN_WIDTH = 950;
     };
 }
 

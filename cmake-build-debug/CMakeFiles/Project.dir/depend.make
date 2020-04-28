@@ -39,6 +39,7 @@ CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../model/Level.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../SDLClasses/SDLLife.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../SDLClasses/SDLLife.h
+CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../factory/TextTexture.h
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../model/Life.h
 

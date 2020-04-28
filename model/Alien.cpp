@@ -33,11 +33,11 @@ void Game::Alien::setAlive(bool alive) {
     Alien::alive = alive;
 }
 
-bool Game::Alien::hitBoundary() {
+bool Game::Alien::hitBoundary(int field_width) {
     if (getXCoord() <= 0 - getWidth()) {
 //        setXCoord(0 - getWidth());
         return true;
-    } else if (getXCoord() >= SCREEN_WIDTH + getWidth()) {
+    } else if (getXCoord() >= field_width) {
 //        setXCoord(SCREEN_WIDTH + getWidth());
         return true;
     } else {

@@ -27,8 +27,8 @@ SDL::SDLFactory::SDLFactory() {
         printf("TTF_Init: %s\n", TTF_GetError());
     } else {
         //Create window
-        gWindow = SDL_CreateWindow("Space Invaders", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_HEIGHT,
-                                   SCREEN_WIDTH, SDL_WINDOW_SHOWN);
+        gWindow = SDL_CreateWindow("Space Invaders", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH,
+                                   SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
         if (gWindow == NULL) {
             printf("Window could not be created! SDL Error: %s\n", SDL_GetError());
         } else {
@@ -59,17 +59,17 @@ Game::PlayerShip *SDL::SDLFactory::createPlayerShip() {
     int sh = SCREEN_HEIGHT / 7;
     int sw = SCREEN_WIDTH / 7;
     int xc = SCREEN_WIDTH / 2;
-    int yc = SCREEN_HEIGHT / 1.7;
+    int yc = SCREEN_HEIGHT - sh;
     return new SDLPlayerShip(xc, yc, sw, sh, gRenderer);
 }
 
 Background *SDL::SDLFactory::createBackground() {
-    return new SDLBackground(gRenderer, SCREEN_HEIGHT, SCREEN_WIDTH);
+    return new SDLBackground(gRenderer, SCREEN_WIDTH, SCREEN_HEIGHT);
 }
 
 Game::Alien *SDL::SDLFactory::createAlien(AlienType alienType, int xPos, int yPos) {
     int alienWidth = SCREEN_WIDTH / 15;
-    int alienHeight = SCREEN_HEIGHT / 20;
+    int alienHeight = SCREEN_HEIGHT / 15;
     return new SDLAlien(xPos, yPos, alienWidth, alienHeight, alienType, gRenderer);
 }
 
@@ -86,7 +86,7 @@ bool SDL::SDLFactory::pollEvents() {
 
 Game::Bullet *SDL::SDLFactory::createBullet(int xCoord, int yCoord) {
     int bw = SCREEN_WIDTH / 30;
-    int bh = SCREEN_HEIGHT / 30;
+    int bh = SCREEN_HEIGHT / 25;
     return new SDLBullet(xCoord, yCoord, bw, bh, gRenderer);
 }
 
@@ -96,7 +96,7 @@ Game::Score *SDL::SDLFactory::createScore() {
 
 Game::AlienBullet *SDL::SDLFactory::createAlienBullet(int xCoord, int yCoord) {
     int bw = SCREEN_WIDTH / 30;
-    int bh = SCREEN_HEIGHT / 30;
+    int bh = SCREEN_HEIGHT / 25;
     return new SDLAlienBullet(xCoord, yCoord, bw, bh, gRenderer);
 }
 

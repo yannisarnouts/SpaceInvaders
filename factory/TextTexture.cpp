@@ -9,12 +9,12 @@ TextTexture::TextTexture() {}
 
 TextTexture::TextTexture(SDL_Renderer *renderer) : renderer(renderer) {
     this->renderer = renderer;
+    gFont = TTF_OpenFont("../assets/Arial.ttf", 25);
 }
 
 bool TextTexture::loadTexture(std::string text) {
     bool ret = false;
     SDL_Texture *newTexture = NULL;
-    gFont = TTF_OpenFont("../assets/Arial.ttf", 25);
     if (gFont == NULL) {
         printf("failed to load font, error:  %s", gFont);
     }
@@ -37,7 +37,7 @@ bool TextTexture::loadTexture(std::string text) {
         SDL_FreeSurface(tmpSurface);
     }
     texture = newTexture;
-    return false;
+    return ret;
 }
 
 void TextTexture::free() {

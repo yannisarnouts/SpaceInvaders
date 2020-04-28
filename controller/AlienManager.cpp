@@ -50,7 +50,7 @@ void Game::AlienManager::Visualize() {
     for (int i = 0; i < alienLength; i++) {
         this->aliens[i]->Visualize();
         this->aliens[i]->move();
-        if (this->aliens[i]->hitBoundary()) {
+        if (this->aliens[i]->hitBoundary(configReader->getScreenHeight())) {
             moveAndCheck(alienLength);
         }
         if (canon->checkCollision(this->aliens[i])) {
@@ -138,7 +138,7 @@ void Game::AlienManager::initLevel() {
         alienTypes = 4;
         alienLength = bossLength + michielLength + cliffLength + thomasLength;
     } else if (level == 3) {
-        bossLength = 10; cliffLength = 10; michielLength = 10; thomasLength = 10;
+        bossLength = 9; cliffLength = 9; michielLength = 9; thomasLength = 9;
         alienTypes = 5;
         alienLength = bossLength + michielLength + cliffLength + thomasLength + michielLength;
     }
