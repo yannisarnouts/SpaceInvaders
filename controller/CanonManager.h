@@ -1,7 +1,9 @@
 //
 // Created by Gebruiker on 18/03/2020.
 //
-
+/*
+ * Manage bullets
+ */
 #ifndef PROJECT_CANONMANAGER_H
 #define PROJECT_CANONMANAGER_H
 

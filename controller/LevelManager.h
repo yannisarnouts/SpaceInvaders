@@ -1,7 +1,9 @@
 //
 // Created by Gebruiker on 22/04/2020.
 //
-
+/*
+ * Manage the level
+ */
 #ifndef SPACEINVADERS_LEVELMANAGER_H
 #define SPACEINVADERS_LEVELMANAGER_H
 

@@ -11,6 +11,9 @@ void SDL::SDLAlien::Visualize() {
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 
+/*
+ * choose the right alien based on it's type
+ */
 SDL::SDLAlien::SDLAlien(int xCoord, int yCoord, int width, int height, AlienType alienType, SDL_Renderer *renderer) : Alien(xCoord, yCoord, width, height, alienType), renderer(renderer) {
     this->renderer = renderer;
     Texture *aTexture = new Texture(renderer);

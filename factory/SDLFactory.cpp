@@ -73,6 +73,9 @@ Game::Alien *SDL::SDLFactory::createAlien(AlienType alienType, int xPos, int yPo
     return new SDLAlien(xPos, yPos, alienWidth, alienHeight, alienType, gRenderer);
 }
 
+/*
+ * keep track if the user intends to end the game
+ */
 bool SDL::SDLFactory::pollEvents() {
     SDL_Event ev;
     bool play = true;

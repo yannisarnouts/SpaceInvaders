@@ -41,6 +41,9 @@ Game::LevelManager::~LevelManager() {
     delete canon;
 }
 
+/*
+ * create every manager
+ */
 void Game::LevelManager::createLevel() {
     playerManager = new PlayerManager(this->A, configReader, shipLife);
     playerShip = playerManager->getPlayerShip();
@@ -105,6 +108,11 @@ void Game::LevelManager::setLevel(Game::Level *level) {
     LevelManager::level = level;
 }
 
+/*
+ * run all the game elements
+ * check on playership collision
+ * check if aliens still exists
+ */
 void Game::LevelManager::runLevel() {
     getPlayerManager()->runPlayer();
     getAliens()->Visualize();

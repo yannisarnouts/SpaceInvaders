@@ -1,7 +1,9 @@
 //
 // Created by Gebruiker on 7/04/2020.
 //
-
+/*
+ * Manages bonusses
+ */
 #ifndef PROJECT_BONUSMANAGER_H
 #define PROJECT_BONUSMANAGER_H
 

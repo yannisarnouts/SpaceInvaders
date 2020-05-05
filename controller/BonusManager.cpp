@@ -18,6 +18,9 @@ Game::BonusManager::BonusManager(Game::AbstractFactory *abstractFactory, Game::P
     createBonusses();
 }
 
+/*
+ * creates 10 bonusses and places it in the vector
+ */
 void Game::BonusManager::createBonusses() {
     bonusses.reserve(10);
     for (int i = 0; i < 10; ++i) {
@@ -31,6 +34,9 @@ void Game::BonusManager::Visualize() {
     }
 }
 
+/*
+ * shoot a random bonus on a random time
+ */
 void Game::BonusManager::runBonusses() {
     timer->update();
     Visualize();
@@ -52,6 +58,10 @@ void Game::BonusManager::fireBonusses() {
     this->bonusses[i]->setYCoord(this->bonusses[i]->getYCoord() + timer->getDeltaTime() * configReader->getBonusSpeed());
 }
 
+/*
+ * checks for collision with the playership
+ * if there is a collision there occurs an event
+ */
 bool Game::BonusManager::checkCollision() {
     if (collisionController->bonusPlayerShip(this->bonusses[i], this->playerShip)) {
         this->bonusses[i]->setYCoord(configReader->getScreenHeight());

@@ -27,6 +27,11 @@ Game::Bullet *Game::CanonManager::createBullet(int shipX, int shipY) {
     return bullet;
 }
 
+/*
+ * check if the shoot key is pressed
+ * set shoot the bullet if the key is pressed and there is no other bullet in the field
+ * check if you still have bullets and fire the canon
+ */
 void Game::CanonManager::runCannon() {
     KeyHandler keyHandler;
     int direction = keyHandler.directions();
@@ -42,6 +47,9 @@ void Game::CanonManager::runCannon() {
     score->Visualize();
 }
 
+/*
+ * move the bullet based on it's speed
+ */
 void Game::CanonManager::fireCannon(Bullet *b) {
     this->currentBullet = b;
     this->currentBullet->setYCoord(this->currentBullet->getYCoord() - timer->getDeltaTime() * configReader->getBulletSpeed());
@@ -51,6 +59,9 @@ void Game::CanonManager::fireCannon(Bullet *b) {
     b->Visualize();
 }
 
+/*
+ * load canon based on the level
+ */
 void Game::CanonManager::loadCannon() {
     switch (level) {
         case 1: canonLength = 500; break;
@@ -64,6 +75,10 @@ void Game::CanonManager::loadCannon() {
     }
 }
 
+/*
+ * check colission with the aliens
+ * different alien types gives different points
+ */
 bool Game::CanonManager::checkCollision(Alien *alien) {
     AlienType resultType = collisionController->bulletPlayerShip(currentBullet, alien);
     if (resultType != AlienType(1000)) {
