@@ -18,7 +18,7 @@
 namespace Game {
     class AlienManager {
     public:
-        AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level, int initAliensKilled);
+        AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level, int initAliensKilled, Timer *timer);
         virtual ~AlienManager();
         void Visualize();
         void createAliens();
@@ -38,9 +38,11 @@ namespace Game {
         CanonManager *canon; AlienBullet *currentBullet;
         CollisionController *collisionController;
         ConfigReader *configReader;
+        Timer *timer;
         int alienLength; int aliensKilled; int alienTypes;
         int bossLength; int thomasLength; int cliffLength; int michielLength;
         int level;
+        bool shoot = true;
     };
 }
 

@@ -16,7 +16,7 @@ namespace Game {
     class PlayerManager {
     public:
         PlayerManager();
-        PlayerManager(AbstractFactory *abstractFactory, ConfigReader *configReader, int initLife);
+        PlayerManager(AbstractFactory *abstractFactory, ConfigReader *configReader, int initLife, Timer *timer);
         virtual ~PlayerManager();
         PlayerShip *getPlayerShip() const;
         void runPlayer();

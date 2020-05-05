@@ -5,13 +5,14 @@
 #include <iostream>
 #include "AlienManager.h"
 
-Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level, int initAliensKilled) {
+Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager *canon, ConfigReader *configReader, int level, int initAliensKilled, Timer *timer) {
     this->abstractFactory = abstractFactory;
     this->canon = canon;
     this->configReader = configReader;
     this->collisionController = new CollisionController();
     this->aliensKilled = initAliensKilled;
     this->level = level;
+    this->timer = timer;
     initLevel();
     bullets.reserve(bulletLength);
     for (int i = 0; i <= bulletLength; ++i) {
@@ -49,7 +50,7 @@ void Game::AlienManager::createAliens() {
 void Game::AlienManager::Visualize() {
     for (int i = 0; i < alienLength; i++) {
         this->aliens[i]->Visualize();
-        this->aliens[i]->move();
+        this->aliens[i]->move(timer->getDeltaTime());
         if (this->aliens[i]->hitBoundary(configReader->getScreenHeight())) {
             moveAndCheck(alienLength);
         }
@@ -63,8 +64,12 @@ void Game::AlienManager::Visualize() {
     this->bullets[bulletLength]->Visualize();
     this->bullets[bulletLength]->shootBullet();
     int a = rand() % 200 / level;
-    if (a == 36) {
+    if (a == 36 && shoot) {
+        shoot = false;
         alienShoot();
+    }
+    if (currentBullet->getYCoord() > this->configReader->getScreenHeight()) {
+        shoot = true;
     }
 }
 
@@ -82,7 +87,7 @@ void Game::AlienManager::moveAndCheck(int length) {
             move = 1;
         }
         this->aliens[i]->setMoveDirection(move);
-        this->aliens[i]->setYCoord(this->aliens[i]->getYCoord() + configReader->getAlienSpeed());
+        this->aliens[i]->setYCoord(this->aliens[i]->getYCoord() + configReader->getAlienSpeed() * timer->getDeltaTime());
     }
 }
 

@@ -13,8 +13,8 @@ Game::Alien::Alien(int xCoord, int yCoord, int width, int height, AlienType alie
                                                                                    alienType(alienType) {
 }
 
-void Game::Alien::move() {
-    setXCoord(getXCoord() + (3 * getMoveAlien()));
+void Game::Alien::move(double timer) {
+    setXCoord(getXCoord() + (timer * 2 * getMoveAlien()));
 }
 
 void Game::Alien::setMoveDirection(int moveAlien) {

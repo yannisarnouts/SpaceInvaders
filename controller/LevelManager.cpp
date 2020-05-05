@@ -6,11 +6,12 @@
 
 Game::LevelManager::LevelManager() {}
 
-Game::LevelManager::LevelManager(ConfigReader *configReader, AbstractFactory *abstractFactory) : configReader(configReader) {
+Game::LevelManager::LevelManager(ConfigReader *configReader, AbstractFactory *abstractFactory,Timer *timer) : configReader(configReader) {
     this->A = abstractFactory;
     this->configReader = new ConfigReader();
     this->setShipLife(configReader->getShipLife());
     this->level = abstractFactory->createLevel();
+    this->timer = timer;
 }
 
 Game::PlayerManager *Game::LevelManager::getPlayerManager() const {
@@ -45,11 +46,11 @@ Game::LevelManager::~LevelManager() {
  * create every manager
  */
 void Game::LevelManager::createLevel() {
-    playerManager = new PlayerManager(this->A, configReader, shipLife);
+    playerManager = new PlayerManager(this->A, configReader, shipLife, timer);
     playerShip = playerManager->getPlayerShip();
-    canon = new CanonManager(this->A, playerShip, configReader, level->getLevel(), score, bulletsFired);
-    aliens = new AlienManager(this->A, canon, configReader, level->getLevel(), aliensKilled);
-    bonusManager = new BonusManager(this->A, playerManager, canon, configReader);
+    canon = new CanonManager(this->A, playerShip, configReader, level->getLevel(), score, bulletsFired, timer);
+    aliens = new AlienManager(this->A, canon, configReader, level->getLevel(), aliensKilled, timer);
+    bonusManager = new BonusManager(this->A, playerManager, canon, configReader, timer);
 }
 
 bool Game::LevelManager::isHasWon() const {

@@ -17,7 +17,7 @@ namespace Game {
         virtual ~Alien();
         bool hitBoundary(int field_width);
         virtual void Visualize() = 0;
-        void move();
+        void move(double timer);
         int getMoveAlien() const;
         void setMoveDirection(int moveAlien);
         bool isAlive() const;

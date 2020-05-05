@@ -29,6 +29,4 @@ void SDL::SDLTimer::reset() {
     elapsedTicks = 0;
 }
 
-SDL::SDLTimer::~SDLTimer() {
-
-}
+SDL::SDLTimer::~SDLTimer() {}

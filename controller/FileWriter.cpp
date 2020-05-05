@@ -18,6 +18,11 @@ void FileWriter::writeStats() {
     statsFile.open("..\\stats.html", std::ios_base::app);
     statsFile << "\t\t\t<tr>\n";
     statsFile << "\t\t\t\t<td>" << ctime(&now) << "</td>\n";
+    if (won) {
+        statsFile << "\t\t\t\t<td>" << "WON" << "</td>\n";
+    } else {
+        statsFile << "\t\t\t\t<td>" << "LOST" << "</td>\n";
+    }
     statsFile << "\t\t\t\t<td>" << std::to_string(getLevel()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getPoints()) << "</td>\n";
     statsFile << "\t\t\t\t<td>" << std::to_string(getAliensKilled()) << "</td>\n";
@@ -106,4 +111,12 @@ int FileWriter::getLevel() const {
 
 void FileWriter::setLevel(int level) {
     FileWriter::level = level;
+}
+
+bool FileWriter::isWon() const {
+    return won;
+}
+
+void FileWriter::setWon(bool won) {
+    FileWriter::won = won;
 }

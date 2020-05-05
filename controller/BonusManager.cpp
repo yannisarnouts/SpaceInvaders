@@ -8,13 +8,13 @@
 Game::BonusManager::BonusManager() {}
 
 Game::BonusManager::BonusManager(Game::AbstractFactory *abstractFactory, Game::PlayerManager *playerManager,
-                                 Game::CanonManager *canonManager, ConfigReader *configReader) {
+                                 Game::CanonManager *canonManager, ConfigReader *configReader, Timer *timer) {
     this->abstractFactory = abstractFactory;
     this->collisionController = new CollisionController();
-    this->timer = abstractFactory->createTimer();
     this->playerShip = playerManager->getPlayerShip();
     this->canonManager = canonManager;
     this->configReader = configReader;
+    this->timer = timer;
     createBonusses();
 }
 

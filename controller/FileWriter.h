@@ -24,10 +24,12 @@ public:
     int getAliensKilled() const;
     void setAliensKilled(int aliensKilled);
     int getFileSize();
-
     int getLevel() const;
-
     void setLevel(int level);
+
+    bool isWon() const;
+
+    void setWon(bool won);
 
 private:
     std::string file;
@@ -39,6 +41,7 @@ private:
     int bonussesCaught;
     int fileSize = 0;
     int aliensKilled;
+    bool won;
 };
 
 

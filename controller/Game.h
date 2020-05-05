@@ -26,6 +26,7 @@ namespace Game {
         LevelManager *levelManager;
         Timer *timer;
         FileWriter *fileWriter;
+        bool won = false;
     };
 }
 

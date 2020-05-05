@@ -18,7 +18,7 @@ namespace Game {
     class LevelManager {
     public:
         LevelManager();
-        LevelManager(ConfigReader *configReader, AbstractFactory *abstractFactory);
+        LevelManager(ConfigReader *configReader, AbstractFactory *abstractFactory, Timer *timer);
         virtual ~LevelManager();
         PlayerManager *getPlayerManager() const;
         PlayerShip *getPlayerShip() const;
@@ -52,6 +52,7 @@ namespace Game {
         CanonManager *canon;
         AlienManager *aliens;
         BonusManager *bonusManager;
+        Timer *timer;
         bool hasWon = false;
         int score = 0;
         int bonusses = 0;

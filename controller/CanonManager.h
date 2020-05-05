@@ -18,7 +18,7 @@ namespace Game {
     class CanonManager {
     public:
         CanonManager();
-        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level, int initScore,int initBulletsFired);
+        CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level, int initScore,int initBulletsFired, Timer *timer);
         virtual ~CanonManager();
         Bullet *createBullet(int shipX, int shipY);
         void runCannon();

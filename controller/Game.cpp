@@ -10,7 +10,7 @@ Game::Game::Game(AbstractFactory *_A) {
     this->timer = A->createTimer();
     bg = A->createBackground();
     configReader = new ConfigReader();
-    levelManager = new LevelManager(configReader, this->A);
+    levelManager = new LevelManager(configReader, this->A, timer);
 }
 
 void Game::Game::Run() {
@@ -27,6 +27,10 @@ void Game::Game::Run() {
             levelManager->runLevel();
             A->render();
             timer->update();
+        }
+        printf("%d ", levelManager->getAliens()->getAlienLength());
+        if (levelManager->getAliens()->getAlienLength() == 0) {
+            won = true;
         }
         levelManager->setScore(levelManager->getCanon()->getScore()->getPoints());
         levelManager->setBonusses(levelManager->getBonusses() + levelManager->getBonusManager()->getBonussesCaught());
@@ -46,6 +50,7 @@ void Game::Game::updateStatistics() {
     fileWriter->setBulletsFired(levelManager->getBulletsFired());
     fileWriter->setBonussesCaught(levelManager->getBonusses());
     fileWriter->setAliensKilled(levelManager->getAliensKilled());
+    fileWriter->setWon(won);
     fileWriter->writeStats();
 }
 

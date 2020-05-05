@@ -7,7 +7,7 @@
 
 Game::CanonManager::CanonManager() {}
 
-Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level, int initScore, int initBulletsFired) {
+Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *playerShip, ConfigReader *configReader, int level, int initScore, int initBulletsFired, Timer *timer) {
     this->configReader = configReader;
     this->canonLength = configReader->getCanonLength();
     this->bulletsFired = initBulletsFired;
@@ -16,7 +16,7 @@ Game::CanonManager::CanonManager(AbstractFactory *abstractFactory, PlayerShip *p
     this->abstractFactory = abstractFactory;
     this->playerShip = playerShip;
     this->collisionController = new CollisionController();
-    this->timer = abstractFactory->createTimer();
+    this->timer = timer;
     this->level = level;
     this->score->setPoints(initScore);
     this->loadCannon();

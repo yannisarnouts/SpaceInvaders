@@ -6,12 +6,12 @@
 
 Game::PlayerManager::PlayerManager() {}
 
-Game::PlayerManager::PlayerManager(Game::AbstractFactory *abstractFactory, ConfigReader *configReader, int initLife) : abstractFactory(abstractFactory) {
+Game::PlayerManager::PlayerManager(Game::AbstractFactory *abstractFactory, ConfigReader *configReader, int initLife, Timer *timer) : abstractFactory(abstractFactory) {
     this->abstractFactory = abstractFactory;
     this->configReader = configReader;
     this->playerShip = abstractFactory->createPlayerShip();
     this->life = abstractFactory->createLife();
-    this->timer = abstractFactory->createTimer();
+    this->timer = timer;
     life->setLife(initLife);
     playerShip->setLife(initLife);
     this->playerShip->setSpeed(configReader->getShipSpeed());
