@@ -25,19 +25,21 @@ Game::AlienManager::AlienManager(AbstractFactory *abstractFactory, CanonManager 
 /*
  * create aliens and add them to the vector
  * aliens can be of a specific type
+ * position determined by the screen width
  */
 void Game::AlienManager::createAliens() {
+    int xi = configReader->getScreenWidth()/12;
     for (int i = 0; i < alienLength; i++) {
         if (i < bossLength && alienTypes > 0) {
-            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::boss, i * 100, 100));
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::boss, i * xi, configReader->getScreenHeight()/12));
         } else if (i >= bossLength && i < bossLength + michielLength && alienTypes > 1) {
-            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::michiel, (i - bossLength) * 100, 200));
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::michiel, (i - bossLength) * xi, configReader->getScreenHeight()/6));
         } else if (i >= bossLength + michielLength && i < bossLength + michielLength + cliffLength && alienTypes > 2) {
-            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::clifford, (i - bossLength - michielLength) * 100, 300));
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::clifford, (i - bossLength - michielLength) * xi, configReader->getScreenHeight()/4));
         } else if (i >= bossLength + michielLength + cliffLength && i < bossLength + michielLength + cliffLength + thomasLength && alienTypes > 3) {
-            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::thomas, (i - bossLength - michielLength - cliffLength) * 100, 400));
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::thomas, (i - bossLength - michielLength - cliffLength) * xi, configReader->getScreenHeight()/3));
         } else if (i >= bossLength + michielLength + cliffLength + thomasLength && i < bossLength + michielLength + cliffLength + thomasLength + michielLength && alienTypes > 4) {
-            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::michiel, (i - bossLength - michielLength - cliffLength - thomasLength) * 100, 500));
+            this->aliens.emplace_back(abstractFactory->createAlien(AlienType::michiel, (i - bossLength - michielLength - cliffLength - thomasLength) * xi, configReader->getScreenHeight()/2.4));
         }
     }
 }
@@ -51,7 +53,7 @@ void Game::AlienManager::Visualize() {
     for (int i = 0; i < alienLength; i++) {
         this->aliens[i]->Visualize();
         this->aliens[i]->move(timer->getDeltaTime());
-        if (this->aliens[i]->hitBoundary(configReader->getScreenHeight())) {
+        if (this->aliens[i]->hitBoundary(configReader->getScreenWidth())) {
             moveAndCheck(alienLength);
         }
         if (canon->checkCollision(this->aliens[i])) {
@@ -131,7 +133,7 @@ int Game::AlienManager::getAliensKilled() const {
 }
 
 /*
- * initialise depending on the level
+ * initialise depending on the level and screen width
  */
 void Game::AlienManager::initLevel() {
     if (level == 1) {
@@ -139,11 +141,19 @@ void Game::AlienManager::initLevel() {
         alienTypes = 3;
         alienLength = bossLength + michielLength + cliffLength;
     } else if (level == 2) {
-        bossLength = 9; cliffLength = 9; michielLength = 9; thomasLength = 9;
+        if (configReader->getScreenWidth() <= 700) {
+            bossLength = 8; cliffLength = 8; michielLength = 8; thomasLength = 8;
+        } else {
+            bossLength = 9; cliffLength = 9; michielLength = 9; thomasLength = 9;
+        }
         alienTypes = 4;
         alienLength = bossLength + michielLength + cliffLength + thomasLength;
     } else if (level == 3) {
-        bossLength = 9; cliffLength = 9; michielLength = 9; thomasLength = 9;
+        if (configReader->getScreenWidth() <= 700) {
+            bossLength = 8; cliffLength = 8; michielLength = 8; thomasLength = 8;
+        } else {
+            bossLength = 9; cliffLength = 9; michielLength = 9; thomasLength = 9;
+        }
         alienTypes = 5;
         alienLength = bossLength + michielLength + cliffLength + thomasLength + michielLength;
     }

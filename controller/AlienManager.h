@@ -40,7 +40,7 @@ namespace Game {
         ConfigReader *configReader;
         Timer *timer;
         int alienLength; int aliensKilled; int alienTypes;
-        int bossLength; int thomasLength; int cliffLength; int michielLength;
+        int bossLength=0; int thomasLength=0; int cliffLength=0; int michielLength=0;
         int level;
         bool shoot = true;
     };

@@ -16,8 +16,9 @@ SDL::SDLLevel::~SDLLevel() {
 }
 
 void SDL::SDLLevel::Visualize() {
+    configReader = new ConfigReader();
     this->texture->loadTexture("Level: " + std::to_string(getLevel()));
-    SDL_Rect renderQuad = {SCREEN_WIDTH/2, 0, 100, 100};
+    SDL_Rect renderQuad = {configReader->getScreenWidth()/2, 0, 100, 100};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
 }
 

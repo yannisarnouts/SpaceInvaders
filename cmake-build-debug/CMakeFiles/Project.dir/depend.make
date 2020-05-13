@@ -34,6 +34,7 @@ CMakeFiles/Project.dir/SDLClasses/SDLBullet.cpp.obj: ../model/Entity.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../SDLClasses/SDLLevel.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../SDLClasses/SDLLevel.h
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../factory/TextTexture.h
 CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../model/Level.h
 

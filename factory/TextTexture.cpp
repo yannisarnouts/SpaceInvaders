@@ -9,7 +9,7 @@ TextTexture::TextTexture() {}
 
 TextTexture::TextTexture(SDL_Renderer *renderer) : renderer(renderer) {
     this->renderer = renderer;
-    gFont = TTF_OpenFont("../assets/Arial.ttf", 25);
+    gFont = TTF_OpenFont("../assets/Arial.ttf", 20);
 }
 
 bool TextTexture::loadTexture(std::string text) {

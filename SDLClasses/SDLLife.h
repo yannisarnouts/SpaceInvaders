@@ -21,7 +21,6 @@ class SDLLife: public Game::Life {
     private:
         SDL_Renderer *renderer;
         TextTexture *texture = NULL;
-        int SCREEN_WIDTH = 950;
         ConfigReader *configReader;
 };
 }

@@ -68,8 +68,8 @@ Background *SDL::SDLFactory::createBackground() {
 }
 
 Game::Alien *SDL::SDLFactory::createAlien(AlienType alienType, int xPos, int yPos) {
-    int alienWidth = SCREEN_WIDTH / 15;
-    int alienHeight = SCREEN_HEIGHT / 15;
+    int alienWidth = SCREEN_WIDTH / 20;
+    int alienHeight = SCREEN_HEIGHT / 20;
     return new SDLAlien(xPos, yPos, alienWidth, alienHeight, alienType, gRenderer);
 }
 

@@ -36,11 +36,10 @@ void Game::Alien::setAlive(bool alive) {
 bool Game::Alien::hitBoundary(int field_width) {
     if (getXCoord() <= 0 - getWidth()) {
         return true;
-    } else if (getXCoord() >= field_width) {
+    } else if (getXCoord() >= field_width - (getWidth() * 2) - 50) {
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
 AlienType Game::Alien::getAlienType() const {
