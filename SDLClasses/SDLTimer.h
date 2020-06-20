@@ -17,6 +17,7 @@ namespace SDL {
         void reset() override;
 
     private:
+        // time current - previous frame
         double deltaTime;
         int startTicks;
         int elapsedTicks;

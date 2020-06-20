@@ -13,16 +13,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b67584d3-261a-4ca7-91f0-7de9e876b73c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLLevel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLLevel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLLevel.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLLevel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLLife.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLLife.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLTimer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLTimer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/CollisionController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/CollisionController.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/AlienManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/AlienManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/AlienManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/controller/AlienManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CollisionController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CollisionController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factory/SDLFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/factory/SDLFactory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factory/TextTexture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/factory/TextTexture.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Alien.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Alien.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/LevelManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/LevelManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/stats.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +214,11 @@
       <workItem from="1588262591818" duration="536000" />
       <workItem from="1588690311531" duration="1046000" />
       <workItem from="1588701475153" duration="2424000" />
-      <workItem from="1589391674711" duration="4687000" />
+      <workItem from="1589391674711" duration="5054000" />
+      <workItem from="1590223926650" duration="115000" />
+      <workItem from="1590224052407" duration="117000" />
+      <workItem from="1590568641569" duration="188000" />
+      <workItem from="1592664273242" duration="2491000" />
     </task>
     <task id="LOCAL-00001" summary="add documentation">
       <created>1588691090431</created>
@@ -253,39 +256,38 @@
     </state>
     <state x="1170" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1586192100954" />
     <state x="1170" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586365903274" />
-    <state x="524" y="119" key="CommitChangelistDialog2" timestamp="1588691089033">
+    <state x="524" y="119" key="CommitChangelistDialog2" timestamp="1592666775559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="524" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1588691089033" />
+    <state x="524" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592666775559" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1587746379812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1032" y="305" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1583867190402" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1587657814137" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587746379812" />
-    <state width="1877" height="137" key="GridCell.Tab.0.bottom" timestamp="1589397095554">
+    <state width="1877" height="137" key="GridCell.Tab.0.bottom" timestamp="1592666660271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="137" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1589392118976" />
-    <state width="1877" height="137" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1589397095554" />
+    <state width="1877" height="137" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592666660271" />
     <state width="1877" height="143" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588100161200" />
-    <state width="1877" height="137" key="GridCell.Tab.0.center" timestamp="1589397095553">
+    <state width="1877" height="137" key="GridCell.Tab.0.center" timestamp="1592666660271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="137" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1589392118976" />
-    <state width="1877" height="137" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1589397095553" />
+    <state width="1877" height="137" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592666660271" />
     <state width="1877" height="143" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588100161200" />
-    <state width="1877" height="137" key="GridCell.Tab.0.left" timestamp="1589397095553">
+    <state width="1877" height="137" key="GridCell.Tab.0.left" timestamp="1592666660270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="137" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1589392118976" />
-    <state width="1877" height="137" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1589397095553" />
+    <state width="1877" height="137" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592666660270" />
     <state width="1877" height="143" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588100161200" />
-    <state width="1877" height="137" key="GridCell.Tab.0.right" timestamp="1589397095553">
+    <state width="1877" height="137" key="GridCell.Tab.0.right" timestamp="1592666660271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="137" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1589392118976" />
-    <state width="1877" height="137" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1589397095553" />
+    <state width="1877" height="137" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592666660271" />
     <state width="1877" height="143" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588100161200" />
     <state width="1877" height="208" key="GridCell.Tab.1.bottom" timestamp="1587998337676">
       <screen x="0" y="0" width="1920" height="1040" />

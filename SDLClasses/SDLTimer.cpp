@@ -6,7 +6,7 @@
 #include "SDLTimer.h"
 
 SDL::SDLTimer::SDLTimer() {
-    reset();
+    SDL::SDLTimer::reset();
 }
 
 double SDL::SDLTimer::getDeltaTime() {
@@ -24,6 +24,7 @@ void SDL::SDLTimer::update() {
 }
 
 void SDL::SDLTimer::reset() {
+    // get nr of ms
     startTicks = SDL_GetTicks();
     deltaTime = 0;
     elapsedTicks = 0;

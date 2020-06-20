@@ -28,15 +28,14 @@ void Game::Game::Run() {
             A->render();
             timer->update();
         }
-        printf("%d ", levelManager->getAliens()->getAlienLength());
         if (levelManager->getAliens()->getAlienLength() == 0) {
             won = true;
         }
         levelManager->setScore(levelManager->getCanon()->getScore()->getPoints());
         levelManager->setBonusses(levelManager->getBonusses() + levelManager->getBonusManager()->getBonussesCaught());
         levelManager->setShipLife(levelManager->getPlayerShip()->getLife());
-        levelManager->setAliensKilled(levelManager->getAliensKilled() + levelManager->getAliens()->getAliensKilled());
-        levelManager->setBulletsFired(levelManager->getBulletsFired() + levelManager->getCanon()->getBulletsFired());
+        levelManager->setAliensKilled(levelManager->getAliens()->getAliensKilled());
+        levelManager->setBulletsFired(levelManager->getCanon()->getBulletsFired());
         levelManager->cleanLevel();
     }
     updateStatistics();

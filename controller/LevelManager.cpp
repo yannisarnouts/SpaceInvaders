@@ -134,5 +134,4 @@ void Game::LevelManager::cleanLevel() {
     delete bonusManager;
     delete aliens;
     delete canon;
-    printf("memory cleaned\n");
 }
