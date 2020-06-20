@@ -11,8 +11,8 @@ Game::CollisionController::CollisionController() {}
  * collision detection on bullet from the playership and an alien
  */
 AlienType Game::CollisionController::bulletPlayerShip(Bullet *bullet, Alien *alien) {
-    if ((bullet->getXCoord() >= alien->getXCoord() && bullet->getXCoord() <= (alien->getXCoord() + 100)) &&
-        (bullet->getYCoord() >= alien->getYCoord() - alien->getHeight() && bullet->getYCoord() <= alien->getYCoord() + alien->getHeight())) {
+    if ((bullet->getXCoord() >= (alien->getXCoord() - alien->getWidth()) && bullet->getXCoord() <= (alien->getXCoord() + 100)) &&
+        (bullet->getYCoord() >= alien->getYCoord() && bullet->getYCoord() <= (alien->getYCoord() + alien->getHeight()))) {
         return alien->getAlienType();
     } else {
         return AlienType(1000);
@@ -23,20 +23,18 @@ AlienType Game::CollisionController::bulletPlayerShip(Bullet *bullet, Alien *ali
  * collision detection on alien bullet and playership
  */
 bool Game::CollisionController::bulletAlien(Game::AlienBullet *bullet, PlayerShip *playerShip) {
-    if (((bullet->getYCoord() >= playerShip->getYCoord()-bullet->getHeight()/2) && (bullet->getYCoord() <= playerShip->getYCoord() + bullet->getHeight()/2)) && (bullet->getXCoord() >= playerShip->getXCoord() - playerShip->getWidth()/2 && bullet->getXCoord() <= playerShip->getXCoord() + playerShip->getWidth()/2)) {
-        return true;
-    } else {
-        return false;
-    }
+    return bullet->getXCoord() + bullet->getWidth() >= playerShip->getXCoord() &&
+            bullet->getXCoord() <= playerShip->getXCoord() + playerShip->getWidth() &&
+            bullet->getYCoord() + bullet->getHeight() >= playerShip->getYCoord() &&
+            bullet->getYCoord() <= playerShip->getYCoord() + playerShip->getHeight();
 }
 
 /*
  * collsion detection on bonus and playership
  */
 bool Game::CollisionController::bonusPlayerShip(Game::Bonus *bonus, PlayerShip *playerShip) {
-    if (((bonus->getYCoord() >= playerShip->getYCoord()-bonus->getHeight()/2) && (bonus->getYCoord() <= playerShip->getYCoord() + bonus->getHeight()/2)) && (bonus->getXCoord() >= playerShip->getXCoord() - playerShip->getWidth()/2 && bonus->getXCoord() <= playerShip->getXCoord() + playerShip->getWidth()/2)) {
-        return true;
-    } else {
-        return false;
-    }
+    return bonus->getXCoord() + bonus->getWidth() >= playerShip->getXCoord() &&
+           bonus->getXCoord() <= playerShip->getXCoord() + playerShip->getWidth() &&
+           bonus->getYCoord() + bonus->getHeight() >= playerShip->getYCoord() &&
+           bonus->getYCoord() <= playerShip->getYCoord() + playerShip->getHeight();
 }
