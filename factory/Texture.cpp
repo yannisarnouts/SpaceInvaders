@@ -4,7 +4,6 @@
 
 #include <SDL2/SDL_image.h>
 #include <cstdio>
-#include <iostream>
 #include "Texture.h"
 
 Texture::Texture(SDL_Renderer *renderer) {
@@ -16,7 +15,7 @@ SDL_Texture *Texture::getTexture() const {
 }
 
 bool Texture::loadFromFile(std::string path) {
-    bool ret = false;
+    bool ret;
     SDL_Texture *newTexture = NULL;
     SDL_Surface *tmpSurface = IMG_Load(path.c_str());
     if (tmpSurface == NULL) {

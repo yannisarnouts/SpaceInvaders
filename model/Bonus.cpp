@@ -2,7 +2,6 @@
 // Created by Gebruiker on 6/04/2020.
 //
 
-#include <iostream>
 #include "Bonus.h"
 
 Game::Bonus::Bonus() {}

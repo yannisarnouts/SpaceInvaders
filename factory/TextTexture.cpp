@@ -13,7 +13,7 @@ TextTexture::TextTexture(SDL_Renderer *renderer) : renderer(renderer) {
 }
 
 bool TextTexture::loadTexture(std::string text) {
-    bool ret = false;
+    bool ret;
     SDL_Texture *newTexture = NULL;
     if (gFont == NULL) {
         printf("failed to load font, error:  %s", gFont);

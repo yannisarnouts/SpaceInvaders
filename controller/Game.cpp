@@ -1,7 +1,6 @@
 //
 // Created by Gebruiker on 3/03/2020.
 //
-#include <ctime>
 #include "Game.h"
 #include "ConfigReader.h"
 

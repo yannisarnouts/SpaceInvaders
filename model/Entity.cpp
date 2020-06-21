@@ -2,7 +2,6 @@
 // Created by Gebruiker on 30/03/2020.
 //
 
-#include <iostream>
 #include "Entity.h"
 
 Game::Entity::Entity() {}

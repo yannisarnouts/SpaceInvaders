@@ -18,7 +18,6 @@ namespace Game {
         virtual ~Game();
         void Run();
         void updateStatistics();
-        void startGame();
 
     private:
         AbstractFactory *A;

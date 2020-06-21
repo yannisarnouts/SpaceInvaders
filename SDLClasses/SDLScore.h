@@ -13,10 +13,7 @@
 namespace SDL {
     class SDLScore: public Game::Score {
     public:
-        SDLScore();
-
         SDLScore(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
-
         ~SDLScore();
         void Visualize() override ;
 

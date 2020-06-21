@@ -15,7 +15,6 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
-#include <iostream>
 
 SDL::SDLFactory::SDLFactory() {
     configReader = new ConfigReader();
@@ -127,5 +126,4 @@ SDL::SDLFactory::~SDLFactory() {
 
 Game::Level *SDL::SDLFactory::createLevel() {
     return new SDLLevel(SCREEN_WIDTH/2, SCREEN_HEIGHT, SCREEN_WIDTH/10, SCREEN_HEIGHT/10, gRenderer);
-//    SDL_Rect renderQuad = {configReader->getScreenWidth()/2, 0, configReader->getScreenWidth()/10, configReader->getScreenHeight()/10};
 }
