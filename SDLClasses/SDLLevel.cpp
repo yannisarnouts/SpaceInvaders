@@ -6,19 +6,20 @@
 
 SDL::SDLLevel::SDLLevel() {}
 
-SDL::SDLLevel::SDLLevel(SDL_Renderer *renderer) : renderer(renderer) {
-    this->renderer = renderer;
-    TextTexture *textTexture = new TextTexture(renderer);
-    this->texture = textTexture;
-    configReader = new ConfigReader();
-}
-
 SDL::SDLLevel::~SDLLevel() {
 }
 
 void SDL::SDLLevel::Visualize() {
     this->texture->loadTexture("Level: " + std::to_string(getLevel()));
-    SDL_Rect renderQuad = {configReader->getScreenWidth()/2, 0, configReader->getScreenWidth()/10, configReader->getScreenHeight()/10};
+    SDL_Rect renderQuad = {this->getXCoord(), 0, this->getWidth(), this->getHeight()};
     SDL_RenderCopy(renderer, texture->getTexture(), NULL, &renderQuad);
+}
+
+SDL::SDLLevel::SDLLevel(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer) : Level(xCoord, yCoord,
+                                                                                                       width, height),
+                                                                                                 renderer(renderer) {
+    this->renderer = renderer;
+    TextTexture *textTexture = new TextTexture(renderer);
+    this->texture = textTexture;
 }
 

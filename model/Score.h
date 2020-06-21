@@ -5,10 +5,12 @@
 #ifndef PROJECT_SCORE_H
 #define PROJECT_SCORE_H
 
+#include "Entity.h"
+
 namespace Game {
-    class Score {
+    class Score : public Entity {
     public:
-        Score();
+        Score(int xCoord, int yCoord, int width, int height);
         virtual ~Score();
         int getPoints() const;
         void setPoints(int points);

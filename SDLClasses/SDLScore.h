@@ -14,14 +14,15 @@ namespace SDL {
     class SDLScore: public Game::Score {
     public:
         SDLScore();
-        SDLScore(SDL_Renderer *renderer);
+
+        SDLScore(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
+
         ~SDLScore();
         void Visualize() override ;
 
     private:
         SDL_Renderer *renderer;
         TextTexture *texture = NULL;
-        ConfigReader *configReader;
     };
 }
 

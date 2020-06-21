@@ -14,14 +14,13 @@ namespace SDL {
 class SDLLevel: public Game::Level {
 public:
     SDLLevel();
-    SDLLevel(SDL_Renderer *renderer);
+    SDLLevel(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
     ~SDLLevel();
     void Visualize() override;
 
 private:
     SDL_Renderer *renderer;
     TextTexture *texture = NULL;
-    ConfigReader *configReader;
 };
 }
 

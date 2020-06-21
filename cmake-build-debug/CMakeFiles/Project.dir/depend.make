@@ -36,12 +36,14 @@ CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../SDLClasses/SDLLevel.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../SDLClasses/SDLLevel.h
 CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../factory/TextTexture.h
+CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/SDLClasses/SDLLevel.cpp.obj: ../model/Level.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../SDLClasses/SDLLife.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../SDLClasses/SDLLife.h
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../factory/TextTexture.h
+CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../model/Life.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../SDLClasses/SDLPlayerShip.cpp
@@ -57,6 +59,7 @@ CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../SDLClasses/SDLScore.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../SDLClasses/SDLScore.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../factory/TextTexture.h
+CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../model/Score.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLTimer.cpp.obj: ../SDLClasses/SDLTimer.cpp
@@ -330,9 +333,11 @@ CMakeFiles/Project.dir/model/Bullet.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.cpp
 CMakeFiles/Project.dir/model/Entity.cpp.obj: ../model/Entity.h
 
+CMakeFiles/Project.dir/model/Level.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Level.cpp.obj: ../model/Level.cpp
 CMakeFiles/Project.dir/model/Level.cpp.obj: ../model/Level.h
 
+CMakeFiles/Project.dir/model/Life.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Life.cpp.obj: ../model/Life.cpp
 CMakeFiles/Project.dir/model/Life.cpp.obj: ../model/Life.h
 
@@ -340,6 +345,7 @@ CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.cpp
 CMakeFiles/Project.dir/model/PlayerShip.cpp.obj: ../model/PlayerShip.h
 
+CMakeFiles/Project.dir/model/Score.cpp.obj: ../model/Entity.h
 CMakeFiles/Project.dir/model/Score.cpp.obj: ../model/Score.cpp
 CMakeFiles/Project.dir/model/Score.cpp.obj: ../model/Score.h
 

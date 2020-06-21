@@ -5,10 +5,15 @@
 #ifndef SPACEINVADERS_LEVEL_H
 #define SPACEINVADERS_LEVEL_H
 
+#include "Entity.h"
+
 namespace Game {
-    class Level {
+    class Level : public Entity {
     public:
         Level();
+
+        Level(int xCoord, int yCoord, int width, int height);
+
         virtual ~Level();
         int getLevel() const;
         void setLevel(int level);

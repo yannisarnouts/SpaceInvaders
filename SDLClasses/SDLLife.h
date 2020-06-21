@@ -14,14 +14,13 @@ namespace SDL {
 class SDLLife: public Game::Life {
     public:
     SDLLife();
-    SDLLife(SDL_Renderer *renderer);
+    SDLLife(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer);
     ~SDLLife();
     void Visualize() override ;
 
     private:
         SDL_Renderer *renderer;
         TextTexture *texture = NULL;
-        ConfigReader *configReader;
 };
 }
 

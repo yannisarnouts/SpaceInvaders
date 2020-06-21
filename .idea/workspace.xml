@@ -13,21 +13,26 @@
   <component name="ChangeListManager">
     <list default="true" id="b67584d3-261a-4ca7-91f0-7de9e876b73c" name="Default Changelist" comment="add documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLBullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLBullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLBullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLBullet.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLClasses/SDLLevel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLLevel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLLevel.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLLevel.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLClasses/SDLLife.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLLife.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLPlayerShip.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLPlayerShip.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDLClasses/SDLLife.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLLife.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLClasses/SDLScore.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLScore.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLClasses/SDLScore.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDLClasses/SDLScore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/CollisionController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/controller/CollisionController.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CanonManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CanonManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CollisionController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CollisionController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CollisionController.h" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CollisionController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factory/TextTexture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/factory/TextTexture.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factory/TextTexture.h" beforeDir="false" afterPath="$PROJECT_DIR$/factory/TextTexture.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factory/SDLFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/factory/SDLFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Level.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Level.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Level.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/Level.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Life.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Life.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Life.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/Life.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Score.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Score.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Score.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/Score.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/stats.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +231,7 @@
       <workItem from="1590568641569" duration="188000" />
       <workItem from="1592664273242" duration="5345000" />
       <workItem from="1592676208577" duration="2296000" />
-      <workItem from="1592738265125" duration="5650000" />
+      <workItem from="1592738265125" duration="8508000" />
     </task>
     <task id="LOCAL-00001" summary="add documentation">
       <created>1588691090431</created>
@@ -254,15 +259,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1205" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585997754333" />
-    <state x="1390" y="280" key="#com.intellij.ide.util.MemberChooser" timestamp="1592742510586">
+    <state x="1390" y="280" width="419" height="640" key="#com.intellij.ide.util.MemberChooser" timestamp="1592746858542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1390" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592742510586" />
+    <state x="1390" y="280" width="419" height="640" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592746858542" />
     <state x="1390" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587917413441" />
-    <state x="1170" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586365903274">
+    <state x="1170" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592745064120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1586192100954" />
+    <state x="1170" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592745064120" />
     <state x="1170" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586365903274" />
     <state x="524" y="119" key="CommitChangelistDialog2" timestamp="1592666775559">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -274,29 +279,29 @@
     <state x="-1032" y="305" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1592677830549" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592739344192" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587746379812" />
-    <state width="1877" height="152" key="GridCell.Tab.0.bottom" timestamp="1592744005183">
+    <state width="1877" height="152" key="GridCell.Tab.0.bottom" timestamp="1592746986826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="137" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1592678936472" />
-    <state width="1877" height="152" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592744005183" />
+    <state width="1877" height="152" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592746986826" />
     <state width="1877" height="143" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588100161200" />
-    <state width="1877" height="152" key="GridCell.Tab.0.center" timestamp="1592744005183">
+    <state width="1877" height="152" key="GridCell.Tab.0.center" timestamp="1592746986826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="137" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1592678936471" />
-    <state width="1877" height="152" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592744005183" />
+    <state width="1877" height="152" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592746986826" />
     <state width="1877" height="143" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588100161200" />
-    <state width="1877" height="152" key="GridCell.Tab.0.left" timestamp="1592744005183">
+    <state width="1877" height="152" key="GridCell.Tab.0.left" timestamp="1592746986825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="137" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1592678936471" />
-    <state width="1877" height="152" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592744005183" />
+    <state width="1877" height="152" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592746986825" />
     <state width="1877" height="143" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588100161200" />
-    <state width="1877" height="152" key="GridCell.Tab.0.right" timestamp="1592744005183">
+    <state width="1877" height="152" key="GridCell.Tab.0.right" timestamp="1592746986826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1637" height="137" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@-1680.34.1680.1010" timestamp="1592678936472" />
-    <state width="1877" height="152" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592744005183" />
+    <state width="1877" height="152" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592746986826" />
     <state width="1877" height="143" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588100161200" />
     <state width="1877" height="208" key="GridCell.Tab.1.bottom" timestamp="1587998337676">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -343,10 +348,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1586881673830" />
-    <state x="-1709" y="19" width="1654" height="854" maximized="true" key="dock-window-1" timestamp="1588703040937">
+    <state x="-1616" y="9" width="1586" height="845" maximized="true" key="dock-window-1" timestamp="1592745128568">
       <screen x="-1680" y="34" width="1680" height="1010" />
     </state>
-    <state x="-1709" y="19" width="1654" height="854" maximized="true" key="dock-window-1/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1588703040937" />
+    <state x="-1616" y="9" width="1586" height="845" maximized="true" key="dock-window-1/0.0.1920.1040/-1680.34.1680.1010@0.0.1920.1040" timestamp="1592745128568" />
     <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1586284426491" />
     <state x="-1621" y="34" width="1637" height="854" key="dock-window-2" timestamp="1587992159675">
       <screen x="-1680" y="34" width="1680" height="1010" />

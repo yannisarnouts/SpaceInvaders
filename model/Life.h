@@ -5,13 +5,21 @@
 #ifndef PROJECT_LIFE_H
 #define PROJECT_LIFE_H
 
+#include "Entity.h"
+
 namespace Game {
-    class Life {
+    class Life : public Entity {
     public:
         Life();
+
+        Life(int xCoord, int yCoord, int width, int height);
+
         virtual ~Life();
-        virtual void Visualize()=0;
+
+        virtual void Visualize() = 0;
+
         int getLife() const;
+
         void setLife(int life);
 
     private:

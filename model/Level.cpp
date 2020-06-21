@@ -17,3 +17,5 @@ int Game::Level::getLevel() const {
 void Game::Level::setLevel(int level) {
     Level::level = level;
 }
+
+Game::Level::Level(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {}

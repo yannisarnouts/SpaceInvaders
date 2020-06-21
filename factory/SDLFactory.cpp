@@ -94,7 +94,7 @@ Game::Bullet *SDL::SDLFactory::createBullet(int xCoord, int yCoord) {
 }
 
 Game::Score *SDL::SDLFactory::createScore() {
-    return new SDLScore(gRenderer);
+    return new SDLScore(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH/10, SCREEN_HEIGHT/10, gRenderer);
 }
 
 Game::AlienBullet *SDL::SDLFactory::createAlienBullet(int xCoord, int yCoord) {
@@ -104,7 +104,7 @@ Game::AlienBullet *SDL::SDLFactory::createAlienBullet(int xCoord, int yCoord) {
 }
 
 Game::Life *SDL::SDLFactory::createLife() {
-    return new SDLLife(gRenderer);
+    return new SDLLife(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH/10, SCREEN_HEIGHT/10, gRenderer);
 }
 
 Game::Timer *SDL::SDLFactory::createTimer() {
@@ -126,5 +126,6 @@ SDL::SDLFactory::~SDLFactory() {
 }
 
 Game::Level *SDL::SDLFactory::createLevel() {
-    return new SDLLevel(gRenderer);
+    return new SDLLevel(SCREEN_WIDTH/2, SCREEN_HEIGHT, SCREEN_WIDTH/10, SCREEN_HEIGHT/10, gRenderer);
+//    SDL_Rect renderQuad = {configReader->getScreenWidth()/2, 0, configReader->getScreenWidth()/10, configReader->getScreenHeight()/10};
 }

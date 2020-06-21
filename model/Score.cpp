@@ -4,8 +4,6 @@
 
 #include "Score.h"
 
-Game::Score::Score() {}
-
 int Game::Score::getPoints() const {
     return points;
 }
@@ -17,3 +15,5 @@ void Game::Score::setPoints(int points) {
 Game::Score::~Score() {
 
 }
+
+Game::Score::Score(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {}

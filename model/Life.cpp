@@ -17,3 +17,5 @@ void Game::Life::setLife(int life) {
 Game::Life::~Life() {
 
 }
+
+Game::Life::Life(int xCoord, int yCoord, int width, int height) : Entity(xCoord, yCoord, width, height) {}
