@@ -20,6 +20,10 @@ public:
 
     void free();
 
+    int getHeight() const;
+
+    int getWidth() const;
+
 private:
     SDL_Texture* texture = NULL;
     SDL_Renderer* renderer;

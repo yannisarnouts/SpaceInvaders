@@ -6,5 +6,7 @@ int main(int argv, char** args) {
     Game::AbstractFactory *A = new SDL::SDLFactory();
     Game::Game *game = new Game::Game(A);
     game->Run();
+    delete game;
+    delete A;
     return 0;
 }

@@ -22,7 +22,6 @@ namespace SDL {
         SDL_Renderer *renderer;
         Texture *texture = NULL;
         std::string imgPath = "../assets/bullet.png";
-        int screenHeight;
     };
 }
 

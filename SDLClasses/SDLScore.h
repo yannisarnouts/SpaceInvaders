@@ -8,6 +8,7 @@
 #include <SDL2/SDL_render.h>
 #include "../model/Score.h"
 #include "../factory/TextTexture.h"
+#include "../controller/ConfigReader.h"
 
 namespace SDL {
     class SDLScore: public Game::Score {
@@ -20,6 +21,7 @@ namespace SDL {
     private:
         SDL_Renderer *renderer;
         TextTexture *texture = NULL;
+        ConfigReader *configReader;
     };
 }
 

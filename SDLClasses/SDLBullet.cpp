@@ -9,7 +9,6 @@ SDL::SDLBullet::SDLBullet() {}
 SDL::SDLBullet::SDLBullet(int xCoord, int yCoord, int width, int height, SDL_Renderer *renderer)
         : Bullet(xCoord, yCoord, width, height), renderer(renderer) {
     this->renderer = renderer;
-    this->screenHeight = height;
     Texture *bTexture = new Texture(renderer);
     texture = bTexture;
     bTexture->loadFromFile(this->imgPath);

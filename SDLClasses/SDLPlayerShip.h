@@ -9,6 +9,7 @@
 #include "../model/PlayerShip.h"
 #include "../factory/Texture.h"
 #include "../controller/KeyHandler.h"
+#include "../controller/ConfigReader.h"
 
 namespace SDL {
     class SDLPlayerShip : public Game::PlayerShip {

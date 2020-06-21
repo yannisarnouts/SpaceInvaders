@@ -10,13 +10,11 @@ Game::CollisionController::CollisionController() {}
 /*
  * collision detection on bullet from the playership and an alien
  */
-AlienType Game::CollisionController::bulletPlayerShip(Bullet *bullet, Alien *alien) {
-    if ((bullet->getXCoord() >= (alien->getXCoord() - alien->getWidth()) && bullet->getXCoord() <= (alien->getXCoord() + 100)) &&
-        (bullet->getYCoord() >= alien->getYCoord() && bullet->getYCoord() <= (alien->getYCoord() + alien->getHeight()))) {
-        return alien->getAlienType();
-    } else {
-        return AlienType(1000);
-    }
+bool Game::CollisionController::bulletPlayerShip(Bullet *bullet, Alien *alien) {
+    return bullet->getXCoord() >= alien->getXCoord() + alien->getWidth() &&
+           bullet->getXCoord() <= alien->getXCoord() + alien->getWidth() * 2 &&
+           bullet->getYCoord() + bullet->getHeight() >= alien->getYCoord() &&
+           bullet->getYCoord() <= alien->getYCoord() + alien->getHeight();
 }
 
 /*

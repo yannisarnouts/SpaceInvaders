@@ -80,17 +80,16 @@ void Game::CanonManager::loadCannon() {
  * different alien types gives different points
  */
 bool Game::CanonManager::checkCollision(Alien *alien) {
-    AlienType resultType = collisionController->bulletPlayerShip(currentBullet, alien);
-    if (resultType != AlienType(1000)) {
+    if (collisionController->bulletPlayerShip(currentBullet, alien)) {
         shoot = false;
         this->currentBullet->setYCoord(0);
-        if  (resultType == AlienType::thomas) {
+        if  (alien->getAlienType() == AlienType::thomas) {
             score->setPoints(score->getPoints() + 1);
-        } else if (resultType == AlienType::clifford) {
+        } else if (alien->getAlienType() == AlienType::clifford) {
             score->setPoints(score->getPoints() + 2);
-        } else if (resultType == AlienType::michiel) {
+        } else if (alien->getAlienType() == AlienType::michiel) {
             score->setPoints(score->getPoints() + 4);
-        } else if (resultType == AlienType::boss) {
+        } else if (alien->getAlienType() == AlienType::boss) {
             score->setPoints(score->getPoints() + 5);
         }
         return true;

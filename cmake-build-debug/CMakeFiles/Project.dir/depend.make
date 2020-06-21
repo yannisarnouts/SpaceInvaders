@@ -46,6 +46,7 @@ CMakeFiles/Project.dir/SDLClasses/SDLLife.cpp.obj: ../model/Life.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../SDLClasses/SDLPlayerShip.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../SDLClasses/SDLPlayerShip.h
+CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../controller/KeyHandler.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../controller/KeyP.h
 CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../factory/Texture.h
@@ -54,6 +55,7 @@ CMakeFiles/Project.dir/SDLClasses/SDLPlayerShip.cpp.obj: ../model/PlayerShip.h
 
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../SDLClasses/SDLScore.cpp
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../SDLClasses/SDLScore.h
+CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../controller/ConfigReader.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../factory/TextTexture.h
 CMakeFiles/Project.dir/SDLClasses/SDLScore.cpp.obj: ../model/Score.h
 

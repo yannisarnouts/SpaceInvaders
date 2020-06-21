@@ -28,9 +28,7 @@ void Game::Game::Run() {
             A->render();
             timer->update();
         }
-        if (levelManager->getAliens()->getAlienLength() == 0) {
-            won = true;
-        }
+        won = levelManager->getAliens()->getAlienLength() == 0;
         levelManager->setScore(levelManager->getCanon()->getScore()->getPoints());
         levelManager->setBonusses(levelManager->getBonusses() + levelManager->getBonusManager()->getBonussesCaught());
         levelManager->setShipLife(levelManager->getPlayerShip()->getLife());

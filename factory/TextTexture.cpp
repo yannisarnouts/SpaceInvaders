@@ -50,3 +50,11 @@ void TextTexture::free() {
 SDL_Texture *TextTexture::getTexture() const {
     return texture;
 }
+
+int TextTexture::getHeight() const {
+    return height;
+}
+
+int TextTexture::getWidth() const {
+    return width;
+}
